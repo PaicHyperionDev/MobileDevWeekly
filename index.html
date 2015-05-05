@@ -20,9 +20,152 @@
 
     <section class="main-content">
       <h1>
-<a id="mobiledevweekly" class="anchor" href="#mobiledevweekly" aria-hidden="true"><span class="octicon octicon-link"></span></a>MobileDevWeekly</h1>
+<a id="平安科技移动开发二队技术周报第一期" class="anchor" href="#%E5%B9%B3%E5%AE%89%E7%A7%91%E6%8A%80%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91%E4%BA%8C%E9%98%9F%E6%8A%80%E6%9C%AF%E5%91%A8%E6%8A%A5%E7%AC%AC%E4%B8%80%E6%9C%9F" aria-hidden="true"><span class="octicon octicon-link"></span></a>平安科技移动开发二队技术周报（第一期）</h1>
 
-<p>平安科技移动开发二队技术周报</p>
+<h2>
+<a id="业界新闻" class="anchor" href="#%E4%B8%9A%E7%95%8C%E6%96%B0%E9%97%BB" aria-hidden="true"><span class="octicon octicon-link"></span></a>业界新闻</h2>
+
+<h3>
+<a id="1流行ios网络通信库afnetworking曝ssl漏洞" class="anchor" href="#1%E6%B5%81%E8%A1%8Cios%E7%BD%91%E7%BB%9C%E9%80%9A%E4%BF%A1%E5%BA%93afnetworking%E6%9B%9Dssl%E6%BC%8F%E6%B4%9E" aria-hidden="true"><span class="octicon octicon-link"></span></a>1）<a href="http://www.freebuf.com/news/65744.html?utm_source=tuicool">流行iOS网络通信库AFNetworking曝SSL漏洞</a>
+</h3>
+
+<p>AFNetworking是一款大名鼎鼎的开源网络库，能够让开发者们在iOS和OS X程序中加入网络功能。但是，这款库没有检查SSL证书是否是颁发给某个合法域名。这直接导致了任何使用了早于2.5.3版本的AFNetworking的iOS程序都存在漏洞，即使程序由SSL加密数据，黑客可以窃取和篡改数据。</p>
+
+<h3>
+<a id="2android-和-ios-应用可轻松移植为-windows-10-通用应用" class="anchor" href="#2android-%E5%92%8C-ios-%E5%BA%94%E7%94%A8%E5%8F%AF%E8%BD%BB%E6%9D%BE%E7%A7%BB%E6%A4%8D%E4%B8%BA-windows-10-%E9%80%9A%E7%94%A8%E5%BA%94%E7%94%A8" aria-hidden="true"><span class="octicon octicon-link"></span></a>2）<a href="http://livesino.net/archives/8402.live?">Android 和 iOS 应用可轻松移植为 Windows 10 通用应用</a>
+</h3>
+
+<p>关于微软 Windows 10 将兼容 Android 应用的传言已经出现近一年，微软在 Build 2015 上给出了正式答案，和传言有些许不同。简而言之，Android 和 iOS 应用可移植为 Windows 10 通用应用。</p>
+
+<h3>
+<a id="3sky一个基于-dart-的高性能移动应用-ui-框架" class="anchor" href="#3sky%E4%B8%80%E4%B8%AA%E5%9F%BA%E4%BA%8E-dart-%E7%9A%84%E9%AB%98%E6%80%A7%E8%83%BD%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8-ui-%E6%A1%86%E6%9E%B6" aria-hidden="true"><span class="octicon octicon-link"></span></a>3）<a href="http://android.jobbole.com/80930/">Sky：一个基于 Dart 的高性能移动应用 UI 框架</a>
+</h3>
+
+<p>除游戏之外的Android应用通常使用Java语言来开发，而谷歌内部的一个团队正在探索全新的应用开发方式。他们利用了谷歌自主的网页开发语言Dart来开发Android应用。这帮助他们专注于速度，并可以与网页进行深度整合。</p>
+
+<h3>
+<a id="4google提议使用jsonnet来增强json" class="anchor" href="#4google%E6%8F%90%E8%AE%AE%E4%BD%BF%E7%94%A8jsonnet%E6%9D%A5%E5%A2%9E%E5%BC%BAjson" aria-hidden="true"><span class="octicon octicon-link"></span></a>4）<a href="http://www.infoq.com/cn/news/2015/04/jsonnet?utm_source=infoq&amp;utm_medium=popular_widget&amp;utm_content=article&amp;utm_campaign=popular_content_list">Google提议使用Jsonnet来增强JSON</a>
+</h3>
+
+<p>Google开源了一门配置语言Jsonnet来取代JSON，它完全向后兼容并加入了一些新特性：注释、引用、算术运算、条件操作符，数组和对象内含，引入，函数，局部变量，继承等。Jsonnet程序被翻译为兼容JSON的数据格式。</p>
+
+<h2>
+<a id="android开发" class="anchor" href="#android%E5%BC%80%E5%8F%91" aria-hidden="true"><span class="octicon octicon-link"></span></a>Android开发</h2>
+
+<h3>
+<a id="1android-studio入门指南" class="anchor" href="#1android-studio%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97" aria-hidden="true"><span class="octicon octicon-link"></span></a>1）<a href="http://www.jianshu.com/p/36cfa1614d23">Android Studio入门指南</a>
+</h3>
+
+<p>总结的比较全面的适用于国内开发者的Android Studio安装和基本使用教程，献给终于想从Eclipse＋Ant转向Android Studio＋Gradle的开发者们。</p>
+
+<h3>
+<a id="2-gradle插件用户指南" class="anchor" href="#2-gradle%E6%8F%92%E4%BB%B6%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97" aria-hidden="true"><span class="octicon octicon-link"></span></a>2） <a href="http://rinvay.github.io/android/2015/03/26/Gradle-Plugin-User-Guide(Translation)/">Gradle插件用户指南</a>
+</h3>
+
+<p>Android Studio中使用Gradle的简单快速入门教程，推荐刚从Eclipse＋Ant开发模式转到Android Studio＋Gradle开发模式的同学们看一看。</p>
+
+<h3>
+<a id="3常见android-native崩溃及错误原因" class="anchor" href="#3%E5%B8%B8%E8%A7%81android-native%E5%B4%A9%E6%BA%83%E5%8F%8A%E9%94%99%E8%AF%AF%E5%8E%9F%E5%9B%A0" aria-hidden="true"><span class="octicon octicon-link"></span></a>3）<a href="http://www.droidsec.cn/%E5%B8%B8%E8%A7%81android-native%E5%B4%A9%E6%BA%83%E5%8F%8A%E9%94%99%E8%AF%AF%E5%8E%9F%E5%9B%A0/">常见Android Native崩溃及错误原因</a>
+</h3>
+
+<p>Android NDK开发中常见的Native Crash原因分析</p>
+
+<h3>
+<a id="4android性能优化典范系列-第一季-第二季" class="anchor" href="#4android%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E5%85%B8%E8%8C%83%E7%B3%BB%E5%88%97-%E7%AC%AC%E4%B8%80%E5%AD%A3-%E7%AC%AC%E4%BA%8C%E5%AD%A3" aria-hidden="true"><span class="octicon octicon-link"></span></a>4）Android性能优化典范系列 <a href="http://hukai.me/android-performance-patterns/">第一季</a> <a href="http://hukai.me/android-performance-patterns-season-2/">第二季</a>
+</h3>
+
+<p>Google发布的系列短视频教程，这两篇文章是对其的总结，第一季主要讨论Android的渲染机制，内存与GC，电量优化，第二季包含的内容电量优化，网络优化，Wear上如何做优化，使用对象池来提高效率，LRU Cache，Bitmap的缩放，缓存，重用，PNG压缩，自定义View的性能，提升设置alpha之后View的渲染性能，以及Lint，StictMode等等工具的使用技巧。</p>
+
+<h3>
+<a id="5instagram是如何提升textview渲染性能的" class="anchor" href="#5instagram%E6%98%AF%E5%A6%82%E4%BD%95%E6%8F%90%E5%8D%87textview%E6%B8%B2%E6%9F%93%E6%80%A7%E8%83%BD%E7%9A%84" aria-hidden="true"><span class="octicon octicon-link"></span></a>5）<a href="http://codethink.me/2015/04/23/improving-comment-rendering-on-android/">Instagram是如何提升TextView渲染性能的</a>
+</h3>
+
+<p>在Android中，文本的渲染是很慢的。即使在一个像Nexus 5这样的新设备上，一段有十几行复杂文本的图片说明的初始绘制时间可能会达到50ms，而其文本的measure阶段就需要30ms。这些都发生在UI线程，在滚动时会导致app跳帧。</p>
+
+<h3>
+<a id="6android中判断app何时启动和关闭的技术研究" class="anchor" href="#6android%E4%B8%AD%E5%88%A4%E6%96%ADapp%E4%BD%95%E6%97%B6%E5%90%AF%E5%8A%A8%E5%92%8C%E5%85%B3%E9%97%AD%E7%9A%84%E6%8A%80%E6%9C%AF%E7%A0%94%E7%A9%B6" aria-hidden="true"><span class="octicon octicon-link"></span></a>6）<a href="http://asce1885.gitbooks.io/android-rd-senior-advanced/content/androidzhong_pan_duan_app_he_shi_qi_dong_he_guan_bi_de_ji_zhu_yan_jiu.html">Android中判断app何时启动和关闭的技术研究</a>
+</h3>
+
+<p>Android开发中不可避免的会遇到需要检查app何时进入前台，何时被用户关闭。奇怪的是，要达到这个目的并不容易。检查app第一次启动并不难，但要判断它何时重新打开和关闭就没有那么简单了。</p>
+
+<h3>
+<a id="7如何检查-android-应用的内存使用情况" class="anchor" href="#7%E5%A6%82%E4%BD%95%E6%A3%80%E6%9F%A5-android-%E5%BA%94%E7%94%A8%E7%9A%84%E5%86%85%E5%AD%98%E4%BD%BF%E7%94%A8%E6%83%85%E5%86%B5" aria-hidden="true"><span class="octicon octicon-link"></span></a>7）<a href="http://android.jobbole.com/80926/">如何检查 Android 应用的内存使用情况</a>
+</h3>
+
+<p>Android是为移动设备而设计的，所以应该关注应用的内存使用情况。尽管Android的Dalvik虚拟机会定期执行垃圾回收操作，但这也不意味着就可以忽视应用在何时何处进行内存分配和释放。为了提供良好的用户体验，做到系统在不同应用间流畅切换，当用户和应用无交互时，避免应用不必要的内存消耗是很重要的。</p>
+
+<h2>
+<a id="ios开发" class="anchor" href="#ios%E5%BC%80%E5%8F%91" aria-hidden="true"><span class="octicon octicon-link"></span></a>iOS开发</h2>
+
+<h3>
+<a id="1-objective-c-拾遗从heap-and-stack到block" class="anchor" href="#1-objective-c-%E6%8B%BE%E9%81%97%E4%BB%8Eheap-and-stack%E5%88%B0block" aria-hidden="true"><span class="octicon octicon-link"></span></a>1） <a href="https://github.com/100mango/zen/blob/master/Objective-C%20%E6%8B%BE%E9%81%97%EF%BC%9A%E4%BB%8EHeap%20and%20Stack%E5%88%B0Block%20/Objective-C%20%E6%8B%BE%E9%81%97%EF%BC%9A%E4%BB%8EHeap%20and%20Stack%E5%88%B0Block%20.md">Objective-C 拾遗：从Heap and Stack到Block</a>
+</h3>
+
+<p>语言基础知识的再探索</p>
+
+<h3>
+<a id="2携程app的网络性能优化实践" class="anchor" href="#2%E6%90%BA%E7%A8%8Bapp%E7%9A%84%E7%BD%91%E7%BB%9C%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E5%AE%9E%E8%B7%B5" aria-hidden="true"><span class="octicon octicon-link"></span></a>2）<a href="http://www.infoq.com/cn/articles/how-ctrip-improves-app-networking-performance">携程App的网络性能优化实践</a>
+</h3>
+
+<p>携程无线开发总监陈浩然在QCon全球软件开发大会（北京站）上的演讲，总结了携程在App网络性能优化方面的一些实践经验。</p>
+
+<h3>
+<a id="3ios应用架构谈系列-开篇-view层的组织和调用方案" class="anchor" href="#3ios%E5%BA%94%E7%94%A8%E6%9E%B6%E6%9E%84%E8%B0%88%E7%B3%BB%E5%88%97-%E5%BC%80%E7%AF%87-view%E5%B1%82%E7%9A%84%E7%BB%84%E7%BB%87%E5%92%8C%E8%B0%83%E7%94%A8%E6%96%B9%E6%A1%88" aria-hidden="true"><span class="octicon octicon-link"></span></a>3）iOS应用架构谈系列 <a href="http://casatwy.com/iosying-yong-jia-gou-tan-kai-pian.html">开篇</a> <a href="http://casatwy.com/iosying-yong-jia-gou-tan-viewceng-de-zu-zhi-he-diao-yong-fang-an.html">view层的组织和调用方案</a>
+</h3>
+
+<p>安居客iOS app开发者的iOS架构经验分享，目前出了两篇文章。</p>
+
+<h3>
+<a id="4ios图形性能进阶与测试" class="anchor" href="#4ios%E5%9B%BE%E5%BD%A2%E6%80%A7%E8%83%BD%E8%BF%9B%E9%98%B6%E4%B8%8E%E6%B5%8B%E8%AF%95" aria-hidden="true"><span class="octicon octicon-link"></span></a>4）<a href="https://github.com/100mango/zen/blob/master/WWDC%E5%BF%83%E5%BE%97%EF%BC%9AAdvanced%20Graphics%20and%20Animations%20for%20iOS%20Apps/Advanced%20Graphics%20and%20Animations%20for%20iOS%20Apps.md">iOS图形性能进阶与测试</a>
+</h3>
+
+<p>这篇文章主要是学习完Advanced Graphics and Animations for iOS Apps这个session后的总结和相应细节的延伸和细化。主要内容为图形性能与测试工具两个章节。</p>
+
+<h3>
+<a id="5view-debugging-in-xcode6" class="anchor" href="#5view-debugging-in-xcode6" aria-hidden="true"><span class="octicon octicon-link"></span></a>5）<a href="https://github.com/bboyfeiyu/iOS-tech-frontier/blob/master/issue-1/View-Debugging-in-Xcode-6.md">View Debugging in Xcode6</a>
+</h3>
+
+<p>我们在开发app的时候经常会遇到一些在代码中难以发现的view中的bug或者自动布局约束。这时候，掌握view调试的技巧就显得很重要—但是在Xcode6出现之前，调试view从未如此简单。</p>
+
+<h2>
+<a id="开源函数库与工具" class="anchor" href="#%E5%BC%80%E6%BA%90%E5%87%BD%E6%95%B0%E5%BA%93%E4%B8%8E%E5%B7%A5%E5%85%B7" aria-hidden="true"><span class="octicon octicon-link"></span></a>开源函数库与工具</h2>
+
+<h3>
+<a id="1-mac上面一款实用的android工具" class="anchor" href="#1-mac%E4%B8%8A%E9%9D%A2%E4%B8%80%E6%AC%BE%E5%AE%9E%E7%94%A8%E7%9A%84android%E5%B7%A5%E5%85%B7" aria-hidden="true"><span class="octicon octicon-link"></span></a>1） <a href="https://github.com/mortenjust/androidtool-mac">Mac上面一款实用的Android工具</a>
+</h3>
+
+<p>使用Mac开发的筒靴可以安装一个，这款简便小工具一键实现如下功能：
+1. 手机截屏
+2. 手机视频录制
+3. 轻松安装APK
+4. 运行自定义脚本</p>
+
+<h3>
+<a id="2adb-idea" class="anchor" href="#2adb-idea" aria-hidden="true"><span class="octicon octicon-link"></span></a>2）<a href="https://github.com/pbreault/adb-idea?utm_source=www.race604.com">adb-idea</a>
+</h3>
+
+<p>一个Android Studio和Intellij IDEA插件，用于加速日常Android的开发，主要提供的功能有：</p>
+
+<ol>
+<li>卸载app</li>
+<li>杀掉app</li>
+<li>启动app</li>
+<li>重新启动app</li>
+<li>清除app数据</li>
+<li>清除app数据并重新启动</li>
+</ol>
+
+<h3>
+<a id="3qcon2015的嘉宾演讲资料" class="anchor" href="#3qcon2015%E7%9A%84%E5%98%89%E5%AE%BE%E6%BC%94%E8%AE%B2%E8%B5%84%E6%96%99" aria-hidden="true"><span class="octicon octicon-link"></span></a>3）<a href="http://yun.baidu.com/share/home?uk=387674681&amp;view=share#category/type=0">QCon2015的嘉宾演讲资料</a>
+</h3>
+
+<p>刚刚结束的QCon 2015的嘉宾演讲资料汇总，感兴趣的筒靴们可以翻阅一下。</p>
+
+<h3>
+<a id="4cmd-markdown客户端" class="anchor" href="#4cmd-markdown%E5%AE%A2%E6%88%B7%E7%AB%AF" aria-hidden="true"><span class="octicon octicon-link"></span></a>4）<a href="https://www.zybuluo.com/ghosert/note/90884">Cmd Markdown客户端</a>
+</h3>
+
+<p>作业部落的Markdown编辑器全平台（Windows/Mac/Linux/浏览器）客户端发布，很好用的一款MarkDown编辑器，支持作业部落的云端同步和发布。</p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/PaicHyperionDev/MobileDevWeekly">Mobiledevweekly</a> is maintained by <a href="https://github.com/PaicHyperionDev">PaicHyperionDev</a>.</span>
