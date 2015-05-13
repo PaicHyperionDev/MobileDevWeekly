@@ -20,152 +20,161 @@
 
     <section class="main-content">
       <h1>
-<a id="平安科技移动开发二队技术周报第一期" class="anchor" href="#%E5%B9%B3%E5%AE%89%E7%A7%91%E6%8A%80%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91%E4%BA%8C%E9%98%9F%E6%8A%80%E6%9C%AF%E5%91%A8%E6%8A%A5%E7%AC%AC%E4%B8%80%E6%9C%9F" aria-hidden="true"><span class="octicon octicon-link"></span></a>平安科技移动开发二队技术周报（第一期）</h1>
+<a id="平安科技移动开发二队技术周报第二期" class="anchor" href="#%E5%B9%B3%E5%AE%89%E7%A7%91%E6%8A%80%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91%E4%BA%8C%E9%98%9F%E6%8A%80%E6%9C%AF%E5%91%A8%E6%8A%A5%E7%AC%AC%E4%BA%8C%E6%9C%9F" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+<a href="https://github.com/PaicHyperionDev/MobileDevWeekly">平安科技移动开发二队技术周报</a>（第二期）</h1>
 
 <h2>
 <a id="业界新闻" class="anchor" href="#%E4%B8%9A%E7%95%8C%E6%96%B0%E9%97%BB" aria-hidden="true"><span class="octicon octicon-link"></span></a>业界新闻</h2>
 
 <h3>
-<a id="1流行ios网络通信库afnetworking曝ssl漏洞" class="anchor" href="#1%E6%B5%81%E8%A1%8Cios%E7%BD%91%E7%BB%9C%E9%80%9A%E4%BF%A1%E5%BA%93afnetworking%E6%9B%9Dssl%E6%BC%8F%E6%B4%9E" aria-hidden="true"><span class="octicon octicon-link"></span></a>1）<a href="http://www.freebuf.com/news/65744.html?utm_source=tuicool">流行iOS网络通信库AFNetworking曝SSL漏洞</a>
+<a id="1apple-watch产品体验报告产品经理角度" class="anchor" href="#1apple-watch%E4%BA%A7%E5%93%81%E4%BD%93%E9%AA%8C%E6%8A%A5%E5%91%8A%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E8%A7%92%E5%BA%A6" aria-hidden="true"><span class="octicon octicon-link"></span></a>1）<a href="http://www.jianshu.com/p/b4e8f2cbcd6d">Apple Watch产品体验报告（产品经理角度）</a>
 </h3>
 
-<p>AFNetworking是一款大名鼎鼎的开源网络库，能够让开发者们在iOS和OS X程序中加入网络功能。但是，这款库没有检查SSL证书是否是颁发给某个合法域名。这直接导致了任何使用了早于2.5.3版本的AFNetworking的iOS程序都存在漏洞，即使程序由SSL加密数据，黑客可以窃取和篡改数据。</p>
+<p>本文从需求分析，外观感受，交互设计，功能场景，差异化等方面给出了Apple Watch的使用体验。</p>
 
 <h3>
-<a id="2android-和-ios-应用可轻松移植为-windows-10-通用应用" class="anchor" href="#2android-%E5%92%8C-ios-%E5%BA%94%E7%94%A8%E5%8F%AF%E8%BD%BB%E6%9D%BE%E7%A7%BB%E6%A4%8D%E4%B8%BA-windows-10-%E9%80%9A%E7%94%A8%E5%BA%94%E7%94%A8" aria-hidden="true"><span class="octicon octicon-link"></span></a>2）<a href="http://livesino.net/archives/8402.live?">Android 和 iOS 应用可轻松移植为 Windows 10 通用应用</a>
+<a id="2mysql-ssltls连接存在安全漏洞可遭中间人攻击" class="anchor" href="#2mysql-ssltls%E8%BF%9E%E6%8E%A5%E5%AD%98%E5%9C%A8%E5%AE%89%E5%85%A8%E6%BC%8F%E6%B4%9E%E5%8F%AF%E9%81%AD%E4%B8%AD%E9%97%B4%E4%BA%BA%E6%94%BB%E5%87%BB" aria-hidden="true"><span class="octicon octicon-link"></span></a>2）<a href="http://www.freebuf.com/news/66277.html">MySQL SSL/TLS连接存在安全漏洞，可遭中间人攻击</a>
 </h3>
 
-<p>关于微软 Windows 10 将兼容 Android 应用的传言已经出现近一年，微软在 Build 2015 上给出了正式答案，和传言有些许不同。简而言之，Android 和 iOS 应用可移植为 Windows 10 通用应用。</p>
+<p>继今年初爆出了openssl曝出Freak攻击漏洞之后又一类似案例。SSL/TLS一直以来被认为是保护通信安全的利器，但现在竟然成为泄露敏感信息的“后门”，这不，MySQL也中招了。</p>
 
 <h3>
-<a id="3sky一个基于-dart-的高性能移动应用-ui-框架" class="anchor" href="#3sky%E4%B8%80%E4%B8%AA%E5%9F%BA%E4%BA%8E-dart-%E7%9A%84%E9%AB%98%E6%80%A7%E8%83%BD%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8-ui-%E6%A1%86%E6%9E%B6" aria-hidden="true"><span class="octicon octicon-link"></span></a>3）<a href="http://android.jobbole.com/80930/">Sky：一个基于 Dart 的高性能移动应用 UI 框架</a>
+<a id="3在visual-studio中将objective-c编译为c" class="anchor" href="#3%E5%9C%A8visual-studio%E4%B8%AD%E5%B0%86objective-c%E7%BC%96%E8%AF%91%E4%B8%BAc" aria-hidden="true"><span class="octicon octicon-link"></span></a>3）<a href="http://www.infoq.com/cn/news/2015/05/VS-Objective-C">在Visual Studio中将Objective-C编译为C++</a>
 </h3>
 
-<p>除游戏之外的Android应用通常使用Java语言来开发，而谷歌内部的一个团队正在探索全新的应用开发方式。他们利用了谷歌自主的网页开发语言Dart来开发Android应用。这帮助他们专注于速度，并可以与网页进行深度整合。</p>
+<p>微软对Objective-C的支持</p>
 
 <h3>
-<a id="4google提议使用jsonnet来增强json" class="anchor" href="#4google%E6%8F%90%E8%AE%AE%E4%BD%BF%E7%94%A8jsonnet%E6%9D%A5%E5%A2%9E%E5%BC%BAjson" aria-hidden="true"><span class="octicon octicon-link"></span></a>4）<a href="http://www.infoq.com/cn/news/2015/04/jsonnet?utm_source=infoq&amp;utm_medium=popular_widget&amp;utm_content=article&amp;utm_campaign=popular_content_list">Google提议使用Jsonnet来增强JSON</a>
+<a id="4java-se-7-公共更新结束通知" class="anchor" href="#4java-se-7-%E5%85%AC%E5%85%B1%E6%9B%B4%E6%96%B0%E7%BB%93%E6%9D%9F%E9%80%9A%E7%9F%A5" aria-hidden="true"><span class="octicon octicon-link"></span></a>4）<a href="http://www.java.com/zh_CN/download/faq/java_7.xml">Java SE 7 公共更新结束通知</a>
 </h3>
 
-<p>Google开源了一门配置语言Jsonnet来取代JSON，它完全向后兼容并加入了一些新特性：注释、引用、算术运算、条件操作符，数组和对象内含，引入，函数，局部变量，继承等。Jsonnet程序被翻译为兼容JSON的数据格式。</p>
+<p>在 2015 年 4 月以后，Oracle 的公共下载网站上将不再发布 Java SE 7 的更新。</p>
 
 <h2>
 <a id="android开发" class="anchor" href="#android%E5%BC%80%E5%8F%91" aria-hidden="true"><span class="octicon octicon-link"></span></a>Android开发</h2>
 
 <h3>
-<a id="1android-studio入门指南" class="anchor" href="#1android-studio%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97" aria-hidden="true"><span class="octicon octicon-link"></span></a>1）<a href="http://www.jianshu.com/p/36cfa1614d23">Android Studio入门指南</a>
+<a id="1android-ui性能优化实战-识别绘制中的性能问题" class="anchor" href="#1android-ui%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E5%AE%9E%E6%88%98-%E8%AF%86%E5%88%AB%E7%BB%98%E5%88%B6%E4%B8%AD%E7%9A%84%E6%80%A7%E8%83%BD%E9%97%AE%E9%A2%98" aria-hidden="true"><span class="octicon octicon-link"></span></a>1）<a href="http://blog.csdn.net/lmj623565791/article/details/45556391">Android UI性能优化实战 识别绘制中的性能问题</a>
 </h3>
 
-<p>总结的比较全面的适用于国内开发者的Android Studio安装和基本使用教程，献给终于想从Eclipse＋Ant转向Android Studio＋Gradle的开发者们。</p>
+<p>基于Google发布的Android性能优化典范，以实例的形式一步一步讲解UI性能的优化。</p>
 
 <h3>
-<a id="2-gradle插件用户指南" class="anchor" href="#2-gradle%E6%8F%92%E4%BB%B6%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97" aria-hidden="true"><span class="octicon octicon-link"></span></a>2） <a href="http://rinvay.github.io/android/2015/03/26/Gradle-Plugin-User-Guide(Translation)/">Gradle插件用户指南</a>
+<a id="2android-recyclerview-使用完全解析-体验艺术般的控件" class="anchor" href="#2android-recyclerview-%E4%BD%BF%E7%94%A8%E5%AE%8C%E5%85%A8%E8%A7%A3%E6%9E%90-%E4%BD%93%E9%AA%8C%E8%89%BA%E6%9C%AF%E8%88%AC%E7%9A%84%E6%8E%A7%E4%BB%B6" aria-hidden="true"><span class="octicon octicon-link"></span></a>2）<a href="http://blog.csdn.net/lmj623565791/article/details/45059587">Android RecyclerView 使用完全解析 体验艺术般的控件</a>
 </h3>
 
-<p>Android Studio中使用Gradle的简单快速入门教程，推荐刚从Eclipse＋Ant开发模式转到Android Studio＋Gradle开发模式的同学们看一看。</p>
+<p>RecyclerView的一个基本介绍，如果开发中你还在使用ListView的话，那么是时候使用RecyclerView来替换它了。</p>
 
 <h3>
-<a id="3常见android-native崩溃及错误原因" class="anchor" href="#3%E5%B8%B8%E8%A7%81android-native%E5%B4%A9%E6%BA%83%E5%8F%8A%E9%94%99%E8%AF%AF%E5%8E%9F%E5%9B%A0" aria-hidden="true"><span class="octicon octicon-link"></span></a>3）<a href="http://www.droidsec.cn/%E5%B8%B8%E8%A7%81android-native%E5%B4%A9%E6%BA%83%E5%8F%8A%E9%94%99%E8%AF%AF%E5%8E%9F%E5%9B%A0/">常见Android Native崩溃及错误原因</a>
+<a id="3material-design-适配-入门篇-高级篇" class="anchor" href="#3material-design-%E9%80%82%E9%85%8D-%E5%85%A5%E9%97%A8%E7%AF%87-%E9%AB%98%E7%BA%A7%E7%AF%87" aria-hidden="true"><span class="octicon octicon-link"></span></a>3）Material Design 适配 <a href="http://www.cnblogs.com/ct2011/p/4493384.html">入门篇</a> <a href="http://www.cnblogs.com/ct2011/p/4493439.html">高级篇</a>
 </h3>
 
-<p>Android NDK开发中常见的Native Crash原因分析</p>
+<p>随着Material Design的普及，很多开发人员都会面临App的MaterialDesign 适配。如果你的App不只是针对5.0以上设备的话（多数情况也必须做兼容）， 那么本系列的经验总结将会对你有所帮助。</p>
 
 <h3>
-<a id="4android性能优化典范系列-第一季-第二季" class="anchor" href="#4android%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E5%85%B8%E8%8C%83%E7%B3%BB%E5%88%97-%E7%AC%AC%E4%B8%80%E5%AD%A3-%E7%AC%AC%E4%BA%8C%E5%AD%A3" aria-hidden="true"><span class="octicon octicon-link"></span></a>4）Android性能优化典范系列 <a href="http://hukai.me/android-performance-patterns/">第一季</a> <a href="http://hukai.me/android-performance-patterns-season-2/">第二季</a>
+<a id="5android加载不同dpi资源与内存消耗之间的关系-" class="anchor" href="#5android%E5%8A%A0%E8%BD%BD%E4%B8%8D%E5%90%8Cdpi%E8%B5%84%E6%BA%90%E4%B8%8E%E5%86%85%E5%AD%98%E6%B6%88%E8%80%97%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB-" aria-hidden="true"><span class="octicon octicon-link"></span></a>5）<a href="http://www.tinylab.org/android-loading-a-different-relationship-between-dpi-and-memory-consumption-of-resources/">Android加载不同DPI资源与内存消耗之间的关系 </a>
 </h3>
 
-<p>Google发布的系列短视频教程，这两篇文章是对其的总结，第一季主要讨论Android的渲染机制，内存与GC，电量优化，第二季包含的内容电量优化，网络优化，Wear上如何做优化，使用对象池来提高效率，LRU Cache，Bitmap的缩放，缓存，重用，PNG压缩，自定义View的性能，提升设置alpha之后View的渲染性能，以及Lint，StictMode等等工具的使用技巧。</p>
+<p>本文一步一步分析位于不同DPI文件夹中的资源与内存消耗之间的关系，得出结论：越是 DPI 小的文件夹内存消耗越大，因此建议根据设备配置 DPI 资源。</p>
 
 <h3>
-<a id="5instagram是如何提升textview渲染性能的" class="anchor" href="#5instagram%E6%98%AF%E5%A6%82%E4%BD%95%E6%8F%90%E5%8D%87textview%E6%B8%B2%E6%9F%93%E6%80%A7%E8%83%BD%E7%9A%84" aria-hidden="true"><span class="octicon octicon-link"></span></a>5）<a href="http://codethink.me/2015/04/23/improving-comment-rendering-on-android/">Instagram是如何提升TextView渲染性能的</a>
+<a id="6proguard后的代码出现异常如何解决" class="anchor" href="#6proguard%E5%90%8E%E7%9A%84%E4%BB%A3%E7%A0%81%E5%87%BA%E7%8E%B0%E5%BC%82%E5%B8%B8%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3" aria-hidden="true"><span class="octicon octicon-link"></span></a>6）<a href="http://bugly.qq.com/blog/?p=110">Proguard后的代码出现异常如何解决</a>
 </h3>
 
-<p>在Android中，文本的渲染是很慢的。即使在一个像Nexus 5这样的新设备上，一段有十几行复杂文本的图片说明的初始绘制时间可能会达到50ms，而其文本的measure阶段就需要30ms。这些都发生在UI线程，在滚动时会导致app跳帧。</p>
+<p>Proguard作为非常优秀的工具，让我们安装包体积变小了，代码混淆更安全了，代码裁剪优化速度更快了，但确实也埋下了一些坑，增加了我们定位崩溃时的成本。这篇文章介绍了如何在Proguard之后保留堆栈信息里面的原文件名和行号。</p>
 
 <h3>
-<a id="6android中判断app何时启动和关闭的技术研究" class="anchor" href="#6android%E4%B8%AD%E5%88%A4%E6%96%ADapp%E4%BD%95%E6%97%B6%E5%90%AF%E5%8A%A8%E5%92%8C%E5%85%B3%E9%97%AD%E7%9A%84%E6%8A%80%E6%9C%AF%E7%A0%94%E7%A9%B6" aria-hidden="true"><span class="octicon octicon-link"></span></a>6）<a href="http://asce1885.gitbooks.io/android-rd-senior-advanced/content/androidzhong_pan_duan_app_he_shi_qi_dong_he_guan_bi_de_ji_zhu_yan_jiu.html">Android中判断app何时启动和关闭的技术研究</a>
+<a id="7android-apk-防止反编译技术系列文章-加壳技术-----运行时修改dalvik指令----------------加密-对抗jd-gui-完整性校验" class="anchor" href="#7android-apk-%E9%98%B2%E6%AD%A2%E5%8F%8D%E7%BC%96%E8%AF%91%E6%8A%80%E6%9C%AF%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0-%E5%8A%A0%E5%A3%B3%E6%8A%80%E6%9C%AF-----%E8%BF%90%E8%A1%8C%E6%97%B6%E4%BF%AE%E6%94%B9dalvik%E6%8C%87%E4%BB%A4----------------%E5%8A%A0%E5%AF%86-%E5%AF%B9%E6%8A%97jd-gui-%E5%AE%8C%E6%95%B4%E6%80%A7%E6%A0%A1%E9%AA%8C" aria-hidden="true"><span class="octicon octicon-link"></span></a>7）android apk 防止反编译技术系列文章 <a href="http://my.oschina.net/u/2323218/blog/393372">加壳技术</a>     <a href="http://my.oschina.net/u/2323218/blog/396203">运行时修改Dalvik指令</a>                <a href="http://my.oschina.net/u/2323218/blog/399326">加密</a> <a href="http://my.oschina.net/u/2323218/blog/403621">对抗JD-GUI</a> <a href="http://my.oschina.net/u/2323218/blog/406860">完整性校验</a>
 </h3>
 
-<p>Android开发中不可避免的会遇到需要检查app何时进入前台，何时被用户关闭。奇怪的是，要达到这个目的并不容易。检查app第一次启动并不难，但要判断它何时重新打开和关闭就没有那么简单了。</p>
-
-<h3>
-<a id="7如何检查-android-应用的内存使用情况" class="anchor" href="#7%E5%A6%82%E4%BD%95%E6%A3%80%E6%9F%A5-android-%E5%BA%94%E7%94%A8%E7%9A%84%E5%86%85%E5%AD%98%E4%BD%BF%E7%94%A8%E6%83%85%E5%86%B5" aria-hidden="true"><span class="octicon octicon-link"></span></a>7）<a href="http://android.jobbole.com/80926/">如何检查 Android 应用的内存使用情况</a>
-</h3>
-
-<p>Android是为移动设备而设计的，所以应该关注应用的内存使用情况。尽管Android的Dalvik虚拟机会定期执行垃圾回收操作，但这也不意味着就可以忽视应用在何时何处进行内存分配和释放。为了提供良好的用户体验，做到系统在不同应用间流畅切换，当用户和应用无交互时，避免应用不必要的内存消耗是很重要的。</p>
+<p>不想辛辛苦苦编写的代码被其他人轻易的反编译，那么可以试下本系列文章介绍的相关方法。</p>
 
 <h2>
 <a id="ios开发" class="anchor" href="#ios%E5%BC%80%E5%8F%91" aria-hidden="true"><span class="octicon octicon-link"></span></a>iOS开发</h2>
 
 <h3>
-<a id="1-objective-c-拾遗从heap-and-stack到block" class="anchor" href="#1-objective-c-%E6%8B%BE%E9%81%97%E4%BB%8Eheap-and-stack%E5%88%B0block" aria-hidden="true"><span class="octicon octicon-link"></span></a>1） <a href="https://github.com/100mango/zen/blob/master/Objective-C%20%E6%8B%BE%E9%81%97%EF%BC%9A%E4%BB%8EHeap%20and%20Stack%E5%88%B0Block%20/Objective-C%20%E6%8B%BE%E9%81%97%EF%BC%9A%E4%BB%8EHeap%20and%20Stack%E5%88%B0Block%20.md">Objective-C 拾遗：从Heap and Stack到Block</a>
+<a id="1-ios单元测试系列单元测试框架选型" class="anchor" href="#1-ios%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E7%B3%BB%E5%88%97%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6%E9%80%89%E5%9E%8B" aria-hidden="true"><span class="octicon octicon-link"></span></a>1） <a href="http://zixun.github.io/blog/2015/04/11/iosdan-yuan-ce-shi-xi-lie-dan-yuan-ce-shi-kuang-jia-xuan-xing/">[iOS单元测试系列]单元测试框架选型</a>
 </h3>
 
-<p>语言基础知识的再探索</p>
+<p>iOS单元测试框架的一个调研报告，值得看一看。</p>
 
 <h3>
-<a id="2携程app的网络性能优化实践" class="anchor" href="#2%E6%90%BA%E7%A8%8Bapp%E7%9A%84%E7%BD%91%E7%BB%9C%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E5%AE%9E%E8%B7%B5" aria-hidden="true"><span class="octicon octicon-link"></span></a>2）<a href="http://www.infoq.com/cn/articles/how-ctrip-improves-app-networking-performance">携程App的网络性能优化实践</a>
+<a id="2apple-watch-和-iphone-通信实践" class="anchor" href="#2apple-watch-%E5%92%8C-iphone-%E9%80%9A%E4%BF%A1%E5%AE%9E%E8%B7%B5" aria-hidden="true"><span class="octicon octicon-link"></span></a>2）<a href="http://nilsun.github.io/iPhone-watch-communication/">Apple Watch 和 iPhone 通信实践</a>
 </h3>
 
-<p>携程无线开发总监陈浩然在QCon全球软件开发大会（北京站）上的演讲，总结了携程在App网络性能优化方面的一些实践经验。</p>
+<p>从实践的角度简要分析了 iPhone 和 Watch 的通信框架WatchKit Extension。</p>
 
 <h3>
-<a id="3ios应用架构谈系列-开篇-view层的组织和调用方案" class="anchor" href="#3ios%E5%BA%94%E7%94%A8%E6%9E%B6%E6%9E%84%E8%B0%88%E7%B3%BB%E5%88%97-%E5%BC%80%E7%AF%87-view%E5%B1%82%E7%9A%84%E7%BB%84%E7%BB%87%E5%92%8C%E8%B0%83%E7%94%A8%E6%96%B9%E6%A1%88" aria-hidden="true"><span class="octicon octicon-link"></span></a>3）iOS应用架构谈系列 <a href="http://casatwy.com/iosying-yong-jia-gou-tan-kai-pian.html">开篇</a> <a href="http://casatwy.com/iosying-yong-jia-gou-tan-viewceng-de-zu-zhi-he-diao-yong-fang-an.html">view层的组织和调用方案</a>
+<a id="3cocoapods安装和使用教程" class="anchor" href="#3cocoapods%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B" aria-hidden="true"><span class="octicon octicon-link"></span></a>3）<a href="http://code4app.com/article/cocoapods-install-usage">CocoaPods安装和使用教程</a>
 </h3>
 
-<p>安居客iOS app开发者的iOS架构经验分享，目前出了两篇文章。</p>
+<p>CocoaPods应该是iOS最常用最有名的类库管理工具，作为iOS程序员的我们，掌握CocoaPods的使用是必不可少的基本技能了。</p>
 
 <h3>
-<a id="4ios图形性能进阶与测试" class="anchor" href="#4ios%E5%9B%BE%E5%BD%A2%E6%80%A7%E8%83%BD%E8%BF%9B%E9%98%B6%E4%B8%8E%E6%B5%8B%E8%AF%95" aria-hidden="true"><span class="octicon octicon-link"></span></a>4）<a href="https://github.com/100mango/zen/blob/master/WWDC%E5%BF%83%E5%BE%97%EF%BC%9AAdvanced%20Graphics%20and%20Animations%20for%20iOS%20Apps/Advanced%20Graphics%20and%20Animations%20for%20iOS%20Apps.md">iOS图形性能进阶与测试</a>
+<a id="4cocoapods建立私有仓库" class="anchor" href="#4cocoapods%E5%BB%BA%E7%AB%8B%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93" aria-hidden="true"><span class="octicon octicon-link"></span></a>4）<a href="http://blog.csdn.net/agdsdl/article/details/45218987#0-tsina-1-51027-397232819ff9a47a7b7e80a40613cfe1">CocoaPods建立私有仓库</a>
 </h3>
 
-<p>这篇文章主要是学习完Advanced Graphics and Animations for iOS Apps这个session后的总结和相应细节的延伸和细化。主要内容为图形性能与测试工具两个章节。</p>
+<p>个人或公司在开发过程中，会积累很多可以复用的代码包，有些我们不想开源，又想像开源库一样在CocoaPods中管理它们，那么通过私有仓库来管理就很有必要。</p>
+
+<h2>
+<a id="技术纵横" class="anchor" href="#%E6%8A%80%E6%9C%AF%E7%BA%B5%E6%A8%AA" aria-hidden="true"><span class="octicon octicon-link"></span></a>技术纵横</h2>
 
 <h3>
-<a id="5view-debugging-in-xcode6" class="anchor" href="#5view-debugging-in-xcode6" aria-hidden="true"><span class="octicon octicon-link"></span></a>5）<a href="https://github.com/bboyfeiyu/iOS-tech-frontier/blob/master/issue-1/View-Debugging-in-Xcode-6.md">View Debugging in Xcode6</a>
+<a id="1代码的印象派写点好代码吧" class="anchor" href="#1%E4%BB%A3%E7%A0%81%E7%9A%84%E5%8D%B0%E8%B1%A1%E6%B4%BE%E5%86%99%E7%82%B9%E5%A5%BD%E4%BB%A3%E7%A0%81%E5%90%A7" aria-hidden="true"><span class="octicon octicon-link"></span></a>1）<a href="http://www.cnblogs.com/gaochundong/p/the_impressionism_of_code.html">代码的印象派：写点好代码吧</a>
 </h3>
 
-<p>我们在开发app的时候经常会遇到一些在代码中难以发现的view中的bug或者自动布局约束。这时候，掌握view调试的技巧就显得很重要—但是在Xcode6出现之前，调试view从未如此简单。</p>
+<p>软件质量与代码编写的优雅程度息息相关，作者就如何实现优雅的编码风格表达了自己的见解。</p>
+
+<h3>
+<a id="2java-8里面lambda的最佳实践" class="anchor" href="#2java-8%E9%87%8C%E9%9D%A2lambda%E7%9A%84%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5" aria-hidden="true"><span class="octicon octicon-link"></span></a>2）<a href="http://my.oschina.net/benhaile/blog/408377">Java 8里面lambda的最佳实践</a>
+</h3>
+
+<p>Java SE 7已经不提供公开的更新，Java 8是大势所趋，而在Java 8 里面Lambda是最火的主题，不仅仅是因为语法的改变，更重要的是带来了函数式编程的思想，我觉得优秀的程序员，有必要学习一下函数式编程的思想以开阔思路。</p>
+
+<h3>
+<a id="3序列化和反序列化" class="anchor" href="#3%E5%BA%8F%E5%88%97%E5%8C%96%E5%92%8C%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96" aria-hidden="true"><span class="octicon octicon-link"></span></a>3）<a href="http://www.infoq.com/cn/articles/serialization-and-deserialization?utm_source=infoq&amp;utm_medium=popular_widget&amp;utm_content=article&amp;utm_campaign=popular_content_list">序列化和反序列化</a>
+</h3>
+
+<p>美团推荐与个性化组研发人员对序列化与反序列化的一个深度解析，无论哪个端的开发人员都能从中获得收益。</p>
+
+<h3>
+<a id="4架构之重构的12条军规" class="anchor" href="#4%E6%9E%B6%E6%9E%84%E4%B9%8B%E9%87%8D%E6%9E%84%E7%9A%8412%E6%9D%A1%E5%86%9B%E8%A7%84" aria-hidden="true"><span class="octicon octicon-link"></span></a>4）<a href="http://www.infoq.com/cn/articles/architect-12-rules-complete">架构之重构的12条军规</a>
+</h3>
+
+<p>针对Uber工程主管Raffi Krikorian的提出的软件架构重构的12条规则，作者结合自己的工程实践进行了解读。</p>
+
+<h3>
+<a id="5聊聊移动端跨平台开发的各种技术" class="anchor" href="#5%E8%81%8A%E8%81%8A%E7%A7%BB%E5%8A%A8%E7%AB%AF%E8%B7%A8%E5%B9%B3%E5%8F%B0%E5%BC%80%E5%8F%91%E7%9A%84%E5%90%84%E7%A7%8D%E6%8A%80%E6%9C%AF" aria-hidden="true"><span class="octicon octicon-link"></span></a>5）<a href="http://fex.baidu.com/blog/2015/05/cross-mobile/">聊聊移动端跨平台开发的各种技术</a>
+</h3>
+
+<p>百度FEX开发人员对目前跨平台开发技术流派的一个调研总结，值得学习一下（附带<a href="http://naotu.baidu.com/viewshare.html?shareId=avi5nek9booo">脑图</a>）</p>
 
 <h2>
 <a id="开源函数库与工具" class="anchor" href="#%E5%BC%80%E6%BA%90%E5%87%BD%E6%95%B0%E5%BA%93%E4%B8%8E%E5%B7%A5%E5%85%B7" aria-hidden="true"><span class="octicon octicon-link"></span></a>开源函数库与工具</h2>
 
 <h3>
-<a id="1-mac上面一款实用的android工具" class="anchor" href="#1-mac%E4%B8%8A%E9%9D%A2%E4%B8%80%E6%AC%BE%E5%AE%9E%E7%94%A8%E7%9A%84android%E5%B7%A5%E5%85%B7" aria-hidden="true"><span class="octicon octicon-link"></span></a>1） <a href="https://github.com/mortenjust/androidtool-mac">Mac上面一款实用的Android工具</a>
+<a id="1-在线生成iosmac-autolayout-constraints的网站" class="anchor" href="#1-%E5%9C%A8%E7%BA%BF%E7%94%9F%E6%88%90iosmac-autolayout-constraints%E7%9A%84%E7%BD%91%E7%AB%99" aria-hidden="true"><span class="octicon octicon-link"></span></a>1） <a href="http://constraints.icodeforlove.com/">在线生成iOS/Mac Autolayout Constraints的网站</a>
 </h3>
 
-<p>使用Mac开发的筒靴可以安装一个，这款简便小工具一键实现如下功能：
-1. 手机截屏
-2. 手机视频录制
-3. 轻松安装APK
-4. 运行自定义脚本</p>
+<p>可视化的Autolayout Constraints代码在线生成网站，加速开发。</p>
 
 <h3>
-<a id="2adb-idea" class="anchor" href="#2adb-idea" aria-hidden="true"><span class="octicon octicon-link"></span></a>2）<a href="https://github.com/pbreault/adb-idea?utm_source=www.race604.com">adb-idea</a>
+<a id="2androidjava内存泄漏检测函数库leakcanary" class="anchor" href="#2androidjava%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F%E6%A3%80%E6%B5%8B%E5%87%BD%E6%95%B0%E5%BA%93leakcanary" aria-hidden="true"><span class="octicon octicon-link"></span></a>2）<a href="https://github.com/square/leakcanary">Android&amp;Java内存泄漏检测函数库leakcanary</a>
 </h3>
 
-<p>一个Android Studio和Intellij IDEA插件，用于加速日常Android的开发，主要提供的功能有：</p>
-
-<ol>
-<li>卸载app</li>
-<li>杀掉app</li>
-<li>启动app</li>
-<li>重新启动app</li>
-<li>清除app数据</li>
-<li>清除app数据并重新启动</li>
-</ol>
+<p>良心企业Square的又一力作，想要减少app的OOM，那么就赶紧用起来吧！</p>
 
 <h3>
-<a id="3qcon2015的嘉宾演讲资料" class="anchor" href="#3qcon2015%E7%9A%84%E5%98%89%E5%AE%BE%E6%BC%94%E8%AE%B2%E8%B5%84%E6%96%99" aria-hidden="true"><span class="octicon octicon-link"></span></a>3）<a href="http://yun.baidu.com/share/home?uk=387674681&amp;view=share#category/type=0">QCon2015的嘉宾演讲资料</a>
+<a id="3android图表库xcl-charts" class="anchor" href="#3android%E5%9B%BE%E8%A1%A8%E5%BA%93xcl-charts" aria-hidden="true"><span class="octicon octicon-link"></span></a>3）<a href="https://github.com/xcltapestry/XCL-Charts">Android图表库XCL-Charts</a>
 </h3>
 
-<p>刚刚结束的QCon 2015的嘉宾演讲资料汇总，感兴趣的筒靴们可以翻阅一下。</p>
+<p>很全面的一个图表库，app中需要绘制图表的话可以参考一下。</p>
 
 <h3>
-<a id="4cmd-markdown客户端" class="anchor" href="#4cmd-markdown%E5%AE%A2%E6%88%B7%E7%AB%AF" aria-hidden="true"><span class="octicon octicon-link"></span></a>4）<a href="https://www.zybuluo.com/ghosert/note/90884">Cmd Markdown客户端</a>
+<a id="4squidb" class="anchor" href="#4squidb" aria-hidden="true"><span class="octicon octicon-link"></span></a>4）<a href="https://github.com/yahoo/squidb">squidb</a>
 </h3>
 
-<p>作业部落的Markdown编辑器全平台（Windows/Mac/Linux/浏览器）客户端发布，很好用的一款MarkDown编辑器，支持作业部落的云端同步和发布。</p>
+<p>Yahoo! 开源的Android 上的 SQLite数据库工具，轻量级、高性能。</p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/PaicHyperionDev/MobileDevWeekly">MobileDevWeekly</a> is maintained by <a href="https://github.com/PaicHyperionDev">PaicHyperionDev</a>.</span>
