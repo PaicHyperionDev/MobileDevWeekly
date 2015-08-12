@@ -20,141 +20,124 @@
 
     <section class="main-content">
       <h1>
-<a id="平安科技移动开发二队技术周报第十四期" class="anchor" href="#%E5%B9%B3%E5%AE%89%E7%A7%91%E6%8A%80%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91%E4%BA%8C%E9%98%9F%E6%8A%80%E6%9C%AF%E5%91%A8%E6%8A%A5%E7%AC%AC%E5%8D%81%E5%9B%9B%E6%9C%9F" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="https://github.com/PaicHyperionDev/MobileDevWeekly">平安科技移动开发二队技术周报</a>（第十四期）</h1>
+<a id="平安科技移动开发二队技术周报第十五期" class="anchor" href="#%E5%B9%B3%E5%AE%89%E7%A7%91%E6%8A%80%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91%E4%BA%8C%E9%98%9F%E6%8A%80%E6%9C%AF%E5%91%A8%E6%8A%A5%E7%AC%AC%E5%8D%81%E4%BA%94%E6%9C%9F" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="https://github.com/PaicHyperionDev/MobileDevWeekly">平安科技移动开发二队技术周报</a>（第十五期）</h1>
 
 <h2>
 <a id="业界新闻" class="anchor" href="#%E4%B8%9A%E7%95%8C%E6%96%B0%E9%97%BB" aria-hidden="true"><span class="octicon octicon-link"></span></a>业界新闻</h2>
 
 <h3>
-<a id="1android-studio-13-正式发布" class="anchor" href="#1android-studio-13-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83" aria-hidden="true"><span class="octicon octicon-link"></span></a>1）<a href="http://chinagdg.org/2015/08/android-studio-1-3-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83/">Android Studio 1.3 正式发布</a>
+<a id="1谷歌重组更名alphabet" class="anchor" href="#1%E8%B0%B7%E6%AD%8C%E9%87%8D%E7%BB%84%E6%9B%B4%E5%90%8Dalphabet" aria-hidden="true"><span class="octicon octicon-link"></span></a>1）<a href="http://tech.sina.com.cn/z/google_restructuring/">谷歌重组更名Alphabet</a>
 </h3>
 
-<p>Android Studio 1.3 正式进入稳定版，求稳的同学该升级了。作为今年改进最大的一个版本，Studio 1.3 包括新的 memory profiler ，改进的测试支持，并且包含了完整的 C++ 编辑和调试功能。</p>
+<p>谷歌8月11日宣布重组。拉里-佩奇将与谢尔盖-布林创办新的控股公司Alphabet，两人分别出任CEO与总裁职位。Alphabet将取代谷歌在纳斯达克上市，谷歌目前所有股份将自动转换为同等数量与权益的Alphabet股份。原先的谷歌将成为Alphabet的全资子公司。</p>
+
+<p>Alphabet公司架构：</p>
+
+<p><img src="http://n.sinaimg.cn/default/20150811/Altt-fxftkpx3763765.jpg" alt=""></p>
+
+<h3>
+<a id="2blackhat-2015-黑帽大会总结-day-1-day-2" class="anchor" href="#2blackhat-2015-%E9%BB%91%E5%B8%BD%E5%A4%A7%E4%BC%9A%E6%80%BB%E7%BB%93-day-1-day-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>2）BlackHat 2015 黑帽大会总结 <a href="http://www.droidsec.cn/blackhat-2015-%E9%BB%91%E5%B8%BD%E5%A4%A7%E4%BC%9A-day1/">Day 1</a> <a href="http://www.droidsec.cn/%E4%BD%A0%E7%9A%84%E6%8C%87%E7%BA%B9%E8%BF%98%E5%AE%89%E5%85%A8%E5%90%97%EF%BC%9F-blackhat-2015-%E9%BB%91%E5%B8%BD%E5%A4%A7%E4%BC%9A%E6%80%BB%E7%BB%93-day-2/">Day 2</a>
+</h3>
+
+<p>黑帽大会的要点总结</p>
 
 <h2>
 <a id="android开发" class="anchor" href="#android%E5%BC%80%E5%8F%91" aria-hidden="true"><span class="octicon octicon-link"></span></a>Android开发</h2>
 
 <h3>
-<a id="1使用o-llvm和ndk对android应用进行混淆" class="anchor" href="#1%E4%BD%BF%E7%94%A8o-llvm%E5%92%8Cndk%E5%AF%B9android%E5%BA%94%E7%94%A8%E8%BF%9B%E8%A1%8C%E6%B7%B7%E6%B7%86" aria-hidden="true"><span class="octicon octicon-link"></span></a>1）<a href="http://www.jianshu.com/p/0c23e0a886f4">使用O-LLVM和NDK对Android应用进行混淆</a>
+<a id="1android拆分与加载dex的多种方案对比" class="anchor" href="#1android%E6%8B%86%E5%88%86%E4%B8%8E%E5%8A%A0%E8%BD%BDdex%E7%9A%84%E5%A4%9A%E7%A7%8D%E6%96%B9%E6%A1%88%E5%AF%B9%E6%AF%94" aria-hidden="true"><span class="octicon octicon-link"></span></a>1）<a href="http://mp.weixin.qq.com/s?__biz=MzAwNDY1ODY2OQ==&amp;mid=207151651&amp;idx=1&amp;sn=9eab282711f4eb2b4daf2fbae5a5ca9a&amp;3rd=MzA3MDU4NTYzMw==&amp;scene=6#rd">Android拆分与加载Dex的多种方案对比</a>
 </h3>
 
-<p>Android开发中经常需要对敏感信息进行加密，避免不了要将密钥存放在终端设备上，那么如何防止密钥被逆向出来呢？这是一个先有鸡还是先有蛋的悖论。相比较将密钥写在Java层，将其下移到NDK层是个更好的选择，本文就来介绍如何对NDK层代码进行混淆，以更好的保护我们的密钥。</p>
+<p>对于Android大型程序来说，64k方法数与线性内存的限制都是必须要考虑的问题。事实上，解决64K方法限制的唯一方法是拆分多dex,不同方案的差异在于需指定哪些类必须在主dex，这与我们期待的效果以及加载方式相关。</p>
 
 <h3>
-<a id="2android平台免root无侵入aop框架dexposed使用详解" class="anchor" href="#2android%E5%B9%B3%E5%8F%B0%E5%85%8Droot%E6%97%A0%E4%BE%B5%E5%85%A5aop%E6%A1%86%E6%9E%B6dexposed%E4%BD%BF%E7%94%A8%E8%AF%A6%E8%A7%A3" aria-hidden="true"><span class="octicon octicon-link"></span></a>2）<a href="http://www.jianshu.com/p/14edcb444c51">Android平台免Root无侵入AOP框架Dexposed使用详解</a>
+<a id="2android项目中如何用好构建神器gradle" class="anchor" href="#2android%E9%A1%B9%E7%9B%AE%E4%B8%AD%E5%A6%82%E4%BD%95%E7%94%A8%E5%A5%BD%E6%9E%84%E5%BB%BA%E7%A5%9E%E5%99%A8gradle" aria-hidden="true"><span class="octicon octicon-link"></span></a>2）<a href="http://www.csdn.net/article/2015-08-10/2825420">Android项目中如何用好构建神器Gradle</a>
 </h3>
 
-<p>阿里巴巴无线事业部最近开源的Android平台下的无侵入运行期AOP框架Dexposed，该框架基于AOP思想，支持经典的AOP使用场景，可应用于日志记录，性能统计，安全控制，事务处理，异常处理等方面。</p>
-
-<p>针对Android平台，Dexposed支持函数级别的在线热更新，例如对已经发布在应用市场上的宿主APK，当我们从crash统计平台上发现某个函数调用有bug，导致经常性crash，这时，可以在本地开发一个补丁APK，并发布到服务器中，宿主APK下载这个补丁APK并集成后，就可以很容易修复这个crash。</p>
+<p>本文作者贾吉鑫为大众点评Android工程师，在进行团队并行开发时，分库遇到的问题很多都要通过Gradle脚本解决。Gradle虽为构建神器，但学习曲线比较陡峭，要想在Android项目中用好Gradle必须要做到三点。</p>
 
 <h3>
-<a id="3android开发中有哪些让你觉得相见恨晚的方法类或接口" class="anchor" href="#3android%E5%BC%80%E5%8F%91%E4%B8%AD%E6%9C%89%E5%93%AA%E4%BA%9B%E8%AE%A9%E4%BD%A0%E8%A7%89%E5%BE%97%E7%9B%B8%E8%A7%81%E6%81%A8%E6%99%9A%E7%9A%84%E6%96%B9%E6%B3%95%E7%B1%BB%E6%88%96%E6%8E%A5%E5%8F%A3" aria-hidden="true"><span class="octicon octicon-link"></span></a>3）<a href="http://www.zhihu.com/question/33636939">Android开发中，有哪些让你觉得相见恨晚的方法、类或接口？</a>
+<a id="3最美应用从android研发工程师的角度之最美时光" class="anchor" href="#3%E6%9C%80%E7%BE%8E%E5%BA%94%E7%94%A8%E4%BB%8Eandroid%E7%A0%94%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88%E7%9A%84%E8%A7%92%E5%BA%A6%E4%B9%8B%E6%9C%80%E7%BE%8E%E6%97%B6%E5%85%89" aria-hidden="true"><span class="octicon octicon-link"></span></a>3）<a href="http://www.jianshu.com/p/bc7a3f022854">最美应用－从Android研发工程师的角度之[最美时光]</a>
 </h3>
 
-<p>Android（Java）开发中，有哪些方法或类（接口）很实用，但是你却没能在第一时间知道它？当有一天你发现它时，只想说一句：“What the f**k，还有这个！”</p>
+<p>最近发现最美应用这样一个网站，它会定期推介一些很有意思的app，作为开发者，每次看到很棒的app都会从实现角度进行剖析，想着如果是自己将如何实现呢？因此，就有了这个系列的文章，旨在从技术选型和架构的角度解读一些有意思的app。</p>
 
 <h3>
-<a id="4如果让我重新设计一款android-app" class="anchor" href="#4%E5%A6%82%E6%9E%9C%E8%AE%A9%E6%88%91%E9%87%8D%E6%96%B0%E8%AE%BE%E8%AE%A1%E4%B8%80%E6%AC%BEandroid-app" aria-hidden="true"><span class="octicon octicon-link"></span></a>4）<a href="http://blog.csdn.net/ahence/article/details/47154419">如果让我重新设计一款Android App</a>
+<a id="4跟我一起写eventbus系列" class="anchor" href="#4%E8%B7%9F%E6%88%91%E4%B8%80%E8%B5%B7%E5%86%99eventbus%E7%B3%BB%E5%88%97" aria-hidden="true"><span class="octicon octicon-link"></span></a>4）<a href="http://blog.mcxiaoke.com/2015/08/11/how-to-write-an-eventbus-part4/">跟我一起写EventBus系列</a>
 </h3>
 
-<p>一篇关于Android app技术选型的探讨。</p>
+<p>跟随作者的脚步了解如何一步一步实现自己的EventBus。</p>
 
 <h3>
-<a id="5全自动化的-android-编译管线" class="anchor" href="#5%E5%85%A8%E8%87%AA%E5%8A%A8%E5%8C%96%E7%9A%84-android-%E7%BC%96%E8%AF%91%E7%AE%A1%E7%BA%BF" aria-hidden="true"><span class="octicon octicon-link"></span></a>5）<a href="http://segmentfault.com/a/1190000003036406">全自动化的 Android 编译管线</a>
+<a id="510-ways-to-improve-your-android-app-performance" class="anchor" href="#510-ways-to-improve-your-android-app-performance" aria-hidden="true"><span class="octicon octicon-link"></span></a>5）<a href="http://pan.baidu.com/s/1kTL7Tbh">10 ways to improve your Android app performance</a>
 </h3>
 
-<p>本文阐述了作者在使用自动化工序去构建 Android 应用程序遇到的一些难题，大家不妨读读，希望能有所收获。</p>
+<p>Google工程师Boris Farber整理的最佳实践和应该避免的常见问题。</p>
 
 <h2>
 <a id="ios开发" class="anchor" href="#ios%E5%BC%80%E5%8F%91" aria-hidden="true"><span class="octicon octicon-link"></span></a>iOS开发</h2>
 
 <h3>
-<a id="1the-swift-programming-language-中文版" class="anchor" href="#1the-swift-programming-language-%E4%B8%AD%E6%96%87%E7%89%88" aria-hidden="true"><span class="octicon octicon-link"></span></a>1）<a href="http://wiki.jikexueyuan.com/project/swift/">The Swift Programming Language 中文版</a>
+<a id="1swift2面向协议编程" class="anchor" href="#1swift2%E9%9D%A2%E5%90%91%E5%8D%8F%E8%AE%AE%E7%BC%96%E7%A8%8B" aria-hidden="true"><span class="octicon octicon-link"></span></a>1）<a href="http://www.devtf.cn/?p=987">Swift2面向协议编程</a>
 </h3>
 
-<p>Swift 2.0来了！《The Swift Programming Language》中文版全新发布，37个章节全部完成更新！</p>
+<p>在WWDC 2015上，Apple发布Swift语言的第二个修订版本–Swift 2，它包含了许多新的语言特性，这些特性能够帮助你更加方便得写代码。在这些新特性中，最令人兴奋的是protocol extensions。在第一个版本的Swift中，它能够扩展class、struct和enum类型的功能。现在，在Swift 2中，你也能扩展一个协议。</p>
 
 <h3>
-<a id="2ios-并发编程之-operation-queues" class="anchor" href="#2ios-%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E4%B9%8B-operation-queues" aria-hidden="true"><span class="octicon octicon-link"></span></a>2）<a href="http://blog.leichunfeng.com/blog/2015/07/29/ios-concurrency-programming-operation-queues/#jtss-tsina">iOS 并发编程之 Operation Queues</a>
+<a id="2用-viper-构建-ios-应用架构" class="anchor" href="#2%E7%94%A8-viper-%E6%9E%84%E5%BB%BA-ios-%E5%BA%94%E7%94%A8%E6%9E%B6%E6%9E%84" aria-hidden="true"><span class="octicon octicon-link"></span></a>2）<a href="http://news.oneapm.com/viper-ios-oneapm/">用 VIPER 构建 iOS 应用架构</a>
 </h3>
 
-<p>在 iOS 开发中，我们主要可以通过 Operation Queues、Dispatch Queues 和 Dispatch Sources 来提高应用的并发性，从而充分地利用多核心 CPU 的性能。本文主要阐述了 iOS 的并发编程模型，以及详细地介绍了 Operation Queues 的相关知识。</p>
+<p>本篇文章由 Jeff Gilbert 和 Conrad Stoll 共同编写，通过构建一个基础示例应用，深入了解 VIPER，并从视图、交互器等多个部件理清 VIPER 的整体布局及思路。通过 VIPER 构建 iOS 应用架构，提升应用质量，迎接应用构建的新机遇！</p>
 
 <h3>
-<a id="3如何轻松实现ios9多任务管理器效果icarousel高级教程" class="anchor" href="#3%E5%A6%82%E4%BD%95%E8%BD%BB%E6%9D%BE%E5%AE%9E%E7%8E%B0ios9%E5%A4%9A%E4%BB%BB%E5%8A%A1%E7%AE%A1%E7%90%86%E5%99%A8%E6%95%88%E6%9E%9Cicarousel%E9%AB%98%E7%BA%A7%E6%95%99%E7%A8%8B" aria-hidden="true"><span class="octicon octicon-link"></span></a>3）<a href="http://adad184.com/2015/08/01/advanced-icarousel-tutorial-copycat-of-ios9-task-tray/">如何轻松实现iOS9多任务管理器效果(iCarousel高级教程)</a>
+<a id="3how-we-built-tinder-like-koloda-animation-in-swift" class="anchor" href="#3how-we-built-tinder-like-koloda-animation-in-swift" aria-hidden="true"><span class="octicon octicon-link"></span></a>3）<a href="https://yalantis.com/blog/how-we-built-tinder-like-koloda-in-swift/">How We Built Tinder-Like Koloda Animation in Swift</a>
 </h3>
 
-<p>文章带领大家实现了一个类似 iOS 9 中 app switcher 的动画效果。虽然只是用 Core Animation 的相关内容也是可以实现类似效果的，但是作者选用了 iCarousel 这个特性丰富的强大动画库，这节省了非常多的时间和代码量。</p>
+<p>Koloda动画效果实现原理解析。</p>
+
+<h3>
+<a id="4uiwebview与js的深度交互" class="anchor" href="#4uiwebview%E4%B8%8Ejs%E7%9A%84%E6%B7%B1%E5%BA%A6%E4%BA%A4%E4%BA%92" aria-hidden="true"><span class="octicon octicon-link"></span></a>4）<a href="http://kittenyang.com/webview-javascript-bridge/">UIWebView与JS的深度交互</a>
+</h3>
+
+<p>一篇实战的UIWebView和JS交互的文章。</p>
 
 <h2>
 <a id="技术纵横" class="anchor" href="#%E6%8A%80%E6%9C%AF%E7%BA%B5%E6%A8%AA" aria-hidden="true"><span class="octicon octicon-link"></span></a>技术纵横</h2>
 
 <h3>
-<a id="1深入浅出react系列" class="anchor" href="#1%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BAreact%E7%B3%BB%E5%88%97" aria-hidden="true"><span class="octicon octicon-link"></span></a>1）深入浅出React系列</h3>
-
-<ul>
-<li><a href="http://www.infoq.com/cn/articles/react-art-of-simplity?utm_source=infoq&amp;utm_medium=related_content_link&amp;utm_campaign=relatedContent_articles_clk">React的设计哲学 - 简单之美</a></li>
-<li><a href="http://www.infoq.com/cn/articles/react-and-webpack?utm_source=infoq&amp;utm_medium=related_content_link&amp;utm_campaign=relatedContent_articles_clk">React开发神器Webpack</a></li>
-<li><a href="http://www.infoq.com/cn/articles/react-jsx-and-component?utm_source=infoq&amp;utm_medium=related_content_link&amp;utm_campaign=relatedContent_articles_clk">理解JSX和组件</a></li>
-</ul>
-
-<h3>
-<a id="2跨终端web之hybrid-app" class="anchor" href="#2%E8%B7%A8%E7%BB%88%E7%AB%AFweb%E4%B9%8Bhybrid-app" aria-hidden="true"><span class="octicon octicon-link"></span></a>2）<a href="http://www.infoq.com/cn/articles/hybrid-app">跨终端Web之Hybrid App</a>
+<a id="1探索react生态圈" class="anchor" href="#1%E6%8E%A2%E7%B4%A2react%E7%94%9F%E6%80%81%E5%9C%88" aria-hidden="true"><span class="octicon octicon-link"></span></a>1）<a href="http://www.csdn.net/article/2015-08-04/2825370-react">探索React生态圈</a>
 </h3>
 
-<p>Native App（以下简称Native）和Mobile Web（以下简称Web）二者混合开发的产物被称为Hybrid App（以下简称Hybrid）。Hybrid并不是什么新概念，最早可以追溯到Symbian时代，直到iOS和Android出现之后才充分展现出价值。</p>
+<p>React社区从其他领域（游戏渲染、ClojureScript、函数式编程）偷师学艺，结合前端面临的独特问题，提出了一系列解决方案。React社区在各方面都推动着前端社区往前进。这对整个社区都是好事。</p>
 
 <h3>
-<a id="3阿里百川技术分享onesdk与手机淘宝技术能力开放" class="anchor" href="#3%E9%98%BF%E9%87%8C%E7%99%BE%E5%B7%9D%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%ABonesdk%E4%B8%8E%E6%89%8B%E6%9C%BA%E6%B7%98%E5%AE%9D%E6%8A%80%E6%9C%AF%E8%83%BD%E5%8A%9B%E5%BC%80%E6%94%BE" aria-hidden="true"><span class="octicon octicon-link"></span></a>3）<a href="http://www.infoq.com/cn/news/2015/08/onesdk-shoutao">阿里百川技术分享：OneSDK与手机淘宝技术能力开放</a>
-</h3>
+<a id="2关于烂代码的那些事" class="anchor" href="#2%E5%85%B3%E4%BA%8E%E7%83%82%E4%BB%A3%E7%A0%81%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B" aria-hidden="true"><span class="octicon octicon-link"></span></a>2）关于烂代码的那些事</h3>
 
-<p>随着大量第三方SDK的使用，一些问题也慢慢暴露出来，比如：</p>
-
-<ul>
-<li>多平台。不同的App管理体系，多个密钥带来的安全问题，以及多次接入带来的集成成本。</li>
-<li>多风格。不同SDK的初始化方法、接口标准，以及编程风格。</li>
-<li>复杂依赖。不同SDK本身的依赖不同，会带来依赖关系混乱，版本冲突，以及引入不需要的依赖的问题。</li>
-<li>包大小。由于不同SDK可能包含重复能力，带来重复依赖，以及不需要的资源导入，会带来包大小的超标。</li>
-</ul>
+<p><a href="http://blog.2baxb.me/archives/1343">（上）烂代码产生的原因和现象</a> 
+<a href="http://blog.2baxb.me/archives/1378">（中）如何尽可能高效和客观的评价代码的优劣</a></p>
 
 <h3>
-<a id="4100分程序员的8个习惯" class="anchor" href="#4100%E5%88%86%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%848%E4%B8%AA%E4%B9%A0%E6%83%AF" aria-hidden="true"><span class="octicon octicon-link"></span></a>4）<a href="http://www.infoq.com/cn/news/2015/08/best-coder-experience">100分程序员的8个习惯</a>
+<a id="3架构腐化之谜" class="anchor" href="#3%E6%9E%B6%E6%9E%84%E8%85%90%E5%8C%96%E4%B9%8B%E8%B0%9C" aria-hidden="true"><span class="octicon octicon-link"></span></a>3）<a href="http://insights.thoughtworkers.org/architecture-corruption/">架构腐化之谜</a>
 </h3>
 
-<ul>
-<li>慎于说Yes</li>
-<li>敢于说No</li>
-<li>构建自己的知识体系</li>
-<li>培养大局观</li>
-<li>代码规范</li>
-<li>代码审查</li>
-<li>学习业务知识</li>
-<li>坚持</li>
-</ul>
-
-<h3>
-<a id="5360加固保应用安全攻防的核心实现" class="anchor" href="#5360%E5%8A%A0%E5%9B%BA%E4%BF%9D%E5%BA%94%E7%94%A8%E5%AE%89%E5%85%A8%E6%94%BB%E9%98%B2%E7%9A%84%E6%A0%B8%E5%BF%83%E5%AE%9E%E7%8E%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>5）<a href="http://www.csdn.net/article/2015-07-30/2825338-jinjiang-360">360加固保，应用安全攻防的核心实现</a>
-</h3>
-
-<p>开发加固应用的技术门槛还是很高的。需要对于Android应用的运行机制具有非常深的理解。比如对于Dalvik虚拟机、DEX和OAT文件结构、动态链接的过程等都需要了然于胸。另外，还需要掌握攻防的技术，因为加固产品需要不停的技术迭代，对于常见的攻击方法进行防护。</p>
+<p>新技术层出不穷。过去十年时间里，我们经历了许多激动人心的新技术，包括那些新的框架、语言、平台、编程模型等等。这些新技术极大地改善了开发人员的工作环境，缩短了产品和项目的面世时间。然而作为在软件行业第一线工作多年的从业者，我们却不得不面对一个现实，那就是当初采用新技术的乐趣随着项目周期的增长而迅速减少。</p>
 
 <h2>
 <a id="开源函数库与工具" class="anchor" href="#%E5%BC%80%E6%BA%90%E5%87%BD%E6%95%B0%E5%BA%93%E4%B8%8E%E5%B7%A5%E5%85%B7" aria-hidden="true"><span class="octicon octicon-link"></span></a>开源函数库与工具</h2>
 
 <h3>
-<a id="1pinremoteimage" class="anchor" href="#1pinremoteimage" aria-hidden="true"><span class="octicon octicon-link"></span></a>1）<a href="https://github.com/pinterest/PINRemoteImage">PINRemoteImage</a>
+<a id="1koloda" class="anchor" href="#1koloda" aria-hidden="true"><span class="octicon octicon-link"></span></a>1）<a href="https://github.com/Yalantis/Koloda">Koloda</a>
 </h3>
 
-<p>图片社交 app 的始祖之一的Pinterest最近开源的一个 iOS 下的图片下载和缓存的框架。除了支持常规的异步下载和缓存之外，还支持是WepP或者gif这样的图片，同时支持JPEG图片的渐进式加载，堪比Android平台Facebook开源的<a href="https://github.com/facebook/fresco">Fresco</a>。</p>
+<p>Yalantis出品的基于卡片的 Tinder-style 动画效果示例。</p>
+
+<p><img src="http://ww3.sinaimg.cn/large/005DI7Bigw1etqhadcssyg30m80goe89.gif" alt=""></p>
 
 <h3>
-<a id="2waveswiperefreshlayout" class="anchor" href="#2waveswiperefreshlayout" aria-hidden="true"><span class="octicon octicon-link"></span></a>2）<a href="https://github.com/recruit-lifestyle/WaveSwipeRefreshLayout">WaveSwipeRefreshLayout</a>
+<a id="2device-year-class" class="anchor" href="#2device-year-class" aria-hidden="true"><span class="octicon octicon-link"></span></a>2）<a href="https://github.com/facebook/device-year-class">device-year-class</a>
 </h3>
 
-<p>水滴式下拉刷新</p>
-
-<p><img src="https://github.com/recruit-lifestyle/WaveSwipeRefreshLayout/blob/master/sc/animation.gif?raw=true" alt=""></p>
+<p>Facebook出品的一个Android工具库，用来判断你的手机是哪个年代的旗舰机，也就是可以用来判断机器的性能，便于动态适配不同机型。</p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/PaicHyperionDev/MobileDevWeekly">MobileDevWeekly</a> is maintained by <a href="https://github.com/PaicHyperionDev">PaicHyperionDev</a>.</span>
