@@ -20,117 +20,160 @@
 
     <section class="main-content">
       <h1>
-<a id="平安科技移动开发二队技术周报第二十八期" class="anchor" href="#%E5%B9%B3%E5%AE%89%E7%A7%91%E6%8A%80%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91%E4%BA%8C%E9%98%9F%E6%8A%80%E6%9C%AF%E5%91%A8%E6%8A%A5%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%85%AB%E6%9C%9F" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="https://github.com/PaicHyperionDev/MobileDevWeekly">平安科技移动开发二队技术周报</a>（第二十八期）</h1>
-
-<h2>
-<a id="业界新闻" class="anchor" href="#%E4%B8%9A%E7%95%8C%E6%96%B0%E9%97%BB" aria-hidden="true"><span class="octicon octicon-link"></span></a>业界新闻</h2>
-
-<h4>
-<a id="1android-studio-20速度提升极大提高开发效率" class="anchor" href="#1android-studio-20%E9%80%9F%E5%BA%A6%E6%8F%90%E5%8D%87%E6%9E%81%E5%A4%A7%E6%8F%90%E9%AB%98%E5%BC%80%E5%8F%91%E6%95%88%E7%8E%87" aria-hidden="true"><span class="octicon octicon-link"></span></a>1）<a href="http://android.jobbole.com/82127/">Android Studio 2.0：速度提升，极大提高开发效率</a>
-</h4>
-
-<p>11月24日，在 Android Developer Summit 大会上，谷歌员工透露 Android Studio 2.0 版中的一些重大特性。</p>
+<a id="平安科技移动开发二队技术周报第二十九期" class="anchor" href="#%E5%B9%B3%E5%AE%89%E7%A7%91%E6%8A%80%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91%E4%BA%8C%E9%98%9F%E6%8A%80%E6%9C%AF%E5%91%A8%E6%8A%A5%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%B9%9D%E6%9C%9F" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="https://github.com/PaicHyperionDev/MobileDevWeekly">平安科技移动开发二队技术周报</a>（第二十九期）</h1>
 
 <h2>
 <a id="android开发" class="anchor" href="#android%E5%BC%80%E5%8F%91" aria-hidden="true"><span class="octicon octicon-link"></span></a>Android开发</h2>
 
 <h4>
-<a id="1各大热补丁方案分析和比较" class="anchor" href="#1%E5%90%84%E5%A4%A7%E7%83%AD%E8%A1%A5%E4%B8%81%E6%96%B9%E6%A1%88%E5%88%86%E6%9E%90%E5%92%8C%E6%AF%94%E8%BE%83" aria-hidden="true"><span class="octicon octicon-link"></span></a>1）<a href="http://blog.zhaiyifan.cn/2015/11/20/HotPatchCompare/">各大热补丁方案分析和比较</a>
-</h4>
-
-<p>最近开源界涌现了很多热补丁项目，但从方案上来说，主要包括Dexposed、AndFix、ClassLoader（来源是原QZone，现淘宝的工程师陈钟，在15年年初就已经开始实现）三种。前两个都是阿里巴巴内部的不同团队做的（淘宝和支付宝），后者则来自腾讯的QQ空间团队。</p>
-
-<h4>
-<a id="2使用-js-构建跨平台的原生应用二react-native-for-android-调试技术剖析" class="anchor" href="#2%E4%BD%BF%E7%94%A8-js-%E6%9E%84%E5%BB%BA%E8%B7%A8%E5%B9%B3%E5%8F%B0%E7%9A%84%E5%8E%9F%E7%94%9F%E5%BA%94%E7%94%A8%E4%BA%8Creact-native-for-android-%E8%B0%83%E8%AF%95%E6%8A%80%E6%9C%AF%E5%89%96%E6%9E%90" aria-hidden="true"><span class="octicon octicon-link"></span></a>2）<a href="http://taobaofed.org/blog/2015/11/25/react-native-android-debug/">使用 JS 构建跨平台的原生应用（二）：React Native for Android 调试技术剖析</a>
-</h4>
-
-<p>本篇文章跟大家一起深入了解了 react-native run-android 背后的执行逻辑，通过对此的学习，我们基本了解了：</p>
+<a id="1android-动态加载技术系列" class="anchor" href="#1android-%E5%8A%A8%E6%80%81%E5%8A%A0%E8%BD%BD%E6%8A%80%E6%9C%AF%E7%B3%BB%E5%88%97" aria-hidden="true"><span class="octicon octicon-link"></span></a>1）Android 动态加载技术系列</h4>
 
 <ul>
-<li>RN JS 层面的打包流程</li>
-<li>RN android 应用的打包流程和技术背景</li>
+<li><a href="http://segmentfault.com/a/1190000004062866">简单易懂的介绍方式</a></li>
+<li><a href="http://segmentfault.com/a/1190000004062880">ClassLoader工作机制</a></li>
+<li><a href="http://segmentfault.com/a/1190000004062899">加载SD卡中的SO库</a></li>
+<li><a href="http://segmentfault.com/a/1190000004062952">简单加载模式</a></li>
+<li><a href="http://segmentfault.com/a/1190000004062972">代理Activity模式</a></li>
+<li><a href="http://segmentfault.com/a/1190000004077469">动态创建Activity模式</a></li>
 </ul>
 
 <h4>
-<a id="3android-autolayout全新的适配方式-堪称适配终结者" class="anchor" href="#3android-autolayout%E5%85%A8%E6%96%B0%E7%9A%84%E9%80%82%E9%85%8D%E6%96%B9%E5%BC%8F-%E5%A0%AA%E7%A7%B0%E9%80%82%E9%85%8D%E7%BB%88%E7%BB%93%E8%80%85" aria-hidden="true"><span class="octicon octicon-link"></span></a>3）<a href="http://blog.csdn.net/lmj623565791/article/details/49990941">Android AutoLayout全新的适配方式 堪称适配终结者</a>
+<a id="2speeding-up-gradle-builds" class="anchor" href="#2speeding-up-gradle-builds" aria-hidden="true"><span class="octicon octicon-link"></span></a>2）<a href="http://kevinpelgrims.com/blog/2015/06/11/speeding-up-your-gradle-builds/">Speeding up Gradle builds</a>
 </h4>
 
-<p>相信Android的开发者对于设配问题都比较苦恼，Google官方虽然给出了一系列的建议，但是想要单纯使用这些建议将设备很轻松的做好，还是相当困难的。</p>
+<p>A common complaint among Android developers that switch to Gradle is that the build time for their projects increases significantly. Gradle provides a lot of flexibility, but this power comes at the cost of a slower build process. Luckily there are several ways to speed things up.</p>
 
 <h4>
-<a id="4使用react-native实现app热更新的一次实践" class="anchor" href="#4%E4%BD%BF%E7%94%A8react-native%E5%AE%9E%E7%8E%B0app%E7%83%AD%E6%9B%B4%E6%96%B0%E7%9A%84%E4%B8%80%E6%AC%A1%E5%AE%9E%E8%B7%B5" aria-hidden="true"><span class="octicon octicon-link"></span></a>4）<a href="https://github.com/fengjundev/React-Native-Remote-Update">使用React-Native实现app热更新的一次实践</a>
+<a id="3dex分包变形记" class="anchor" href="#3dex%E5%88%86%E5%8C%85%E5%8F%98%E5%BD%A2%E8%AE%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>3）<a href="http://bugly.qq.com/bbs/forum.php?mod=viewthread&amp;tid=193">dex分包变形记</a>
 </h4>
 
-<p>使用React Native进行热部署是可行的，只要远程提供打包好的bundle，app下载后重新加载即可。但是，这样的方案也具有一定的局限性：React Native在使用View的时候，这些View是要经过本地定制的，并且将相关方法通过RCT_EXPORT_METHOD暴露给js，js端才能正常使用。</p>
+<p>就在项目灰度测试前不久，爆出了在 Android 3.0以下手机上安装时出现 INSTALL _ FAILED_DEXOPT，导致安装失败。INSTALL _ FAILED_DEXOPT导致无法安装的问题，从根本上来说，可能是两个原因造成的：</p>
+
+<ul>
+<li>单个 dex 文件方法总数65K 的限制。</li>
+<li>Dexopt 的 LinearAlloc 限制。</li>
+</ul>
 
 <h4>
-<a id="510-条提升-android-性能的建议" class="anchor" href="#510-%E6%9D%A1%E6%8F%90%E5%8D%87-android-%E6%80%A7%E8%83%BD%E7%9A%84%E5%BB%BA%E8%AE%AE" aria-hidden="true"><span class="octicon octicon-link"></span></a>5）<a href="https://realm.io/cn/news/droidcon-farber-improving-android-app-performance/">10 条提升 Android 性能的建议</a>
+<a id="4android应用启动优化一种delayload的实现和原理" class="anchor" href="#4android%E5%BA%94%E7%94%A8%E5%90%AF%E5%8A%A8%E4%BC%98%E5%8C%96%E4%B8%80%E7%A7%8Ddelayload%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%92%8C%E5%8E%9F%E7%90%86" aria-hidden="true"><span class="octicon octicon-link"></span></a>4）<a href="http://www.androidperformance.com/2015/11/18/Android-app-lunch-optimize-delay-load.html">Android应用启动优化:一种DelayLoad的实现和原理</a>
 </h4>
 
-<p>每个人都知道一个 App 的成功，与这个 App 的性能体验有着很密切的关系。但是如何让你的 App 拥有极致性能体验呢？在 DroidCon NYC 2015 的这个分享里，Boris Farber 带来了他关于 Android Api 以及如何避免一些常见坑的经验。带你了解如何缩短启动时间，优化滑动效果，创建更加顺滑的用户体验。</p>
+<p>在 Android 开发中,应用启动速度是一个非常重要的点,应用启动优化也是一个非常重要的过程.对于应用启动优化,其实核心思想就是在启动过程中少做事情,具体实践的时候无非就是下面几种：</p>
+
+<ul>
+<li>异步加载</li>
+<li>延时加载</li>
+<li>懒加载</li>
+</ul>
+
+<h4>
+<a id="5如何开发一个appandroid" class="anchor" href="#5%E5%A6%82%E4%BD%95%E5%BC%80%E5%8F%91%E4%B8%80%E4%B8%AAappandroid" aria-hidden="true"><span class="octicon octicon-link"></span></a>5）<a href="http://blog.csdn.net/wwj_748/article/details/50088959">如何开发一个App（Android）</a>
+</h4>
+
+<p>本篇博客从开发的角度来介绍如何开发一个Android App，需要说明一点是，这里只是提供一个如何开发一个app的思路，并不会介绍很多技术上的细节，从整个大局去把握如何去构思一个app的开发，让你对独立开发一款app的时候有个理解。</p>
 
 <h2>
 <a id="ios开发" class="anchor" href="#ios%E5%BC%80%E5%8F%91" aria-hidden="true"><span class="octicon octicon-link"></span></a>iOS开发</h2>
 
 <h4>
-<a id="1ios-事件处理机制与图像渲染过程" class="anchor" href="#1ios-%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86%E6%9C%BA%E5%88%B6%E4%B8%8E%E5%9B%BE%E5%83%8F%E6%B8%B2%E6%9F%93%E8%BF%87%E7%A8%8B" aria-hidden="true"><span class="octicon octicon-link"></span></a>1）<a href="https://mp.weixin.qq.com/s?__biz=MzAwNDY1ODY2OQ==&amp;mid=400417748&amp;idx=1&amp;sn=0c5f6747dd192c5a0eea32bb4650c160&amp;scene=0&amp;key=d72a47206eca0ea91e5270477b19d687630d00a257f6bda4058e0f62ddefc7929973595cc40cfa01cb80ae794bed499d&amp;ascene=0&amp;uin=NTk4MzU3OTAw&amp;devicetype=iMac+MacBookPro12%2C1+OSX+OSX+10.11.1+build(15B42)&amp;version=11020201&amp;pass_ticket=GQjakWfsPfmCQE4YRsEbyNVInXB%2FKQEryN0cbYiet3IaE0%2B0qtwYNXAs7Mv2ZyHX">iOS 事件处理机制与图像渲染过程</a>
+<a id="1如何让ios-保持界面流畅这些技巧你知道吗" class="anchor" href="#1%E5%A6%82%E4%BD%95%E8%AE%A9ios-%E4%BF%9D%E6%8C%81%E7%95%8C%E9%9D%A2%E6%B5%81%E7%95%85%E8%BF%99%E4%BA%9B%E6%8A%80%E5%B7%A7%E4%BD%A0%E7%9F%A5%E9%81%93%E5%90%97" aria-hidden="true"><span class="octicon octicon-link"></span></a>1）<a href="http://www.cocoachina.com/ios/20151130/14477.html">如何让iOS 保持界面流畅？这些技巧你知道吗</a>
 </h4>
 
-<p>微信前端团队出品。</p>
+<p>这篇文章会非常详细的分析 iOS 界面构建中的各种性能问题以及对应的解决思路，同时给出一个开源的微博列表实现，通过实际的代码展示如何构建流畅的交互。</p>
 
 <h4>
-<a id="2swift-中枚举高级用法及实践" class="anchor" href="#2swift-%E4%B8%AD%E6%9E%9A%E4%B8%BE%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95%E5%8F%8A%E5%AE%9E%E8%B7%B5" aria-hidden="true"><span class="octicon octicon-link"></span></a>2）<a href="http://segmentfault.com/a/1190000004023852">Swift 中枚举高级用法及实践</a>
+<a id="2如何实现ios图书动画第1部分--第2部分" class="anchor" href="#2%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0ios%E5%9B%BE%E4%B9%A6%E5%8A%A8%E7%94%BB%E7%AC%AC1%E9%83%A8%E5%88%86--%E7%AC%AC2%E9%83%A8%E5%88%86" aria-hidden="true"><span class="octicon octicon-link"></span></a>2）如何实现iOS图书动画：<a href="http://www.devtf.cn/?p=1127">第1部分</a>  <a href="http://www.devtf.cn/?p=1129">第2部分</a>
 </h4>
 
-<p>和switch语句类似，Swift中的枚举乍看之下更像是C语言中枚举的进阶版本，即允许你定义一种类型，用于表示普通事情中某种用例。不过深入挖掘之后，凭借Swift背后特别的设计理念，相比较C语言枚举来说其在实际场景中的应用更为广泛。特别是作为强大的工具，Swift中的枚举能够清晰表达代码的意图。</p>
+<p>本教程分为2个部分，教你开发一个漂亮的iOS图书打开和翻页动画。
+在第1部分，你将学习到如何定制化Collection View Layout，并通过使用深度和阴影使App看起来更真实。在第2部分，你将学习如何以一种合理的方法在两个不同的控制器之间创建自定义的过渡特效，以及利用手势在两个视图间创建自然的、直观的过渡效果。</p>
+
+<h4>
+<a id="3解析-ios-动画原理与实现" class="anchor" href="#3%E8%A7%A3%E6%9E%90-ios-%E5%8A%A8%E7%94%BB%E5%8E%9F%E7%90%86%E4%B8%8E%E5%AE%9E%E7%8E%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>3）<a href="http://www.jianshu.com/p/13c231b76594">解析 iOS 动画原理与实现</a>
+</h4>
+
+<p>这篇文章不会教大家如何实现一个具体的动画效果，我会从动画的本质出发，来说说 iOS 动画的原理与实现方式。</p>
+
+<h4>
+<a id="4在-ios-模拟器中调试-web-页面" class="anchor" href="#4%E5%9C%A8-ios-%E6%A8%A1%E6%8B%9F%E5%99%A8%E4%B8%AD%E8%B0%83%E8%AF%95-web-%E9%A1%B5%E9%9D%A2" aria-hidden="true"><span class="octicon octicon-link"></span></a>4）<a href="http://www.cocoachina.com/webapp/20151126/14448.html">在 iOS 模拟器中调试 Web 页面</a>
+</h4>
+
+<p>虽然 Chrome DevTools 可以模拟手机的环境，但与真实环境差别还是比较大的，另外 Chrome 模拟的环境对 App 内 Webview 场景也无能为力（手机淘宝上的无线 Web 页面有非常多的功能需要调用 Webview 提供的 JSBridge 接口实现）。所以真机调试和模拟器调试是无线 Web 开发必备技能。</p>
+
+<h4>
+<a id="5知其然亦知其所以然-nsoperation并发编程" class="anchor" href="#5%E7%9F%A5%E5%85%B6%E7%84%B6%E4%BA%A6%E7%9F%A5%E5%85%B6%E6%89%80%E4%BB%A5%E7%84%B6-nsoperation%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B" aria-hidden="true"><span class="octicon octicon-link"></span></a>5）<a href="http://www.jianshu.com/p/ebb3e42049fd">知其然亦知其所以然-NSOperation并发编程</a>
+</h4>
+
+<p>对于iOS的并发编程, 用的最普遍的就是GCD了, GCD结合Block可以so easy的实现多线程并发编程. 但如果你看一些诸如AFNetworking, SDWebImage的源码, 你会发现它们使用的都是NSOperation, 纳尼? 难道NSOperation这货更屌? YES, 它确实更屌! Okay, 那我们就先来简单PK下GCD和NSOperation(当然这里也包括NSOperationQueue).</p>
 
 <h2>
 <a id="技术纵横" class="anchor" href="#%E6%8A%80%E6%9C%AF%E7%BA%B5%E6%A8%AA" aria-hidden="true"><span class="octicon octicon-link"></span></a>技术纵横</h2>
 
 <h4>
-<a id="1前端工程师必读的10篇精选技术文章" class="anchor" href="#1%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%BF%85%E8%AF%BB%E7%9A%8410%E7%AF%87%E7%B2%BE%E9%80%89%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0" aria-hidden="true"><span class="octicon octicon-link"></span></a>1）<a href="http://www.infoq.com/cn/news/2015/11/front-end-welfare">前端工程师必读的10篇精选技术文章</a>
+<a id="1reactnative-for-android-10个最常见问题" class="anchor" href="#1reactnative-for-android-10%E4%B8%AA%E6%9C%80%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98" aria-hidden="true"><span class="octicon octicon-link"></span></a>1）<a href="https://github.com/yipengmu/ReactNative_Android_QA">ReactNative For Android 10个最常见问题</a>
 </h4>
 
-<p>过去一两年，前端的发展非常迅猛，Node.js、HTML5、Angular、React 等技术更迭速度非常快。这些技术背后的驱动力，都是这些年业务形态的快速变化。移动互联网的兴起、企业平台系统的愈加重要，对前端技术提出了非常高的要求。</p>
+<p>这里逐条记录下最容易遇到的React native android 相关case。</p>
 
 <h4>
-<a id="2读懂-ecmascript-规格" class="anchor" href="#2%E8%AF%BB%E6%87%82-ecmascript-%E8%A7%84%E6%A0%BC" aria-hidden="true"><span class="octicon octicon-link"></span></a>2）<a href="http://www.ruanyifeng.com/blog/2015/11/ecmascript-specification.html">读懂 ECMAScript 规格</a>
+<a id="2我所亲见的前端技术变革" class="anchor" href="#2%E6%88%91%E6%89%80%E4%BA%B2%E8%A7%81%E7%9A%84%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%E5%8F%98%E9%9D%A9" aria-hidden="true"><span class="octicon octicon-link"></span></a>2）<a href="http://zhuanlan.zhihu.com/fangtalk/20359442">我所亲见的前端技术变革</a>
 </h4>
 
-<p>规格文件（specification）是计算机语言的官方标准，详细描述语法规则和实现方法。一般来说，没有必要阅读规格，除非你要写编译器。因为规格写得非常抽象和精炼，又缺乏实例，不容易理解，而且对于解决实际的应用问题，帮助不大。但是，如果你遇到疑难的语法问题，实在找不到答案，这时可以去查看规格文件，了解语言标准是怎么说的。规格是解决问题的"最后一招"。</p>
+<p>可能每个人对前端的发展变化的理解都不一样，本文仅以我的视角，回顾了我所理解的变化。这么多年带了很多团队，交付了很多的项目，但同时我也有自知之明，也许我只是井底之蛙，看到了我能看到的世界，但是没有关系，重要的是，每个人都需要找到自己对这个世界的认识，找到拥抱这个变化的世界的方法，独一无二的方法。</p>
 
 <h4>
-<a id="3react-mixin-的前世今生" class="anchor" href="#3react-mixin-%E7%9A%84%E5%89%8D%E4%B8%96%E4%BB%8A%E7%94%9F" aria-hidden="true"><span class="octicon octicon-link"></span></a>3）<a href="http://zhuanlan.zhihu.com/purerender/20361937">React Mixin 的前世今生</a>
+<a id="3深入理解-react-router-路由系统" class="anchor" href="#3%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3-react-router-%E8%B7%AF%E7%94%B1%E7%B3%BB%E7%BB%9F" aria-hidden="true"><span class="octicon octicon-link"></span></a>3）<a href="http://zhuanlan.zhihu.com/purerender/20381597">深入理解 react-router 路由系统</a>
 </h4>
 
-<p>在 React component 构建过程中，常常有这样的场景，有一类功能要被不同的 Component 公用，然后看得到文档经常提到 Mixin（混入） 这个术语。此文就从 Mixin 的来源、含义、在 React 中的使用说起。</p>
+<p>在 web 应用开发中，路由系统是不可或缺的一部分。在浏览器当前的 URL 发生变化时，路由系统会做出一些响应，用来保证用户界面与 URL 的同步。随着单页应用时代的到来，为之服务的前端路由系统也相继出现了。有一些独立的第三方路由系统，比如 director，代码库也比较轻量。</p>
 
 <h4>
-<a id="4大概可能也许是目前最好的-javascript-异步方案-asyncawait" class="anchor" href="#4%E5%A4%A7%E6%A6%82%E5%8F%AF%E8%83%BD%E4%B9%9F%E8%AE%B8%E6%98%AF%E7%9B%AE%E5%89%8D%E6%9C%80%E5%A5%BD%E7%9A%84-javascript-%E5%BC%82%E6%AD%A5%E6%96%B9%E6%A1%88-asyncawait" aria-hidden="true"><span class="octicon octicon-link"></span></a>4）<a href="https://blog.leancloud.cn/3910/">「大概可能也许是」目前最好的 JavaScript 异步方案 async/await</a>
+<a id="4es2015--babel-实战开发npm模块" class="anchor" href="#4es2015--babel-%E5%AE%9E%E6%88%98%E5%BC%80%E5%8F%91npm%E6%A8%A1%E5%9D%97" aria-hidden="true"><span class="octicon octicon-link"></span></a>4）<a href="http://morning.work/page/2015-11/es6-es7-develop-npm-module-using-babel.html">ES2015 &amp; babel 实战：开发NPM模块</a>
 </h4>
 
-<p>构建一个应用程序总是会面对异步调用，不论是在 Web 前端界面，还是 Node.js 服务端都是如此，JavaScript 里面处理异步调用一直是非常恶心的一件事情。以前只能通过回调函数，后来渐渐又演化出来很多方案，最后 Promise 以简单、易用、兼容性好取胜，但是仍然有非常多的问题。其实 JavaScript 一直想在语言层面彻底解决这个问题，在 ES6 中就已经支持原生的 Promise，还引入了 Generator 函数，终于在 ES7 中决定支持 async 和 await。</p>
+<p>本文的重点是介绍借助babel开发Node.js项目的基本方法，同时会简略介绍文中出现的ES2015新语法，本文内容将分为以下几部分：</p>
+
+<ul>
+<li>配置babel编译环境</li>
+<li>编写模块</li>
+<li>单元测试</li>
+<li>发布模块</li>
+</ul>
 
 <h4>
-<a id="5打造最舒适的webview调试环境" class="anchor" href="#5%E6%89%93%E9%80%A0%E6%9C%80%E8%88%92%E9%80%82%E7%9A%84webview%E8%B0%83%E8%AF%95%E7%8E%AF%E5%A2%83" aria-hidden="true"><span class="octicon octicon-link"></span></a>5）<a href="http://div.io/topic/1449">打造最舒适的webview调试环境</a>
+<a id="5webpack傻瓜式指南一" class="anchor" href="#5webpack%E5%82%BB%E7%93%9C%E5%BC%8F%E6%8C%87%E5%8D%97%E4%B8%80" aria-hidden="true"><span class="octicon octicon-link"></span></a>5）<a href="http://zhuanlan.zhihu.com/FrontendMagazine/20367175">Webpack傻瓜式指南（一）</a>
 </h4>
 
-<p>你在做移动web开发的时候是不是只是在Chrome下开启移动模式，然后就啪啪啪闷头敲代码了？如果你平时只是做做宣传页，Chrome的移动模式可能就能满足你。但是现在越来越多的应用采用Hybrid的开发方式，这样的话就可能在web页面上调用webview注入的函数，那么，这个页面在Chrome上只会报错，因为我们不在webview里，根本没有注入的那些函数。</p>
-
-<h4>
-<a id="6致我们终将组件化的web" class="anchor" href="#6%E8%87%B4%E6%88%91%E4%BB%AC%E7%BB%88%E5%B0%86%E7%BB%84%E4%BB%B6%E5%8C%96%E7%9A%84web" aria-hidden="true"><span class="octicon octicon-link"></span></a>6）<a href="http://www.alloyteam.com/2015/11/we-will-be-componentized-web-long-text/">致我们终将组件化的Web</a>
-</h4>
-
-<p>模块一般指能够独立拆分且通用的代码单元。由于JavaScript语言本身没有内置的模块机制（ES6有了！！），我们一般会使用CMD或ADM建立起模块机制。现在大部分稍微大型一点的项目，都会使用requirejs或者seajs来实现JS的模块化。多人分工合作开发，其各自定义依赖和暴露接口，维护功能模块间独立性，对于项目的开发效率和项目后期扩展和维护，都是是有很大的帮助作用。</p>
+<p>Webpack最近很热，我一开始是想翻译一篇国外关于webpack的佳作，但是找来找去也没有一篇让我感觉到很满意的，好多都是一步到位，满屏幕都是React＋Webpack，官方文档写的不太好，好多点都没有解释的详细，所以我参考了几篇文章，写一篇傻瓜式指南。本文适合第一次接触webpack的朋友，如果是老鸟，就不用看了。这是系列的第一篇，主要讲他最基本的用法。</p>
 
 <h2>
 <a id="开源函数库与工具" class="anchor" href="#%E5%BC%80%E6%BA%90%E5%87%BD%E6%95%B0%E5%BA%93%E4%B8%8E%E5%B7%A5%E5%85%B7" aria-hidden="true"><span class="octicon octicon-link"></span></a>开源函数库与工具</h2>
 
 <h4>
-<a id="1推荐-11-款-react-native-开源移动-ui-组件" class="anchor" href="#1%E6%8E%A8%E8%8D%90-11-%E6%AC%BE-react-native-%E5%BC%80%E6%BA%90%E7%A7%BB%E5%8A%A8-ui-%E7%BB%84%E4%BB%B6" aria-hidden="true"><span class="octicon octicon-link"></span></a>1）<a href="http://www.imooc.com/article/2223">推荐 11 款 React Native 开源移动 UI 组件</a>
+<a id="1aranimation" class="anchor" href="#1aranimation" aria-hidden="true"><span class="octicon octicon-link"></span></a>1）<a href="https://github.com/AugustRush/ARAnimation">ARAnimation</a>
 </h4>
 
-<p>本文推荐 11 个非常棒的 React Native 开源组件，希望能给移动应用开发者提供帮助。</p>
+<p>ARAnimation 是对 Core Animation 进行了封装, 帮助 iOS 开发者能更加便捷的在项目中使用动画。</p>
+
+<h4>
+<a id="2klog" class="anchor" href="#2klog" aria-hidden="true"><span class="octicon octicon-link"></span></a>2）<a href="https://github.com/ZhaoKaiQiang/KLog">KLog</a>
+</h4>
+
+<p>这是一个Android专用的LogCat工具，主要功能为打印行号、函数调用、Json解析、XML解析、点击跳转、Log信息保存等功能。灵感来自Logger。</p>
+
+<h4>
+<a id="3elasticprogressbar" class="anchor" href="#3elasticprogressbar" aria-hidden="true"><span class="octicon octicon-link"></span></a>3）<a href="https://github.com/michelelacorte/ElasticProgressBar">ElasticProgressBar</a>
+</h4>
+
+<p>ElasticProgressBar 是一款有弹性的 Android 加载进度条。</p>
+
+<p><img src="https://raw.githubusercontent.com/Tibolte/ElasticDownload/master/success.gif" alt=""></p>
+
+<h4>
+<a id="4packer-ng-plugin" class="anchor" href="#4packer-ng-plugin" aria-hidden="true"><span class="octicon octicon-link"></span></a>4）<a href="https://github.com/mcxiaoke/packer-ng-plugin">packer-ng-plugin</a>
+</h4>
+
+<p>下一代Android渠道打包工具。</p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/PaicHyperionDev/MobileDevWeekly">MobileDevWeekly</a> is maintained by <a href="https://github.com/PaicHyperionDev">PaicHyperionDev</a>.</span>
