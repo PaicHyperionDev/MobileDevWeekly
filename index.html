@@ -20,132 +20,133 @@
 
     <section class="main-content">
       <h1>
-<a id="平安科技移动开发二队技术周报第三十期最终期" class="anchor" href="#%E5%B9%B3%E5%AE%89%E7%A7%91%E6%8A%80%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91%E4%BA%8C%E9%98%9F%E6%8A%80%E6%9C%AF%E5%91%A8%E6%8A%A5%E7%AC%AC%E4%B8%89%E5%8D%81%E6%9C%9F%E6%9C%80%E7%BB%88%E6%9C%9F" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="https://github.com/PaicHyperionDev/MobileDevWeekly">平安科技移动开发二队技术周报</a>（第三十期（最终期））</h1>
-
-<h2>
-<a id="业界新闻" class="anchor" href="#%E4%B8%9A%E7%95%8C%E6%96%B0%E9%97%BB" aria-hidden="true"><span class="octicon octicon-link"></span></a>业界新闻</h2>
-
-<h4>
-<a id="1swift-已经是-github-上第一-star-编程语言" class="anchor" href="#1swift-%E5%B7%B2%E7%BB%8F%E6%98%AF-github-%E4%B8%8A%E7%AC%AC%E4%B8%80-star-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80" aria-hidden="true"><span class="octicon octicon-link"></span></a>1）<a href="https://github.com/showcases/programming-languages">Swift 已经是 Github 上第一 Star 编程语言</a>
-</h4>
-
-<p><img src="http://upload-images.jianshu.io/upload_images/191937-28659116a9258490.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<a id="平安科技移动开发二队技术周报第三十一期" class="anchor" href="#%E5%B9%B3%E5%AE%89%E7%A7%91%E6%8A%80%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91%E4%BA%8C%E9%98%9F%E6%8A%80%E6%9C%AF%E5%91%A8%E6%8A%A5%E7%AC%AC%E4%B8%89%E5%8D%81%E4%B8%80%E6%9C%9F" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="https://github.com/PaicHyperionDev/MobileDevWeekly">平安科技移动开发二队技术周报</a>（第三十一期）</h1>
 
 <h2>
 <a id="android开发" class="anchor" href="#android%E5%BC%80%E5%8F%91" aria-hidden="true"><span class="octicon octicon-link"></span></a>Android开发</h2>
 
 <h4>
-<a id="1android-开发必备知识我和-gradle-有个约会" class="anchor" href="#1android-%E5%BC%80%E5%8F%91%E5%BF%85%E5%A4%87%E7%9F%A5%E8%AF%86%E6%88%91%E5%92%8C-gradle-%E6%9C%89%E4%B8%AA%E7%BA%A6%E4%BC%9A" aria-hidden="true"><span class="octicon octicon-link"></span></a>1）<a href="http://bugly.qq.com/bbs/forum.php?mod=viewthread&amp;tid=235">Android 开发必备知识：我和 Gradle 有个约会</a>
+<a id="1android应用架构" class="anchor" href="#1android%E5%BA%94%E7%94%A8%E6%9E%B6%E6%9E%84" aria-hidden="true"><span class="octicon octicon-link"></span></a>1）<a href="http://www.jianshu.com/p/8ca27934c6e6">Android应用架构</a>
 </h4>
 
-<p>关于Android中使用Gradle构建的一篇浅显易懂的介绍。</p>
+<p>Android开发生态圈的节奏非常之快。每周都会有新的工具诞生，类库的更新，博客的发表以及技术探讨。如果你外出度假一个月，当你回来的时候可能已经发布了新版本的Support Library或者Play Services。</p>
 
 <h4>
-<a id="2加快android编译速度" class="anchor" href="#2%E5%8A%A0%E5%BF%ABandroid%E7%BC%96%E8%AF%91%E9%80%9F%E5%BA%A6" aria-hidden="true"><span class="octicon octicon-link"></span></a>2）<a href="http://timeszoro.xyz/2015/11/25/%E5%8A%A0%E5%BF%ABandroid%E7%BC%96%E8%AF%91%E9%80%9F%E5%BA%A6/">加快Android编译速度</a>
+<a id="2eventbus源码研读--上-中-下" class="anchor" href="#2eventbus%E6%BA%90%E7%A0%81%E7%A0%94%E8%AF%BB--%E4%B8%8A-%E4%B8%AD-%E4%B8%8B" aria-hidden="true"><span class="octicon octicon-link"></span></a>2）EventBus源码研读  <a href="http://kymjs.com/code/2015/12/12/01/">（上）</a> <a href="http://kymjs.com/code/2015/12/13/01/">（中）</a> <a href="http://kymjs.com/code/2015/12/16/01/">（下）</a>
 </h4>
 
-<p>对于Android开发者而言，随着工程不断的壮大，Android项目的编译时间也逐渐变长，即便是有时候添加一行代码也需要等待好久才能看见期待的效果。之前加快Android编译的工具相对较少，其中最具有代表性的开源项目当属FaceBook的Buck和 mmin18的LayoutCast，除此之外还有JRebel 和 Jimulabs。不过前两天google宣布推出Instant Run加快Android 编译速度，相信对其他的工具来说都是一次冲击，这也是写这篇文章的动机。</p>
+<p>EventBus 是一款针对Android优化的发布/订阅事件总线。主要功能是替代Intent, Handler, BroadCast 在 Fragment，Activity，Service，线程之间传递消息.优点是开销小，使用方便,可以很大程度上降低它们之间的耦合，使得我们的代码更加简洁，耦合性更低，提升我们的代码质量。类似的库还有 Otto ,今天就带大家一起研读 EventBus 的源码.</p>
 
 <h4>
-<a id="3android开发艺术探索读书笔记-系列" class="anchor" href="#3android%E5%BC%80%E5%8F%91%E8%89%BA%E6%9C%AF%E6%8E%A2%E7%B4%A2%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E7%B3%BB%E5%88%97" aria-hidden="true"><span class="octicon octicon-link"></span></a>3）<a href="http://hujiaweibujidao.github.io/blog/2015/12/05/Art-of-Android-Development-Reading-Notes/">《Android开发艺术探索》读书笔记 系列</a>
+<a id="3android内存优化杂谈" class="anchor" href="#3android%E5%86%85%E5%AD%98%E4%BC%98%E5%8C%96%E6%9D%82%E8%B0%88" aria-hidden="true"><span class="octicon octicon-link"></span></a>3）<a href="http://mp.weixin.qq.com/s?__biz=MzAwNDY1ODY2OQ==&amp;mid=400656149&amp;idx=1&amp;sn=122b4f4965fafebf78ec0b4fce2ef62a&amp;scene=0#wechat_redirect">Android内存优化杂谈</a>
 </h4>
 
-<p>这系列读书比较可以让你快速了解Android开发的一些关键知识点。</p>
+<p>Android内存优化是我们性能优化工作中比较重要的一环，这里其实主要包括两方面的工作：</p>
+
+<ul>
+<li>优化RAM，即降低运行时内存。这里的目的是防止程序发生OOM异常，以及降低程序由于内存过大被LMK机制杀死的概率。另一方面，不合理的内存使用会使GC大大增多，从而导致程序变卡。</li>
+<li>优化ROM，即降低程序占ROM的体积。这里主要是为了降低程序占用的空间，防止由于ROM空间不足导致程序无法安装。</li>
+</ul>
 
 <h4>
-<a id="415个必知的android开发者选项" class="anchor" href="#415%E4%B8%AA%E5%BF%85%E7%9F%A5%E7%9A%84android%E5%BC%80%E5%8F%91%E8%80%85%E9%80%89%E9%A1%B9" aria-hidden="true"><span class="octicon octicon-link"></span></a>4）<a href="http://mp.weixin.qq.com/s?__biz=MzA4MjU5NTY0NA==&amp;mid=401101455&amp;idx=1&amp;sn=dffc19631e2356ed0aea581f5d7769d7&amp;scene=1&amp;srcid=1210EPYGYqP0b7LOZzqywvmS&amp;from=groupmessage&amp;isappinstalled=0#wechat_redirect">15个必知的Android开发者选项</a>
+<a id="4react-native-android-热更新" class="anchor" href="#4react-native-android-%E7%83%AD%E6%9B%B4%E6%96%B0" aria-hidden="true"><span class="octicon octicon-link"></span></a>4）<a href="http://richard-cao.github.io/2015/12/03/React-native-Android-%E7%83%AD%E6%9B%B4%E6%96%B0/">React-native Android 热更新</a>
 </h4>
 
-<p>Android开发者选项，看起来很简单的事情，其实很多同学对它了解得不够，Google用心良苦得为我们设计了这么多小开关都是有它的作用的，今天也花了点时间，过了一遍全部的30多个开关，从中整理出15个对日常Android开发比较有帮助的选项。</p>
+<p>继上次React-native Android 初次踩坑之旅的分享之后，这次分享的内容是React-native Android 热更新实现。本文目录：</p>
+
+<ul>
+<li>网上已知方案</li>
+<li>分析与发现</li>
+<li>新的热更新方案</li>
+</ul>
 
 <h4>
-<a id="5一款app从设计稿到切图android篇" class="anchor" href="#5%E4%B8%80%E6%AC%BEapp%E4%BB%8E%E8%AE%BE%E8%AE%A1%E7%A8%BF%E5%88%B0%E5%88%87%E5%9B%BEandroid%E7%AF%87" aria-hidden="true"><span class="octicon octicon-link"></span></a>5）<a href="http://blog.jobbole.com/95577/">一款APP，从设计稿到切图(Android篇)</a>
+<a id="5面试时问哪些问题能试出一个android应用开发者真正的水平" class="anchor" href="#5%E9%9D%A2%E8%AF%95%E6%97%B6%E9%97%AE%E5%93%AA%E4%BA%9B%E9%97%AE%E9%A2%98%E8%83%BD%E8%AF%95%E5%87%BA%E4%B8%80%E4%B8%AAandroid%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E8%80%85%E7%9C%9F%E6%AD%A3%E7%9A%84%E6%B0%B4%E5%B9%B3" aria-hidden="true"><span class="octicon octicon-link"></span></a>5）<a href="http://www.jianshu.com/p/74565bd741ab">面试时，问哪些问题能试出一个Android应用开发者真正的水平？</a>
 </h4>
 
-<p>设计就是解决问题，所以不要一味的追求视觉效果，设计不是搞艺术。很多人会发现工作好多年的设计师工作做的东西不炫也不酷，就认为他们的设计水平很烂，但其实他们可以做出炫彩屌炸天的作品，可是工作不是炫技，设计不是绘画，解决问题才是目的。</p>
+<p>一般面试时间短则30分钟，多则1个小时，这么点时间要全面考察一个人难度很大，需要一些技巧，这里我不局限于回答题主的问题，而是分享一下我个人关于如何做好Android技术面试的一些经验。</p>
+
+<h4>
+<a id="6react-native-for-android-热部署图片解决方案" class="anchor" href="#6react-native-for-android-%E7%83%AD%E9%83%A8%E7%BD%B2%E5%9B%BE%E7%89%87%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88" aria-hidden="true"><span class="octicon octicon-link"></span></a>6）<a href="http://blog.csdn.net/kid1986513/article/details/50337083">React Native for Android 热部署图片解决方案</a>
+</h4>
+
+<p>热部署时，我们期望升级包中包含js代码与图片资源。bundle的热部署网上已经有两种方案了，一种是用反射，一种是利用RN自带函数，将bundle初始化时直接放到指定目录下，之后通过替换bundle文件实现代码热部署。我们希望图片也可以实现热部署，下面是一个比较简单的解决方案。</p>
 
 <h2>
 <a id="ios开发" class="anchor" href="#ios%E5%BC%80%E5%8F%91" aria-hidden="true"><span class="octicon octicon-link"></span></a>iOS开发</h2>
 
 <h4>
-<a id="194个ios开发资源推荐帮你加速应用开发" class="anchor" href="#194%E4%B8%AAios%E5%BC%80%E5%8F%91%E8%B5%84%E6%BA%90%E6%8E%A8%E8%8D%90%E5%B8%AE%E4%BD%A0%E5%8A%A0%E9%80%9F%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91" aria-hidden="true"><span class="octicon octicon-link"></span></a>1）<a href="http://www.cocoachina.com/ios/20151210/14635.html">94个iOS开发资源推荐，帮你加速应用开发</a>
+<a id="1漫谈ios程序的证书和签名机制" class="anchor" href="#1%E6%BC%AB%E8%B0%88ios%E7%A8%8B%E5%BA%8F%E7%9A%84%E8%AF%81%E4%B9%A6%E5%92%8C%E7%AD%BE%E5%90%8D%E6%9C%BA%E5%88%B6" aria-hidden="true"><span class="octicon octicon-link"></span></a>1）<a href="http://www.pchou.info/ios/2015/12/14/ios-certification-and-code-sign.html">漫谈iOS程序的证书和签名机制</a>
 </h4>
 
-<p>资源总结类文章总是开发者们所喜欢的，网上已经有各种weekly、头条以及期刊类资源总结，今天这篇来自于开发者Viswateja Reddy的总结。原文对各个项目的介绍非常简单，为了更便于阅读，编辑在原有的基础上进行了丰富和完善。</p>
+<p>接触iOS开发半年，曾经也被这个主题坑的摸不着头脑，也在淘宝上买过企业证书签名这些服务，有大神都做了一个全自动的发布打包（不过此大神现在不卖企业证书了），甚是羡慕和崇拜。于是，花了一点时间去研究了一下iOS这套证书和签名机制，并撰文分享给需要的朋友。</p>
 
 <h4>
-<a id="2一款app从设计稿到切图过程全方位揭秘" class="anchor" href="#2%E4%B8%80%E6%AC%BEapp%E4%BB%8E%E8%AE%BE%E8%AE%A1%E7%A8%BF%E5%88%B0%E5%88%87%E5%9B%BE%E8%BF%87%E7%A8%8B%E5%85%A8%E6%96%B9%E4%BD%8D%E6%8F%AD%E7%A7%98" aria-hidden="true"><span class="octicon octicon-link"></span></a>2）<a href="http://blog.jobbole.com/91994/">一款APP从设计稿到切图过程全方位揭秘</a>
+<a id="2ios开发-kvo的奥秘" class="anchor" href="#2ios%E5%BC%80%E5%8F%91-kvo%E7%9A%84%E5%A5%A5%E7%A7%98" aria-hidden="true"><span class="octicon octicon-link"></span></a>2）<a href="http://www.jianshu.com/p/742b4b248da9">iOS开发-KVO的奥秘</a>
 </h4>
 
-<p>我本身是一名GUI设计师，所以我只站在GUI设计师的角度去把APP从项目启动到切片输出的过程写一写，相当于工作流程的介绍吧；公司不同，流程不尽相同，但是终究还是能有些帮助。</p>
+<p>在iOS开发中，苹果提供了许多机制给我们进行回调。KVO(key-value-observing)是一种十分有趣的回调机制，在某个对象注册监听者后，在被监听的对象发生改变时，对象会发送一个通知给监听者，以便监听者执行回调操作。最常见的KVO运用是监听scrollView的contentOffset属性，来完成用户滚动时动态改变某些控件的属性实现效果，包括渐变导航栏、下拉刷新控件等效果。</p>
 
 <h4>
-<a id="3谈谈闭包以swift为例" class="anchor" href="#3%E8%B0%88%E8%B0%88%E9%97%AD%E5%8C%85%E4%BB%A5swift%E4%B8%BA%E4%BE%8B" aria-hidden="true"><span class="octicon octicon-link"></span></a>3）<a href="http://www.infoq.com/cn/articles/talk-about-closure-taking-swift-as-example">谈谈闭包——以Swift为例</a>
+<a id="3objective-c-自动生成分类属性方法" class="anchor" href="#3objective-c-%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E5%88%86%E7%B1%BB%E5%B1%9E%E6%80%A7%E6%96%B9%E6%B3%95" aria-hidden="true"><span class="octicon octicon-link"></span></a>3）<a href="http://nathanli.cn/2015/12/14/objective-c-%E5%85%83%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5-%E5%88%86%E7%B1%BB%E5%8A%A8%E6%80%81%E5%B1%9E%E6%80%A7/">Objective-C 自动生成分类属性方法</a>
 </h4>
 
-<p>本文讨论闭包的相关概念，大部分代码使用Swift编写。Swift对闭包有着良好的支持。这是因为，Swift被设计成一门一定程度上支持函数式编程范式的编程语言。而函数式编程和闭包有着紧密的联系。本文着重讨论的也是函数式编程和闭包之间的关系。</p>
+<p>分类，在 iOS 开发中，是常常需要用到的。在分类里添加属性也是常有的事，但分类中无法添加实例变量，编译器也无法为提供分类中属性的 getter 和 setter 方法了。一般而言，需要手动来实现这两个方法，如果只是用来存储变量的话，关联对象很容易做到这一点。</p>
+
+<h4>
+<a id="4auto-layout的最佳实践" class="anchor" href="#4auto-layout%E7%9A%84%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5" aria-hidden="true"><span class="octicon octicon-link"></span></a>4）<a href="http://www.calios.gq/2015/12/14/%EF%BC%BB%E8%AF%91%EF%BC%BDAuto-Layout%E7%9A%84%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5-%E2%80%94%E2%80%94-%E6%AD%A2%E7%96%BC%E7%89%87/">Auto Layout的最佳实践</a>
+</h4>
+
+<p>Auto Layout是个很棒的工具，作为开发者，它可以让我们保持神志清醒，还能让我们这些懒人们在设置frame的时候远离“神奇数字”。</p>
+
+<p>但是任何技术都不是完美无缺的，我必须得说我花了太多的时间来debug那些缺失的约束条件，或者对于一些藏在层级结构深处的视图，添加一个冲突的约束条件就会把整个布局毁掉，当这些事情发生的时候简直是天崩地裂！</p>
+
+<h4>
+<a id="5swift-2-throws-全解析---从原理到实践" class="anchor" href="#5swift-2-throws-%E5%85%A8%E8%A7%A3%E6%9E%90---%E4%BB%8E%E5%8E%9F%E7%90%86%E5%88%B0%E5%AE%9E%E8%B7%B5" aria-hidden="true"><span class="octicon octicon-link"></span></a>5）<a href="http://www.ibm.com/developerworks/cn/mobile/mo-cn-swift/index.html">Swift 2 throws 全解析 - 从原理到实践</a>
+</h4>
+
+<p>本文从 Swift 2 中新加入的 throws 关键字的用法入手，通过在 SIL 和汇编层面的分析，深入剖析了 Swift 中异常机制这一新特性的背后机理。在此基础上，本文进一步对异常处理相关的 ErrorType 接口进行了一些研究。结合 Swift 2 中错误处理方式的特点，作者对 throws 这一关键字在实际使用时的场景和适用范围进行了示例和说明，并给出了一些建议。</p>
 
 <h2>
 <a id="技术纵横" class="anchor" href="#%E6%8A%80%E6%9C%AF%E7%BA%B5%E6%A8%AA" aria-hidden="true"><span class="octicon octicon-link"></span></a>技术纵横</h2>
 
 <h4>
-<a id="1h5-缓存机制浅析-移动端-web-加载性能优化" class="anchor" href="#1h5-%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6%E6%B5%85%E6%9E%90-%E7%A7%BB%E5%8A%A8%E7%AB%AF-web-%E5%8A%A0%E8%BD%BD%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96" aria-hidden="true"><span class="octicon octicon-link"></span></a>1）<a href="http://bugly.qq.com/bbs/forum.php?mod=viewthread&amp;tid=267&amp;extra=page%3D1">H5 缓存机制浅析 移动端 Web 加载性能优化</a>
+<a id="1我眼里的架构师" class="anchor" href="#1%E6%88%91%E7%9C%BC%E9%87%8C%E7%9A%84%E6%9E%B6%E6%9E%84%E5%B8%88" aria-hidden="true"><span class="octicon octicon-link"></span></a>1）<a href="http://mp.weixin.qq.com/s?__biz=MzI4MjA4ODU0Ng==&amp;mid=401373742&amp;idx=1&amp;sn=e27102eda726a2a56ee097013c2754ac#rd">我眼里的架构师</a>
 </h4>
 
-<p>H5 应用程序缓存为应用带来三个优势：</p>
+<p>几年前，我对架构师的印象，停留在：画漂亮的设计图，研究高性能，技术攻关一把手。反正就是各种技术高手的标签都可以贴上去。最近两三年，和自己做的事情、职责多少有一点点关系，思路发生了一些变化，总结下来，我觉得架构师的关注点应该是：</p>
 
 <ul>
-<li>离线浏览 用户可在应用离线时使用它们</li>
-<li>速度 已缓存资源加载得更快</li>
-<li>减少服务器负载 浏览器将只从服务器下载更新过或更改过的资源。</li>
+<li>架构团队</li>
+<li>架构技术</li>
+<li>架构流程规范</li>
+<li>架构产品</li>
+<li>架构客户</li>
 </ul>
 
 <h4>
-<a id="2是时候开始招募移动架构师了" class="anchor" href="#2%E6%98%AF%E6%97%B6%E5%80%99%E5%BC%80%E5%A7%8B%E6%8B%9B%E5%8B%9F%E7%A7%BB%E5%8A%A8%E6%9E%B6%E6%9E%84%E5%B8%88%E4%BA%86" aria-hidden="true"><span class="octicon octicon-link"></span></a>2）<a href="http://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&amp;mid=401591012&amp;idx=1&amp;sn=3743c1b958139eb5fc3744166f4c7dbe&amp;scene=0#wechat_redirect">是时候开始招募移动架构师了</a>
+<a id="2作为一个程序员进步完全取决于自己" class="anchor" href="#2%E4%BD%9C%E4%B8%BA%E4%B8%80%E4%B8%AA%E7%A8%8B%E5%BA%8F%E5%91%98%E8%BF%9B%E6%AD%A5%E5%AE%8C%E5%85%A8%E5%8F%96%E5%86%B3%E4%BA%8E%E8%87%AA%E5%B7%B1" aria-hidden="true"><span class="octicon octicon-link"></span></a>2）<a href="http://mp.weixin.qq.com/s?__biz=MjM5NzMyMjAwMA==&amp;mid=401268306&amp;idx=1&amp;sn=3eb48ec9f939478f5955a55872145aae">作为一个程序员，进步完全取决于自己</a>
 </h4>
 
-<p>短短几年时间，我们已经走进了一个“移动应用决定一切”的时代。移动应用的创意、功能、质量的好坏，决定着用户口碑、留存率等关键指标，能够左右创业公司的成败，也对行业竞争和营销效果有着重大影响。</p>
+<p>我做程序员已经32年了，而且我一直努力让自己学习各种技术来保持进步。我知道很多像我这个年纪的人自从拿到计算机学士学位以后就再也没有学习过任何新知识，因此他们最终会被淘汰。我花了6年的时间学习化学，但是一旦当我成为一名程序员，我发现我需要了解在我工作之外发生了些什么，而且我有不断学习的欲望并一直在尝试各种各样的编程。</p>
 
 <h4>
-<a id="3redux-核心概念" class="anchor" href="#3redux-%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5" aria-hidden="true"><span class="octicon octicon-link"></span></a>3）<a href="http://www.jianshu.com/p/3334467e4b32?">Redux 核心概念</a>
+<a id="3手机淘宝-521-性能优化项目揭秘" class="anchor" href="#3%E6%89%8B%E6%9C%BA%E6%B7%98%E5%AE%9D-521-%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E9%A1%B9%E7%9B%AE%E6%8F%AD%E7%A7%98" aria-hidden="true"><span class="octicon octicon-link"></span></a>3）<a href="http://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&amp;mid=401554928&amp;idx=1&amp;sn=abde4233ad87b6c7fb2e797b1902f5b6&amp;scene=2&amp;srcid=1206I2q9x0pFaJTh0gjOv9P5">手机淘宝 521 性能优化项目揭秘</a>
 </h4>
 
-<p>本文重点介绍Redux的核心知识点，并提供很多有用的链接，通过本文开始Redux的学习吧！</p>
+<p>为了让用户更顺畅更方便地实现这一切，做到“如丝般顺滑”，双十一前夕手机淘宝成立了“521”(我爱你)性能优化项目，在日常优化基础之上进行三个方面的专项优化攻关，分别是1)H5页面的一秒法则；2)启动时间和页面帧率提升20%；3)Android内存占用降低50%。优化过程中遇到的困难，思考后找寻的方案，实施后提取的经验都会在下面详细地介绍给读者。</p>
 
 <h4>
-<a id="4使用-js-构建跨平台的原生应用listview-组件介绍" class="anchor" href="#4%E4%BD%BF%E7%94%A8-js-%E6%9E%84%E5%BB%BA%E8%B7%A8%E5%B9%B3%E5%8F%B0%E7%9A%84%E5%8E%9F%E7%94%9F%E5%BA%94%E7%94%A8listview-%E7%BB%84%E4%BB%B6%E4%BB%8B%E7%BB%8D" aria-hidden="true"><span class="octicon octicon-link"></span></a>4）<a href="http://taobaofed.org/blog/2015/12/09/using-js-to-build-an-crossplatform-native-app-an-introduction-to-listview/">使用 JS 构建跨平台的原生应用：ListView 组件介绍</a>
+<a id="4为什么有些大公司技术弱爆了" class="anchor" href="#4%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9C%89%E4%BA%9B%E5%A4%A7%E5%85%AC%E5%8F%B8%E6%8A%80%E6%9C%AF%E5%BC%B1%E7%88%86%E4%BA%86" aria-hidden="true"><span class="octicon octicon-link"></span></a>4）<a href="https://www.zhihu.com/question/32039226">为什么有些大公司技术弱爆了？</a>
 </h4>
 
-<p>滚动列表 几乎是移动开发中用途最广的 UI 组件，其重要性不言而喻。由于平台差异性，React Native 中的滚动列表组件 ListView 并没有直接映射为 Android 中的 ListView 或 iOS 中的 UITableView，而是在 ScrollView 的基础上使用 JS 做了一次封装。这样，滚动体验部分由 Native 负责，而 React 部分则专注于组件何时渲染、如何渲染等问题。</p>
+<p>今年年初，到一家互联网公司实习，该公司是国内行业龙头。不过技术和管理方面，却弱爆了。那里的程序员，每天都在看邮件，查问题工单。这些问题，多半是他们设计不当，造成的。</p>
 
 <h4>
-<a id="5性能优化模式" class="anchor" href="#5%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E6%A8%A1%E5%BC%8F" aria-hidden="true"><span class="octicon octicon-link"></span></a>5）<a href="http://tech.meituan.com/performance_tuning_pattern.html">性能优化模式</a>
+<a id="5实际经历告诉你写一本技术书能赚多少钱" class="anchor" href="#5%E5%AE%9E%E9%99%85%E7%BB%8F%E5%8E%86%E5%91%8A%E8%AF%89%E4%BD%A0%E5%86%99%E4%B8%80%E6%9C%AC%E6%8A%80%E6%9C%AF%E4%B9%A6%E8%83%BD%E8%B5%9A%E5%A4%9A%E5%B0%91%E9%92%B1" aria-hidden="true"><span class="octicon octicon-link"></span></a>5）<a href="http://www.cocoachina.com/programmer/20151208/14580.html">实际经历告诉你，写一本技术书能赚多少钱</a>
 </h4>
 
-<p>性能优化涉及面很广。一般而言，性能优化指降低响应时间和提高系统吞吐量两个方面，但在流量高峰时候，性能问题往往会表现为服务可用性下降，所以性能优化也可以包括提高服务可用性。在某些情况下，降低响应时间、提高系统吞吐量和提高服务可用性三者相互矛盾，不可兼得。例如：增加缓存可以降低平均响应时间，但是处理线程数量会因为缓存过大而有所限制，从而降低系统吞吐量；为了提高服务可用性，对异常请求重复调用是一个常用的做法，但是这会提高响应时间并降低系统吞吐量。</p>
-
-<h2>
-<a id="开源函数库与工具" class="anchor" href="#%E5%BC%80%E6%BA%90%E5%87%BD%E6%95%B0%E5%BA%93%E4%B8%8E%E5%B7%A5%E5%85%B7" aria-hidden="true"><span class="octicon octicon-link"></span></a>开源函数库与工具</h2>
-
-<h4>
-<a id="1finestwebview-android" class="anchor" href="#1finestwebview-android" aria-hidden="true"><span class="octicon octicon-link"></span></a>1）<a href="https://github.com/TheFinestArtist/FinestWebView-Android">FinestWebView-Android</a>
-</h4>
-
-<p>Beautiful and customizable Android Activity that shows web pages within an app.</p>
-
-<p><img src="https://raw.githubusercontent.com/TheFinestArtist/FinestWebView-Android/master/art/screenshots.png" alt=""></p>
-
-<h4>
-<a id="2let" class="anchor" href="#2let" aria-hidden="true"><span class="octicon octicon-link"></span></a>2）<a href="https://github.com/canelmas/let">let</a>
-</h4>
-
-<p>基于注解调用简单的AP来处理新的Android运行权限模型</p>
-
-<h4>
-<a id="3tailor" class="anchor" href="#3tailor" aria-hidden="true"><span class="octicon octicon-link"></span></a>3）<a href="https://github.com/sleekbyte/tailor">tailor</a>
-</h4>
-
-<p>Swift静态代码分析工具。</p>
+<p>我的书出版后，经常有朋友问我赚了多少钱。我有时说没多少钱，有时说按付出回报比来看那点版税对不住付出的辛苦。有的朋友微微一笑很倾城，表示理解；有的朋友笑着撇撇嘴，那意思是我没有实话实说。</p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/PaicHyperionDev/MobileDevWeekly">MobileDevWeekly</a> is maintained by <a href="https://github.com/PaicHyperionDev">PaicHyperionDev</a>.</span>
