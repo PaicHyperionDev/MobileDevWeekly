@@ -20,152 +20,129 @@
 
     <section class="main-content">
       <h1>
-<a id="平安科技移动开发二队技术周报第三十二期" class="anchor" href="#%E5%B9%B3%E5%AE%89%E7%A7%91%E6%8A%80%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91%E4%BA%8C%E9%98%9F%E6%8A%80%E6%9C%AF%E5%91%A8%E6%8A%A5%E7%AC%AC%E4%B8%89%E5%8D%81%E4%BA%8C%E6%9C%9F" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="https://github.com/PaicHyperionDev/MobileDevWeekly">平安科技移动开发二队技术周报</a>（第三十二期）</h1>
+<a id="平安科技移动开发二队技术周报第三十三期" class="anchor" href="#%E5%B9%B3%E5%AE%89%E7%A7%91%E6%8A%80%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91%E4%BA%8C%E9%98%9F%E6%8A%80%E6%9C%AF%E5%91%A8%E6%8A%A5%E7%AC%AC%E4%B8%89%E5%8D%81%E4%B8%89%E6%9C%9F" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="https://github.com/PaicHyperionDev/MobileDevWeekly">平安科技移动开发二队技术周报</a>（第三十三期）</h1>
 
 <h2>
 <a id="android开发" class="anchor" href="#android%E5%BC%80%E5%8F%91" aria-hidden="true"><span class="octicon octicon-link"></span></a>Android开发</h2>
 
 <h4>
-<a id="1安卓模拟器20初探" class="anchor" href="#1%E5%AE%89%E5%8D%93%E6%A8%A1%E6%8B%9F%E5%99%A820%E5%88%9D%E6%8E%A2" aria-hidden="true"><span class="octicon octicon-link"></span></a>1）<a href="http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2015/1218/3786.html">安卓模拟器2.0初探</a>
+<a id="1解读2015之android篇横向扩张平稳发展" class="anchor" href="#1%E8%A7%A3%E8%AF%BB2015%E4%B9%8Bandroid%E7%AF%87%E6%A8%AA%E5%90%91%E6%89%A9%E5%BC%A0%E5%B9%B3%E7%A8%B3%E5%8F%91%E5%B1%95" aria-hidden="true"><span class="octicon octicon-link"></span></a>1）<a href="http://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&amp;mid=401946629&amp;idx=1&amp;sn=bb9935b06886689ee35f977df0d55d77&amp;scene=0#wechat_redirect">解读2015之Android篇：横向扩张、平稳发展</a>
 </h4>
 
-<p>我相信每一个安卓开发者都会同意 2015年安卓开发者大会上宣布的最大事情就是 Android Studio 2.0和安卓模拟器2.0，其中安卓模拟器2.0宣称运行和部署应用的速度比第一个版本快得超乎寻常。</p>
+<p>Android经历了大概7年的野蛮成长之后，2015年的Android应该是平稳发展的一年。从Umeng最新的报告能够看出国内Android设备已经占到了62.3%，大概是iOS的两倍，毫无疑问Android已经稳稳的坐到了手机操作系统第一的宝座。如今整个Android生态链已经形成，几乎每一个细分的领域都有相应的厂商，已经很难挖掘到新的空白地带，无论是App的种类、开发工具、分发渠道、测试平台等等都已经初步形成了规模。</p>
 
 <h4>
-<a id="2react-native-android小结" class="anchor" href="#2react-native-android%E5%B0%8F%E7%BB%93" aria-hidden="true"><span class="octicon octicon-link"></span></a>2）<a href="http://blog.kazaff.me/2015/12/21/React-Native-Android%E5%B0%8F%E7%BB%93/">React-Native-Android小结</a>
+<a id="2android开发中的mvp架构" class="anchor" href="#2android%E5%BC%80%E5%8F%91%E4%B8%AD%E7%9A%84mvp%E6%9E%B6%E6%9E%84" aria-hidden="true"><span class="octicon octicon-link"></span></a>2）<a href="http://www.jianshu.com/p/7567ed0d1853">Android开发中的MVP架构</a>
 </h4>
 
-<p>最近尝试使用react-native android为我们的一个创业项目写了一个demo，项目放在github了，有兴趣的朋友可以看看。</p>
+<p>最近越来越多的人开始谈论架构。我周围的同事和工程师也是如此。尽管我还不是特别深入理解MVP和DDD，但是我们的新项目还是决定通过MVP来构建。这篇文章是我通过研究和学习各种文章以及专题讨论所总结出来的。</p>
 
 <h4>
-<a id="3android-webview远程执行代码漏洞浅析" class="anchor" href="#3android-webview%E8%BF%9C%E7%A8%8B%E6%89%A7%E8%A1%8C%E4%BB%A3%E7%A0%81%E6%BC%8F%E6%B4%9E%E6%B5%85%E6%9E%90" aria-hidden="true"><span class="octicon octicon-link"></span></a>3）<a href="http://www.freebuf.com/vuls/90552.html">Android WebView远程执行代码漏洞浅析</a>
+<a id="3fresco图片加载框架一源码简要分析" class="anchor" href="#3fresco%E5%9B%BE%E7%89%87%E5%8A%A0%E8%BD%BD%E6%A1%86%E6%9E%B6%E4%B8%80%E6%BA%90%E7%A0%81%E7%AE%80%E8%A6%81%E5%88%86%E6%9E%90" aria-hidden="true"><span class="octicon octicon-link"></span></a>3）<a href="http://www.cnblogs.com/chiefhsing/articles/5071807.html">Fresco图片加载框架（一）源码简要分析</a>
 </h4>
 
-<p>在过去的一段时间里，WebView远程代码执行漏洞可以说是横扫了一大批的Android App，查询一些漏洞平台可以得到大致的情况，鉴于很多存在漏洞的App并没有披露，因此WebVeiw远程执行代码漏洞的影响程度会更大。由于Google Android 系统碎片化程度很高，大量的Android系统无法得到及时有效地更新，这个漏洞目前依然在被利用。</p>
+<p>本文对Facebook出品的图片加载缓存库Fresco进行整体架构的一个分析，帮助开发者入门Fresco源码分析。</p>
 
 <h4>
-<a id="4android性能优化之如何避免overdraw" class="anchor" href="#4android%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E4%B9%8B%E5%A6%82%E4%BD%95%E9%81%BF%E5%85%8Doverdraw" aria-hidden="true"><span class="octicon octicon-link"></span></a>4）<a href="http://www.jianshu.com/p/145fc61011cd">Android性能优化之如何避免Overdraw</a>
+<a id="4leakcanary-内存泄露监测原理研究" class="anchor" href="#4leakcanary-%E5%86%85%E5%AD%98%E6%B3%84%E9%9C%B2%E7%9B%91%E6%B5%8B%E5%8E%9F%E7%90%86%E7%A0%94%E7%A9%B6" aria-hidden="true"><span class="octicon octicon-link"></span></a>4）<a href="http://www.jianshu.com/p/5ee6b471970e">LeakCanary 内存泄露监测原理研究</a>
 </h4>
 
-<p>Overdraw就是过度绘制，是指在一帧的时间内（16.67ms）像素被绘制了多次，理论上一个像素每次只绘制一次是最优的，但是由于重叠的布局导致一些像素会被多次绘制，而每次绘制都会对应到CPU的一组绘图命令和GPU的一些操作，当这个操作耗时超过16.67ms时，就会出现掉帧现象，也就是我们所说的卡顿，所以对重叠不可见元素的重复绘制会产生额外的开销，需要尽量减少Overdraw的发生。</p>
+<p>LeakCanary是安卓中用来检测内存泄露的小工具，它能帮助我们提早发现代码中隐藏的bug, 降低应用中内存泄露以及OOM产生的概率。</p>
 
 <h4>
-<a id="5终端应用开发指南" class="anchor" href="#5%E7%BB%88%E7%AB%AF%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97" aria-hidden="true"><span class="octicon octicon-link"></span></a>5）<a href="http://mp.weixin.qq.com/s?__biz=MjM5NDAxNTY4MA==&amp;mid=401407608&amp;idx=1&amp;sn=b858c2ccfa26b90c7fd4083b64ab9aef&amp;3rd=MzA3MDU4NTYzMw==&amp;scene=6#rd">终端应用开发指南</a>
+<a id="5android单元测试研究与实践" class="anchor" href="#5android%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%AE%9E%E8%B7%B5" aria-hidden="true"><span class="octicon octicon-link"></span></a>5）<a href="http://tech.meituan.com/Android_unit_test.html">Android单元测试研究与实践</a>
 </h4>
 
-<p>中国移动一年前发布的一个面向终端厂商和应用厂商提出规范性建议，旨在推动终端、网络、应用各方共同努力，开发用户体验更加良好的应用产品，至今仍有借鉴意义。</p>
+<p>处于高速迭代开发中的Android项目往往需要除黑盒测试外更加可靠的质量保障，这正是单元测试的用武之地。单元测试周期性对项目进行函数级别的测试，在良好的覆盖率下，能够持续维护代码逻辑，从而支持项目从容应对快速的版本更新。</p>
 
 <h4>
-<a id="6android的multidex带来的性能问题减慢app启动速度" class="anchor" href="#6android%E7%9A%84multidex%E5%B8%A6%E6%9D%A5%E7%9A%84%E6%80%A7%E8%83%BD%E9%97%AE%E9%A2%98%E5%87%8F%E6%85%A2app%E5%90%AF%E5%8A%A8%E9%80%9F%E5%BA%A6" aria-hidden="true"><span class="octicon octicon-link"></span></a>6）<a href="http://jcodecraeer.com/a/anzhuokaifa/androidkaifa/2015/1223/3796.html">Android的multidex带来的性能问题－减慢app启动速度</a>
+<a id="6关于65535问题的一点研究与思考" class="anchor" href="#6%E5%85%B3%E4%BA%8E65535%E9%97%AE%E9%A2%98%E7%9A%84%E4%B8%80%E7%82%B9%E7%A0%94%E7%A9%B6%E4%B8%8E%E6%80%9D%E8%80%83" aria-hidden="true"><span class="octicon octicon-link"></span></a>6）<a href="http://blog.csdn.net/zhaokaiqiang1992/article/details/50412975">关于『65535问题』的一点研究与思考</a>
 </h4>
 
-<p>在安卓社区中，65k方法数的限制是一个被多次提及的问题。目前解决这个问题的办法就是用multidex。虽然multidex是谷歌给出的一个非常棒的办法，但是我发现了它对app启动性能存在严重的影响，这点还没有在社区引起重视。我这篇文章的就是为那些还没有听说过这个问题（但是想使用multidexing）的开发者以及那些使用了multidexing，但是想观察本文解决办法所能赢得性能的伙伴而写的。</p>
+<p>目前来说，对于使用Android Studio的朋友来说，MultiDex应该不陌生，就是Google为了解决『65535天花板』问题而给出的官方解决方案，但是这个方案并不完美，所以美团又给出了异步加载Dex文件的方案。今天这篇文章是我最近研究MultiDex方案的一点收获，最后还留了一个没有解决的问题，如果你有思路的话，欢迎交流！</p>
+
+<h4>
+<a id="7flux架构在android中的应用" class="anchor" href="#7flux%E6%9E%B6%E6%9E%84%E5%9C%A8android%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8" aria-hidden="true"><span class="octicon octicon-link"></span></a>7）<a href="http://www.devtf.cn/?hmsr=toutiao.io&amp;p=1193">Flux架构在Android中的应用</a>
+</h4>
+
+<p>Facebook 开发Flux是为了将它应用到网页和javaScript 上，所以如果我想把它应用到Android项目中，就必须这个项目作一定程度的修改。经过一些调整（主要是 dispatcher 和 view 访问数据的方式），结合 Square 开发的 Otto 库，Android版的Flux架构库就诞生了。</p>
 
 <h2>
 <a id="ios开发" class="anchor" href="#ios%E5%BC%80%E5%8F%91" aria-hidden="true"><span class="octicon octicon-link"></span></a>iOS开发</h2>
 
 <h4>
-<a id="1ios-视图动画渲染机制探究" class="anchor" href="#1ios-%E8%A7%86%E5%9B%BE%E5%8A%A8%E7%94%BB%E6%B8%B2%E6%9F%93%E6%9C%BA%E5%88%B6%E6%8E%A2%E7%A9%B6" aria-hidden="true"><span class="octicon octicon-link"></span></a>1）<a href="http://mp.weixin.qq.com/s?__biz=MzA3NTYzODYzMg==&amp;mid=402348480&amp;idx=1&amp;sn=7f737a96b9a9e7baad12b48ebc6b1efe&amp;scene=0&amp;key=ac89cba618d2d9765dea8e02c0365bc4a490199938ebd108346b0361994543a6ae2a4655870436a42627968d2beac841&amp;ascene=0&amp;uin=MjAyNzY1NTU%3D&amp;devicetype=iMac+MacBookPro12%2C1+OSX+OSX+10.11.1+build(15B42)&amp;version=11020201&amp;pass_ticket=YYDGAMjGcYJJlj%2Bh72BXctaqS6yuDJlVNZ6LhIpUFMc%3D">iOS 视图，动画渲染机制探究</a>
+<a id="1reactivecocoa-v25-源码解析之架构总览" class="anchor" href="#1reactivecocoa-v25-%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90%E4%B9%8B%E6%9E%B6%E6%9E%84%E6%80%BB%E8%A7%88" aria-hidden="true"><span class="octicon octicon-link"></span></a>1）<a href="http://blog.leichunfeng.com/blog/2015/12/25/reactivecocoa-v2-dot-5-yuan-ma-jie-xi-zhi-jia-gou-zong-lan/#jtss-tsina">ReactiveCocoa v2.5 源码解析之架构总览</a>
 </h4>
 
-<p>终端的开发，首当其冲的就是视图、动画的渲染，切换等等。用户使用 App 时最直接的体验就是这个界面好不好看，动画炫不炫，滑动流不流畅。UI就是 App 的门面，它的体验伴随着用户使用 App 的整个过程。如果UI失败，用户是不会有打开第二次的欲望的。</p>
+<p>ReactiveCocoa 是一个 iOS 中的函数式响应式编程框架，它受 Functional Reactive Programming 的启发，是 Justin Spahr-Summers 和 Josh Abernathy 在开发 GitHub for Mac 过程中的一个副产品，它提供了一系列用来组合和转换值流的 API 。</p>
 
 <h4>
-<a id="2基于面向协议mvp模式下的软件设计ios篇" class="anchor" href="#2%E5%9F%BA%E4%BA%8E%E9%9D%A2%E5%90%91%E5%8D%8F%E8%AE%AEmvp%E6%A8%A1%E5%BC%8F%E4%B8%8B%E7%9A%84%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1ios%E7%AF%87" aria-hidden="true"><span class="octicon octicon-link"></span></a>2）<a href="http://www.jianshu.com/p/f7ff18ac1c31">基于面向协议MVP模式下的软件设计－(iOS篇)</a>
+<a id="2使用-js-构建跨平台的原生应用react-native-ios-通信机制初探" class="anchor" href="#2%E4%BD%BF%E7%94%A8-js-%E6%9E%84%E5%BB%BA%E8%B7%A8%E5%B9%B3%E5%8F%B0%E7%9A%84%E5%8E%9F%E7%94%9F%E5%BA%94%E7%94%A8react-native-ios-%E9%80%9A%E4%BF%A1%E6%9C%BA%E5%88%B6%E5%88%9D%E6%8E%A2" aria-hidden="true"><span class="octicon octicon-link"></span></a>2）<a href="http://taobaofed.org/blog/2015/12/30/the-communication-scheme-of-react-native-in-ios/">使用 JS 构建跨平台的原生应用：React Native iOS 通信机制初探</a>
 </h4>
 
-<p>相信就算你是个iOS新手也应该听说过MVC的，MVC是构建iOS App的标准模板。随着时间的推移，在iOS平台上MVC也逐渐开始面临着越来越多的问题,最近又开始流行MVVM,MVVM使由MVC衍生而来，MVVM作为一种新的开发模式和响应式编程相结合用来解决一部分业务场景等，本文将给大家介绍的是一个新的方式来架构你的App: Model-View-Protocol,暂时可以理解为是基于协议的一种设计规范,拿出你的流行语bingo card，因为我们即将进行一次范式转变。</p>
+<p>在初识 React Native 时，非常令人困惑的一个地方就是 JS 和 Native 两个端之间是如何相互通信的。本篇文章对 iOS 端 React Native 启动时的调用流程做下简要总结，以此窥探其背后的通信机制。</p>
 
 <h4>
-<a id="3如何在-swift-中使用-alamofire-进行网络编程" class="anchor" href="#3%E5%A6%82%E4%BD%95%E5%9C%A8-swift-%E4%B8%AD%E4%BD%BF%E7%94%A8-alamofire-%E8%BF%9B%E8%A1%8C%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B" aria-hidden="true"><span class="octicon octicon-link"></span></a>3）<a href="http://swift.gg/2015/12/22/alamofire-beginner-guide/">如何在 Swift 中使用 Alamofire 进行网络编程</a>
+<a id="3uitableview性能优化" class="anchor" href="#3uitableview%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96" aria-hidden="true"><span class="octicon octicon-link"></span></a>3）<a href="http://southpeak.github.io/blog/2015/12/20/perfect-smooth-scrolling-in-uitableviews/">UITableView性能优化</a>
 </h4>
 
-<p>2014 年 6 月 Apple 发布 Swift 以来，如何在 Swift 中进行网络编程一直成为程序猿们关注的焦点。甚至就连 Swift 的作者之一 Chris Lattner 也发推说过，在 Swift 中解析 JSON 还有很长的路要走。因此，许多人开始寻求替代方案。在 Swift 中虽然有处理 JSON 解析的内建类，但是对开发者来说并不是很友好。幸运的是，Alamofire 出现了。Alamofire 是一个可以帮助我们解析 JSON 的强力网络库，它由 Objective-C 中同类网络库 AFNetworking 的作者编写。</p>
-
-<h4>
-<a id="4arc下需要注意的内存管理" class="anchor" href="#4arc%E4%B8%8B%E9%9C%80%E8%A6%81%E6%B3%A8%E6%84%8F%E7%9A%84%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86" aria-hidden="true"><span class="octicon octicon-link"></span></a>4）<a href="http://www.jianshu.com/p/556ba33fa498">ARC下需要注意的内存管理</a>
-</h4>
-
-<p>之前发了一篇关于图片加载优化的文章，还是引起很多人关注的，不过也有好多人反馈看不太懂，这次谈谈iOS中ARC的一些使用注意事项，相信做iOS开发的不会对ARC陌生啦。这里不是谈ARC的使用，只是介绍下ARC下仍然可能发生的内存泄露问题，可能不全，欢迎大家补充。</p>
-
-<h4>
-<a id="5ios-开发中的-self-manager-模式" class="anchor" href="#5ios-%E5%BC%80%E5%8F%91%E4%B8%AD%E7%9A%84-self-manager-%E6%A8%A1%E5%BC%8F" aria-hidden="true"><span class="octicon octicon-link"></span></a>5）<a href="http://blog.sunnyxx.com/2015/12/19/self-manager-pattern-in-ios/">iOS 开发中的 Self-Manager 模式</a>
-</h4>
-
-<p>赋予一个 Widget 更大的权利，让其自己负责自己的事件。</p>
+<p>本文尝试解释了iOS绘图系统(没有使用OpenGL)的主要思路。当然有些看起来很模糊，但事实上这只是一些方向，你应该朝着这些方向来检查你的代码以找出影响滚动性能的所有问题。</p>
 
 <h2>
 <a id="技术纵横" class="anchor" href="#%E6%8A%80%E6%9C%AF%E7%BA%B5%E6%A8%AA" aria-hidden="true"><span class="octicon octicon-link"></span></a>技术纵横</h2>
 
 <h4>
-<a id="1react-native的架构设计" class="anchor" href="#1react-native%E7%9A%84%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1" aria-hidden="true"><span class="octicon octicon-link"></span></a>1）<a href="http://segmentfault.com/a/1190000004161358">React Native的架构设计</a>
+<a id="1近几年前端技术盘点以及-2016-年技术发展方向" class="anchor" href="#1%E8%BF%91%E5%87%A0%E5%B9%B4%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%E7%9B%98%E7%82%B9%E4%BB%A5%E5%8F%8A-2016-%E5%B9%B4%E6%8A%80%E6%9C%AF%E5%8F%91%E5%B1%95%E6%96%B9%E5%90%91" aria-hidden="true"><span class="octicon octicon-link"></span></a>1）<a href="http://www.barretlee.com/blog/2015/12/10/after-framework-we-gonna-to-hug-data/">近几年前端技术盘点以及 2016 年技术发展方向</a>
 </h4>
 
-<p>用RN最大的难题是设计思想的转变，以前的设计方法论已经不太适用了。而RN仅仅提供了view的框架，构建完整app的架构并没有直接提供。考虑目前遇到的如下问题，希望架构给出解决方案。</p>
-
-<ul>
-<li>交互：如何解决组件间通信【父子、子父、兄弟等，特别是跨层or反向数据流动等】；用state还是接口操作组件；</li>
-<li>职责：组件状态放哪，业务逻辑放哪，数据放哪，因为太灵活了，怎么做都可以实现功能，但是怎么做才是最好的，才是最正确的呢？</li>
-</ul>
+<p>Web 发展了几十个春秋，风起云涌，千变万化。我很庆幸自己没有完整地经历过这些年头，而是站在前人的肩膀上行走。Web 技术发展的速度让人感觉那几乎不是继承式的迭代，而是一次又一次的变革，一次又一次的创造。这几年的前端，更为之甚！</p>
 
 <h4>
-<a id="2谈谈技术人员的成长" class="anchor" href="#2%E8%B0%88%E8%B0%88%E6%8A%80%E6%9C%AF%E4%BA%BA%E5%91%98%E7%9A%84%E6%88%90%E9%95%BF" aria-hidden="true"><span class="octicon octicon-link"></span></a>2）<a href="http://mp.weixin.qq.com/s?__biz=MzI4MjA4ODU0Ng==&amp;mid=401732392&amp;idx=1&amp;sn=af5487a14dff9f9e3a9aa60d86eb0d55#rd">谈谈技术人员的成长</a>
+<a id="2架构师于小波魅族实时消息推送架构" class="anchor" href="#2%E6%9E%B6%E6%9E%84%E5%B8%88%E4%BA%8E%E5%B0%8F%E6%B3%A2%E9%AD%85%E6%97%8F%E5%AE%9E%E6%97%B6%E6%B6%88%E6%81%AF%E6%8E%A8%E9%80%81%E6%9E%B6%E6%9E%84" aria-hidden="true"><span class="octicon octicon-link"></span></a>2）<a href="http://www.csdn.net/article/2015-12-22/2826542">架构师于小波：魅族实时消息推送架构</a>
 </h4>
 
-<p>最近两三年，技术之外，花了一些时间带技术团队，也陆陆续续和大家聊了很多关于技术、管理以及成长方面的话题。聊天总归比较零散，今天以文字的形式，把我的所思、所想做一下系统的整理和总结，也许，对正在徘徊的你有所帮助呢？</p>
+<p>本文是根据魅族架构师于小波在msup和魅族联合举办的#魅族技术开放日#的演讲中的分享内容整理而成，于小波分享了魅族实时消息推送架构的其中遇到的坑和一些心得体会。</p>
 
 <h4>
-<a id="3涅槃重生我的技术转管理之路" class="anchor" href="#3%E6%B6%85%E6%A7%83%E9%87%8D%E7%94%9F%E6%88%91%E7%9A%84%E6%8A%80%E6%9C%AF%E8%BD%AC%E7%AE%A1%E7%90%86%E4%B9%8B%E8%B7%AF" aria-hidden="true"><span class="octicon octicon-link"></span></a>3）<a href="http://mp.weixin.qq.com/s?__biz=MjM5NTIyNTUyMQ==&amp;mid=437927167&amp;idx=1&amp;sn=9e5cc72546c1111b335bbbb71b8318bc&amp;scene=0&amp;key=ac89cba618d2d97635ebfdea222c6d87a6da37221e1c8ad8703d028d79f964f533877ceb05baba85aab84a363c4e25c8&amp;ascene=0&amp;uin=MTYzMjY2MTE1&amp;devicetype=iMac+MacBookPro10%2C1+OSX+OSX+10.11.2+build(15C50)&amp;version=11020201&amp;pass_ticket=8%2B9kCPaKWLELWhXK1Ti56wnYFeHN%2Flwihti1k%2FcCTMw%3D">涅槃重生:我的技术转管理之路</a>
+<a id="3全站-https-来了" class="anchor" href="#3%E5%85%A8%E7%AB%99-https-%E6%9D%A5%E4%BA%86" aria-hidden="true"><span class="octicon octicon-link"></span></a>3）<a href="http://bugly.qq.com/bbs/forum.php?mod=viewthread&amp;tid=417">全站 HTTPS 来了</a>
 </h4>
 
-<p>我希望我的故事能够激励其他的技术同行，能够勇敢地接受新的挑战。在快速变化的移动互联网时代，快速迭代演进的不止有 App，也包括我们自己，愿大家都能活得精彩！</p>
+<p>全站 HTTPS 能够带来怎样的优势？HTTPS 的原理又是什么？同时，阻碍 HTTPS 普及的困难是什么？本文综合参考多种资料并经过实践验证，探究 HTTPS 的基础原理，分析基本的 HTTPS 通信过程，迎接全站 HTTPS 的来临。</p>
 
 <h4>
-<a id="4为什么你应该先成为全栈工程师" class="anchor" href="#4%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%A0%E5%BA%94%E8%AF%A5%E5%85%88%E6%88%90%E4%B8%BA%E5%85%A8%E6%A0%88%E5%B7%A5%E7%A8%8B%E5%B8%88" aria-hidden="true"><span class="octicon octicon-link"></span></a>4）<a href="https://www.phodal.com/blog/become-full-stack-first/">为什么你应该先成为全栈工程师</a>
+<a id="4redux系列x源码分析" class="anchor" href="#4redux%E7%B3%BB%E5%88%97x%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90" aria-hidden="true"><span class="octicon octicon-link"></span></a>4）<a href="http://segmentfault.com/a/1190000004209897">Redux系列x：源码分析</a>
 </h4>
 
-<p>让我觉得我应该再写一篇文章站在全栈工程师的理由是，一本书《浮现式设计》和一个单词Re-Practise。似乎这是一个新的思考，尽管在那之前我已经写了一篇《全栈工程师的思考》，只是事隔半年之后，我又有了一些新的感触。这半年来，除了增长了一些软技能，如沟通、表达 、英语，以及一点点的技术提升之外，并没有什么太大的变化。</p>
+<p>redux的源码很简洁，除了applyMiddleware比较绕难以理解外，大部分原理还是比较简洁易懂的，本文尝试做一次分析。</p>
 
 <h4>
-<a id="5hey-async-await-me" class="anchor" href="#5hey-async-await-me" aria-hidden="true"><span class="octicon octicon-link"></span></a>5）<a href="http://www.alloyteam.com/2015/12/hey-async-await-me/">Hey async, await me</a>
+<a id="5java-functional-reactive-编程" class="anchor" href="#5java-functional-reactive-%E7%BC%96%E7%A8%8B" aria-hidden="true"><span class="octicon octicon-link"></span></a>5）<a href="https://realm.io/cn/news/droidcon-gomez-functional-reactive-programming/">Java Functional Reactive 编程</a>
 </h4>
 
-<p>众所周知，ES2015来的太晚了，而现在，TC39决定加快脚步，也许每年都会有新版本发布，明年可能会发布ES2016。ES2016终于给JS带来了async/await原生支持，而其他语言如C#、Python等更早就支持上了。而async/await正是本文要重点介绍的用来解决callback hell问题的终极大杀器。 虽然离浏览器或nodejs支持ES2016还有很久很久，但依靠babel任然可以转换出当前环境就支持的代码。</p>
-
-<h4>
-<a id="62015前端生态发展回顾" class="anchor" href="#62015%E5%89%8D%E7%AB%AF%E7%94%9F%E6%80%81%E5%8F%91%E5%B1%95%E5%9B%9E%E9%A1%BE" aria-hidden="true"><span class="octicon octicon-link"></span></a>6）<a href="https://github.com/kuitos/kuitos.github.io/issues/32">2015前端生态发展回顾</a>
-</h4>
-
-<p>编程技术及生态发展的三个阶段</p>
-
-<ul>
-<li>最初的时候人们忙着补全各种API，代表着他们拥有的东西还很匮乏，需要在语言跟基础设施上继续完善</li>
-<li>然后就开始各种模式，标志他们做的东西逐渐变大变复杂，需要更好的组织了</li>
-<li>然后就是各类分层MVC，MVP，MVVM之类，可视化开发，自动化测试，团队协同系统等等，说明重视生产效率了，也就是所谓工程化</li>
-</ul>
+<p>我们如何才能将传统的变量式线程同步管理转移到基于数据的异步流式编程上？试试 Reactive Programming 吧！这篇分享包含的主题有： reactive 扩展，observers ，以及 RxJava 的工作原理。尽管不容易上手，但是一旦上手，其乐无穷。</p>
 
 <h2>
 <a id="开源函数库与工具" class="anchor" href="#%E5%BC%80%E6%BA%90%E5%87%BD%E6%95%B0%E5%BA%93%E4%B8%8E%E5%B7%A5%E5%85%B7" aria-hidden="true"><span class="octicon octicon-link"></span></a>开源函数库与工具</h2>
 
 <h4>
-<a id="1smartappupdates" class="anchor" href="#1smartappupdates" aria-hidden="true"><span class="octicon octicon-link"></span></a>1）<a href="https://github.com/cundong/SmartAppUpdates">SmartAppUpdates</a>
+<a id="1-react-编程规范" class="anchor" href="#1-react-%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83" aria-hidden="true"><span class="octicon octicon-link"></span></a>1） <a href="https://github.com/dwqs/react-style-guide">React 编程规范</a>
 </h4>
 
-<p>Android应用增量更新函数库，包含客户端、服务端两部分代码。</p>
+<p>Airbnb的React和JSX的编程规范。</p>
 
 <h4>
-<a id="2htextview" class="anchor" href="#2htextview" aria-hidden="true"><span class="octicon octicon-link"></span></a>2）<a href="https://github.com/hanks-zyh/HTextView">HTextView</a>
+<a id="2vwinstantrun" class="anchor" href="#2vwinstantrun" aria-hidden="true"><span class="octicon octicon-link"></span></a>2）<a href="https://github.com/wangshengjia/VWInstantRun">VWInstantRun</a>
 </h4>
 
-<p>Android平台上针对TextView的一个动画库，效果挺赞！</p>
+<p>一个实现Instant Run的XCode插件。</p>
 
-<p><img src="https://raw.githubusercontent.com/hanks-zyh/HTextView/master/screenshot/demo2.gif" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/wangshengjia/VWInstantRun/master/run_swift_code_1.gif" alt=""></p>
 
 <h4>
-<a id="3bye2015hi2016" class="anchor" href="#3bye2015hi2016" aria-hidden="true"><span class="octicon octicon-link"></span></a>3）<a href="https://github.com/winter-fall/Bye2015Hi2016">Bye2015Hi2016</a>
+<a id="3filedownloader" class="anchor" href="#3filedownloader" aria-hidden="true"><span class="octicon octicon-link"></span></a>3）<a href="https://github.com/lingochamp/FileDownloader">FileDownloader</a>
 </h4>
 
-<p>2015，你最开心的事情是什么？最难忘的又是什么。回望，展望；过去，将来。让我们用文字，记录过去的时光，或者畅想未来的可能吧！和我们认识的，以及认识我们的朋友们一起！</p>
+<p>一个基于okhttp的文件下载器，支持多任务，断点续传，高并发，简单易用等特点。</p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/PaicHyperionDev/MobileDevWeekly">MobileDevWeekly</a> is maintained by <a href="https://github.com/PaicHyperionDev">PaicHyperionDev</a>.</span>
