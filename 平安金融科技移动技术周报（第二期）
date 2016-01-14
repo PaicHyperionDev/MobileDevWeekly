@@ -1,0 +1,129 @@
+# [平安金融科技移动技术周报](https://github.com/PaicHyperionDev/MobileDevWeekly)（第二期）
+
+> @author ASCE1885的 [Github](https://github.com/ASCE1885)  [简书](http://www.jianshu.com/users/4ef984470da8/latest_articles) [微博](http://weibo.com/asce885/profile?rightmod=1&wvr=6&mod=personinfo) [CSDN](http://blog.csdn.net/asce1885) [知乎](https://www.zhihu.com/people/asce1885)
+
+
+## 业界新闻
+
+#### 1）[Stack Overflow 告诉你，2015 年程序猿们最爱和最怕的编程语言是什么](http://36kr.com/p/5041893.html)
+
+开发者调查是 Stack Overflow 每年都要进行的一次开发者用户调查问卷活动，调查对象为在 Stack Overflow 注册的开发者用户。和以往相比，2015 年的调查涵盖面更广，参与人数最多，调查结果包括 157 个国家的 26086 名开发者。在这些人中，有 6800 人是经过认证的全栈工程师，另外还有移动开发者 1900 人，前端开发者 1200 人。 
+
+#### 2）[张小龙首次公开演讲：4大价值观揭示微信未来模样](https://mp.weixin.qq.com/s?__biz=MzA3NDEyMDgzMw==&mid=402863630&idx=1&sn=b4752274767244f8bb28c80fe1483815)
+
+这是张小龙的第一次对外公开演讲，分享了如下四个方面：
+
+* 一切以用户价值为依归
+* 让创造发挥价值
+* 好的产品应该用完即走
+* 让商业化存在于无形之中
+
+#### 4）[Swift在TIOBE编程语言排行榜上超过了Objective-C](http://www.infoq.com/cn/news/2016/01/swift-overtakes-objective-c)
+
+随着Swift在去年12月份开源，这门语言自2014年首次宣布以来的迅猛发展势头仍在继续。在开源公告发布之前，Swift在2015年11月就在TIOBE编程语言排行榜的表格里爬升到了第15名的位置，就在Objective-C（苹果用于iOS和OSX开发的主要语言）的下面。然而，Objective-C到现在已经有几十年了，在苹果生态系统之外没有任何重大的应用。虽然在过去这些年中有一些小的变化，但这些变化可能只是受新兴的Swift所驱动，为了提供互操作性。
+
+
+## Android开发
+
+#### 1）[Gradle实践之自定义打包jar+Log开关自动关闭](http://unclechen.github.io/2015/10/25/Gradle%E5%AE%9E%E8%B7%B5%E4%B9%8B%E6%89%93%E5%8C%85jar+Log%E5%BC%80%E5%85%B3%E8%87%AA%E5%8A%A8%E5%85%B3%E9%97%AD/)
+
+上一篇博客介绍了Gradle实践之多渠道自动化打包+版本号管理。由于我在公司里主要是做SDK开发的，这次我想介绍一下如何使用Gradle打出自己想要的jar包，并根据需要混淆、发布jar包。然后再介绍一下如何在打包的时候将自定义的Log输出工具关闭。
+
+#### 2）[Android性能优化典范（四）](http://geek.csdn.net/news/detail/50692)
+
+Android性能优化典范第4季的课程学习笔记终于在2015年的最后一天完成了(并于2016年1月12日正式发布在CSDN上)，文章共17个段落，包含的内容大致有：优化网络请求的行为，优化安装包的资源文件，优化数据传输的效率，性能优化的几大基础原理等等。
+
+#### 3）[AndroidFlux-异步请求和网络](http://www.jianshu.com/p/3baddb51f5a4)
+
+在移动开发中，异步网络操作必不可少，本篇着重介绍在Flux模式中如何处理异步操作的问题，并深入一些细节，比如如何在异步操作时显示异步状态。另外，网络操作仅仅是异步操作的一种，最后扩展ActionCreator的语义来处理更多的业务逻辑。
+
+#### 4）[Android应用坐标系统全面详解](http://blog.csdn.net/yanbober/article/details/50419117)
+
+很多人可能不屑一顾Android的坐标系，但是如果你想彻底学会自定义控件，我想说了解Android各种坐标系及一些API的坐标含义绝对算一个小而不可忽视的技能；所谓Android自定义View那几大主要onXXX()方法的重写实质其实大多数都是在处理坐标逻辑运算，所以我们就先来就题重谈一下Android坐标系。
+
+#### 5）[React Native Android源码分析-Js如何调用Native的代码](http://zhuanlan.zhihu.com/program-life/20464825)
+
+关于Js如何调用Native的代码的详尽的分析。
+
+#### 6）[如何选择 compileSdkVersion, minSdkVersion 和 targetSdkVersion](http://chinagdg.org/2016/01/picking-your-compilesdkversion-minsdkversion-targetsdkversion/)
+
+Android 系统升级总是会尽最大努力保证向前兼容，但这不意味着系统没有任何变化。开发者合理地设置 compileSdkVersion, minSdkVersion 和 targetSdkVersion 非常重要，听听 Google 技术专家对这三个变量的详解和建议。
+
+
+## iOS开发
+
+#### 1）[iOS大事件：iOS 9发布、Swift开源…丨解读2015](http://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=402301937&idx=1&sn=a9b0d35010bc6c0938468054bafaa6b0&scene=0#wechat_redirect)
+
+2015年过去了，对于iOS开发者来说，这是充满惊喜和机遇的一年。Swift开源让这门语言有了更光明的前途，并且让苹果和开发者之间的联系更紧密了，React Native给iOS开发带来了全新的理念，watchOS和tvOS则给开发者开辟了更广阔的市场。下面就让我们来具体回顾一下。
+
+#### 2）[RxSwift 函数响应式编程](https://realm.io/cn/news/slug-max-alexander-functional-reactive-rxswift/)
+
+异步操作的代码为什么会成为程序员的梦魇呢？函数响应式编程 (Functional Reactive Programming) 旨在简化异步操作，让您可以像操作变量一样来操作闭包。RxSwift 是一个全新的第三方库，让您的事件驱动 (event-driven) 应用更容易进行管理，增强代码的可读性，从而减少错误的发生，让您不再为此而烦恼。Max Alexander 为大家展示了这个库的基本操作，并讲述了如何使用函数响应式编程来达成我们的目的等内容。
+
+#### 3）[iOS 架构模式--解密 MVC，MVP，MVVM以及VIPER架构](http://www.cocoachina.com/ios/20160108/14916.html)
+
+在 iOS 中使用 MVC 架构感觉很奇怪？ 迁移到MVVM架构又怀有疑虑？听说过 VIPER 又不确定是否真的值得切换？我们将带领大家简要的回顾一些流行的架构，并且在理论和实践上对它们进行比较，通过一些小的例子深化你的认知。
+
+#### 4）[我从55个Swift标准库协议中学到了什么？](http://www.cocoachina.com/swift/20160107/14868.html)
+
+首先我只想问：为什么是协议？为什么面向协议编程？如果我们回到过去那段年少无知少不更事的面相对象编程时期，我们很多人最初学习的是Objective-C，这意味着我们免受多继承的专横。又或者你是这个房间里另一半喜欢C++的人，那么我们并没有受过多继承的启示，我们稍后将对其进行讨论。
+
+#### 5）[如何使用 iOS 9 App 瘦身功能](http://swift.gg/2016/01/07/app-thinning-appcoda/)
+
+iOS 9 已经变成了一个大热门。发布几周后，这个新的操作系统在 iOS 设备上的安装量就超过了一半。它的普及率打破了 iOS 7 在 2013 年的记录。在写完上一篇文章之后 Search APIs and SFSafariViewController in iOS 9，我们继续学习如何使用 App 瘦身这个 iOS 9 中令人兴奋的特性。在此教程中，我们将探索为什么要使用 App 瘦身以及如何在自己的 App 中使用这个令人兴奋的新特性。
+
+## 技术纵横
+
+#### 1）[饿了么移动APP的架构演进](https://mp.weixin.qq.com/s?__biz=MzAxNDUwMzU3Mw==&mid=401044540&idx=1&sn=24b7d8fb655ae6dd5d989d0cb3c08e90&scene=2&srcid=0106EtxRjD2jHxzomxVPTwY3&from=timeline&isappinstalled=0&uin=NzgwODIwNDgw&key=&devicetype=webwx&version=70000001&lang=zh_CN&pass_ticket=46hW44w3Hxd7VY9rutz7mgLu1JGe2T1AAKNQpxNoYOSGi8NpmNYr%2BAZj%2BiXtRX2F)
+
+随着移动互联网时代的到来，移动技术也随之飞速发展。如今，APP已然成为绝大多数互联网企业用来获取用户的核心渠道。与此同时，伴随着业务量的增长，愈来愈多的APP也在不断地挑战着每一个移动端研发人员的知识深度，而移动端技术人员也在这个不断接受挑战的过程中，成就了今天的移动互联网时代。
+
+#### 2）[论蚂蚁金服质量体系的变化](https://testerhome.com/topics/3937)
+
+测试不再是传统意义上的测试，不再是仅仅做自动化，做功能，做专项，做安全等了。测试要去推动整个产品的质量，而质量这个东西是一个完全的体系，而不是一个点能改变的，也不是测试这样一个团队就能够去提升和改变的。
+
+#### 3）[Hybrid APP架构设计思路](http://segmentfault.com/a/1190000004263182)
+
+关于Hybrid模式开发app的好处，网络上已有很多文章阐述了，这里不展开。本文将从以下几个方面阐述Hybrid app架构设计的一些经验和思考：通讯，界面与交互（Native与H5职责划分），设计H5容器。
+
+#### 4）[大多数人理解的移动无线 app 测试最多只能活两年](https://testerhome.com/topics/3977)
+
+从现在开始不要再仅仅只关注无线的东西，未来无线可能还会存在，也可能真的出现下一波，但技术和思想本身肯定都上了一个新的台阶了。故而现在最重要的就是从现在开始就分出一部分精力去学习新的东西吧，不要再局限自己的视野和高度了。用恒温的一句话总结吧要永远保持积极的学习态度。
+
+#### 5）[React-Native With Redux](http://richard-cao.github.io/2016/01/12/React-Native-With-Redux/)
+
+Redux是javascript状态容器，提供可预测化的状态管理，可以构建一致化的应用，除了和React一起用外，还支持其他界面库，体积小（只有2kb）而且没有任何依赖。
+Redux由Flux演变而来，但是避开了Flux的复杂性，上手快，使用简单，而且社区活跃，是目前主流的Flux数据流框架。
+
+## 技术人生
+
+#### 1）[怎么做好互联网公司的技术团队负责人？](https://www.zhihu.com/question/39421456)
+
+互联网公司的技术团队负责人应该具备怎样的能力？
+
+#### 2）[程序员如何提高影响力](http://mp.weixin.qq.com/s?__biz=MjM5Mjg4NDMwMA==&mid=403616804&idx=1&sn=e10f81cc6f95899ed9d01c60e4f44c88#rd)
+
+不知道你发现了没有你在Github上的代码并不比别人差，但是无论你怎么努力你都换取不了同样的关注。当别人开始使用微信公众号的时候，你也开始使用，但是你怎么努力也不及别人的百分之一的阅读量。
+
+#### 3）[简述淘宝团队的技术沉淀和对外分享](http://www.barretlee.com/blog/2016/01/08/share-in-team/)
+
+分享和沉淀是团队基础建设的一部分，没有分享没有记录，很多交流和学习的东西就沉淀不下来。一个没有沉淀的团队，新成员需要长时间的踩坑和磨合才能得以成长，团队各个小组的信息互通不顺畅、信息不对称，同时也难以对外形成一定的影响力。
+
+#### 4）[互联网寒冬，作为程序员我们能做什么？](http://zhuanlan.zhihu.com/yutou/20478156)
+
+这个冬天，比以前格外冷，不仅是天气冷，人的心也都冷了下来，创业的人明显少了很多很多，投资越来越谨慎了，身边听不到几个成功拉到投资的公司，反而是一片哀嚎，动不动就倒闭一个，更多则是悄无声息的在暗地里挣扎，稍微好一点的，缩紧一下支出，小规模的裁一下员，紧巴巴的算着还能活多久。
+
+
+## 开源函数库与工具
+
+#### 1）[Small](https://github.com/wequick/Small)
+
+Small，做最轻巧的跨平台插件化框架。
+
+#### 2）[atswift-2016-resources](https://github.com/atConf/atswift-2016-resources)
+
+2016中国Swift开发者大会源文件，包括keynote, pdf 和源工程文件。
+
+#### 3）[RxJava-Essentials-CN](https://github.com/yuxingxin/RxJava-Essentials-CN)
+
+RxJava Essentials 中文翻译版。
