@@ -1,0 +1,143 @@
+# [平安金融科技移动技术周报](https://github.com/PaicHyperionDev/MobileDevWeekly)（第三期）
+
+> @author ASCE1885的 [Github](https://github.com/ASCE1885)  [简书](http://www.jianshu.com/users/4ef984470da8/latest_articles) [微博](http://weibo.com/asce885/profile?rightmod=1&wvr=6&mod=personinfo) [CSDN](http://blog.csdn.net/asce1885) [知乎](https://www.zhihu.com/people/asce1885)
+
+## 业界新闻
+
+#### 1）[2016 Google I/O大会日期宣布](https://mp.weixin.qq.com/s?__biz=MzAwODY4OTk2Mg==&mid=402144493&idx=1&sn=9d12917a49660a784ebb72fef8b06c93&scene=1&srcid=01135NoC7aGw35xSTBSyIryr&key=41ecb04b05111003b4694ae1f855732694a9b77e7f219d5b5152e478f03414b6a79ad5e98efcdd9919e7a2cab41e19ee&ascene=0&uin=MTYzMjY2MTE1&devicetype=iMac+MacBookPro10%2C1+OSX+OSX+10.11.2+build(15C50)&version=11020201&pass_ticket=9p5lnIh3K3G8I2FvfncYkoGNOueUiq1%2B6ELLdgUwkGc%3D)
+
+谷歌CEO桑达尔·皮查伊（Sundar Pichai）今天在Google＋上宣布：2016年Google I/O大会将于5月18日至20日举行。今年大会的地址为谷歌总部山景城的Shoreline Ampitheatre 露天剧场。
+
+#### 2）[App Store应用TOP榜：究竟有多少款App在使用Swift？](http://geek.csdn.net/news/detail/51917)
+
+在过去的一年里，Swift火得一塌糊涂，而苹果官方也给出了开源后的诸多好处和美妙的前瞻。但是当下，有多少款App已经使用到了Swift语言？本文作者，来自Instagram的iOS工程师Ryan Olson对App Store免费排行榜前100名应用进行了分析，发现大多数并未使用到。
+
+## Android开发
+
+#### 1）[Android UI性能优化详解](http://music4kid.github.io//android/2016/01/11/android-performance-ui/)
+
+设计师，开发人员，需求研究和测试都会影响到一个app最后的UI展示，所有人都很乐于去建议app应该怎么去展示UI。UI也是app和用户打交道的部分，直接对用户形成品牌意识，需要仔细的设计。无论你的app UI是简单还是复杂，重要的是性能一定要好。
+
+#### 2）[Android 开发绕不过的坑：你的 Bitmap 究竟占多大内存？](https://mp.weixin.qq.com/s?__biz=MzA3NTYzODYzMg==&mid=403263974&idx=1&sn=b0315addbc47f3c38e65d9c633a12cd6&scene=0&key=41ecb04b0511100390dcd25b8d443be2a357c0de12cdba7e7b1c4d06e1c2a9331881b1697239b4a3b89b86ef42a7eba9&ascene=0&uin=MTYzMjY2MTE1&devicetype=iMac+MacBookPro10%2C1+OSX+OSX+10.11.2+build(15C50)&version=11020201&pass_ticket=9p5lnIh3K3G8I2FvfncYkoGNOueUiq1%2B6ELLdgUwkGc%3D)
+
+本文主要讨论了如何运行时获取 Bitmap 占用内存的大小，如果事先根据 Bitmap 的格式、读取方式等算出其占用内存的大小，后面又整理了一些常见的 Bitmap 使用建议。
+
+#### 3）[Android应用开发架构概述](http://www.liuguangli.win/archives/299)
+
+通常一个App的成长过程都是这样的：
+
+* 第一阶：先用最少的成本和时间快速把东西做出来。
+* 第二阶段：积累一定用户量之后在小步快跑的迭代功能。
+* 第三阶段：性能和体验上逐步求精。
+
+#### 4）[Android网络请求心路历程](http://www.jianshu.com/p/3141d4e46240)
+
+网络请求是android客户端很重要的部分。本文从入门级开始介绍下自己Android网络请求的实践历程。希望能给刚接触Android网络部分的朋友一些帮助。
+
+#### 5）蘑菇街Android组件与插件化背后的故事 [一](http://mogu.io/117-117) [二](http://mogu.io/119-119)
+
+本系列文章简述了蘑菇街Android app组件和插件化过程的实践。
+
+#### 6）[使用pngquant来缩小你的APK](http://www.jianshu.com/p/a721fbaa62ab)
+
+pngquant是国外的一个有损的PNG压缩开源库，提供了命令行形式和源码库形式。
+
+* 通过这个库的转化可以显著减少png文件大小（通常减少70%），并且保持原有透明度通道。
+* 生成的图片文件可以兼容所有现代web浏览器，在IE6下比24-bit PNGs也有更好的表现。
+
+## iOS开发
+
+#### 1）[盘点iOS开发者必看的105个全球最佳博客](http://geek.csdn.net/news/detail/51862)
+
+如果你正在寻找见解深刻，并富有教育意义的iOS开发博客，那就找对地方了。下面列出了质量最好且最为活跃的105个线上博客。无论是想要与同侪沟通的iOS开发老手，还是渴望学习以提高移动应用开发技巧的大学新鲜人，都能从这些博客中找到自己所需的工具、知识见解与技术，并在软件的开发过程中充分利用这些知识。
+
+#### 2）[CoreData VS Realm](http://iiiyu.com/2016/01/19/CoreData-VS-Realm/)
+
+相比之下，Realm 更加适合一些业务逻辑不怎么复杂的场景，团队配置要求不高，有经验的人稍微看一下午就能上手。CoreData 更加适合业务逻辑复杂的情况，团队配置要求比较高，有经验的老手也需要几周甚至更长的时间才能科学的使用CoreData。
+
+#### 3）[iOS应用架构谈：架构设计的方法论](http://mp.weixin.qq.com/s?__biz=MzA5Nzc4OTA1Mw==&mid=407735372&idx=1&sn=87c20f7db6990db00838498827692683#rd)
+
+iOS客户端应用架构看似简单，但实际上要考虑的事情不少。本文作者将以系列文章的形式来回答iOS应用架构中的种种问题，本文是其中的第一篇，主要讲架构设计的通识和方法论等，同时还讨论了大家关心的架构分层、是否要有common文件夹等问题。
+
+#### 4）[iOS崩溃调试](http://www.cocoachina.com/ios/20160115/15009.html)
+
+在iOS开发调试过程中以及上线之后，程序经常会出现崩溃的问题。简单的崩溃还好说，复杂的崩溃就需要我们通过解析Crash文件来分析了，解析Crash文件在iOS开发中是比较常见的。
+
+#### 5）[基于彻底解耦合的实验性iOS架构](http://www.cocoachina.com/ios/20160114/14995.html)
+
+本文探究的主题是：“如果所有的应用内通讯都通过一个事件流来完成会怎么样？”。
+
+## 技术纵横
+
+#### 1）[理解 Promise 的工作原理](https://blog.coding.net/blog/how-do-promises-work)
+
+Javascript 采用回调函数(callback)来处理异步编程。从同步编程到异步回调编程有一个适应的过程，但是如果出现多层回调嵌套，也就是我们常说的厄运的回调金字塔(Pyramid of Doom)，绝对是一种糟糕的编程体验。于是便有了 CommonJS 的 Promises/A 规范，用于解决回调金字塔问题。本文先介绍 Promises 相关规范，然后再通过解读一个迷你的 Promises 以加深理解。
+
+#### 2）[Mixin 已死，Composition 万岁](http://efe.baidu.com/blog/mixins-are-dead-long-live-the-composition/)
+
+当 React 0.13 推出的时候，大家都震惊了。它的开篇表达得很明确，mixin 正在逐步退出历史舞台。在 JavaScript 中我们找不到通用的标准来定义 mixin，事实上，ES6 也摒弃了不少支持 mixin 的特性。语义混乱的类库已经很多了。尽管我们认为应该有一个统一的方法来定义 mixin，便于对 JavaScript 各种“类”的操作，但 React 并不打算这么做。
+
+#### 3）[微信应用号来了，你自己的 app 该怎么办？](http://36kr.com/p/5042147.html)
+
+很多人今天开始知道，微信正在开发一款叫 “应用号” 的产品。而很多人还不知道，百度的 App Link 协议上周刚刚公开发布。如果你还不知道应用号是什么东西，不妨通过 App link 来做一个脑补。但在脑补之前，我们需要先弄清楚，对于大部分 Native app 的 maker 来说，微信应用号这么个东西意味着什么？
+
+#### 4）[极致的 Hybrid：航旅离线包再加速！](http://yq.aliyun.com/articles/2939)
+
+在Hybrid开发的道路上，Native 期望获得 H5 快速开发和部署能力、H5 期望获得更快的速度和更高的硬件调用权限，主要有两个思路：
+
+* H5 容器技术
+* H5 代码 Native 化
+
+
+## 技术人生
+
+#### 1）[你那些招人的方法都是错的](http://36kr.com/p/5042328.html)
+
+这是一篇译文，原文作者Andreessen 在创业公司招聘的标准和流程上提出了自己的思考与建议。读完这篇文章，或许你真的能够明白 “如何招到最好的人”。
+
+#### 2）[关于IT技术交流与分享的这点事儿](http://mp.weixin.qq.com/s?__biz=MzAxMjM2MTY0OQ==&mid=401436349&idx=1&sn=9832cf756273c6514ac36941498fab13#rd)
+
+两三年来，我一直坚持的一个IT技术理念，那就是“进步始于交流，收获源于分享”！在我认为，无论你是向他人请教也好，还是从网上查找到的知识也好，你技术的增长都是得自于他人给你做的无私分享。那么，作为知识获取方，保持一颗感恩的心是必须的，然后对于这种技术知识传承也有着不可推卸的责任！
+
+#### 3）[程序员的知识管理](http://blog.xiaohansong.com/2016/01/16/kownledge-Management/)
+
+本文从一个程序员的视角来讨论知识管理，包括以下几个方面：
+
+* 什么是知识管理
+* 为什么要管理知识
+* 如何管理知识
+
+#### 4）[程序员从优秀到伟大有多远](http://www.jianshu.com/p/83cc64470ec4)
+
+我没法全面的说明优秀和伟大间的区别，但是我知道有一些伟大程序员才有的特质：
+
+* 能够在实用主义与完美主义间保持平衡
+* 不会讨厌调试和修复bug
+* 合理的怀疑态度
+* 纪律
+* 经验
+* 产品意识
+* 社交意识
+
+
+## 开源函数库与工具
+
+#### 1）[build-time-tracker-plugin](https://github.com/passy/build-time-tracker-plugin)
+
+一个可以查看Gradle构建时各个阶段花费的时间的插件。
+
+![](https://raw.githubusercontent.com/passy/build-time-tracker-plugin/master/assets/screenshot.png)
+
+#### 2）[Android架构合集](https://github.com/Juude/Awesome-Android-Architecture)
+
+Android架构相关文章的汇总。
+
+#### 3）[JavaScript Promise迷你书（中文版）](http://liubin.org/promises-book/)
+
+对Promise还不熟悉的同学，可以通过这本书学起来了。
+
+#### 4）[react-web](https://github.com/taobaofed/react-web)
+
+基于 React 的构建无线 Web 应用框架。
+
+#### 5）[推荐几款实用的Android Studio 插件](http://www.jianshu.com/p/6f5f818afe4b)
