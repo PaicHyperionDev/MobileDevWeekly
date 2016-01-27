@@ -1,0 +1,86 @@
+# [平安金融科技移动技术周报](https://github.com/PaicHyperionDev/MobileDevWeekly)（第四期）
+
+> @author ASCE1885的 [Github](https://github.com/ASCE1885)  [简书](http://www.jianshu.com/users/4ef984470da8/latest_articles) [微博](http://weibo.com/asce885/profile?rightmod=1&wvr=6&mod=personinfo) [CSDN](http://blog.csdn.net/asce1885) [知乎](https://www.zhihu.com/people/asce1885)
+
+![](http://a.picphotos.baidu.com/album/w%3D1458%3Bq%3D90/sign=48a5914e0bf3d7ca0cf63b72c7278578/241f95cad1c8a78619909c7e6009c93d70cf500c.jpg)
+
+## Android开发
+
+#### 1）[使用 Jenkins 自动化构建 Android 和 iOS 应用](http://www.jayfeng.com/2015/10/22/%E4%BD%BF%E7%94%A8jenkins%E8%87%AA%E5%8A%A8%E5%8C%96%E6%9E%84%E5%BB%BAandroid%E5%92%8Cios%E5%BA%94%E7%94%A8/)
+
+随着业务需求的演进，工程的复杂度会逐渐增加，自动化的践行日益强烈。事实上，工程的自动化一直是我们努力的目标，能有效提高我们的生产效率，最大化减少人为出错的概率，实现一些复杂的业务需求应变。
+
+#### 2）[2016 这些 Android 技术会很火](http://mp.weixin.qq.com/s?__biz=MzAwNjE5MzA0NQ==&mid=402079389&idx=1&sn=6823b23c996c5c54c2bfaa03961d06ff&scene=0#wechat_redirect)
+
+在Android开发中，新技术不断涌现。对于GitHub上如此众多的项目，有人不断Mark，有人分享自己的经验，不管怎么样，如果能让你真的有所学习有所收获，我们的目的也就达到了。
+
+#### 3）[如何成为一个“偷懒又高效”的Android开发人员](http://www.jianshu.com/p/5a705a8a2479)
+
+人生就是一个不断接受新的思想而推翻过去的一个过程，和软件开发一样，唯一不变的就是变化。
+
+#### 4）[Android应用安全开发之源码安全](http://drops.wooyun.org/mobile/12172)
+
+Android apk很容易通过逆向工程进行反编译，从而是其代码完全暴露给攻击者，使apk面临破解，软件逻辑修改，插入恶意代码，替换广告商ID等风险。我们可以采用以下方法对apk进行保护。
+
+#### 5）[APK瘦身实践](http://www.jayfeng.com/2015/12/29/APK%E7%98%A6%E8%BA%AB%E5%AE%9E%E8%B7%B5/)
+
+Android APK 瘦身经验总结。
+
+#### 6）[优化 Android 线程和后台任务开发](https://realm.io/cn/news/android-threading-background-tasks/)
+
+在 Android 开发中，你不应该做任何阻碍主线程的事情。但这究竟意味着什么呢？在这次海湾 Android 开发者大会讲座中，Ari Lacenski 认为对于长时间运行或潜在的复杂任务要特别小心。这一次演讲，我们将根据一个真实场景应用的需求，讨论 AsyncTask, Activity, 和 Service，逐步建立一个更易于维护的解决方案。
+
+#### 7）[多长时间更新一次 Android Studio](http://chinagdg.org/2016/01/%E5%A4%9A%E9%95%BF%E6%97%B6%E9%97%B4%E6%9B%B4%E6%96%B0%E4%B8%80%E6%AC%A1-android-studio)
+
+Android Studio 迭代周期快、不断改进，这是它的一大优点。每次新版本都带来一批新特性、新工具以及 bug 修复，所有这些都可以潜在地提高你的生产力。你想尝试所有这些新玩意，但是又不想冒险离开现在稳定的开发环境。你会用哪个更新 channel ，多长时间接受一次更新呢？
+## iOS开发
+
+#### 1）[iOS响应式编程：ReactiveCocoa vs RxSwift  选谁好](http://www.jianshu.com/p/2f83b766a081)
+
+要直接比较这两个有点难。Rx 是 Reactive Extensions 的一部分，其他语言像C#, Java 和 JS 也有。Reactive Cocoa 受 Functional Reactive Programming(FRP) 启发,但是在最近一段时间里，他们提到也受到Reactive Extensions的启发。最终结果就是一个从Rx借鉴了一些东西，但是有着源自FRP名声的一个框架。
+
+#### 2）[iOS内存管理和malloc源码解读](https://yq.aliyun.com/articles/3065)
+
+最近由于排查问题，顺便对iOS的内存管理，尤其是malloc库稍微深入地了解一下，在这里整理出来，和大家分享一下。 
+
+#### 3）Block深究浅析
+* [(上篇)-Block本质](http://1gcode.com/2015/10/03/notes-iOS-Block01/)
+* [(中篇)-内存管理与变量传递](http://1gcode.com/2015/10/01/notes-iOS-Block02/)
+* [(下篇)-开发中使用场景](http://1gcode.com/2015/09/28/notes-iOS-Block03/)
+
+#### 4）[Swift中的let和var背后的编程模式](http://www.infoq.com/cn/articles/programming-model-behind-let-and-var-in-swift)
+
+Swift中有两种声明“变量”的方式，这两种方式分别使用let和var这两个关键字。这应该是借鉴了Scala，因为它们和Scala的val和var有相同的作用。let被用于声明不变量，var被用于声明变量。不变量的值一旦被定义就不能再改变，变量则可以在声明之后被随意赋值。
+
+#### 5）[Square对iOS App架构的新尝试---Ziggurat](http://www.cocoachina.com/ios/20160126/15107.html)
+
+今年六月，我做了一场关于避免臃肿的ViewController的演讲，用Swift讲解了一种采用“单向数据流”的架构模式。当时并没有发布相关的博客，甚至没有给这个架构起个名字。现在两者都有了。首先介绍一下Ziggurat：它是一种通过不可变的视图模型和单向数据流来实现的分层的、易测试的架构模式。
+
+## 技术纵横
+
+#### 1）[React.js 2016 最佳实践](http://www.alloyteam.com/2016/01/reactjs-best-practices-for-2016/)
+
+2015可以算是React之年了，关于其版本发布和开发者大会的话题遍布全球。关于去年React的发展里程碑详情，可以查看我们整理的React 2015这一年。2016年最有趣的问题可能是，我们该如何编写一个应用呢，有什么推荐的库或框架？
+
+#### 2）[浏览器缓存知识小结及应用](http://www.cnblogs.com/lyzg/p/5125934.html)
+
+浏览器缓存，也就是客户端缓存，既是网页性能优化里面静态资源相关优化的一大利器，也是无数web开发人员在工作过程不可避免的一大问题，所以在产品开发的时候我们总是想办法避免缓存产生，而在产品发布之时又在想策略管理缓存提升网页的访问速度。了解浏览器的缓存命中原理，是开发web应用的基础，本文着眼于此，学习浏览器缓存的相关知识，总结缓存避免和缓存管理的方法，结合具体的场景说明缓存的相关问题。希望能对有需要的人有所帮助。
+
+#### 3）[移动端高清、多屏适配方案](http://div.io/topic/1092)
+
+移动端高清、多屏适配方案的背景：
+
+* 开发移动端H5页面
+* 面对不同分辨率的手机
+* 面对不同屏幕尺寸的手机
+
+#### 4）[响应式编程的基本概念](http://www.infoq.com/cn/news/2016/01/reactive-basics)
+
+在参加了许多次谈话并阅读了大量的博文后，Peter Ledbrook仍然未能深刻地理解响应式编程的含义。因此他认为，响应式编程领域存在一个关键的问题，就是它之所以那么难以理解是因为所有的术语词汇以及针对这些词汇的许多不同的解释。于是，他决定搞明白这一切，并希望同其他开发人员分享他的知识。
+
+
+## 开源函数库与工具
+
+#### 1）[Yalantis出品的uCrop](https://github.com/Yalantis/uCrop)
+
+![](https://camo.githubusercontent.com/8577338af603bb6046e0ff06e2530cbbedd94d85/68747470733a2f2f6431337961637572716a676172612e636c6f756466726f6e742e6e65742f75736572732f3232313933352f73637265656e73686f74732f323437343239352f616e696d6174696f6e2e676966)
