@@ -1,0 +1,98 @@
+# [平安金融科技移动技术周报](https://github.com/PaicHyperionDev/MobileDevWeekly)（第五期）
+
+## Android开发
+
+#### 1）[OpenJDK将对Android开发产生怎样的影响？](https://mp.weixin.qq.com/s?__biz=MzA3ODg4MDk0Ng==&mid=401499938&idx=1&sn=97ecdcc759a8d218735c6083deca278c&scene=1&srcid=0128rfJZoZVv6oIai4RRbJAa&key=710a5d99946419d9d9e854a3d7b2ed79deda4c5e929e1e8ecd9d8252681d1678ab1332fd55ed256176bb176fa7cb6d34&ascene=0&uin=MTYzMjY2MTE1&devicetype=iMac+MacBookPro10%2C1+OSX+OSX+10.11.2+build(15C50)&version=11020201&pass_ticket=0cwDXs9zWHiCbxJsdqx6jTlZ2N3LgXr0Einy%2BSFlcfo%3D)
+
+在2015年年底，InfoQ曾提到Google已经决定在Android中使用OpenJDK，以取代基于Harmony实现的Java库。尽管这条消息在宣布时恰逢圣诞期间，但Google的这一决定还是在互联网上引起了很大的反响，我们将在本文中对于这些观点进行一次总结。
+
+#### 2）[如何自定义Android注解？](https://mp.weixin.qq.com/s?__biz=MzA4MjU5NTY0NA==&mid=402332359&idx=1&sn=3eb84b8bd7d9ecfeb6a95beca01cf948&scene=1&srcid=0130N3i4OKZtlA7N6iNUydqe&key=710a5d99946419d954144790b44c7fac6c48ca42eee8dbf4b4e3645b9bd40ef56cde266041b04036d5b144c8fc1d69d7&ascene=0&uin=MTYzMjY2MTE1&devicetype=iMac+MacBookPro10%2C1+OSX+OSX+10.11.3+build(15D21)&version=11020201&pass_ticket=XwI%2BWH7mvU%2Byg1F3WcLOFgEqTq4x7jdGP7E0FujO%2BjU%3D)
+
+目前基于注解的开源项目越来越热，Dagger, ButterKnife, Retrofit...很多热门的开源项目都用到了注解，如何才能像GitHub大牛那样优雅得使用注解呢？本文作者就给你一步步地演示。
+
+#### 3）[Android Development Culture](http://artemzin.com/blog/android-development-culture-the-document-qualitymatters/)
+
+Android Development is in trouble (for about 7 years). Most of the projects does not have tests (unit, integration, functional); compilation and lint warnings ignored; code is kind of smelling spaghetti (hopefully, reactive-spaghetti) and so on.
+
+#### 4）一系列的热修复框架使用及源码剖析
+
+* [Alibaba-AndFix Bug热修复框架的使用](http://blog.csdn.net/qxs965266509/article/details/49802429)
+* [Alibaba-AndFix Bug热修复框架原理及源码解析](http://blog.csdn.net/qxs965266509/article/details/49816007)
+* [Alibaba-Dexposed框架在线热补丁修复的使用](http://blog.csdn.net/qxs965266509/article/details/49821413)
+* [Alibaba-Dexposed Bug框架原理及源码解析](http://blog.csdn.net/qxs965266509/article/details/50117137)
+* [Android-FixBug热修复框架的使用及源码分析(不发版修复bug)](http://blog.csdn.net/qxs965266509/article/details/50390325)
+
+#### 5）[Android 内存泄漏总结](https://yq.aliyun.com/articles/3009)
+
+内存管理的目的就是让我们在开发中怎么有效的避免我们的应用出现内存泄漏的问题。内存泄漏大家都不陌生了，简单粗俗的讲，就是该被释放的对象没有释放，一直被某个或某些实例所持有却不再被使用导致 GC 不能回收。最近自己阅读了大量相关的文档资料，打算做个 总结 沉淀下来跟大家一起分享和学习，也给自己一个警示，以后 coding 时怎么避免这些情况，提高应用的体验和质量。
+
+#### 6）[Android：Activity与Fragment通信(99%)完美解决方案](http://www.jianshu.com/p/1b824e26105b)
+
+最近一直在想着能否有一种更好的方案来解决：Android中Activity与Fragment之间通信的问题，什么叫更好呢，就是能让Fragment的复用性高，性能还有好（不用反射），代码还要好维护，不需要为每对Activity和Fragment之间定义接口而发愁。
+
+## iOS开发
+
+#### 1）[THE BENEFITS AND RISKS OF IOS REMOTE HOT PATCHING](https://www.fireeye.com/blog/threat-research/2016/01/hot_or_not_the_bene.html)
+
+本文是对 JSPatch 优点和存在的风险点的一个讨论，对于使用  JSPatch 实现 iOS 热更新的项目有一定的借鉴意义。
+
+#### 2）[iOS 高性能异构滚动视图构建方案 —— LazyScrollView](http://pingguohe.net/2016/01/31/lazyscroll.html)
+
+LazyScrollView 继承自ScrollView，目标是解决异构（与TableView的同构对比）滚动视图的复用回收问题。它可以支持跨View层的复用，用易用方式来生成一个高性能的滚动视图。此方案最先在天猫iOS客户端的首页落地。
+
+#### 3）[如何打造一个让人愉快的框架](http://onevcat.com/2016/01/create-framework/)
+
+本文是作者在今年 1 月 10 日 @Swift 开发者大会 上演讲的文字稿。相关的视频还在制作中，没有到现场的朋友可以通过这个文字稿了解到这个 session 的内容。
+
+## 技术纵横
+
+#### 1）Git学习汇总
+
+* [廖雪峰的Git教程](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/)
+* [阮一峰 Git 使用规范流程](http://www.ruanyifeng.com/blog/2015/08/git-use-process.html)
+* [Pro Git（中文版）](http://git.oschina.net/progit/)
+* [利用Jenkins+Gitlab搭建持续集成(CI)环境](http://hyhx2008.github.io/li-yong-jenkinsgitlabda-jian-chi-xu-ji-cheng-cihuan-jing.html)
+
+#### 2）[在 JS 中使用 fetch 更加高效地进行网络请求](http://blog.parryqiu.com/2016/03/02/using_fetch_in_nodejs/)
+
+在 AJAX 时代，进行请求 API 等网络请求都是通过 XMLHttpRequest 或者封装后的框架进行网络请求。现在产生的 fetch 框架简直就是为了提供更加强大、高效的网络请求而生，虽然在目前会有一点浏览器兼容的问题，但是当我们进行 Hybrid App 开发的时候，如我之前介绍的 Ionic 和 React Native，都可以使用 fetch 进行完美的网络请求。
+
+#### 3）[react native 代码分离打包](https://github.com/changfuguo/react-native/blob/master/react-native-depart-lib-and-app-code.md)
+
+作为一个小前端，九月份接触到RN，说实在的有些小小激动；毕竟可以绕过纷扰的oc和java，做些简单的小demo，其中踩到一些坑，下面说说一个首要的问题-index.ios.bundle的代码分离；
+
+#### 4）[Redux学习笔记](http://blog.csdn.net/colorapp/article/details/50256913)
+
+随着JavaScript单页面应用开发的日趋复杂，JavaScript需要管理比之前任何时候都要多的State。State可以包括服务器返回的数据，本地缓存的数据，也可以是本地创建还没有发送给服务器的数据。UI state也变得日趋复杂。
+
+#### 5）[ReactNative For Android 项目实战总结](http://mp.weixin.qq.com/s?__biz=MzI1MTA1MzM2Nw==&mid=401483604&idx=1&sn=399cdf7e13fe6125108de1bfd045f2cf&scene=0#wechat_redirect)
+
+本文是 QQ 空间 Android 版本 React Native 的实践总结，以实际数据对比了 React Native 和 H5 的性能。
+
+## 技术人生
+
+#### 1）[架构师和开发团队应该如何协作？组织架构怎么设置最好？](http://mp.weixin.qq.com/s?__biz=MzA5Nzc4OTA1Mw==&mid=408439849&idx=1&sn=ecbd524c4dd844f2b45172ade4acee0b&scene=0#wechat_redirect)
+
+软件架构构成了一个系统的骨架。它定义了当面对不同的功能性和非功能性需求时的系统行为。一方面，传统瀑布式方法对项目开发的所有阶段提出了硬性约束要求，因此传统瀑布式方法显得僵化。另一方面，敏捷运动让我们拥抱改变，即使是处于开发阶段后期的改变。
+
+#### 2）[看完了张小龙的 2359 条饭否日记](http://zhuanlan.zhihu.com/spacekid/20539834)
+
+Allen 在饭否上的名字是 gzallen，广州艾伦，头像和他早已清空的微博一样，来自于 Leonard Cohen 一张名为 Recent Songs 的专辑。gzallen 其实并不是 Allen 注册的第一个饭否帐号，早在 07 年 6 月 4 号，他就注册了一个叫 allen 的帐号并写了 454 条饭否。饭否被封后这个帐号也就弃用了，直到 2010 年 11 月 26 日（饭否恢复运营第二天），和菜头把他拉来注册了 gzallen 这个新号。从那天起直至 2012 年 4 月与和菜头一同离开饭否，他一共写了 2359 条饭否，他的微信版本也从 0，变为了 4。
+
+#### 3）[程序员如何优雅度过一生的15个建议](http://www.jianshu.com/p/e15c1435675f)
+
+美国程序员的建议，有一定的借鉴意义。
+
+#### 4）[如何出一本技术书](http://hy1984427.github.io/2016/01/28/How_To_Publish_A_Technical_Book/)
+
+作者根据自己出书的一些经验，给想出书的同学提出了一系列建议。
+
+## 开源函数库与工具
+
+#### 1）[awesome-kotlin](https://github.com/mcxiaoke/awesome-kotlin)
+
+Kotlin 资源的一个合集。
+
+
+
+
