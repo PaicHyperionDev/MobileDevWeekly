@@ -1,0 +1,94 @@
+# [平安金融科技移动技术周报](https://github.com/PaicHyperionDev/MobileDevWeekly)（第六期）
+
+> @author ASCE1885的 [Github](https://github.com/ASCE1885)  [简书](http://www.jianshu.com/users/4ef984470da8/latest_articles) [微博](http://weibo.com/asce885/profile?rightmod=1&wvr=6&mod=personinfo) [CSDN](http://blog.csdn.net/asce1885) [知乎](https://www.zhihu.com/people/asce1885)
+
+## 业界新闻
+
+#### 1）[JetBrains正式发布Kotlin 1.0：JVM和Android上更好用的语言](http://geek.csdn.net/news/detail/55826)
+
+![](http://g.picphotos.baidu.com/album/h%3D820%3Bq%3D90/sign=11bc272a992f070840052702d91fc9a4/bd315c6034a85edf1bdbcb464e540923dd54757b.jpg)
+
+Kotlin是一门通用的语言，只要能用Java的地方就能用Kotlin，包含：服务器程序开发、移动应用开发（Android）、桌面客户端程序开发。Kotlin的主要特点之一是Java+Kotlin混合工程的互操作性以及无缝兼容，使引入Kotlin的过程简单容易，并达成更少的重复性代码和更佳的类型安全。Kotlin还有一个扩展标准库能让日常工作变得简单顺畅，它能帮助保持低字节码足迹 (bytecode footprint)。当然，Kotlin 中自然可以使用 Java 库，反之亦然。
+
+更多内容可参见[《Kotlin for android developers》中文版》](https://wangjiegulu.gitbooks.io/kotlin-for-android-developers-zh/content/)
+
+
+#### 2）[Google发布J2ObjC 1.0：将Java转换为Objective-C](http://www.infoq.com/cn/news/2016/02/j2objc)
+
+J2ObjC是一个Google开发的开源工具，用于将Java代码转换为Objective-C代码。其目的是为了能在iOS平台上重用Android平台、web服务器端的Java代码。服务器端代码的转换由GWT完成。J2ObjC并不转换UI代码，这部分需要针对不同平台分别开发。
+
+## Android开发
+
+#### 1）[Android Studio 小技巧合集](http://laobie.github.io/android/2016/02/14/android-studio-tips.html)
+
+本文翻译自 [Android Studio Tips by Philippe Breault](https://github.com/pavlospt/Android-Studio-Tips-by-Philippe-Breault/wiki)，一共收集了62个 Android Studio 使用小技巧和快捷键。 根据这些小技巧的使用场景，本文将这62个小技巧分为常用技巧（1 – 28）、编码技巧（29 – 49）和调试技巧（50 – 62），分成三个部分。
+
+#### 2）[AndroidManifest合并原理](http://wangxinghe.me/blog/2016-02-05/androidmanifest-merge/)
+
+Android Studio工程通常包含多个AndroidManifest文件，最终构建成APK时，会合并成一个AndroidManifest文件。但是可能很多人应该都不知道是怎么合并的，本文将为大家揭开神秘面纱。
+
+#### 3）[在Android应用中使用Clean架构](http://blog.chengdazhi.com/index.php/101)
+
+自从开始开发安卓应用，我一直感觉我可以做得更好。我看过不少烂代码，其中当然有我写的。安卓系统的复杂性加上烂代码势必酿成灾祸，所以从错误中成长就很重要。我Google了如何更好地开发应用，发现了这个叫做Clean架构的东西。于是我尝试将它应用于安卓开发，根据我在类似项目中的经验做了一些改善，写出了这篇我觉得较为实用、值得分享的文章。
+
+#### 4）[Android单元测试框架Robolectric3.0介绍](http://www.jianshu.com/p/9d988a2f8ff7)
+
+作为一个软件开发攻城狮，无论你多不屑多排斥单元测试，它都是一种非常好的开发方式，且不谈TDD，为自己写的代码负责，测试自己写的代码，在自己力所能及的范围内提高产品的质量，本是理所当然的事情。
+
+#### 5）[如何将apk大小减少6M的](http://blog.csdn.net/UsherFor/article/details/46827587)
+
+Apk瘦身一直是大家比较关心的话题，这篇文章来自蘑菇街的伯约同学，分享他个人关于如何有效减小apk size的一些实战干货，同时给出了相关的开源项目。
+
+#### 6）[Android开发者博客汇总](https://github.com/CodingFish2015/Android-Developer-Blog-Rss)
+
+该项目主要是收集国内外 Android 开发者的优秀博客，欢迎大家推荐以及自荐。
+
+## iOS开发
+
+#### 1）[iOS时间回归bug](http://weibo.com/ttarticle/p/show?id=2309403942046627940126)
+
+最近在网上沸腾的iOS时间bug闹的沸沸扬扬，据说是将iOS系统时间修改为1970/1/1，重启后系统将永远无法开机，有人还发明了整蛊方法：设置WiFi路由的时间为1970/1/1，连上WiFi就会中招。这个Bug背后的原理是什么呢？这篇文章给出了解释和应对的方法。
+
+#### 2）[自学 iOS - 三十天三十个 Swift 项目](http://www.jianshu.com/p/52032bc4cbe4)
+
+整个#30daysSwift 自学计划完全是受到 Sam Lu 的灵感启发，他在 100天内持续学 Swift 写了 40个小项目, 我也是在看了他1月5日发出来的 Medium 文章后立即决定也开始自己的 30天自学计划，每天写一个小项目，如果有天没写也可以在周末的时候多写几个补上。因为其实对 Swift 基础语法并还没有太懂，我是一边看基础语法和一边 Google 一堆网络上的文章或视频 Swift 初学者教程来做项目。
+
+## 技术纵横
+
+#### 1）[小米网技术架构变迁实践](http://toutiao.com/i6249914234113622529/)
+
+小米网架构师张涛讲述的关于小米网后端技术架构变迁的实践。
+
+#### 2）[React Native超棒的LayoutAnimation(布局动画)](http://www.lcode.org/react-native%E8%B6%85%E6%A3%92%E7%9A%84layoutanimation%E5%B8%83%E5%B1%80%E5%8A%A8%E7%94%BB/)
+
+如果你是用React Native进行开发，然而还没有尝试过使用LayoutAnimation的话，那么你就太out啦。
+
+#### 3）[做技术，应该先有深度再谈广度](http://mp.weixin.qq.com/s?__biz=MzA5Nzc4OTA1Mw==&mid=408703236&idx=1&sn=3f78abcca906d5edee06ff85b2d22416&scene=0#wechat_redirect)
+
+本文是前新浪微博架构师卫向军，和大家讨论交流的是架构师的成长，主要包括架构师的能力要求，以及如何从一名菜鸟成长为出色的架构师， 既借鉴其他专家的精辟总结，也有多年的心得体会。
+
+#### 4）[Segment开发团队的最佳实践](http://mp.weixin.qq.com/s?__biz=MzIxMjE0MjM4NA==&mid=402140936&idx=1&sn=a11dcf2c5616a7b4aef2fcda652d7ad1#rd)
+
+目前每个月Segment已经为数百个不同的关键业务应用提供了超过500亿次API调用，包括收集、转换和路由等。在这方面我们已经走了很长的路，成立之初我的联合创始人和我仅仅只跑了少数的应用实例。现在，我们对我们所解决的问题已经有了很深刻的理解，与此同时我们学到了很多东西。为了保持快速对问题的解决并且避免之前遇到过的错误，我们团队已经开始总结一个最佳实践列表。
+
+## 技术人生
+
+#### 1）[聊聊职场规划那些事儿](http://mp.weixin.qq.com/s?__biz=MjM5ODQ2MDIyMA==&mid=402162818&idx=1&sn=a01e2442d9fe5721044c9892b0272320&scene=0#wechat_redirect)
+
+我现在已经活到了人生的中途，拿一日来比喻人的一生，现在正是中午。人在童年时从朦胧中醒来，需要一些时间来克服清晨的软弱，然后就要投入工作；在正午时分，他的精力最为充沛，但已隐隐感到疲惫；到了黄昏时节，就要总结一日的工作，准备沉入永恒的休息。
+
+#### 2）[程序员，你的安全感呢？](http://www.linkedme.in/2015/10/12/how-developer-feel-safe)
+
+最近跟一位同事谈心，他非常热爱技术，是一个不折不扣的极客，不仅如此他有很强的执行力，并能持之以恒，从他的身上我看到了未来几年将会成长起来的一个技术牛人。但是，他有比较严重的焦虑症，比如：几天没有看书就会非常纠结，通常情况是他需要花时间来陪孩子和家人，他会感觉自己浪费了宝贵时间，精力无法集中在当前所做的事情上。
+
+#### 3）[如何在帝都混技术会议](http://yangchangming.com/blog/show/53)
+
+帝都人才济济，大小IT公司林立，IT相关媒体也很活跃，CSDN算是一个老牌的IT媒体，把robbin的javaeye并过来之后，显得更加庞大了，什么都做，也好像什么都没做；最近几年的infoQ，号称关注企业级开发领域，不过这个口号早就没了，现在以开各种技术类型大会挣钱，还挣的相当有成绩；而开源是IT界目前最流行的话题，相关的开源会议也满地开花，像OSC源创会等，除了这些比较大的媒体组织的会议，还有一些是程序员们或者企业自发组织的各类型会议，比如ruby大会，在3w咖啡馆，或者其他场所举行的不定期的meetup，不一而足。
+
+#### 4）[人，终究是要找到自己喜欢的才行 ](http://mp.weixin.qq.com/s?__biz=MzA3ODk5OTEzOA==&mid=569820709&idx=1&sn=513934c43f55eb2f53a28538ae4e550a&scene=0#wechat_redirect)
+
+所谓人生，大概没有什么比找到自己喜欢的人和事情更重要的了吧。
+
+
+
+
