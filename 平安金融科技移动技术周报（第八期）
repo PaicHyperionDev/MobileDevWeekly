@@ -8,11 +8,7 @@
 
 #### 2）[viewport与设备适配](http://139.196.14.76/t/viewport/243) @曾文富（运营服务组）
 
-首先来了解下 viewport 的核心概念：
-
-* css中的1px通常情况下并不等于设备的1px(物理像素)
-* ideal viewport（理想viewport）等于device-width，也就是设备的逻辑像素宽度（逻辑分辨率），设备的逻辑像素宽度和物理像素宽度（像素分辨率）的关系满足如下公式：`逻辑像素宽度*倍率 = 物理像素宽度`
-* viewport(页面实际viewport，参考文章中提出了layout viewport和visual viewport的概念，私以为这两个概念可以合并），viewport可以通过meta标签进行设置，设备都有一个默认的viewport，一般大于ideal viewport
+本文是对 Web 前端开发中 viewport 和设备适配的一个讨论和总结，主要包括：1）viewport的通俗理解；2）H5 移动端适配方案的讨论。
 
 ## 业界新闻
 
