@@ -1,0 +1,91 @@
+# [平安金融科技移动技术周报](https://github.com/PaicHyperionDev/MobileDevWeekly)（第八期）
+
+> @author ASCE1885的 [Github](https://github.com/ASCE1885)  [简书](http://www.jianshu.com/users/4ef984470da8/latest_articles) [微博](http://weibo.com/asce885/profile?rightmod=1&wvr=6&mod=personinfo) [CSDN](http://blog.csdn.net/asce1885) [知乎](https://www.zhihu.com/people/asce1885)
+
+## 原创专题
+
+#### 1）[iOS动态库安全－攻击篇](http://139.196.14.76/t/ios/234) @钟浩清（金融服务A组）
+
+从上篇文章《如何替换object－c中的函数实现》可以知道，我们可以通过动态的方法去替换iOS的方法。如果被攻击者利用，把我们一些敏感的方法替换掉，是非常危险的。有人会问，我们发布到App Store的包，是经过代码签名的，他们是怎么进行替换方法来攻击的呢？
+
+#### 2）[比特币P2P网络简介(上)](http://gitlab.bertrand.wang/hyperion/wiki/wikis/bitcoin/p2p-network) @黄伟淦（产品服务组）
+
+P2P网络作为比特币交互区块和交易信息的重要媒介，在比特币技术中占据重要地位。本文主要结合当前比特币官方客户端BitcoinCore和java客户端BitcoinJ来进行原理及流程讲解。
+
+## Android开发
+
+#### 1）[Android 开发进阶指南](http://www.jianshu.com/p/32d289ae179d)
+
+本文收集总结了对于 Android 初中级开发者的技术进阶指引，可供参考。
+
+#### 2）[从开发者角度解析 Android N 新特性！](http://gank.io/post/56e0b83c67765963436fcb94#rd?sukey=16298ae1a3e336312d4f3d7bc08c671ab7dfbe7a1dd7203a9cbd651414fcef91cd30526ce0ccb8f8b0cc3db9a3b6d195)
+
+Android N 开发者预览版发布！在第一个预览版中包含的新特性有：多窗口支持、可直接回复的通知、打包的通知、效率提升，以及 Java 8 语言特性的支持！
+
+#### 3）[巧用 GitHub 创建自己的私人 Maven 仓库，及一些开发Library的建议](http://www.jianshu.com/p/d2fae8c7d93f)
+
+2014年中的时候，当时国内使用 Android Studio 的人还没有很多，很多人还没处理尝鲜的时候我开始把公司的项目迁移到 Android Studio 上了，开始了挺长一段踩坑的日子，开始接触到了 Gradle，才开始了解到使用它来管理项目的依赖库，由于在过程中有不少第三方库是没有将依赖包发布到 jCenter / Maven Central ，而且个人并不太喜欢把一整个开源项目添加到项目中，导致经常使用一些非官方仓库，从而可能给后续维护带来一些问题。
+
+#### 4）[GitHub Android Librarys Top 100 简介](https://github.com/Freelander/Android_Data/blob/master/Android-Librarys-Top-100.md)
+
+本项目主要对目前 GitHub 上排名前 100 的 Android 开源库进行简单的介绍, 至于排名完全是根据GitHub搜索Java语言选择 (Best Match) 得到的结果, 然后过滤了跟Android不相关的项目, 所以排名并不具备任何官方效力, 仅供参考学习, 方便初学者快速了解当前一些流行的Android开源库。
+
+#### 5）[Android推送技术研究](http://www.jianshu.com/p/584707554ed7)
+
+现实生活中, 推送服务就像订杂志一样, 只要留下你的地址, 杂志就能如期送到你手里, 可以认为每个人都有唯一的一个地址, 但在目前的网络上, 这是办不到的, 因为不是每个人都有一个唯一的地址, 服务器想要给我们推送一条消息, 必须知道我们的地址, 但服务器不知道我们在哪.
+
+#### 6）[EventBus3.0源码解析](http://yydcdut.com/2016/03/07/eventbus3-code-analyse/)
+
+EventBus 是Android上的以发布\订阅事件为核心的库。事件 (event) 通过 post() 发送到总线，然后再分发到匹配事件类型的订阅者 (subscribers) 。订阅者只有在总线中注册 (register) 了才能收到事件，注销 (unrigister) 之后就收不到任何事件了。事件方法必须带有 Subscribe 的注解，必须是 public ，没有返回类型 void 并且只能有一个参数。EventBus3 与之前的相比，其主要差别在于订阅方法可以不再以 onEvent 开头了，改为用编译时注解。
+
+## iOS开发
+
+#### 1）[一个前端用React Native开发首个iOS App后的心得分享](https://mp.weixin.qq.com/s?__biz=MzA3ODg4MDk0Ng==&mid=402417234&idx=1&sn=16b54068834f05cb4a4df0a49a1c9d13&scene=0&uin=NTk4MzU3OTAw&key=710a5d99946419d9ed2b6f87b7b0cda3df6fee1bbd94de2ce22bdebcdf3ad0cc1f2dede5fe30caa8324ed20312728649&devicetype=iMac+MacBookPro12%2C1+OSX+OSX+10.11.1+build(15B42)&version=11020201&lang=zh_CN&pass_ticket=cGzAAsfEGh%2B5krxxqY0XasS33aQW49lQp8VY80MFkRjcLgwLUAUv5XFAAfBhxvPB )
+
+我询问过不少资深的移动开发者对于React Native的看法，他们大多不太喜欢，并不认为它能做什么大事。不过，如果从另一边的前端的眼中看，React Native为他们打通了移动开发的最后一片圣域：原生应用，可以说寄托了他们的期待。本文作者之前没有Objective-C和Swift的经验，使用React Native开发了首个iOS App之后，写下了这篇心得感受，包括React Native的正面与负面意见，以及他们遇到的一些坑。但最终他达成了预期目标，并对React Native感到满意。作为移动开发者，看到这篇文章，可能会百味杂陈吧。
+
+#### 2）[解决常见的masksToBounds离屏渲染带来的性能损耗](http://zyden.vicp.cc/zycornerradius/)
+
+这篇文章介绍 ZYCornerRadius 解决生产中圆角带来的离屏渲染问题的思路。日常生产中app布局离不开美丽的圆角(RounderCorner)，特别是用圆角UIImageView来做数据呈现交互，但是这种柔和易于让人接受的视图效果并不仅仅是改变了一个形状那么简单，需要付出一定的性能代价。
+
+## 技术纵横
+
+#### 1）[GitHub最活跃中国用户的编程成长计划](http://mp.weixin.qq.com/s?__biz=MjM5Mjg4NDMwMA==&mid=404787458&idx=1&sn=4c3b860fd9d5710f0363797415655a43#rd)
+
+本文作者总结了自己的编程成长的经验，主要分为四点进行讲解，想要进一步提高自己，可以好好学习一下：
+
+* 能做到你想做的: Tasking与学习能力
+* 用更好的方法来实现功能
+* Better Code & Architecture
+* Growth Hacking
+
+#### 2）[年前挖的坑都填了吗？技术债务偿还计划](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=402964742&idx=1&sn=60a657a4eeca714bee80e861406c6443&scene=1&srcid=0304udikTw5KnO5TyuSkDe7L&from=groupmessage&isappinstalled=0&uin=NTk4MzU3OTAw&key=710a5d99946419d95fb527b962b7e5a5ab02b45d913c970186492bfb0500e333c601125fe9c3efcd4af155bbfb0e714f&devicetype=iMac+MacBookPro12%2C1+OSX+OSX+10.11.1+build(15B42)&version=11020201&lang=zh_CN&pass_ticket=cGzAAsfEGh%2B5krxxqY0XasS33aQW49lQp8VY80MFkRjcLgwLUAUv5XFAAfBhxvPB)
+
+许多团队都饱受技术债务困扰，但是鲜有人能真正地设计一个计划，并且从中挣脱。为了更好的理解如何才能摆脱技术债务，不妨用金融债务做类比，带你正确理解什么是技术债务。
+
+#### 3）[Redux middleware 详解](http://zhuanlan.zhihu.com/purerender/20597452)
+
+middleware 提供了一个分类处理 action 的机会，在 middleware 中你可以检阅每一个流过的 action，挑选出特定类型的 action 进行相应操作，给你一次改变 action 的机会。
+
+#### 4）[Java Stream 详解](http://colobu.com/2016/03/02/Java-Stream/)
+
+Stream是 Java 8新增加的类，用来补充集合类。Stream和其它集合类的区别在于：其它集合类主要关注与有限数量的数据的访问和有效管理(增删改)，而Stream并没有提供访问和管理元素的方式，而是通过声明数据源的方式，利用可计算的操作在数据源上执行。
+
+
+## 技术人生
+
+#### 1）[使用番茄工作法一个月感受](http://blog.coderzh.com/2016/03/06/pomotodo/)
+
+一个东西适不适合自己，只有亲身尝试后才知道，从现在开始，尝试一下「番茄工作法」吧！开始一个最好的尝试，就是使用「番茄工作法」阅读[《番茄工作法图解》](http://book.douban.com/subject/5916234/)一书。
+
+#### 2）[在创业公司做架构师，是一种修炼](http://mp.weixin.qq.com/s?__biz=MzA3MzYwNjQ3NA==&mid=403264297&idx=1&sn=f5f1bfc5ae9f4d2bed782060e534297d&scene=2&srcid=0308Bl2AbOVUvcHPNFmMrKPZ&from=timeline&isappinstalled=0#wechat_redirect)
+
+当你刚加盟一家初创公司的时候，总是豪情万丈，自信满满，但是问题总是出现的那么突然，没有一点点防备，创业公司甚至没有大公司的蜜月期，你就会面临很多问题：
+
+* 项目管理问题
+* 深入业务代码的问题
+* 产品需求问题
+* 组织协调问题
+* 技术选型约束问题
+* 运维方面的问题
+* 人的问题
