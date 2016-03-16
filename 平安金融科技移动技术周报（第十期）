@@ -1,0 +1,92 @@
+# [平安金融科技移动技术周报](https://github.com/PaicHyperionDev/MobileDevWeekly)（第十期）
+
+> @author ASCE1885的 [Github](https://github.com/ASCE1885)  [简书](http://www.jianshu.com/users/4ef984470da8/latest_articles) [微博](http://weibo.com/asce885/profile?rightmod=1&wvr=6&mod=personinfo) [CSDN](http://blog.csdn.net/asce1885) [知乎](https://www.zhihu.com/people/asce1885)
+
+
+## 原创专题
+
+#### 1）[truffle以太坊编程实践](http://gitlab.tuqitech.com/hyperion/wiki/wikis/ethereum/ethereum-truffle-programming-guide) @周远彬（技术创新组）
+
+本文主要以mac为环境，搭建以太坊truffle开发环境。
+
+#### 2）[Javascript跨域的解决方案和原理](http://139.196.14.76/t/javascript/253) @何文斌（运营服务组）
+
+JS 跨域的解决方案有多种，本文讲述了 JSONP 和 H5 的 postMessage 的原理和使用情况。
+
+## Android开发
+
+#### 1）[搭建数据驱动型Android架构](http://mrpeak.cn/blog/dda-android/)
+
+数据驱动是一种思想，数据驱动型编程是一种编程范式。基于数据驱动的编程，基于事件的编程，以及近几年业界关注的响应式编程，本质其实都是观察者模型。数据驱动定义了data和acton之间的关系，传统的思维方式是从action开始，一个action到新的action，不同的action里面可能会触发data的修改。数据驱动则是反其道而行之，以data的变化为起点，data的变化触发新的action，action改变data之后再触发另一个action。
+
+#### 2）[移动开发之崩溃监控分析服务](http://mp.weixin.qq.com/s?__biz=MzIwMTQwNTA3Nw==&mid=402317533&idx=1&sn=37eefadfe316b8fc90864040fb5ca0b3&scene=0#wechat_redirect)
+
+移动开发工具与服务为移动应用开发者提供各种便利，大大提升其研发效率，而崩溃监控分析服务为应用的质量保证更是助力不少。如何对应用进行崩溃监控和分析已是开发者所必须掌握的一项技能。
+
+* 崩溃监控分析的重要性
+* 崩溃监控的相关技术要点
+* 第三方崩溃监控分析服务
+* 关于应用崩溃监控分析方面的一些经验
+
+#### 3）[Kotlin 语言高级安卓开发入门](https://realm.io/cn/news/oredev-jake-wharton-kotlin-advancing-android-dev/)
+
+过去一年，使用 Kotlin 来为安卓开发的人越来越多。即使那些现在还没有使用这个语言的开发者，也会对这个语言的精髓产生共鸣，它给现在 Java 开发增加了简单并且强大的范式。Jake Wharton 在他的 Øredev 的讨论中，提到了 Kotlin 是如何通过提升安卓开发的语言特性和设计模式来解决这些严重的问题，通过这些方法你可以清除那些无用的 API 还有无效代码。充分利用扩展特性来解决你的开发中的模板性代码的问题！
+
+#### 4）从零开始的Android新项目
+
+* [架构搭建篇](http://blog.zhaiyifan.cn/2016/03/14/android-new-project-from-0-p1/)  
+* [Gradle篇](http://blog.zhaiyifan.cn/2016/03/14/android-new-project-from-0-p2/)
+
+#### 5）[由Android 65K方法数限制引发的思考](http://jayfeng.com/2016/03/10/%E7%94%B1Android-65K%E6%96%B9%E6%B3%95%E6%95%B0%E9%99%90%E5%88%B6%E5%BC%95%E5%8F%91%E7%9A%84%E6%80%9D%E8%80%83/)
+
+本文是对 65K 问题的一个源码级别的深究，值得学习。
+
+#### 6）[浅谈 Android 编程思想和架构](https://drakeet.me/mvp-and-thinking-in-android)
+
+今年 Android 开发的技术趋势，我觉得一是 RxJava 会继续被更多人接受进而开始使用，二是谷歌花了不少心思的 Data Binding 很可能会迎来正式版，data binding 是实现 MVVM 架构的重要组成部分，介于它还不够完善而且目前还无法提供双向绑定，目前很多人包括俺都还只能停留在个人项目玩一玩的阶段，所以我也是比较青睐于 MVP 架构。
+
+## iOS开发
+
+#### 1）[iOS应用架构谈 组件化方案](http://casatwy.com/iOS-Modulization.html)
+
+本文是对 iOS 应用开发中组件化方案的一个探讨。
+
+#### 2）[JSPatch 近期新特性解析](http://blog.cnbang.net/tech/3038/)
+
+JSPatch 在社区的推动下不断在优化改善，这篇文章总结下这几个月以来 JSPatch 的一些新特性，以及它们的实现原理。包括脱离锁的 performSelectorInOC 接口，支持可变参数方法调用，给新增方法指定类型的 defineProtocol 接口，支持重写 dealloc 方法，以及两个扩展 JPCleaner 和 JPLoader。
+
+#### 3）[给那些刚入行的 iOS/Android 开发新手们的一些建议](http://mp.weixin.qq.com/s?__biz=MzIwMTYzMzcwOQ==&mid=403237166&idx=1&sn=86c173ccbe9f93175dd842bba66bd821&scene=0#wechat_redirect)
+
+本文是作者总结的如何成为更好的工程师的建议。
+
+## 技术纵横
+
+#### 1）[探索 .git 目录，让你真正了理解git](http://blog.jobbole.com/98634/)
+
+当你创建一个仓库的时候，使用 git init 指令， git 将会创建一个神奇的目录：.git。这个目录下包含了所有 git 正常工作所需要的信息。说白一点，如果你想从你的项目中删除 git 但是又要保留项目文件，只需要删除 .git 文件夹就可以了。
+
+#### 2）[Java 8的新特性—终极版](http://www.jianshu.com/p/5b800057f2d8)
+
+毫无疑问，Java 8是Java自Java 5（发布于2004年）之后的最重要的版本。这个版本包含语言、编译器、库、工具和JVM等方面的十多个新特性。在本文中我们将学习这些新特性，并用实际的例子说明在什么场景下适合使用。
+
+#### 3）[为移动应用设计优雅的离线支持策略](http://mp.weixin.qq.com/s?__biz=MzA3ODg4MDk0Ng==&mid=402777737&idx=1&sn=9e62f5c5b89396d5fc43eedde79f9e7f&scene=0#wechat_redirect)
+
+本文作者Gustavo Machado是KidoZen的工程部门的副总裁，负责公司下一代企业移动应用平台的建设。他在本文里介绍了移动应用几种常见的离线支持策略，以及在选择这些策略时需要考虑哪些问题，下次你在为应用设计离线支持时，也可以这样思考，找到最适合你的方式。
+
+#### 4）[深入源码探索 ReactNative 通信机制](http://bugly.qq.com/bbs/forum.php?mod=viewthread&tid=663)
+
+对于传统 Java<>Js 通信而言，Js 调用 Java 通不外乎 Jsbridge、onprompt、log 及 addjavascriptinterface 四种方式，在 Java 调用 Js 只有 loadurl 及高版本才支持的 evaluateJavaScript 两种。但在 RN 中没有采用了传统 Java 与 Js 之间的通信机制，而是借助 MessageQueue 及模块配置表，将调用转化为{moduleID, methodID，callbackID，args}，处理端在模块配置表里查找注册的模块与方法并调用。
+
+#### 5）[不要写死！天猫App的动态化配置中心实践](http://mp.weixin.qq.com/s?__biz=MzA3ODg4MDk0Ng==&mid=402842876&idx=1&sn=e15d596c95bf7d1ed579cfd7e410696a&scene=0#wechat_redirect)
+
+不要写死，一个永恒的话题。动态化，也是一个涵盖了界面，功能，数据，配置诸多方面的一个宽泛话题。
+
+## 技术人生
+
+#### 1）[如何成为架构师？7个关键的思考、习惯和经验](http://mp.weixin.qq.com/s?__biz=MzA5Nzc4OTA1Mw==&mid=410252715&idx=1&sn=d1d5f95de8d1905c4530955f862f735b&scene=0#wechat_redirect)
+
+工作了挺久，发现有个挺有意思的现象，从程序员、高级程序员，到现在挂着架构师、专家之类的头衔，伴随着技术和能力的提高，想不明白的事情反而越来越多了。这些疑问有些来自于跟小伙伴交流，有些是我的自问自答，有些到现在也想不清楚，这篇文章就来写一写这些问题。
+
+#### 3）[豆瓣研发管理的三板斧：规则、考核和激励](http://mp.weixin.qq.com/s?__biz=MzA5Nzc4OTA1Mw==&mid=410219239&idx=1&sn=3312f6c7960188f3c6dce2b316ba5443&scene=4#wechat_redirect)
+
+本文主要探讨了如何给团队设置规则、如何传输价值观、如何恰到好处的设置激励策略、如何考核工程师等话题。
