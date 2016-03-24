@@ -1,0 +1,95 @@
+# [平安金融科技移动技术周报](https://github.com/PaicHyperionDev/MobileDevWeekly)（第十一期）
+
+> @author ASCE1885的 [Github](https://github.com/ASCE1885)  [简书](http://www.jianshu.com/users/4ef984470da8/latest_articles) [微博](http://weibo.com/asce885/profile?rightmod=1&wvr=6&mod=personinfo) [CSDN](http://blog.csdn.net/asce1885) [知乎](https://www.zhihu.com/people/asce1885)
+
+[外网链接](http://paichyperiondev.github.io/MobileDevWeekly/) [壹翎阁论坛链接](http://139.196.14.76/t/topic/254)
+
+![](http://g.picphotos.baidu.com/album/w%3D1458%3Bq%3D90/sign=06c6835dbb3eb13544c7b3bf932693a2/0bd162d9f2d3572c971333698d13632763d0c396.jpg)
+
+## 原创专题
+
+#### 1）[以太坊账号，gas及交易简介](http://gitlab.tuqitech.com/hyperion/wiki/wikis/ethereum/accounts) @黄伟淦  产品服务团队
+
+相比比特币，以太坊增加了合约账号，同时在交易过程中引入了gas概念。本文主要介绍一下以太坊账号，gas及交易的一些概念。
+
+#### 2）[Java基础－I/O、NIO](http://139.196.14.76/t/java-i-o-nio/256) @伍琼珂 （产品服务组）
+
+本文概括介绍 Java I/O 流和 NIO 的概念及相关原理，对各种常用流进行简单演示，最后说明一下 I/O 及 NIO 的区别。
+
+
+
+## Android开发
+
+#### 1）[RxJava 与 Retrofit 结合的最佳实践](http://gank.io/post/56e80c2c677659311bed9841)
+
+RxJava和Retrofit也火了一段时间了，不过最近一直在学习ReactNative和Node相关的姿势，一直没有时间研究这些新东西，最近有个项目准备写，打算先用Android写一个Demo出来，却发现Android的世界发生了天翻地覆的变化，EventBus和OKHttp啥的都不见了，RxJava和Retrofit是什么鬼？
+
+#### 2）[Android 进程常驻（0）----MarsDaemon使用说明](http://blog.csdn.net/marswin89/article/details/50917098)
+
+这是一个轻量级的库，配置几行代码，就可以实现在android上实现进程常驻，也就是在系统强杀下，以及360获取root权限下，clean master获取root权限下都无法杀死进程，支持系统2.3到6.0，支持大部分设备，包括三星，华为，oppo，nexus，魅族等等，可以简单对开机广播进行保护。
+
+#### 3）[Android实现多次闪退清除数据](http://sixwolf.net/blog/2016/03/22/Android%E5%AE%9E%E7%8E%B0%E5%A4%9A%E6%AC%A1%E9%97%AA%E9%80%80%E6%B8%85%E9%99%A4%E6%95%B0%E6%8D%AE/)
+
+很多时候由于后台返回的数据异常，可能会导致App闪退。而如果这些异常数据被App本地缓存下来，那么即使杀掉进程重新进入还是会发生闪退。唯一的解决方法就是清除App数据，但是用户可能没有这个意识或者嫌麻烦就直接不再使用了，这是我们无法接受的。
+
+#### 4）[这些小工具让你的Android开发更高效](http://mp.weixin.qq.com/s?__biz=MzA4NTQwNDcyMA==&mid=402858357&idx=1&sn=5dd38f4dcc5d7680e6daf7b3d1105b63#rd)
+
+在做Android 开发过程中，会遇到一些小的问题，虽然自己动手也能解决，但是有了一些小工具，解决这些问题就得心应手了，今天就为大家推荐一下Android 开发遇到的小工具，来让你的开发更高效。
+
+#### 5）[你应该知道的那些Android小经验](http://www.jayfeng.com/2016/03/18/%E4%BD%A0%E5%BA%94%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%84%E9%82%A3%E4%BA%9BAndroid%E5%B0%8F%E7%BB%8F%E9%AA%8C/)
+
+做Android久了，就会踩很多坑，被坑的多了就有经验了，闲暇之余整理了部分，现挑选一些重要或者偏门的“小”经验做个记录。
+
+#### 6）[一种动态为apk写入信息的方案](http://pingguohe.net/2016/03/21/Dynimac-write-infomation-into-apk.html)
+
+android使用的apk包的压缩方式是zip，与zip有相同的文件结构，在zip的Central directory file header中包含一个File comment区域，可以存放一些数据。File comment是zip文件如果可以正确的修改这个部分，就可以在不破坏压缩包、不用重新打包的的前提下快速的给apk文件写入自己想要的数据。
+
+#### 7）[实践移动端的 Flux 架构](http://www.wangchenlong.org/2016/03/12/1602/apply-flux-architecture/)
+
+Facebook 使用 Flux 架构来构建客户端的Web应用. Flux 架构并不是为移动端设计的, 但是我们仍然可以采用这个思想在 Android 端使用. Flux 是数据驱动型架构, 在以数据为核心的场景中使用非常合适, 不过 Facebook 好像把 Flux 架构应用于所有产品, 无论是前端还是移动端. 最新 Facebook 开发的 ReactNative 中, 就是使用 Flux 架构为核心, 也是开源的, 可以阅读RN的代码了解所有内容。
+
+## iOS开发
+
+#### 1）[iOS 组件化方案探索](http://blog.cnbang.net/tech/3080/)
+
+最近国内 iOS 圈对组件化方案的讨论，又有了一篇新文章，本文作者在看了 Limboy([蘑菇街 App 的组件化之路](http://limboy.me/ios/2016/03/10/mgj-components.html)  [蘑菇街 App 的组件化之路·续](http://limboy.me/ios/2016/03/14/mgj-components-continued.html)) 和 Casa ([iOS应用架构谈 组件化方案](http://casatwy.com/iOS-Modulization.html)) 对 iOS 组件化方案的讨论之后，写的一篇文章。
+
+#### 2）[滴滴出行iOS客户端架构演进之路](http://mp.weixin.qq.com/s?__biz=MzA3ODg4MDk0Ng==&mid=402854111&idx=1&sn=5876e615fabd6d921285d904e16670fb&scene=1&srcid=0316S0rfKlDBAWc5GsA1jA6b&from=groupmessage&isappinstalled=0#wechat_redirect)
+
+本文总结了滴滴 iOS 架构的一些问题，包括它是如何演变的，如何应对数据传输和展示挑战，以及组件化、热修复等等。这应该是滴滴首次向外分享它的客户端架构，让我们一起来揭开它神秘的面纱，看看它是怎么做的。
+
+## 技术纵横
+
+#### 1）[App架构经验总结](http://keeganlee.me/post/architecture/20160303)
+
+架构因人而异，不同的架构师大多会有不同的看法；架构也因项目而异，不同的项目需求不同，相应的架构也会不同。然而，有些东西还是通用的，是所有架构师都需要考虑的，也是所有项目都会有的需求，比如API如何设计？架构如何分层？开发环境和生产环境如何分离？
+
+#### 2）[如何打造顶尖的技术研发团队？Esty有这么些点滴实践](http://mp.weixin.qq.com/s?__biz=MzA5Nzc4OTA1Mw==&mid=410326234&idx=1&sn=f7f07933f7caf5b73c1a089a9790367c&scene=0#wechat_redirect)
+
+本文是 Etsy 公司的高级软件工程师为大家讲述Etsy公司的工程技术文化，以及工程师之间如何凭借着共同的价值观以富有成效的方式实现愉快协作。本文将对Etsy的日常工作加以概述，同时分享让这一切成为现实的Etsy工程技术方针。
+
+#### 3）[关于初创公司的研发体系构建，这可能是最成功的案例了](http://mp.weixin.qq.com/s?__biz=MzA5Nzc4OTA1Mw==&mid=410367860&idx=1&sn=d9f4fdc1c4ace8ce46a277930f141288&scene=0#wechat_redirect)
+
+在上面一篇文章中，我们介绍了Esty的工程师是如何工作的，比如他们为每位程序员都分配一个虚拟机、自动化测试流程、如行进行代码审查、如何进行持续部署等。今天的文章将会在昨天的基础上继续介绍Etsy的实践经验。
+
+#### 4）[无线APP日志上报优化实践](http://www.habadog.com/2015/10/21/app-log-report/)
+
+无线时代，APP流量敏感，为了统计APP内用户行为，或者需要收集某些产品数据，往往需要进行日志上报，日志上报往往又非常费流量，有没有一些好的节省流量的优化方法呢，这是本文将要讨论的问题。
+
+#### 5）[Java 单例真的写对了么?](http://www.race604.com/java-double-checked-singleton/)
+
+在 Java 中，涉及到多线程编程，问题就会复杂很多，有些 Bug 甚至会超出你的想象。本文是对单例在多线程中问题的讨论。
+
+## 技术人生
+
+#### 1）[程序员如何艺术的提升技术、影响力和赚钱](http://mp.weixin.qq.com/s?__biz=MjM5Mjg4NDMwMA==&mid=404954034&idx=1&sn=d61e1668f8f38b52e9c8d31524ff5bc2&scene=2&srcid=0317jnrETNk8BfjJYqoiaQqA&from=timeline&isappinstalled=0#wechat_redirect)
+
+这篇文章会从以下几个角度来分析，即赚钱、影响力和技术——这是我所关心的三个维度。
+
+#### 2）[专访链家鸟哥：技术人员如何保持进步？](http://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=403082749&idx=1&sn=59d24d71982099f7d71b233ab69a8786&scene=0#wechat_redirect)
+
+在任何一个时代，一款优秀的产品背后必定有一只优秀的团队做支撑。有目共睹，链家在过去的一年里成绩斐然。我不禁好奇，这背后是怎样的一只技术团队？恰好去年“鸟哥”惠新宸离开微博加盟链家一度为业界盛事。藉此机会InfoQ再访鸟哥，听他讲讲链家技术团队的文化、思想与经验分享。
+
+#### 3）[为什么说全栈工程师是未来？](http://mp.weixin.qq.com/s?__biz=MjM5Mjg4NDMwMA==&mid=405019922&idx=1&sn=354643ee38b0ca423cd0f3025fb98338#rd)
+
+技术在过去的几十年里进步很快，也将在未来的几十年里发展得更快。今天技术的门槛下降得越来越快，原本需要一个团队做出来的Web应用，现在只需要一两个人就可以了。同时，由于公司组织结构的变迁，以及到变化的适应度，也决定了赋予每个人的职责将会越来越多。尽管我们看到工厂化生产带来的优势，但是我们也看到了精益思想带来的变革。正是这种变革让越来越多的专家走向全栈，让组织内部有更好的交流。
