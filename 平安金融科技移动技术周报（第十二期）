@@ -1,0 +1,74 @@
+# [平安金融科技移动技术周报](https://github.com/PaicHyperionDev/MobileDevWeekly)（第十二期）
+
+> @author ASCE1885的 [Github](https://github.com/ASCE1885)  [简书](http://www.jianshu.com/users/4ef984470da8/latest_articles) [微博](http://weibo.com/asce885/profile?rightmod=1&wvr=6&mod=personinfo) [CSDN](http://blog.csdn.net/asce1885) [知乎](https://www.zhihu.com/people/asce1885)
+
+> **本期导读**：本期 Android 相关文章较多，RxJava/RxAndroid 越来越普及，或许在不久的将来，将会成为 Android 开发的标配。Gradle 插件开发能够实现很多自动化的事情，可以学习一下并在实际项目中多想想哪些方面可以应用。iOS 带来了 JSPatch 作者关于这个项目的开源经验的介绍，如果你也想做一款炙手可热的开源产品可以参考一下。在移动开发中，涉及到Android，iOS，H5，React Native等等多个平台和系统，像素是一个通用的基本概念，如果对这个概念还没有完整的认识，可以看看《移动开发需要知道的像素知识》一文。
+
+## Android开发
+
+#### 1）[为什么要用插件化](http://www.jianshu.com/p/a475c828e6f6)
+
+插件化代表一种热更新、分拆的概念，具体实现技术很多。技术没有绝对的好坏，终究用啥是场景和需求驱动。当我们在判定一种技术选型时，我们告诫自己一定不是跟风，跟热，而是关注负责的业务，盯住了那些实现中「不太优雅」的瓶颈环节。技术都是源于需求演进而来，不是凭空架设的空中楼阁。
+
+#### 2）[拥抱 Android Studio 之五：Gradle 插件开发](http://kvh.io/2016/03/28/embrace-android-studio-gradle-plugin/)
+
+本文以一个实例进行 Gradle 插件开发的讲解，Gradle 官方文档给出了比较详细的实现步骤，本文的脉络跟官方文档差不了太多，额外增补实际例子和一些实践经验。
+
+#### 3）[当EventBus遇上RxJava](http://www.easydone.cn/2016/03/29/)
+
+接触过 EventBus 和 RxJava 的都知道，可以用 RxJava 来实现 EventBus，网上随便一搜，就可以拿得到代码。但是究竟为什么可以这么做？却没有类似的文章作进一步的深度解析。（本文假定读者都已经了解 EventBus 和 RxJava 是什么，可以做什么。）
+
+#### 4）从零开始的Android新项目系列续 
+* [MVPVM in Action, 谁告诉你MVP和MVVM是互斥的](http://blog.zhaiyifan.cn/2016/03/16/android-new-project-from-0-p3/)
+* [Dagger2篇](http://blog.zhaiyifan.cn/2016/03/27/android-new-project-from-0-p4/)
+
+#### 5）[App环境分离的实现:Android篇](http://keeganlee.me/post/architecture/20160329)
+
+我在App架构经验总结中有简单提到环境分离的实现方案，但没有深入讲实现细节。本系列则打算用两篇文章分别详细讲讲Android和iOS环境分离的具体实现，本篇则先讲Android的实现。
+
+#### 6）[APK瘦身记，如何实现高达53%的压缩效果](http://jaq.alibaba.com/community/art/show?articleid=219)
+
+APK是Android系统安装包的文件格式，关于这个话题其实是一个老生常谈的题目，不论是公司内部，还是外部网络，前人前辈已经总结出很多方法和规律。不过随着移动端技术近两年的飞速发展，一些新的思维方式和优化方法也逐渐涌现和成熟起来。笔者在实践过程中踩过一些坑，收获了一些经验，在这里做个思考和总结，所以随笔给大家，希望对大家从事相关工作的时候有所帮助和参考，同时也是抛砖引玉，希望大家共同探讨这个开放性的话题。
+
+#### 7）[从案例学RxAndroid开发 （上、下）](https://mp.weixin.qq.com/s?__biz=MzA3ODg4MDk0Ng==&mid=403201730&idx=1&sn=d16caf0c0cefe4ed7a9e0463ef5d0b11&scene=0&uin=NTk4MzU3OTAw&key=710a5d99946419d931cf17f52175b39d47e9af60f580b94d35e6bad8379d6fc8a5468b11df7cfda0d4452f4cfe84e6b1&devicetype=iMac+MacBookPro12%2C1+OSX+OSX+10.11.1+build(15B42)&version=11020201&lang=zh_CN&pass_ticket=0Wu4ZVjeI3O%2BnJmI8l5OyZLSNnIt9A%2B3XY%2FIBzz9AxkydeEkmMQeq1PvlIoGem%2FD)
+
+RxJava最核心的东西就是Observable和Observer。Observable会发出数据，而与之相对的Observer则会通过订阅Observable来进行观察。Observer可以在Observable发出数据、报错或者声明没有数据可以发送时进行相应的操作。这三个操作被封装在Observer接口中，相应的方法为onNext()，onError()和onCompleted()。
+
+## iOS开发
+
+#### 1）[JSPatch开源经验分享](http://mp.weixin.qq.com/s?__biz=MzA3ODg4MDk0Ng==&mid=403063229&idx=1&sn=34651b982e211ae64742913026d459b0&scene=0#wechat_redirect)
+
+JSPatch 在还没投入使用时就就在 github 开源，因为开源社区的推动和帮助才会有今天较完善的版本和广泛的使用。目前在 Github 上有4k+ star，25位社区成员贡献过代码，算是较活跃的开源项目。
+
+#### 2）[Swift Runtime分析：还像OC Runtime一样吗？](http://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=402916381&idx=1&sn=3a62eb98aea342c6cb9cf7a0c8afab1a&scene=0#wechat_redirect)
+
+Swift是苹果2014年发布的编程开发语言，可与Objective-C共同运行于Mac OS和iOS平台，用于搭建基于苹果平台的应用程序。Swift已经开源，目前最新版本为2.2。我们知道Objective-C是具有动态性的，能够通过runtime API调用和替换任意方法，那Swift也具有这些动态性吗？
+
+#### 3）[iOS 视图控制器转场详解](https://github.com/seedante/iOS-Note/wiki/ViewController-Transition)
+
+本文有一定的阅读门槛，并非适合新手的入门教程。本文的结构以及相关知识点能让你回忆起当初亲手写出转场动画时的那股激动，除此之外，本文能满足你希望彻底搞懂转场的求知欲，我相信后者更重要，那种把分支技能树升满的感觉。
+
+
+## 技术纵横
+
+#### 1）[移动开发需要知道的像素知识『多图』](http://weizhifeng.net/you-should-know-about-dpi.html?f=tt)
+
+像素（Pixel）对于WEB开发者来说很是熟悉，在PC互联网时代没少与其打交道。进入移动互联网之后，随着移动设备屏幕的解析度越来越高，衍生了一些关于屏幕和像素的一些新概念，比如DPI，DP，PT，Retina，4K等等，本文对这些概念做一个简单的介绍。
+
+#### 2）[重构的七宗罪](http://insights.thoughtworkers.org/refactoring/)
+
+重构经过了十几年的发展和应用，可以说它是极限编程中程序员最爱的实践之一了，纷纷争相在项目里应用。重构工作坊、Codekata重构练习等各种提升能力的方式也屡见不鲜，帮助程序员们去追求优秀的代码和设计。然这仍然摆脱不了人们对它的各种抱怨：“搞什么，又重构”，“重构出defect来了”，“项目紧，最近不要再重构了”，“重构到什么时候停呀”。
+
+#### 3）[一个名字引发的血案: left-pad 和 npm 的那些事](http://www.gotoli.us/left-pad-npm)
+
+近日，一个只有 11 代码的 left-pad 被作者 unpublished。 npm 圈子因此闹得鸡犬不宁。究竟发生了什么呢？
+
+## 技术人生
+
+#### 1）[工程师文化=好的福利？谈谈被大家误解的编码文化](https://mp.weixin.qq.com/s?__biz=MzA5Nzc4OTA1Mw==&mid=410735535&idx=1&sn=7d967e4897517055ec9377f6791950e3&scene=0&key=710a5d99946419d9a05b67c2538169d455d35cb0a61dc46b97f61c706f1b1f83238cdd676a89703dbd76ee89d2f41c6a&ascene=0&uin=NTk4MzU3OTAw&devicetype=iMac+MacBookPro12%2C1+OSX+OSX+10.11.1+build(15B42)&version=11020201&pass_ticket=KcnPJJHzJ9RqtptucKbCzL3fLEbBG10bLe2o4ZPhE3g%2BarsSY8nmaLjtQy2o42e9)
+
+软件开发人员通常会付出大量的时间和精力在如何构建最好的产品上。我们常会纠结应该使用哪种Web框架，是用NoSQL数据库还是SQL数据库？不过，尽管这些问题十分重要，开发人员通常会忽视掉软件开发过程中与这些问题同样重要的一个方面——文化。本文将与读者分享在Atlanssian公司中如何保持健壮的创新和协作文化氛围的经验。
+
+#### 2）[写在离开百度后的第一天](http://weibo.com/p/1001603956574254141761)
+
+刚从百度离职，很多朋友问我原因，不黑不赞不偏激，客观的回顾一下~
