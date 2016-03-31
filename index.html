@@ -20,134 +20,115 @@
 
     <section class="main-content">
       <h1>
-<a id="平安金融科技移动技术周报第十一期" class="anchor" href="#%E5%B9%B3%E5%AE%89%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80%E7%A7%BB%E5%8A%A8%E6%8A%80%E6%9C%AF%E5%91%A8%E6%8A%A5%E7%AC%AC%E5%8D%81%E4%B8%80%E6%9C%9F" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="https://github.com/PaicHyperionDev/MobileDevWeekly">平安金融科技移动技术周报</a>（第十一期）</h1>
+<a id="平安金融科技移动技术周报第十二期" class="anchor" href="#%E5%B9%B3%E5%AE%89%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80%E7%A7%BB%E5%8A%A8%E6%8A%80%E6%9C%AF%E5%91%A8%E6%8A%A5%E7%AC%AC%E5%8D%81%E4%BA%8C%E6%9C%9F" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="https://github.com/PaicHyperionDev/MobileDevWeekly">平安金融科技移动技术周报</a>（第十二期）</h1>
 
-<h2>
-<a id="原创专题" class="anchor" href="#%E5%8E%9F%E5%88%9B%E4%B8%93%E9%A2%98" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>原创专题</h2>
-
-<h4>
-<a id="1以太坊账号gas及交易简介-黄伟淦--产品服务团队" class="anchor" href="#1%E4%BB%A5%E5%A4%AA%E5%9D%8A%E8%B4%A6%E5%8F%B7gas%E5%8F%8A%E4%BA%A4%E6%98%93%E7%AE%80%E4%BB%8B-%E9%BB%84%E4%BC%9F%E6%B7%A6--%E4%BA%A7%E5%93%81%E6%9C%8D%E5%8A%A1%E5%9B%A2%E9%98%9F" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1）<a href="http://gitlab.tuqitech.com/hyperion/wiki/wikis/ethereum/accounts">以太坊账号，gas及交易简介</a> @黄伟淦  产品服务团队</h4>
-
-<p>相比比特币，以太坊增加了合约账号，同时在交易过程中引入了gas概念。本文主要介绍一下以太坊账号，gas及交易的一些概念。</p>
-
-<h4>
-<a id="2java基础ionio-伍琼珂-产品服务组" class="anchor" href="#2java%E5%9F%BA%E7%A1%80ionio-%E4%BC%8D%E7%90%BC%E7%8F%82-%E4%BA%A7%E5%93%81%E6%9C%8D%E5%8A%A1%E7%BB%84" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2）<a href="http://139.196.14.76/t/java-i-o-nio/256">Java基础－I/O、NIO</a> @伍琼珂 （产品服务组）</h4>
-
-<p>本文概括介绍 Java I/O 流和 NIO 的概念及相关原理，对各种常用流进行简单演示，最后说明一下 I/O 及 NIO 的区别。</p>
+<blockquote>
+<p><strong>本期导读</strong>：本期 Android 相关文章较多，RxJava/RxAndroid 越来越普及，或许在不久的将来，将会成为 Android 开发的标配。Gradle 插件开发能够实现很多自动化的事情，可以学习一下并在实际项目中多想想哪些方面可以应用。iOS 带来了 JSPatch 作者关于这个项目的开源经验的介绍，如果你也想做一款炙手可热的开源产品可以参考一下。在移动开发中，涉及到Android，iOS，H5，React Native等等多个平台和系统，像素是一个通用的基本概念，如果对这个概念还没有完整的认识，可以看看《移动开发需要知道的像素知识》一文。</p>
+</blockquote>
 
 <h2>
 <a id="android开发" class="anchor" href="#android%E5%BC%80%E5%8F%91" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Android开发</h2>
 
 <h4>
-<a id="1rxjava-与-retrofit-结合的最佳实践" class="anchor" href="#1rxjava-%E4%B8%8E-retrofit-%E7%BB%93%E5%90%88%E7%9A%84%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1）<a href="http://gank.io/post/56e80c2c677659311bed9841">RxJava 与 Retrofit 结合的最佳实践</a>
+<a id="1为什么要用插件化" class="anchor" href="#1%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%94%A8%E6%8F%92%E4%BB%B6%E5%8C%96" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1）<a href="http://www.jianshu.com/p/a475c828e6f6">为什么要用插件化</a>
 </h4>
 
-<p>RxJava和Retrofit也火了一段时间了，不过最近一直在学习ReactNative和Node相关的姿势，一直没有时间研究这些新东西，最近有个项目准备写，打算先用Android写一个Demo出来，却发现Android的世界发生了天翻地覆的变化，EventBus和OKHttp啥的都不见了，RxJava和Retrofit是什么鬼？</p>
+<p>插件化代表一种热更新、分拆的概念，具体实现技术很多。技术没有绝对的好坏，终究用啥是场景和需求驱动。当我们在判定一种技术选型时，我们告诫自己一定不是跟风，跟热，而是关注负责的业务，盯住了那些实现中「不太优雅」的瓶颈环节。技术都是源于需求演进而来，不是凭空架设的空中楼阁。</p>
 
 <h4>
-<a id="2android-进程常驻0----marsdaemon使用说明" class="anchor" href="#2android-%E8%BF%9B%E7%A8%8B%E5%B8%B8%E9%A9%BB0----marsdaemon%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2）<a href="http://blog.csdn.net/marswin89/article/details/50917098">Android 进程常驻（0）----MarsDaemon使用说明</a>
+<a id="2拥抱-android-studio-之五gradle-插件开发" class="anchor" href="#2%E6%8B%A5%E6%8A%B1-android-studio-%E4%B9%8B%E4%BA%94gradle-%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2）<a href="http://kvh.io/2016/03/28/embrace-android-studio-gradle-plugin/">拥抱 Android Studio 之五：Gradle 插件开发</a>
 </h4>
 
-<p>这是一个轻量级的库，配置几行代码，就可以实现在android上实现进程常驻，也就是在系统强杀下，以及360获取root权限下，clean master获取root权限下都无法杀死进程，支持系统2.3到6.0，支持大部分设备，包括三星，华为，oppo，nexus，魅族等等，可以简单对开机广播进行保护。</p>
+<p>本文以一个实例进行 Gradle 插件开发的讲解，Gradle 官方文档给出了比较详细的实现步骤，本文的脉络跟官方文档差不了太多，额外增补实际例子和一些实践经验。</p>
 
 <h4>
-<a id="3android实现多次闪退清除数据" class="anchor" href="#3android%E5%AE%9E%E7%8E%B0%E5%A4%9A%E6%AC%A1%E9%97%AA%E9%80%80%E6%B8%85%E9%99%A4%E6%95%B0%E6%8D%AE" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3）<a href="http://sixwolf.net/blog/2016/03/22/Android%E5%AE%9E%E7%8E%B0%E5%A4%9A%E6%AC%A1%E9%97%AA%E9%80%80%E6%B8%85%E9%99%A4%E6%95%B0%E6%8D%AE/">Android实现多次闪退清除数据</a>
+<a id="3当eventbus遇上rxjava" class="anchor" href="#3%E5%BD%93eventbus%E9%81%87%E4%B8%8Arxjava" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3）<a href="http://www.easydone.cn/2016/03/29/">当EventBus遇上RxJava</a>
 </h4>
 
-<p>很多时候由于后台返回的数据异常，可能会导致App闪退。而如果这些异常数据被App本地缓存下来，那么即使杀掉进程重新进入还是会发生闪退。唯一的解决方法就是清除App数据，但是用户可能没有这个意识或者嫌麻烦就直接不再使用了，这是我们无法接受的。</p>
+<p>接触过 EventBus 和 RxJava 的都知道，可以用 RxJava 来实现 EventBus，网上随便一搜，就可以拿得到代码。但是究竟为什么可以这么做？却没有类似的文章作进一步的深度解析。（本文假定读者都已经了解 EventBus 和 RxJava 是什么，可以做什么。）</p>
 
 <h4>
-<a id="4这些小工具让你的android开发更高效" class="anchor" href="#4%E8%BF%99%E4%BA%9B%E5%B0%8F%E5%B7%A5%E5%85%B7%E8%AE%A9%E4%BD%A0%E7%9A%84android%E5%BC%80%E5%8F%91%E6%9B%B4%E9%AB%98%E6%95%88" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>4）<a href="http://mp.weixin.qq.com/s?__biz=MzA4NTQwNDcyMA==&amp;mid=402858357&amp;idx=1&amp;sn=5dd38f4dcc5d7680e6daf7b3d1105b63#rd">这些小工具让你的Android开发更高效</a>
-</h4>
+<a id="4从零开始的android新项目系列续" class="anchor" href="#4%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84android%E6%96%B0%E9%A1%B9%E7%9B%AE%E7%B3%BB%E5%88%97%E7%BB%AD" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>4）从零开始的Android新项目系列续</h4>
 
-<p>在做Android 开发过程中，会遇到一些小的问题，虽然自己动手也能解决，但是有了一些小工具，解决这些问题就得心应手了，今天就为大家推荐一下Android 开发遇到的小工具，来让你的开发更高效。</p>
-
-<h4>
-<a id="5你应该知道的那些android小经验" class="anchor" href="#5%E4%BD%A0%E5%BA%94%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%84%E9%82%A3%E4%BA%9Bandroid%E5%B0%8F%E7%BB%8F%E9%AA%8C" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>5）<a href="http://www.jayfeng.com/2016/03/18/%E4%BD%A0%E5%BA%94%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%84%E9%82%A3%E4%BA%9BAndroid%E5%B0%8F%E7%BB%8F%E9%AA%8C/">你应该知道的那些Android小经验</a>
-</h4>
-
-<p>做Android久了，就会踩很多坑，被坑的多了就有经验了，闲暇之余整理了部分，现挑选一些重要或者偏门的“小”经验做个记录。</p>
+<ul>
+<li><a href="http://blog.zhaiyifan.cn/2016/03/16/android-new-project-from-0-p3/">MVPVM in Action, 谁告诉你MVP和MVVM是互斥的</a></li>
+<li><a href="http://blog.zhaiyifan.cn/2016/03/27/android-new-project-from-0-p4/">Dagger2篇</a></li>
+</ul>
 
 <h4>
-<a id="6一种动态为apk写入信息的方案" class="anchor" href="#6%E4%B8%80%E7%A7%8D%E5%8A%A8%E6%80%81%E4%B8%BAapk%E5%86%99%E5%85%A5%E4%BF%A1%E6%81%AF%E7%9A%84%E6%96%B9%E6%A1%88" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>6）<a href="http://pingguohe.net/2016/03/21/Dynimac-write-infomation-into-apk.html">一种动态为apk写入信息的方案</a>
+<a id="5app环境分离的实现android篇" class="anchor" href="#5app%E7%8E%AF%E5%A2%83%E5%88%86%E7%A6%BB%E7%9A%84%E5%AE%9E%E7%8E%B0android%E7%AF%87" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>5）<a href="http://keeganlee.me/post/architecture/20160329">App环境分离的实现:Android篇</a>
 </h4>
 
-<p>android使用的apk包的压缩方式是zip，与zip有相同的文件结构，在zip的Central directory file header中包含一个File comment区域，可以存放一些数据。File comment是zip文件如果可以正确的修改这个部分，就可以在不破坏压缩包、不用重新打包的的前提下快速的给apk文件写入自己想要的数据。</p>
+<p>我在App架构经验总结中有简单提到环境分离的实现方案，但没有深入讲实现细节。本系列则打算用两篇文章分别详细讲讲Android和iOS环境分离的具体实现，本篇则先讲Android的实现。</p>
 
 <h4>
-<a id="7实践移动端的-flux-架构" class="anchor" href="#7%E5%AE%9E%E8%B7%B5%E7%A7%BB%E5%8A%A8%E7%AB%AF%E7%9A%84-flux-%E6%9E%B6%E6%9E%84" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>7）<a href="http://www.wangchenlong.org/2016/03/12/1602/apply-flux-architecture/">实践移动端的 Flux 架构</a>
+<a id="6apk瘦身记如何实现高达53的压缩效果" class="anchor" href="#6apk%E7%98%A6%E8%BA%AB%E8%AE%B0%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E9%AB%98%E8%BE%BE53%E7%9A%84%E5%8E%8B%E7%BC%A9%E6%95%88%E6%9E%9C" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>6）<a href="http://jaq.alibaba.com/community/art/show?articleid=219">APK瘦身记，如何实现高达53%的压缩效果</a>
 </h4>
 
-<p>Facebook 使用 Flux 架构来构建客户端的Web应用. Flux 架构并不是为移动端设计的, 但是我们仍然可以采用这个思想在 Android 端使用. Flux 是数据驱动型架构, 在以数据为核心的场景中使用非常合适, 不过 Facebook 好像把 Flux 架构应用于所有产品, 无论是前端还是移动端. 最新 Facebook 开发的 ReactNative 中, 就是使用 Flux 架构为核心, 也是开源的, 可以阅读RN的代码了解所有内容。</p>
+<p>APK是Android系统安装包的文件格式，关于这个话题其实是一个老生常谈的题目，不论是公司内部，还是外部网络，前人前辈已经总结出很多方法和规律。不过随着移动端技术近两年的飞速发展，一些新的思维方式和优化方法也逐渐涌现和成熟起来。笔者在实践过程中踩过一些坑，收获了一些经验，在这里做个思考和总结，所以随笔给大家，希望对大家从事相关工作的时候有所帮助和参考，同时也是抛砖引玉，希望大家共同探讨这个开放性的话题。</p>
+
+<h4>
+<a id="7从案例学rxandroid开发-上下" class="anchor" href="#7%E4%BB%8E%E6%A1%88%E4%BE%8B%E5%AD%A6rxandroid%E5%BC%80%E5%8F%91-%E4%B8%8A%E4%B8%8B" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>7）<a href="https://mp.weixin.qq.com/s?__biz=MzA3ODg4MDk0Ng==&amp;mid=403201730&amp;idx=1&amp;sn=d16caf0c0cefe4ed7a9e0463ef5d0b11&amp;scene=0&amp;uin=NTk4MzU3OTAw&amp;key=710a5d99946419d931cf17f52175b39d47e9af60f580b94d35e6bad8379d6fc8a5468b11df7cfda0d4452f4cfe84e6b1&amp;devicetype=iMac+MacBookPro12%2C1+OSX+OSX+10.11.1+build(15B42)&amp;version=11020201&amp;lang=zh_CN&amp;pass_ticket=0Wu4ZVjeI3O%2BnJmI8l5OyZLSNnIt9A%2B3XY%2FIBzz9AxkydeEkmMQeq1PvlIoGem%2FD">从案例学RxAndroid开发 （上、下）</a>
+</h4>
+
+<p>RxJava最核心的东西就是Observable和Observer。Observable会发出数据，而与之相对的Observer则会通过订阅Observable来进行观察。Observer可以在Observable发出数据、报错或者声明没有数据可以发送时进行相应的操作。这三个操作被封装在Observer接口中，相应的方法为onNext()，onError()和onCompleted()。</p>
 
 <h2>
 <a id="ios开发" class="anchor" href="#ios%E5%BC%80%E5%8F%91" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>iOS开发</h2>
 
 <h4>
-<a id="1ios-组件化方案探索" class="anchor" href="#1ios-%E7%BB%84%E4%BB%B6%E5%8C%96%E6%96%B9%E6%A1%88%E6%8E%A2%E7%B4%A2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1）<a href="http://blog.cnbang.net/tech/3080/">iOS 组件化方案探索</a>
+<a id="1jspatch开源经验分享" class="anchor" href="#1jspatch%E5%BC%80%E6%BA%90%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1）<a href="http://mp.weixin.qq.com/s?__biz=MzA3ODg4MDk0Ng==&amp;mid=403063229&amp;idx=1&amp;sn=34651b982e211ae64742913026d459b0&amp;scene=0#wechat_redirect">JSPatch开源经验分享</a>
 </h4>
 
-<p>最近国内 iOS 圈对组件化方案的讨论，又有了一篇新文章，本文作者在看了 Limboy(<a href="http://limboy.me/ios/2016/03/10/mgj-components.html">蘑菇街 App 的组件化之路</a>  <a href="http://limboy.me/ios/2016/03/14/mgj-components-continued.html">蘑菇街 App 的组件化之路·续</a>) 和 Casa (<a href="http://casatwy.com/iOS-Modulization.html">iOS应用架构谈 组件化方案</a>) 对 iOS 组件化方案的讨论之后，写的一篇文章。</p>
+<p>JSPatch 在还没投入使用时就就在 github 开源，因为开源社区的推动和帮助才会有今天较完善的版本和广泛的使用。目前在 Github 上有4k+ star，25位社区成员贡献过代码，算是较活跃的开源项目。</p>
 
 <h4>
-<a id="2滴滴出行ios客户端架构演进之路" class="anchor" href="#2%E6%BB%B4%E6%BB%B4%E5%87%BA%E8%A1%8Cios%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%9E%B6%E6%9E%84%E6%BC%94%E8%BF%9B%E4%B9%8B%E8%B7%AF" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2）<a href="http://mp.weixin.qq.com/s?__biz=MzA3ODg4MDk0Ng==&amp;mid=402854111&amp;idx=1&amp;sn=5876e615fabd6d921285d904e16670fb&amp;scene=1&amp;srcid=0316S0rfKlDBAWc5GsA1jA6b&amp;from=groupmessage&amp;isappinstalled=0#wechat_redirect">滴滴出行iOS客户端架构演进之路</a>
+<a id="2swift-runtime分析还像oc-runtime一样吗" class="anchor" href="#2swift-runtime%E5%88%86%E6%9E%90%E8%BF%98%E5%83%8Foc-runtime%E4%B8%80%E6%A0%B7%E5%90%97" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2）<a href="http://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&amp;mid=402916381&amp;idx=1&amp;sn=3a62eb98aea342c6cb9cf7a0c8afab1a&amp;scene=0#wechat_redirect">Swift Runtime分析：还像OC Runtime一样吗？</a>
 </h4>
 
-<p>本文总结了滴滴 iOS 架构的一些问题，包括它是如何演变的，如何应对数据传输和展示挑战，以及组件化、热修复等等。这应该是滴滴首次向外分享它的客户端架构，让我们一起来揭开它神秘的面纱，看看它是怎么做的。</p>
+<p>Swift是苹果2014年发布的编程开发语言，可与Objective-C共同运行于Mac OS和iOS平台，用于搭建基于苹果平台的应用程序。Swift已经开源，目前最新版本为2.2。我们知道Objective-C是具有动态性的，能够通过runtime API调用和替换任意方法，那Swift也具有这些动态性吗？</p>
+
+<h4>
+<a id="3ios-视图控制器转场详解" class="anchor" href="#3ios-%E8%A7%86%E5%9B%BE%E6%8E%A7%E5%88%B6%E5%99%A8%E8%BD%AC%E5%9C%BA%E8%AF%A6%E8%A7%A3" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3）<a href="https://github.com/seedante/iOS-Note/wiki/ViewController-Transition">iOS 视图控制器转场详解</a>
+</h4>
+
+<p>本文有一定的阅读门槛，并非适合新手的入门教程。本文的结构以及相关知识点能让你回忆起当初亲手写出转场动画时的那股激动，除此之外，本文能满足你希望彻底搞懂转场的求知欲，我相信后者更重要，那种把分支技能树升满的感觉。</p>
 
 <h2>
 <a id="技术纵横" class="anchor" href="#%E6%8A%80%E6%9C%AF%E7%BA%B5%E6%A8%AA" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>技术纵横</h2>
 
 <h4>
-<a id="1app架构经验总结" class="anchor" href="#1app%E6%9E%B6%E6%9E%84%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1）<a href="http://keeganlee.me/post/architecture/20160303">App架构经验总结</a>
+<a id="1移动开发需要知道的像素知识多图" class="anchor" href="#1%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91%E9%9C%80%E8%A6%81%E7%9F%A5%E9%81%93%E7%9A%84%E5%83%8F%E7%B4%A0%E7%9F%A5%E8%AF%86%E5%A4%9A%E5%9B%BE" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1）<a href="http://weizhifeng.net/you-should-know-about-dpi.html?f=tt">移动开发需要知道的像素知识『多图』</a>
 </h4>
 
-<p>架构因人而异，不同的架构师大多会有不同的看法；架构也因项目而异，不同的项目需求不同，相应的架构也会不同。然而，有些东西还是通用的，是所有架构师都需要考虑的，也是所有项目都会有的需求，比如API如何设计？架构如何分层？开发环境和生产环境如何分离？</p>
+<p>像素（Pixel）对于WEB开发者来说很是熟悉，在PC互联网时代没少与其打交道。进入移动互联网之后，随着移动设备屏幕的解析度越来越高，衍生了一些关于屏幕和像素的一些新概念，比如DPI，DP，PT，Retina，4K等等，本文对这些概念做一个简单的介绍。</p>
 
 <h4>
-<a id="2如何打造顶尖的技术研发团队esty有这么些点滴实践" class="anchor" href="#2%E5%A6%82%E4%BD%95%E6%89%93%E9%80%A0%E9%A1%B6%E5%B0%96%E7%9A%84%E6%8A%80%E6%9C%AF%E7%A0%94%E5%8F%91%E5%9B%A2%E9%98%9Festy%E6%9C%89%E8%BF%99%E4%B9%88%E4%BA%9B%E7%82%B9%E6%BB%B4%E5%AE%9E%E8%B7%B5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2）<a href="http://mp.weixin.qq.com/s?__biz=MzA5Nzc4OTA1Mw==&amp;mid=410326234&amp;idx=1&amp;sn=f7f07933f7caf5b73c1a089a9790367c&amp;scene=0#wechat_redirect">如何打造顶尖的技术研发团队？Esty有这么些点滴实践</a>
+<a id="2重构的七宗罪" class="anchor" href="#2%E9%87%8D%E6%9E%84%E7%9A%84%E4%B8%83%E5%AE%97%E7%BD%AA" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2）<a href="http://insights.thoughtworkers.org/refactoring/">重构的七宗罪</a>
 </h4>
 
-<p>本文是 Etsy 公司的高级软件工程师为大家讲述Etsy公司的工程技术文化，以及工程师之间如何凭借着共同的价值观以富有成效的方式实现愉快协作。本文将对Etsy的日常工作加以概述，同时分享让这一切成为现实的Etsy工程技术方针。</p>
+<p>重构经过了十几年的发展和应用，可以说它是极限编程中程序员最爱的实践之一了，纷纷争相在项目里应用。重构工作坊、Codekata重构练习等各种提升能力的方式也屡见不鲜，帮助程序员们去追求优秀的代码和设计。然这仍然摆脱不了人们对它的各种抱怨：“搞什么，又重构”，“重构出defect来了”，“项目紧，最近不要再重构了”，“重构到什么时候停呀”。</p>
 
 <h4>
-<a id="3关于初创公司的研发体系构建这可能是最成功的案例了" class="anchor" href="#3%E5%85%B3%E4%BA%8E%E5%88%9D%E5%88%9B%E5%85%AC%E5%8F%B8%E7%9A%84%E7%A0%94%E5%8F%91%E4%BD%93%E7%B3%BB%E6%9E%84%E5%BB%BA%E8%BF%99%E5%8F%AF%E8%83%BD%E6%98%AF%E6%9C%80%E6%88%90%E5%8A%9F%E7%9A%84%E6%A1%88%E4%BE%8B%E4%BA%86" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3）<a href="http://mp.weixin.qq.com/s?__biz=MzA5Nzc4OTA1Mw==&amp;mid=410367860&amp;idx=1&amp;sn=d9f4fdc1c4ace8ce46a277930f141288&amp;scene=0#wechat_redirect">关于初创公司的研发体系构建，这可能是最成功的案例了</a>
+<a id="3一个名字引发的血案-left-pad-和-npm-的那些事" class="anchor" href="#3%E4%B8%80%E4%B8%AA%E5%90%8D%E5%AD%97%E5%BC%95%E5%8F%91%E7%9A%84%E8%A1%80%E6%A1%88-left-pad-%E5%92%8C-npm-%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3）<a href="http://www.gotoli.us/left-pad-npm">一个名字引发的血案: left-pad 和 npm 的那些事</a>
 </h4>
 
-<p>在上面一篇文章中，我们介绍了Esty的工程师是如何工作的，比如他们为每位程序员都分配一个虚拟机、自动化测试流程、如行进行代码审查、如何进行持续部署等。今天的文章将会在昨天的基础上继续介绍Etsy的实践经验。</p>
-
-<h4>
-<a id="4无线app日志上报优化实践" class="anchor" href="#4%E6%97%A0%E7%BA%BFapp%E6%97%A5%E5%BF%97%E4%B8%8A%E6%8A%A5%E4%BC%98%E5%8C%96%E5%AE%9E%E8%B7%B5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>4）<a href="http://www.habadog.com/2015/10/21/app-log-report/">无线APP日志上报优化实践</a>
-</h4>
-
-<p>无线时代，APP流量敏感，为了统计APP内用户行为，或者需要收集某些产品数据，往往需要进行日志上报，日志上报往往又非常费流量，有没有一些好的节省流量的优化方法呢，这是本文将要讨论的问题。</p>
-
-<h4>
-<a id="5java-单例真的写对了么" class="anchor" href="#5java-%E5%8D%95%E4%BE%8B%E7%9C%9F%E7%9A%84%E5%86%99%E5%AF%B9%E4%BA%86%E4%B9%88" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>5）<a href="http://www.race604.com/java-double-checked-singleton/">Java 单例真的写对了么?</a>
-</h4>
-
-<p>在 Java 中，涉及到多线程编程，问题就会复杂很多，有些 Bug 甚至会超出你的想象。本文是对单例在多线程中问题的讨论。</p>
+<p>近日，一个只有 11 代码的 left-pad 被作者 unpublished。 npm 圈子因此闹得鸡犬不宁。究竟发生了什么呢？</p>
 
 <h2>
 <a id="技术人生" class="anchor" href="#%E6%8A%80%E6%9C%AF%E4%BA%BA%E7%94%9F" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>技术人生</h2>
 
 <h4>
-<a id="1程序员如何艺术的提升技术影响力和赚钱" class="anchor" href="#1%E7%A8%8B%E5%BA%8F%E5%91%98%E5%A6%82%E4%BD%95%E8%89%BA%E6%9C%AF%E7%9A%84%E6%8F%90%E5%8D%87%E6%8A%80%E6%9C%AF%E5%BD%B1%E5%93%8D%E5%8A%9B%E5%92%8C%E8%B5%9A%E9%92%B1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1）<a href="http://mp.weixin.qq.com/s?__biz=MjM5Mjg4NDMwMA==&amp;mid=404954034&amp;idx=1&amp;sn=d61e1668f8f38b52e9c8d31524ff5bc2&amp;scene=2&amp;srcid=0317jnrETNk8BfjJYqoiaQqA&amp;from=timeline&amp;isappinstalled=0#wechat_redirect">程序员如何艺术的提升技术、影响力和赚钱</a>
+<a id="1工程师文化好的福利谈谈被大家误解的编码文化" class="anchor" href="#1%E5%B7%A5%E7%A8%8B%E5%B8%88%E6%96%87%E5%8C%96%E5%A5%BD%E7%9A%84%E7%A6%8F%E5%88%A9%E8%B0%88%E8%B0%88%E8%A2%AB%E5%A4%A7%E5%AE%B6%E8%AF%AF%E8%A7%A3%E7%9A%84%E7%BC%96%E7%A0%81%E6%96%87%E5%8C%96" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1）<a href="https://mp.weixin.qq.com/s?__biz=MzA5Nzc4OTA1Mw==&amp;mid=410735535&amp;idx=1&amp;sn=7d967e4897517055ec9377f6791950e3&amp;scene=0&amp;key=710a5d99946419d9a05b67c2538169d455d35cb0a61dc46b97f61c706f1b1f83238cdd676a89703dbd76ee89d2f41c6a&amp;ascene=0&amp;uin=NTk4MzU3OTAw&amp;devicetype=iMac+MacBookPro12%2C1+OSX+OSX+10.11.1+build(15B42)&amp;version=11020201&amp;pass_ticket=KcnPJJHzJ9RqtptucKbCzL3fLEbBG10bLe2o4ZPhE3g%2BarsSY8nmaLjtQy2o42e9">工程师文化=好的福利？谈谈被大家误解的编码文化</a>
 </h4>
 
-<p>这篇文章会从以下几个角度来分析，即赚钱、影响力和技术——这是我所关心的三个维度。</p>
+<p>软件开发人员通常会付出大量的时间和精力在如何构建最好的产品上。我们常会纠结应该使用哪种Web框架，是用NoSQL数据库还是SQL数据库？不过，尽管这些问题十分重要，开发人员通常会忽视掉软件开发过程中与这些问题同样重要的一个方面——文化。本文将与读者分享在Atlanssian公司中如何保持健壮的创新和协作文化氛围的经验。</p>
 
 <h4>
-<a id="2专访链家鸟哥技术人员如何保持进步" class="anchor" href="#2%E4%B8%93%E8%AE%BF%E9%93%BE%E5%AE%B6%E9%B8%9F%E5%93%A5%E6%8A%80%E6%9C%AF%E4%BA%BA%E5%91%98%E5%A6%82%E4%BD%95%E4%BF%9D%E6%8C%81%E8%BF%9B%E6%AD%A5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2）<a href="http://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&amp;mid=403082749&amp;idx=1&amp;sn=59d24d71982099f7d71b233ab69a8786&amp;scene=0#wechat_redirect">专访链家鸟哥：技术人员如何保持进步？</a>
+<a id="2写在离开百度后的第一天" class="anchor" href="#2%E5%86%99%E5%9C%A8%E7%A6%BB%E5%BC%80%E7%99%BE%E5%BA%A6%E5%90%8E%E7%9A%84%E7%AC%AC%E4%B8%80%E5%A4%A9" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2）<a href="http://weibo.com/p/1001603956574254141761">写在离开百度后的第一天</a>
 </h4>
 
-<p>在任何一个时代，一款优秀的产品背后必定有一只优秀的团队做支撑。有目共睹，链家在过去的一年里成绩斐然。我不禁好奇，这背后是怎样的一只技术团队？恰好去年“鸟哥”惠新宸离开微博加盟链家一度为业界盛事。藉此机会InfoQ再访鸟哥，听他讲讲链家技术团队的文化、思想与经验分享。</p>
-
-<h4>
-<a id="3为什么说全栈工程师是未来" class="anchor" href="#3%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AF%B4%E5%85%A8%E6%A0%88%E5%B7%A5%E7%A8%8B%E5%B8%88%E6%98%AF%E6%9C%AA%E6%9D%A5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3）<a href="http://mp.weixin.qq.com/s?__biz=MjM5Mjg4NDMwMA==&amp;mid=405019922&amp;idx=1&amp;sn=354643ee38b0ca423cd0f3025fb98338#rd">为什么说全栈工程师是未来？</a>
-</h4>
-
-<p>技术在过去的几十年里进步很快，也将在未来的几十年里发展得更快。今天技术的门槛下降得越来越快，原本需要一个团队做出来的Web应用，现在只需要一两个人就可以了。同时，由于公司组织结构的变迁，以及到变化的适应度，也决定了赋予每个人的职责将会越来越多。尽管我们看到工厂化生产带来的优势，但是我们也看到了精益思想带来的变革。正是这种变革让越来越多的专家走向全栈，让组织内部有更好的交流。</p>
+<p>刚从百度离职，很多朋友问我原因，不黑不赞不偏激，客观的回顾一下~</p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/PaicHyperionDev/MobileDevWeekly">MobileDevWeekly</a> is maintained by <a href="https://github.com/PaicHyperionDev">PaicHyperionDev</a>.</span>
