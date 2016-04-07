@@ -1,0 +1,86 @@
+# [平安金融科技移动技术周报](https://github.com/PaicHyperionDev/MobileDevWeekly)（第十三期）
+
+> @author ASCE1885的 [Github](https://github.com/ASCE1885)  [简书](http://www.jianshu.com/users/4ef984470da8/latest_articles) [微博](http://weibo.com/asce885/profile?rightmod=1&wvr=6&mod=personinfo) [CSDN](http://blog.csdn.net/asce1885) [知乎](https://www.zhihu.com/people/asce1885)
+
+> **本期导读**：本周产品服务组带来两篇原创文章，一篇是对动静分离和负载均衡的实践总结，一篇是 Golang 特性的介绍；Android 开发可重点关注 RxJava 在 Airbnb 中的实践，以及静态代码扫描在 360 无线中的实践；iOS 开发可关注 JSPatch 的新特性，支持动态下发全新的功能模块，而不仅限于 bugfix；技术纵横中可借鉴豆瓣关于 Hybrid 混合开发的经验，和你的项目中 Hybrid 的使用有和异同；技术人生中带来了 GitHub 中国区前 100 名的统计，是否有你的身影？
+
+## 原创专题
+
+#### 1）[Nginx+tomcat实现动静分离和负载均衡](http://139.196.14.76/t/nginx-tomcat/260) @陈维新(产品服务组)
+ 
+动静分离总的来说就是把请求到服务端的动态请求和静态资源的请求分离开，这样在请求量很大的时候能够缓解服务端的压力。之前项目需要用到nginx和tomcat结合来实现动静分离和负载均衡，在这里整理一下做为总结。
+
+#### 2）[浅谈Go语言](http://139.196.14.76/t/go/266) @何刘兴（产品服务组）
+
+Go语言（也称为Golang）是google在2009年推出的一种编译型编程语言。相对于大多数语言，golang具有编写并发或网络交互简单、丰富的数据类型、编译快等特点，比较适合于高性能、高并发场景。本文主要基于笔者的亲身实践和总结，介绍golang 1.3（目前最新版本是1.5）的一些特性，重点介绍并发的实现和使用，希望能引发读者一些启发或兴趣。
+
+## Android开发
+
+#### 1）[Airbnb：我们的安卓客户端是如何使用 RxJava 的](https://realm.io/cn/news/kau-felipe-lima-adopting-rxjava-airbnb-android/)
+
+Reactive 编程和 RxJava 是最近常常引起强烈争论的话题，争论过程中问题很多，不确定性也很多。本次演讲我们会讨论，在 Airbnb 的客户端里，我们是如何采纳这些范式和技术，包括动力，实现的困难，和这一路走来的经验教训。我们还会看些产品的代码，比较 imperative 编程和 reactive 编程的优劣，然后分别讨论它们的优势和缺陷。
+
+#### 2）[详细解析 RxAndroid 的使用方式](http://www.wangchenlong.org/2016/03/20/1603/207-rxjava-first/)
+
+RxAndroid是RxJava的扩展, 优雅地处理异步请求. RxAndroid配合Lambda表达式, 精简处理回调, 使程序更具有可读性. Rx作为Android最优秀的开源库之一, 极大地提高生产力, 我们需要掌握. 本文由浅入深, 介绍一些常见的使用方法, 并附有源码.
+
+#### 3）[微信Android客户端后台保活经验分享](http://mp.weixin.qq.com/s?__biz=MzA3ODg4MDk0Ng==&mid=403254393&idx=1&sn=8dc0e3a03031177777b5a5876cb210cc&scene=0#wechat_redirect)
+
+本文是微信Android客户端基础平台、性能优化负责人在微信群的分享总结。
+
+#### 4）[Android MultiDex实践：如何绕过那些坑？](http://mp.weixin.qq.com/s?__biz=MzA4MjU5NTY0NA==&mid=405574783&idx=1&sn=6ff49fda8a7229bf6b2692fddcf23e04&scene=0#wechat_redirect)
+
+Android应用65k方法数的限制一直为广大开发者所诟病，在应用功能越来越丰富、各种开源库越来越多的今天，65k方法数瓶颈俨然已是一大绊脚石。至于怎么解决这个问题，业内有包括插件化在内的一些方案，我们今天的重点是Android官方给出的这个方案，MultiDex。
+
+#### 5）[这些小工具让你的Android 开发更高效（下）](http://mp.weixin.qq.com/s?__biz=MzA4MTg4MjkzMw==&mid=406710215&idx=1&sn=32d43c2cc1a2e47f297b51101148f20d&scene=2&srcid=04070LmiWGy5EKLLQdNWlbFD&from=timeline&isappinstalled=0#wechat_redirect)
+
+在做Android 开发过程中，会遇到一些小的问题，虽然自己动手也能解决，但是有了一些小工具，解决这些问题就得心应手了，今天就为大家推荐一下Android 开发遇到的小工具，来让你的开发更高效。
+
+#### 6）[静态代码扫描在 360 无线项目中的实践](https://testerhome.com/topics/4570)
+
+安卓代码红线出现的目的就是杜绝一些明显违反公司规定，或者违反安全类规范的代码内容，希望通过静态代码分析来解决这个问题。前期定下的规则已经大部分实现了（实际上也没几条规则），随着工作的推进，我们发现其实我们可以做更多的事情，于是在安卓代码红线的基础上做了不少扩展，演变成了如今的“火线”平台。
+
+
+
+## iOS开发
+
+#### 1）[App环境分离的实现:iOS篇](http://mp.weixin.qq.com/s?__biz=MzA5OTI1NDE0Mw==&mid=405010080&idx=1&sn=f7ce0e613b3166d292e8321ad4c10d58&scene=0#wechat_redirect)
+
+说到App环境分离在iOS的实现，我曾在iOS技术群里问过：如何实现在同一台手机能同时安装同个应用的测试和生产版本？应用名称要有区分，图标也要有所区别。不要手动修改Bundle id和应用名称，也不要手动替换图标，更不要维护两个项目。如何才能简单地实现？
+
+#### 2）[面向协议的 MVVM 架构介绍](https://realm.io/cn/news/doios-natasha-murashev-protocol-oriented-mvvm/)
+
+在 Swift 中用值类型来替代引用类型，比以前在 Objective-C 中要容易许多，这可以让您的代码更简洁，并且更不容易出错。然而，当需要在多个类型当中共享代码的时候，许多人往往会回避使用值类型，而转为使用继承来实现。
+
+#### 3）[JSPatch更新：完善开发功能模块的能力](http://blog.cnbang.net/tech/3123/)
+
+JSPatch 开源以来大部分被用于 hotfix，替换原生方法修复线上bug，但实际上 JSPatch 一直拥有动态添加功能模块的能力，因为 JSPatch 可以创建和调用任意 OC 类和方法，完全可以用 JSPatch 写功能模块，然后动态下发加载。只是之前在性能和开发体验上有些问题，还没有太多这方面的应用。这次 JSPatch 做了较大的更新，扫除这些问题，让用纯 JS 写功能模块变得实用。
+
+
+## 技术纵横
+
+#### 1）[豆瓣混合开发实践](http://lincode.github.io/Hybrid-Rexxar)
+
+混合开发的直白的解释是 Native 和 Web 技术都要用。但形式上，应用仍然和浏览器无关，用户还是需要在 App Store 和 Android Market 下载 App。只是在开发时，开发者以 Native 代码为主体框架，在合适的地方部分使用 Web 技术。
+
+#### 2）[React-Native痛点解析之开发环境搭建及扩展](http://mp.weixin.qq.com/s?__biz=MzA3ODg4MDk0Ng==&mid=403225766&idx=1&sn=acd8e3ab7f234b97827c3e210c2d8673&scene=0#wechat_redirect)
+
+React Native简直太火了，国内大公司都在争先恐后的尝鲜，让人难以相信这是诞生刚刚一年的开源项目。正因为它的年轻，在使用它进行开发时难免会遇到这样那样的坑，因此，我们邀请了《React Native入门与实战》的作者之一，魅族高级研发经理魏晓军来为我们解析RN开发中的痛点。
+
+#### 3）[一探前端开发中的JS调试技巧](http://mp.weixin.qq.com/s?__biz=MzAxODE2MjM1MA==&mid=403029188&idx=1&sn=9c8249b8c4a3b60e0ff3db3e7e89faa0&scene=2&srcid=0406CIjgaTkzF8pXRrOPb7r2&from=timeline&isappinstalled=0#wechat_redirect)
+
+调试技巧，在任何一项技术研发中都可谓是必不可少的技能。掌握各种调试技巧，必定能在工作中起到事半功倍的效果。譬如，快速定位问题、降低故障概率、帮助分析逻辑错误等等。而在互联网前端开发越来越重要的今天，如何在前端开发中降低开发成本，提升工作效率，掌握前端开发调试技巧尤为重要。
+
+## 技术人生
+
+#### 1）[20年前GoF提出的设计模式，对这个时代是否还有指导意义？](http://mp.weixin.qq.com/s?__biz=MzA5Nzc4OTA1Mw==&mid=410965974&idx=1&sn=f41b049d2acd18a48413aec137bbe78e&scene=0#wechat_redirect)
+
+在四人帮（Gang of Four，GoF）的那本设计模式的书出版20年后，重新审视设计模式，书中的23种设计模式，真的只是23种使用指针的方法吗？对我们这个时代是否还有指导意义？
+
+#### 2）[写代码的四个境界](http://mp.weixin.qq.com/s?__biz=MzA4ODgwNjk1MQ==&mid=2653788186&idx=1&sn=d589bdd64d4f4668241ab3072e186505&scene=0#wechat_redirect)
+
+从你拿到第一份码工的工作开始，你就可以说你会写代码了，因为毕竟面试是需要写代码的。然而会写面试的代码于工作是没有太大益处的。仅仅是你必备的一项找工作技能。真正能写出在 production 也很 solid、很靠谱的代码，可能很多人都经历过类似的不同阶段。
+
+#### 3）[GitHub 中国区前 100 名到底是什么样的人？](http://geek.csdn.net/news/detail/66000)
+
+本文根据Github公开API，抓取了地址显示China的用户，根据粉丝关注做了一个排名，分析前一百名的用户属性，剖析这些活跃在技术社区的牛人到底是何许人也！
