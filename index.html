@@ -20,126 +20,168 @@
 
     <section class="main-content">
       <h1>
-<a id="平安金融科技移动技术周报第十三期" class="anchor" href="#%E5%B9%B3%E5%AE%89%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80%E7%A7%BB%E5%8A%A8%E6%8A%80%E6%9C%AF%E5%91%A8%E6%8A%A5%E7%AC%AC%E5%8D%81%E4%B8%89%E6%9C%9F" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="https://github.com/PaicHyperionDev/MobileDevWeekly">平安金融科技移动技术周报</a>（第十三期）</h1>
+<a id="平安金融科技移动技术周报第十四期" class="anchor" href="#%E5%B9%B3%E5%AE%89%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80%E7%A7%BB%E5%8A%A8%E6%8A%80%E6%9C%AF%E5%91%A8%E6%8A%A5%E7%AC%AC%E5%8D%81%E5%9B%9B%E6%9C%9F" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="https://github.com/PaicHyperionDev/MobileDevWeekly">平安金融科技移动技术周报</a>（第十四期）</h1>
+
+<p><a href="http://paichyperiondev.github.io/MobileDevWeekly/">外网链接</a> <a href="http://139.196.14.76/t/topic/275/1">壹翎阁论坛链接</a></p>
 
 <blockquote>
-<p><strong>本期导读</strong>：本周产品服务组带来两篇原创文章，一篇是对动静分离和负载均衡的实践总结，一篇是 Golang 特性的介绍；Android 开发可重点关注 RxJava 在 Airbnb 中的实践，以及静态代码扫描在 360 无线中的实践；iOS 开发可关注 JSPatch 的新特性，支持动态下发全新的功能模块，而不仅限于 bugfix；技术纵横中可借鉴豆瓣关于 Hybrid 混合开发的经验，和你的项目中 Hybrid 的使用有和异同；技术人生中带来了 GitHub 中国区前 100 名的统计，是否有你的身影？</p>
+<p><strong>本期导读</strong>：本期周报原创专题带来团队的三篇实战文章；Android 带来两篇应用 UI 架构的讨论，同时可重点关注路由框架和随机对象生成器设计与实现；iOS 重点推荐网易漫画 Swift 混编实践；技术人生中我们推荐了两篇关于程序员影响力的文章，你没理由不看！</p>
 </blockquote>
 
 <h2>
 <a id="原创专题" class="anchor" href="#%E5%8E%9F%E5%88%9B%E4%B8%93%E9%A2%98" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>原创专题</h2>
 
 <h4>
-<a id="1nginxtomcat实现动静分离和负载均衡-陈维新产品服务组" class="anchor" href="#1nginxtomcat%E5%AE%9E%E7%8E%B0%E5%8A%A8%E9%9D%99%E5%88%86%E7%A6%BB%E5%92%8C%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1-%E9%99%88%E7%BB%B4%E6%96%B0%E4%BA%A7%E5%93%81%E6%9C%8D%E5%8A%A1%E7%BB%84" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1）<a href="http://139.196.14.76/t/nginx-tomcat/260">Nginx+tomcat实现动静分离和负载均衡</a> @陈维新(产品服务组)</h4>
+<a id="1react-native-listview-实践-吴健兴金融服务a组" class="anchor" href="#1react-native-listview-%E5%AE%9E%E8%B7%B5-%E5%90%B4%E5%81%A5%E5%85%B4%E9%87%91%E8%9E%8D%E6%9C%8D%E5%8A%A1a%E7%BB%84" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1）<a href="http://139.196.14.76/t/react-native-listview/269">React Native ListView 实践</a> @吴健兴（金融服务A组）</h4>
 
-<p>动静分离总的来说就是把请求到服务端的动态请求和静态资源的请求分离开，这样在请求量很大的时候能够缓解服务端的压力。之前项目需要用到nginx和tomcat结合来实现动静分离和负载均衡，在这里整理一下做为总结。</p>
+<p>本文总结了 React Native 开发中使用 ListView 时，遇到的一些问题以及解决方案。</p>
 
 <h4>
-<a id="2浅谈go语言-何刘兴产品服务组" class="anchor" href="#2%E6%B5%85%E8%B0%88go%E8%AF%AD%E8%A8%80-%E4%BD%95%E5%88%98%E5%85%B4%E4%BA%A7%E5%93%81%E6%9C%8D%E5%8A%A1%E7%BB%84" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2）<a href="http://139.196.14.76/t/go/266">浅谈Go语言</a> @何刘兴（产品服务组）</h4>
+<a id="2svn-git-transfer-svn仓库批量迁移git工具-潘伟洲应用架构组" class="anchor" href="#2svn-git-transfer-svn%E4%BB%93%E5%BA%93%E6%89%B9%E9%87%8F%E8%BF%81%E7%A7%BBgit%E5%B7%A5%E5%85%B7-%E6%BD%98%E4%BC%9F%E6%B4%B2%E5%BA%94%E7%94%A8%E6%9E%B6%E6%9E%84%E7%BB%84" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2）<a href="http://139.196.14.76/t/svn-git-transfer-svn-git/271/1">svn-git-transfer SVN仓库批量迁移Git工具</a> @潘伟洲（应用架构组）</h4>
 
-<p>Go语言（也称为Golang）是google在2009年推出的一种编译型编程语言。相对于大多数语言，golang具有编写并发或网络交互简单、丰富的数据类型、编译快等特点，比较适合于高性能、高并发场景。本文主要基于笔者的亲身实践和总结，介绍golang 1.3（目前最新版本是1.5）的一些特性，重点介绍并发的实现和使用，希望能引发读者一些启发或兴趣。</p>
+<p>要从 svn 迁移到 git ，方法是使用 git-svn ，将某个 svn 路径克隆到本地，并转换为 git 的形式，最后推送到对应的 Git 中央仓库上。这个流程并没有涉及复杂的决策，所以完全可以做到自动化。于是我写了一个工具 git-svn-transfer ，用它批量完成所有 SVN 路径到 Git 仓库的迁移。</p>
+
+<h4>
+<a id="3化繁为简的企业-git-管理实践一多分支子模块依赖管理-潘伟洲应用架构组" class="anchor" href="#3%E5%8C%96%E7%B9%81%E4%B8%BA%E7%AE%80%E7%9A%84%E4%BC%81%E4%B8%9A-git-%E7%AE%A1%E7%90%86%E5%AE%9E%E8%B7%B5%E4%B8%80%E5%A4%9A%E5%88%86%E6%94%AF%E5%AD%90%E6%A8%A1%E5%9D%97%E4%BE%9D%E8%B5%96%E7%AE%A1%E7%90%86-%E6%BD%98%E4%BC%9F%E6%B4%B2%E5%BA%94%E7%94%A8%E6%9E%B6%E6%9E%84%E7%BB%84" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3）<a href="http://139.196.14.76/t/git/274/1">化繁为简的企业 Git 管理实践（一）：多分支子模块依赖管理</a> @潘伟洲（应用架构组）</h4>
+
+<p>在 Git 的使用中，我们对子模块的使用进行了简化，避免了由于漏提交子模块 commit id 或子模块代码导致无法更新或更新错误的情况。这么做看起来好像完全抛弃了子模块的 commit id。</p>
 
 <h2>
 <a id="android开发" class="anchor" href="#android%E5%BC%80%E5%8F%91" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Android开发</h2>
 
 <h4>
-<a id="1airbnb我们的安卓客户端是如何使用-rxjava-的" class="anchor" href="#1airbnb%E6%88%91%E4%BB%AC%E7%9A%84%E5%AE%89%E5%8D%93%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%98%AF%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-rxjava-%E7%9A%84" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1）<a href="https://realm.io/cn/news/kau-felipe-lima-adopting-rxjava-airbnb-android/">Airbnb：我们的安卓客户端是如何使用 RxJava 的</a>
+<a id="1选择恐惧症的福音教你认清mvcmvp和mvvm" class="anchor" href="#1%E9%80%89%E6%8B%A9%E6%81%90%E6%83%A7%E7%97%87%E7%9A%84%E7%A6%8F%E9%9F%B3%E6%95%99%E4%BD%A0%E8%AE%A4%E6%B8%85mvcmvp%E5%92%8Cmvvm" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1）<a href="http://zjutkz.net/2016/04/13/%E9%80%89%E6%8B%A9%E6%81%90%E6%83%A7%E7%97%87%E7%9A%84%E7%A6%8F%E9%9F%B3%EF%BC%81%E6%95%99%E4%BD%A0%E8%AE%A4%E6%B8%85MVC%EF%BC%8CMVP%E5%92%8CMVVM/">选择恐惧症的福音！教你认清MVC，MVP和MVVM</a>
 </h4>
 
-<p>Reactive 编程和 RxJava 是最近常常引起强烈争论的话题，争论过程中问题很多，不确定性也很多。本次演讲我们会讨论，在 Airbnb 的客户端里，我们是如何采纳这些范式和技术，包括动力，实现的困难，和这一路走来的经验教训。我们还会看些产品的代码，比较 imperative 编程和 reactive 编程的优劣，然后分别讨论它们的优势和缺陷。</p>
+<p>相信大家对MVC，MVP和MVVM都不陌生，作为三个最耳熟能详的Android框架，它们的应用可以是非常广泛的，但是对于一些新手来说，可能对于区分它们三个都有困难，更别说在实际的项目中应用了，有些时候想用MVP的，代码写着写着就变成了MVC，久而久之就对它们三个的选择产生了恐惧感，如果你也是这样的人群，那么这篇文章可能会对你有很大的帮助，希望大家看完都会有收获吧！</p>
 
 <h4>
-<a id="2详细解析-rxandroid-的使用方式" class="anchor" href="#2%E8%AF%A6%E7%BB%86%E8%A7%A3%E6%9E%90-rxandroid-%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2）<a href="http://www.wangchenlong.org/2016/03/20/1603/207-rxjava-first/">详细解析 RxAndroid 的使用方式</a>
+<a id="2android官方mvp架构示例项目解析" class="anchor" href="#2android%E5%AE%98%E6%96%B9mvp%E6%9E%B6%E6%9E%84%E7%A4%BA%E4%BE%8B%E9%A1%B9%E7%9B%AE%E8%A7%A3%E6%9E%90" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2）<a href="https://mp.weixin.qq.com/s?__biz=MzA3ODg4MDk0Ng==&amp;mid=403539764&amp;idx=1&amp;sn=d30d89e6848a8e13d4da0f5639100e5f&amp;scene=0&amp;key=b28b03434249256bffe51beb898aff097e1f71fcaa265f5ddd46dd9d9ccc1a7445341fabce7c4c83a92e8dd788e776f0&amp;ascene=0&amp;uin=NTk4MzU3OTAw&amp;devicetype=iMac+MacBookPro12%2C1+OSX+OSX+10.11.1+build(15B42)&amp;version=11020201&amp;pass_ticket=Y6O8ThEJd805yY7Z3J5F37aWin8jj%2BZA1EcE9Lr6OHUti2tXUO%2B07WQi0NQRfZwx">Android官方MVP架构示例项目解析</a>
 </h4>
 
-<p>RxAndroid是RxJava的扩展, 优雅地处理异步请求. RxAndroid配合Lambda表达式, 精简处理回调, 使程序更具有可读性. Rx作为Android最优秀的开源库之一, 极大地提高生产力, 我们需要掌握. 本文由浅入深, 介绍一些常见的使用方法, 并附有源码.</p>
+<p>前段时间Google在Github推出了一个项目，专门展示Android引用各种各样的MVP架构，算是官方教程了。趁着还新鲜，让我们来抛砖引玉一探究竟，看看在Google眼里什么样算是好的MVP架构。</p>
 
 <h4>
-<a id="3微信android客户端后台保活经验分享" class="anchor" href="#3%E5%BE%AE%E4%BF%A1android%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%90%8E%E5%8F%B0%E4%BF%9D%E6%B4%BB%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3）<a href="http://mp.weixin.qq.com/s?__biz=MzA3ODg4MDk0Ng==&amp;mid=403254393&amp;idx=1&amp;sn=8dc0e3a03031177777b5a5876cb210cc&amp;scene=0#wechat_redirect">微信Android客户端后台保活经验分享</a>
+<a id="3android-studio-advanced-configuration" class="anchor" href="#3android-studio-advanced-configuration" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3）<a href="http://liukun.engineer/2016/04/10/Android-Studio-advanced-configuration/">Android Studio advanced configuration</a>
 </h4>
 
-<p>本文是微信Android客户端基础平台、性能优化负责人在微信群的分享总结。</p>
+<p>本文主要内容来自 Dmytro Danylyk 在 Medium 的文章Configuring Android Studio。在此感谢！虽然使用Android Studio 有一定的时间了，但文中的某几个设置之前还真不知道，且原文在长城外，因此在翻译原文的基础上作了一些补充，若有新的发现会即时更新。希望对大家尤其是刚接触 Android Studio 的朋友有一点帮助。</p>
 
 <h4>
-<a id="4android-multidex实践如何绕过那些坑" class="anchor" href="#4android-multidex%E5%AE%9E%E8%B7%B5%E5%A6%82%E4%BD%95%E7%BB%95%E8%BF%87%E9%82%A3%E4%BA%9B%E5%9D%91" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>4）<a href="http://mp.weixin.qq.com/s?__biz=MzA4MjU5NTY0NA==&amp;mid=405574783&amp;idx=1&amp;sn=6ff49fda8a7229bf6b2692fddcf23e04&amp;scene=0#wechat_redirect">Android MultiDex实践：如何绕过那些坑？</a>
+<a id="4retrofit分析-漂亮的解耦套路" class="anchor" href="#4retrofit%E5%88%86%E6%9E%90-%E6%BC%82%E4%BA%AE%E7%9A%84%E8%A7%A3%E8%80%A6%E5%A5%97%E8%B7%AF" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>4）<a href="http://www.jianshu.com/p/45cb536be2f4">Retrofit分析-漂亮的解耦套路</a>
 </h4>
 
-<p>Android应用65k方法数的限制一直为广大开发者所诟病，在应用功能越来越丰富、各种开源库越来越多的今天，65k方法数瓶颈俨然已是一大绊脚石。至于怎么解决这个问题，业内有包括插件化在内的一些方案，我们今天的重点是Android官方给出的这个方案，MultiDex。</p>
+<p>万万没想到Retrofit会这么火，在没看源码之前，我简单的认为是因为它跟OkHttp同出一源(Square)，所以才会炒的那么热。又或者是因为它能支持RxJava，所以火上浇油，一发不可收拾。后来看过Retrofit源码之后，我才理解为什么它倍受关注，是因为它集诸优点于一身，并且炒鸡解耦。你能预见的特殊需求，都能非常容易的扩展。</p>
 
 <h4>
-<a id="5这些小工具让你的android-开发更高效下" class="anchor" href="#5%E8%BF%99%E4%BA%9B%E5%B0%8F%E5%B7%A5%E5%85%B7%E8%AE%A9%E4%BD%A0%E7%9A%84android-%E5%BC%80%E5%8F%91%E6%9B%B4%E9%AB%98%E6%95%88%E4%B8%8B" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>5）<a href="http://mp.weixin.qq.com/s?__biz=MzA4MTg4MjkzMw==&amp;mid=406710215&amp;idx=1&amp;sn=32d43c2cc1a2e47f297b51101148f20d&amp;scene=2&amp;srcid=04070LmiWGy5EKLLQdNWlbFD&amp;from=timeline&amp;isappinstalled=0#wechat_redirect">这些小工具让你的Android 开发更高效（下）</a>
+<a id="5android路由框架设计与实现" class="anchor" href="#5android%E8%B7%AF%E7%94%B1%E6%A1%86%E6%9E%B6%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>5）<a href="http://sixwolf.net/blog/2016/03/23/Android%E8%B7%AF%E7%94%B1%E6%A1%86%E6%9E%B6%E8%AE%BE%E8%AE%A1/">Android路由框架设计与实现</a>
 </h4>
 
-<p>在做Android 开发过程中，会遇到一些小的问题，虽然自己动手也能解决，但是有了一些小工具，解决这些问题就得心应手了，今天就为大家推荐一下Android 开发遇到的小工具，来让你的开发更高效。</p>
+<p>我们知道传统的网站开发框架一般支持用户设置路由表，如Django。而在Android开发中，我们打开页面的方式主要是startActivity()。使用startActivity()的缺点是需要打开的那个Activity的类已经存在，否则无法通过编译，但是在协同开发中，这往往是无法得到满足的。那么如何来解决这一问题呢，我们是否也能够像在Web开放中一样使用一个url来打开一个Activity呢？因此本文主要介绍在Android平台设计和实现一个路由框架。</p>
 
 <h4>
-<a id="6静态代码扫描在-360-无线项目中的实践" class="anchor" href="#6%E9%9D%99%E6%80%81%E4%BB%A3%E7%A0%81%E6%89%AB%E6%8F%8F%E5%9C%A8-360-%E6%97%A0%E7%BA%BF%E9%A1%B9%E7%9B%AE%E4%B8%AD%E7%9A%84%E5%AE%9E%E8%B7%B5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>6）<a href="https://testerhome.com/topics/4570">静态代码扫描在 360 无线项目中的实践</a>
+<a id="6android实战之你应该使用哪个网络库" class="anchor" href="#6android%E5%AE%9E%E6%88%98%E4%B9%8B%E4%BD%A0%E5%BA%94%E8%AF%A5%E4%BD%BF%E7%94%A8%E5%93%AA%E4%B8%AA%E7%BD%91%E7%BB%9C%E5%BA%93" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>6）<a href="https://segmentfault.com/a/1190000003965158">Android实战之你应该使用哪个网络库？</a>
 </h4>
 
-<p>安卓代码红线出现的目的就是杜绝一些明显违反公司规定，或者违反安全类规范的代码内容，希望通过静态代码分析来解决这个问题。前期定下的规则已经大部分实现了（实际上也没几条规则），随着工作的推进，我们发现其实我们可以做更多的事情，于是在安卓代码红线的基础上做了不少扩展，演变成了如今的“火线”平台。</p>
+<p>目前基本上每个应用都会使用HTTP/HTTPS协议来作为主要的传输协议来传输数据。即使你没有直接使用HTTP协议，也会有成堆的SDK会包含这些协议，譬如分析、Crash反馈等等。当然，目前也有很多优秀的HTTP的协议库，可以很方便的帮助开发者构建应用。</p>
+
+<h4>
+<a id="7android随机对象生成器的设计与实现" class="anchor" href="#7android%E9%9A%8F%E6%9C%BA%E5%AF%B9%E8%B1%A1%E7%94%9F%E6%88%90%E5%99%A8%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>7）<a href="http://sixwolf.net/blog/2016/04/08/Android%E9%9A%8F%E6%9C%BA%E5%AF%B9%E8%B1%A1%E7%94%9F%E6%88%90%E5%99%A8%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/">Android随机对象生成器的设计与实现</a>
+</h4>
+
+<p>当完成一个新的Feature的时候，需要对其进行测试。但是由于服务器还没有部署该功能，或者单元测试的限制，往往需要程序员自己去伪造一些数据。但是手工伪造数据往往效率不高并且没有代表性。因此希望能够实现一个对象生成器，生成对象并往里面填充随机值。</p>
 
 <h2>
 <a id="ios开发" class="anchor" href="#ios%E5%BC%80%E5%8F%91" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>iOS开发</h2>
 
 <h4>
-<a id="1app环境分离的实现ios篇" class="anchor" href="#1app%E7%8E%AF%E5%A2%83%E5%88%86%E7%A6%BB%E7%9A%84%E5%AE%9E%E7%8E%B0ios%E7%AF%87" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1）<a href="http://mp.weixin.qq.com/s?__biz=MzA5OTI1NDE0Mw==&amp;mid=405010080&amp;idx=1&amp;sn=f7ce0e613b3166d292e8321ad4c10d58&amp;scene=0#wechat_redirect">App环境分离的实现:iOS篇</a>
+<a id="1网易漫画swift混编实践" class="anchor" href="#1%E7%BD%91%E6%98%93%E6%BC%AB%E7%94%BBswift%E6%B7%B7%E7%BC%96%E5%AE%9E%E8%B7%B5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1）<a href="http://mp.weixin.qq.com/s?__biz=MzA3ODg4MDk0Ng==&amp;mid=403474677&amp;idx=1&amp;sn=5163adb2d80aa5b4f0099f79e6d783e1&amp;scene=0#wechat_redirect">网易漫画Swift混编实践</a>
 </h4>
 
-<p>说到App环境分离在iOS的实现，我曾在iOS技术群里问过：如何实现在同一台手机能同时安装同个应用的测试和生产版本？应用名称要有区分，图标也要有所区别。不要手动修改Bundle id和应用名称，也不要手动替换图标，更不要维护两个项目。如何才能简单地实现？</p>
+<p>网易漫画App是网易杭州这边最早采用Swift的产品，本文主要为大家分享下网易漫画App在Swift上的实践：</p>
+
+<ul>
+<li>使用Swift历程</li>
+<li>Swift混编实践 </li>
+<li>基于Swift的架构演变及建议</li>
+</ul>
 
 <h4>
-<a id="2面向协议的-mvvm-架构介绍" class="anchor" href="#2%E9%9D%A2%E5%90%91%E5%8D%8F%E8%AE%AE%E7%9A%84-mvvm-%E6%9E%B6%E6%9E%84%E4%BB%8B%E7%BB%8D" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2）<a href="https://realm.io/cn/news/doios-natasha-murashev-protocol-oriented-mvvm/">面向协议的 MVVM 架构介绍</a>
+<a id="2客户端的前端化之异步数据管理" class="anchor" href="#2%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%9A%84%E5%89%8D%E7%AB%AF%E5%8C%96%E4%B9%8B%E5%BC%82%E6%AD%A5%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2）<a href="http://mp.weixin.qq.com/s?__biz=MzIwMTQwNTA3Nw==&amp;mid=2650500886&amp;idx=1&amp;sn=bf02c4c70218f526579deba2f3fd2541&amp;scene=0#wechat_redirect">客户端的前端化之异步数据管理</a>
 </h4>
 
-<p>在 Swift 中用值类型来替代引用类型，比以前在 Objective-C 中要容易许多，这可以让您的代码更简洁，并且更不容易出错。然而，当需要在多个类型当中共享代码的时候，许多人往往会回避使用值类型，而转为使用继承来实现。</p>
+<p>近年来，App上火热的技术，有些是跟随Web技术的发展趋势的。比如Futures and Promise是JavaScript 先火起来，然后传到App。还比如React，响应式编程也是从Web走向了客户端。当下客户端的架构，需要具备以下几点能力：</p>
+
+<ul>
+<li>复杂异步数据管理的能力</li>
+<li>及时自我更新的能力</li>
+<li>在线Hotfix的能力</li>
+</ul>
 
 <h4>
-<a id="3jspatch更新完善开发功能模块的能力" class="anchor" href="#3jspatch%E6%9B%B4%E6%96%B0%E5%AE%8C%E5%96%84%E5%BC%80%E5%8F%91%E5%8A%9F%E8%83%BD%E6%A8%A1%E5%9D%97%E7%9A%84%E8%83%BD%E5%8A%9B" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3）<a href="http://blog.cnbang.net/tech/3123/">JSPatch更新：完善开发功能模块的能力</a>
+<a id="3ios开发之-动画coreanimation" class="anchor" href="#3ios%E5%BC%80%E5%8F%91%E4%B9%8B-%E5%8A%A8%E7%94%BBcoreanimation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3）<a href="http://blog.treney.com/index.php/archives/CoreAnimation.html">iOS开发之 动画CoreAnimation</a>
 </h4>
 
-<p>JSPatch 开源以来大部分被用于 hotfix，替换原生方法修复线上bug，但实际上 JSPatch 一直拥有动态添加功能模块的能力，因为 JSPatch 可以创建和调用任意 OC 类和方法，完全可以用 JSPatch 写功能模块，然后动态下发加载。只是之前在性能和开发体验上有些问题，还没有太多这方面的应用。这次 JSPatch 做了较大的更新，扫除这些问题，让用纯 JS 写功能模块变得实用。</p>
+<p>本文是对 CoreAnimation 知识点的一个总结回顾。</p>
+
+<h4>
+<a id="4如何编写稳定流畅的ios移动端应用" class="anchor" href="#4%E5%A6%82%E4%BD%95%E7%BC%96%E5%86%99%E7%A8%B3%E5%AE%9A%E6%B5%81%E7%95%85%E7%9A%84ios%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BA%94%E7%94%A8" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>4）<a href="http://www.jianshu.com/p/f4adce56166f">如何编写稳定流畅的iOS移动端应用</a>
+</h4>
+
+<p>把一个客户端做得稳定、无奔溃、流畅，是写客户端朋友的梦想，但是，我们面临的结果往往是不如人意的。天下武功，唯快不破。很多公司都信奉这个教条。恨不得把app开发周期压缩到最低,这就导致了开发中隐藏了很多问题。有点经验的工程师草率的优化一下,更糟的情况是那些没有经验的工程师甚至不会对app进行任何优化，这将会使情况变的更糟。</p>
 
 <h2>
 <a id="技术纵横" class="anchor" href="#%E6%8A%80%E6%9C%AF%E7%BA%B5%E6%A8%AA" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>技术纵横</h2>
 
 <h4>
-<a id="1豆瓣混合开发实践" class="anchor" href="#1%E8%B1%86%E7%93%A3%E6%B7%B7%E5%90%88%E5%BC%80%E5%8F%91%E5%AE%9E%E8%B7%B5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1）<a href="http://lincode.github.io/Hybrid-Rexxar">豆瓣混合开发实践</a>
+<a id="1平安金融科技测试技术周报第一期" class="anchor" href="#1%E5%B9%B3%E5%AE%89%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80%E6%B5%8B%E8%AF%95%E6%8A%80%E6%9C%AF%E5%91%A8%E6%8A%A5%E7%AC%AC%E4%B8%80%E6%9C%9F" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1）<a href="http://mp.weixin.qq.com/s?__biz=MzI1NzE0NjA5Mg==&amp;mid=404197704&amp;idx=1&amp;sn=0ded2883ea2bfa72084e2fe2dbae1c15&amp;scene=0#wechat_redirect">平安金融科技测试技术周报(第一期)</a>
 </h4>
 
-<p>混合开发的直白的解释是 Native 和 Web 技术都要用。但形式上，应用仍然和浏览器无关，用户还是需要在 App Store 和 Android Market 下载 App。只是在开发时，开发者以 Native 代码为主体框架，在合适的地方部分使用 Web 技术。</p>
+<p>平安金融科技测试技术周报终于和大家见面了，我们旨在为大家分享最前沿的测试技术和测试组最新的技术成果。我们将定期给大家带来测试组内的一些原创文章和业内的优秀博文。测试技术周报主要分为五个栏目：原创文章、移动测试技术、后端测试技术、通用测试技术和测试人生。</p>
 
 <h4>
-<a id="2react-native痛点解析之开发环境搭建及扩展" class="anchor" href="#2react-native%E7%97%9B%E7%82%B9%E8%A7%A3%E6%9E%90%E4%B9%8B%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E5%8F%8A%E6%89%A9%E5%B1%95" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2）<a href="http://mp.weixin.qq.com/s?__biz=MzA3ODg4MDk0Ng==&amp;mid=403225766&amp;idx=1&amp;sn=acd8e3ab7f234b97827c3e210c2d8673&amp;scene=0#wechat_redirect">React-Native痛点解析之开发环境搭建及扩展</a>
+<a id="2从架构的角度看如何写好代码" class="anchor" href="#2%E4%BB%8E%E6%9E%B6%E6%9E%84%E7%9A%84%E8%A7%92%E5%BA%A6%E7%9C%8B%E5%A6%82%E4%BD%95%E5%86%99%E5%A5%BD%E4%BB%A3%E7%A0%81" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2）<a href="http://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&amp;mid=403485970&amp;idx=2&amp;sn=5af6adc927d32149bbad1b4191840bf1&amp;scene=0#wechat_redirect">从架构的角度看，如何写好代码？</a>
 </h4>
 
-<p>React Native简直太火了，国内大公司都在争先恐后的尝鲜，让人难以相信这是诞生刚刚一年的开源项目。正因为它的年轻，在使用它进行开发时难免会遇到这样那样的坑，因此，我们邀请了《React Native入门与实战》的作者之一，魅族高级研发经理魏晓军来为我们解析RN开发中的痛点。</p>
+<p>软件架构实际上包括：代码架构，以及承载代码运行的硬件部署架构。实际上，硬件部署架构最终还是由代码的架构来决定。因为代码架构不合理，是无法把一个运行单元分拆出多个来的，那么硬件架构能分拆的就非常的有限，整个系统最终很难长的更大。所以我们经常会听说，重写代码，推翻原有架构，重新设计等等说法，来说明架构的进化。</p>
 
 <h4>
-<a id="3一探前端开发中的js调试技巧" class="anchor" href="#3%E4%B8%80%E6%8E%A2%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E4%B8%AD%E7%9A%84js%E8%B0%83%E8%AF%95%E6%8A%80%E5%B7%A7" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3）<a href="http://mp.weixin.qq.com/s?__biz=MzAxODE2MjM1MA==&amp;mid=403029188&amp;idx=1&amp;sn=9c8249b8c4a3b60e0ff3db3e7e89faa0&amp;scene=2&amp;srcid=0406CIjgaTkzF8pXRrOPb7r2&amp;from=timeline&amp;isappinstalled=0#wechat_redirect">一探前端开发中的JS调试技巧</a>
+<a id="3google-或许会将-swift-编程语言纳入-android-平台" class="anchor" href="#3google-%E6%88%96%E8%AE%B8%E4%BC%9A%E5%B0%86-swift-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E7%BA%B3%E5%85%A5-android-%E5%B9%B3%E5%8F%B0" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3）<a href="http://www.infoq.com/cn/news/2016/04/Google-Uber-Swift-Android">Google 或许会将 Swift 编程语言纳入 Android 平台</a>
 </h4>
 
-<p>调试技巧，在任何一项技术研发中都可谓是必不可少的技能。掌握各种调试技巧，必定能在工作中起到事半功倍的效果。譬如，快速定位问题、降低故障概率、帮助分析逻辑错误等等。而在互联网前端开发越来越重要的今天，如何在前端开发中降低开发成本，提升工作效率，掌握前端开发调试技巧尤为重要。</p>
+<p>自从去年年末备受瞩目的 Swift 开源后，消息不断，最近互联网巨头们－Google、Facebook、Uber 齐聚伦敦，共同就 Swift 相关问题展开了讨论。The Next Web 称，据可靠消息，Google 意欲在其 Android 平台下采纳应用开发编程语言 Swift为其首要开发语言，这可能和他们备受和 Oracle 的官司之争有关吧。但 Swift 的魅力亦是重要因素，Facebook 和 Uber 均表态，未来会将 Swift 作为主要的开发语言。</p>
 
 <h2>
 <a id="技术人生" class="anchor" href="#%E6%8A%80%E6%9C%AF%E4%BA%BA%E7%94%9F" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>技术人生</h2>
 
 <h4>
-<a id="120年前gof提出的设计模式对这个时代是否还有指导意义" class="anchor" href="#120%E5%B9%B4%E5%89%8Dgof%E6%8F%90%E5%87%BA%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E5%AF%B9%E8%BF%99%E4%B8%AA%E6%97%B6%E4%BB%A3%E6%98%AF%E5%90%A6%E8%BF%98%E6%9C%89%E6%8C%87%E5%AF%BC%E6%84%8F%E4%B9%89" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1）<a href="http://mp.weixin.qq.com/s?__biz=MzA5Nzc4OTA1Mw==&amp;mid=410965974&amp;idx=1&amp;sn=f41b049d2acd18a48413aec137bbe78e&amp;scene=0#wechat_redirect">20年前GoF提出的设计模式，对这个时代是否还有指导意义？</a>
+<a id="1丁香园范凯技术团队管理不仅仅是管理" class="anchor" href="#1%E4%B8%81%E9%A6%99%E5%9B%AD%E8%8C%83%E5%87%AF%E6%8A%80%E6%9C%AF%E5%9B%A2%E9%98%9F%E7%AE%A1%E7%90%86%E4%B8%8D%E4%BB%85%E4%BB%85%E6%98%AF%E7%AE%A1%E7%90%86" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1）<a href="http://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&amp;mid=403505026&amp;idx=2&amp;sn=7cf6faa04c9da0537ab0635a8e34978c&amp;scene=0#wechat_redirect">丁香园范凯：技术团队管理不仅仅是管理</a>
 </h4>
 
-<p>在四人帮（Gang of Four，GoF）的那本设计模式的书出版20年后，重新审视设计模式，书中的23种设计模式，真的只是23种使用指针的方法吗？对我们这个时代是否还有指导意义？</p>
+<p>硅谷有一些互联网公司，怎么衡量它们未来的好坏呢，这就是看优秀的人才往哪个互联网公司去流动。如果我们承认互联网公司的核心资产是人的话，那其实整个互联网公司团队的管理观念都要发生改变。那意味着我们管理一家公司或者说公司里面的团队，最根本的目标是做人才培养，把公司的文化建设放在第一位，然后把人的核心价值发挥出来。</p>
 
 <h4>
-<a id="2写代码的四个境界" class="anchor" href="#2%E5%86%99%E4%BB%A3%E7%A0%81%E7%9A%84%E5%9B%9B%E4%B8%AA%E5%A2%83%E7%95%8C" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2）<a href="http://mp.weixin.qq.com/s?__biz=MzA4ODgwNjk1MQ==&amp;mid=2653788186&amp;idx=1&amp;sn=d589bdd64d4f4668241ab3072e186505&amp;scene=0#wechat_redirect">写代码的四个境界</a>
+<a id="2也谈程序员影响力的经营" class="anchor" href="#2%E4%B9%9F%E8%B0%88%E7%A8%8B%E5%BA%8F%E5%91%98%E5%BD%B1%E5%93%8D%E5%8A%9B%E7%9A%84%E7%BB%8F%E8%90%A5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2）<a href="http://weibo.com/ttarticle/p/show?hmsr=toutiao.io&amp;id=2309403963757121391703">也谈程序员影响力的经营</a>
 </h4>
 
-<p>从你拿到第一份码工的工作开始，你就可以说你会写代码了，因为毕竟面试是需要写代码的。然而会写面试的代码于工作是没有太大益处的。仅仅是你必备的一项找工作技能。真正能写出在 production 也很 solid、很靠谱的代码，可能很多人都经历过类似的不同阶段。</p>
+<p>过去几年我一直在不断的讲，程序员需要提升自己的表达能力和技术影响力。因为在我的印象里，程序员这个群体一直是很安静、务实、谦逊的。然而最近一段时间的事情，让我看到程序员圈子发生了很大的变化：</p>
+
+<ul>
+<li>比如，大量程序员伪造简历，并视其为理所当然。</li>
+<li>比如，给知名项目发送垃圾PR，混contribute和star。</li>
+</ul>
 
 <h4>
-<a id="3github-中国区前-100-名到底是什么样的人" class="anchor" href="#3github-%E4%B8%AD%E5%9B%BD%E5%8C%BA%E5%89%8D-100-%E5%90%8D%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E4%B9%88%E6%A0%B7%E7%9A%84%E4%BA%BA" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3）<a href="http://geek.csdn.net/news/detail/66000">GitHub 中国区前 100 名到底是什么样的人？</a>
+<a id="3如何把自己打造成技术圈的-papi-酱" class="anchor" href="#3%E5%A6%82%E4%BD%95%E6%8A%8A%E8%87%AA%E5%B7%B1%E6%89%93%E9%80%A0%E6%88%90%E6%8A%80%E6%9C%AF%E5%9C%88%E7%9A%84-papi-%E9%85%B1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3）<a href="http://diycode.cc/topics/33">如何把自己打造成技术圈的 papi 酱</a>
 </h4>
 
-<p>本文根据Github公开API，抓取了地址显示China的用户，根据粉丝关注做了一个排名，分析前一百名的用户属性，剖析这些活跃在技术社区的牛人到底是何许人也！</p>
+<p>最近半年，一个叫papi酱的平胸女子连续在微博、朋友圈、创业圈刷屏，当之无愧成了中文互联网的第一大网红。呃，你以为我会巴拉巴拉说一堆网工创业的事？NO，今天想借papi酱的话题跟大家一起聊聊程序员如何打造自己的个人品牌。</p>
+
+<blockquote>
+<p>欢迎关注我们团队的技术公众号</p>
+</blockquote>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/191937-85d04d5eec527391.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/PaicHyperionDev/MobileDevWeekly">MobileDevWeekly</a> is maintained by <a href="https://github.com/PaicHyperionDev">PaicHyperionDev</a>.</span>
