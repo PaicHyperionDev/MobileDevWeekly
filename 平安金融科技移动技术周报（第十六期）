@@ -1,0 +1,91 @@
+# [平安金融科技移动技术周报](https://github.com/PaicHyperionDev/MobileDevWeekly)（第十六期）
+
+> @author ASCE1885的 [Github](https://github.com/ASCE1885)  [简书](http://www.jianshu.com/users/4ef984470da8/latest_articles) [微博](http://weibo.com/asce885/profile?rightmod=1&wvr=6&mod=personinfo) [CSDN](http://blog.csdn.net/asce1885) [知乎](https://www.zhihu.com/people/asce1885)
+
+![](http://c.picphotos.baidu.com/album/w%3D1458%3Bq%3D90/sign=076f71cf05087bf47dec53edc7eb6c5d/9825bc315c6034a84425f605cc1349540823766a.jpg)
+
+> **本期导读**：本期原创专题继续带来团队的 Git 管理实战第二篇，以及产品服务组带来的两篇后端系统设计和总结；Android篇可关注蘑菇街的单元测试实战，应该有很多 Android 开发同学没有在项目中使用过单元测试，上一期介绍的 Google 开源的函数响应式函数库Agera有了第一篇中文使用介绍，感兴趣的可以学习一下；iOS篇可重点关注下《从源代码看 ObjC 中消息的发送》；技术纵横篇带来三篇RN相关的文章。
+
+## 原创专题
+
+#### 1）[化繁为简的企业级 Git 管理实战（二）：多分支子模块持续集成](http://mp.weixin.qq.com/s?__biz=MzIxNjIwMTg0NA==&mid=2650279575&idx=1&sn=7df6288142dd863c3d56462f986e9695#rd) @潘伟洲（应用架构组）
+
+在 上一篇文章[1]中，我简单描述了我们一个项目的复杂程度：子模块、嵌套子模块、多分支。除了工程分支切换上的复杂，我们还遇到另一个问题：子模块持续集成。
+
+#### 2）[一个分布式服务治理系统的设计](http://139.196.14.76/t/topic/270) @田聪（产品服务组）
+
+本文主要介绍团队中app的crash收集的分布式系统设计的选型、实现流程及遇到的问题。
+
+#### 3）[高性能分布式Mock平台的框架与设计](http://139.196.14.76/t/mock/285) @严月强（产品服务组）
+
+本文主要介绍一个多点分布式mock平台的架构与设计，即提供公有mock节点也可自助搭建私人专用mock节点，同时提供缓存模式以配合应用或系统做性能测试。文章的最后还提出平台的后期扩展和规划。
+
+## Android开发
+
+#### 1）[蘑菇街支付金融Android单元测试实践](http://mp.weixin.qq.com/s?__biz=MzA3ODg4MDk0Ng==&mid=2651112121&idx=1&sn=c5cc27a8cefd0dc8e1ed956e82a76cd9&scene=0#wechat_redirect)
+
+首先要介绍为什么蘑菇街支付金融这边会采用单元测试的实践。说起来比较巧，刚开始的时候，只是我一个人会写单元测试。后来老板们知道了，觉得这是件很有价值的事情，于是就叫我负责我们组的单元测试这件事情。就这样慢慢的，单元测试这件事情就成了我们这边的正常实践了。再后来，在公司层面也开始有一定的推广。
+
+#### 2）[关于Android N的那些事](https://mp.weixin.qq.com/s?__biz=MzAwNDY1ODY2OQ==&mid=2649286252&idx=1&sn=6f8901da11883f1f9004f1319d1c20b9&scene=0&key=b28b03434249256bd9ff9b4a2a6d2fd616d5c7ed94e5efdfb1630742b89eb740191f060122bd01cf7d0a3c73e1446ace&ascene=0&uin=NTk4MzU3OTAw&devicetype=iMac+MacBookPro12%2C1+OSX+OSX+10.11.1+build(15B42)&version=11020201&pass_ticket=PfOX9hJpyL0eGDSNdIU%2B3kzg%2Fv%2BPwAgferpOE9HYW4HaxPfElYVybw2KloP80Uon)
+
+今年3月，Google破天荒提前半年发布了Android N开发者预览版。本文是作者在参加Google在北京举办了Android开发者大会后的总结。
+
+#### 3）[Android 开发中的单一职责原则](https://realm.io/cn/news/donn-felker-solid-part-1/)
+
+SOLID 最初始于 2000 年左右，由 Robert Martin (AKA: Uncle Bob) 和 Michael Feathers 一起提出。当这五个基础的面向对象的设计原则一起提出的时候，它帮助开发者来开发可维护和可扩展的软件。
+
+#### 4）[要做一个有冒险精神的人！开启漫漫的agera之旅](http://zjutkz.net/2016/04/23/%E8%A6%81%E5%81%9A%E4%B8%80%E4%B8%AA%E6%9C%89%E5%86%92%E9%99%A9%E7%B2%BE%E7%A5%9E%E7%9A%84%E4%BA%BA%EF%BC%81%E5%BC%80%E5%90%AF%E6%BC%AB%E6%BC%AB%E7%9A%84agera%E4%B9%8B%E6%97%85/)
+
+Google在上周开源了一个响应式框架——agera，相信它会慢慢地被广大程序员所熟知。我个人对这样的技术是很感兴趣的，在这之前也研究过RxJava，所以在得知Google开源了这样的框架之后第一时间进行了学习，这里算是把学习的心得和大家分享。
+
+#### 5）[GRADLE构建最佳实践](http://www.figotan.org/2016/04/01/gradle-on-android-best-practise/)
+
+用GRADLE构建安卓项目已是大势所趋，具体实战中姿势啥的很重要，结合具体应用场景，最佳实践给你最佳的体验。
+
+## iOS开发
+
+#### 1）[从源代码看 ObjC 中消息的发送](http://draveness.me/message/)
+
+如果你点开这篇文章，相信你对 Objective-C 比较熟悉，并且有多年使用 Objective-C 编程的经验，否则且先移步《[Objective-C Runtime](http://tech.glowing.com/cn/objective-c-runtime/)》一文。
+
+#### 2）[离屏渲染优化](https://mp.weixin.qq.com/s?__biz=MjM5NTIyNTUyMQ==&mid=2709544818&idx=1&sn=62d0d2e9a363d250beb2d6887dca54b3&scene=0&uin=NTk4MzU3OTAw&key=b28b03434249256ba4bd6036fc475cf485ef5eeeafdd66c0d725a98e98ae0dc17b4e34ff9e90e5c3d4f9cf3678145ac5&devicetype=iMac+MacBookPro12%2C1+OSX+OSX+10.11.1+build(15B42)&version=11020201&lang=zh_CN&pass_ticket=soGOmluHQP0az2SXgB3LowkLxWBkUCyeUp5PMPlFIyZ5PENf0IIMYO51XHjHUrGW)
+
+objc.io 出品的 Getting Pixels onto the Screen 的翻译版绘制像素到屏幕上应该是国内对离屏渲染这个概念推广力度最大的一篇文章了。文章里提到「直接将图层合成到帧的缓冲区中(在屏幕上)比先创建屏幕外缓冲区，然后渲染到纹理中，最后将结果渲染到帧的缓冲区中要廉价很多。因为这其中涉及两次昂贵的环境转换(转换环境到屏幕外缓冲区，然后转换环境到帧缓冲区)。」触发离屏渲染后这种转换发生在每一帧，在界面的滚动过程中如果有大量的离屏渲染发生时会严重影响帧率。
+
+#### 3）A Waltz with Objc Runtime [第一节](https://mp.weixin.qq.com/s?__biz=MzIwMTYzMzcwOQ==&mid=2650948280&idx=1&sn=8a987e6210e37b1e872e33f36a111829&scene=0&uin=NTk4MzU3OTAw&key=b28b03434249256b34ecb28ba05905583963cf12385c278e71758a10ae8fb06d70600e0453a10601c581016b64c64267&devicetype=iMac+MacBookPro12%2C1+OSX+OSX+10.11.1+build(15B42)&version=11020201&lang=zh_CN&pass_ticket=soGOmluHQP0az2SXgB3LowkLxWBkUCyeUp5PMPlFIyZ5PENf0IIMYO51XHjHUrGW) [第二节](https://mp.weixin.qq.com/s?__biz=MzIwMTYzMzcwOQ==&mid=2650948284&idx=1&sn=6372223145d1c0dcb3f534837452cb8d&scene=0&uin=NTk4MzU3OTAw&key=b28b03434249256b9b7d1c5f603a3442dd6a033c24d8b5ab479af631ce83ff2be1998cc4486eb3d50567d0f1ce1f07ea&devicetype=iMac+MacBookPro12%2C1+OSX+OSX+10.11.1+build(15B42)&version=11020201&lang=zh_CN&pass_ticket=soGOmluHQP0az2SXgB3LowkLxWBkUCyeUp5PMPlFIyZ5PENf0IIMYO51XHjHUrGW)
+
+Objective-C 中，最令人着迷的就是他那高度灵活的 Runtime 机制。通过 Runtime 我们可以调用系统私有 API、修改第三方库、让功能实现的更简练，甚至可以扩展这门语言。
+
+## 技术纵横
+
+#### 1）[平安金融科技测试技术周报(第三期)](http://www.jianshu.com/p/d33c69baa0dd#rd)
+
+本期测试技术周报带来两篇原创文章，为大家介绍常用的开源框架以及支付宝支撑双11高并发的后端设计方案。移动端测试技术本期主打性能测试，带来两篇Android客户端性能测试及优化方法的文章，非常实用。另外要重点推荐通用测试技术专栏的探索性测试体系这篇文章，重点阐述了测试工作中如何运用探索式测试思想来发现问题。在测试杂谈专栏，让我们看看软件测试行业有哪些新趋势。
+
+#### 2）[团队中的 Git 实践](https://ourai.ws/posts/working-with-git-in-team/)
+
+本文不是一篇 Git 入门教程，这样的文章一搜一大把，我是要从具体实践角度，尤其是在团队协作中，阐述如何去好好地应用 Git。既然是讲在团队中的应用实践，我就尽可能地结合实际场景来讲述。
+
+#### 3）[聊聊代码规范](http://mp.weixin.qq.com/s?__biz=MzI5NDIyMzY2OQ==&mid=2247483652&idx=1&sn=651dbe000f052b0cfccff4c3e439dff7&scene=4#wechat_redirect)
+
+不论在哪一家公司，不论是哪一种语言，工程师们总会或显式或隐式地逐渐形成一种编码约定，这其实就是编码规范。今天，我们在这里简单的聊聊代码规范。由于平时工作中涉及的编程语言主要以Java为主，所以下面讨论的主要是Java代码规范，不过有些思想对其他的语言规范也同样有所借鉴。
+
+#### 4）[ReactNative For Android 框架启动核心路径剖析](http://mp.weixin.qq.com/s?__biz=MzI1MTA1MzM2Nw==&mid=2649796767&idx=1&sn=9a499453b627a223e0c2863658dd0329&scene=0#wechat_redirect)
+
+前面给大家分析过 ReactNative For Android (RN4A) 的通信机制，这次我们从源码出发，分析下RN4A的启动过程。启动过程基于通信机制，涉及通信机制原理大家可以查看前一篇文章，本篇不赘述。
+
+#### 5）[React Native 的 ES6 类写法与未定义错误](http://www.wangchenlong.org/2016/04/26/1604/261-rn-es6-class/)
+
+ES6, 即ECMAScript6, JavaScript的新标准, 书写更加规范, 代码更加优雅. React Native推荐使用ES6的类写法代替传统的模块, 即使用extends React.Component代替React.createClass. 本文介绍在ReactNative中ES6的写法, 与传统方法进行对比, 并解决未定义(undefined)错误。
+
+#### 6）[React-Native 分包实践](https://mp.weixin.qq.com/s?__biz=MzI1NjEwMTM4OA==&mid=2651231742&idx=1&sn=1e5ab2536b97bd7c6776c2d215a9d8c6&scene=1&srcid=04240FnRrBh23Yz8a0Up0icS&key=b28b03434249256b07cd915f657014dd9a3cd79fc6a1552f597ec69788da4c0efaefdc328dd2c52f10b704d75775a98b&ascene=0&uin=NTkyMjI3NQ%3D%3D&devicetype=iMac+MacBookPro12%2C1+OSX+OSX+10.11.4+build(15E65)&version=11020201&pass_ticket=Sf%2BRR%2BcLL%2B55loFUPeIAYKSS9%2B77CfOES%2BMBRqAotxg%3D)
+
+对于很多在使用react-native开发应用的小伙伴们肯定都会遇到一个问题，功能越来越复杂，生成的jsbundle文件越来越大，无论是打包在app内发布还是走http请求更新bunlde文件都是噩梦，这个时候我们应该如何来更新呢？本文是QQ音乐技术团队的方案。
+
+#### 7）[QCON 2016 北京站演讲 PPT 合辑](http://yun.baidu.com/s/1b6M2su#path=%252F)
+
+几天前的QCON 2016 北京站演讲PPT，可以关注下其中的：1）工程效率提升专题；2）移动开发挑战专题；3）未来的前端专题；4）人才与团队专题；5）移动测试技术专题。
+
+> 欢迎关注我们团队的技术公众号
+
+![](http://c.picphotos.baidu.com/album/w%3D1458%3Bq%3D90/sign=682592986a224f4a579977173ccfab23/32fa828ba61ea8d327c190ba900a304e241f58a9.jpg)
