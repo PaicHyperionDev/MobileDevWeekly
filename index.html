@@ -20,128 +20,107 @@
 
     <section class="main-content">
       <h1>
-<a id="平安金融科技移动技术周报第十六期" class="anchor" href="#%E5%B9%B3%E5%AE%89%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80%E7%A7%BB%E5%8A%A8%E6%8A%80%E6%9C%AF%E5%91%A8%E6%8A%A5%E7%AC%AC%E5%8D%81%E5%85%AD%E6%9C%9F" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="https://github.com/PaicHyperionDev/MobileDevWeekly">平安金融科技移动技术周报</a>（第十六期）</h1>
+<a id="平安金融科技移动技术周报第十七期" class="anchor" href="#%E5%B9%B3%E5%AE%89%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80%E7%A7%BB%E5%8A%A8%E6%8A%80%E6%9C%AF%E5%91%A8%E6%8A%A5%E7%AC%AC%E5%8D%81%E4%B8%83%E6%9C%9F" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="https://github.com/PaicHyperionDev/MobileDevWeekly">平安金融科技移动技术周报</a>（第十七期）</h1>
 
 <blockquote>
-<p><strong>本期导读</strong>：本期原创专题继续带来团队的 Git 管理实战第二篇，以及产品服务组带来的两篇后端系统设计和总结；Android篇可关注蘑菇街的单元测试实战，应该有很多 Android 开发同学没有在项目中使用过单元测试，上一期介绍的 Google 开源的函数响应式函数库Agera有了第一篇中文使用介绍，感兴趣的可以学习一下；iOS篇可重点关注下《从源代码看 ObjC 中消息的发送》；技术纵横篇带来三篇RN相关的文章。</p>
+<p><strong>本期导读</strong>：本期原创专题带来对 JSPatch 的源码分析；Android 篇可重点关注性能优化一文，Hybrid通信方式一文也可以关注一下，你是否知道我们项目中用的是哪一种？iOS 篇带来架构和性能相关的讨论；技术纵横可以了解日常开发中使用的React Natie，是如何实现 Native 和 JavaScript 的通信的。</p>
 </blockquote>
 
 <h2>
 <a id="原创专题" class="anchor" href="#%E5%8E%9F%E5%88%9B%E4%B8%93%E9%A2%98" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>原创专题</h2>
 
 <h4>
-<a id="1化繁为简的企业级-git-管理实战二多分支子模块持续集成-潘伟洲应用架构组" class="anchor" href="#1%E5%8C%96%E7%B9%81%E4%B8%BA%E7%AE%80%E7%9A%84%E4%BC%81%E4%B8%9A%E7%BA%A7-git-%E7%AE%A1%E7%90%86%E5%AE%9E%E6%88%98%E4%BA%8C%E5%A4%9A%E5%88%86%E6%94%AF%E5%AD%90%E6%A8%A1%E5%9D%97%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90-%E6%BD%98%E4%BC%9F%E6%B4%B2%E5%BA%94%E7%94%A8%E6%9E%B6%E6%9E%84%E7%BB%84" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1）<a href="http://mp.weixin.qq.com/s?__biz=MzIxNjIwMTg0NA==&amp;mid=2650279575&amp;idx=1&amp;sn=7df6288142dd863c3d56462f986e9695#rd">化繁为简的企业级 Git 管理实战（二）：多分支子模块持续集成</a> @潘伟洲（应用架构组）</h4>
+<a id="1jspatch-源码分析-一-二-熊壮应用架构组" class="anchor" href="#1jspatch-%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90-%E4%B8%80-%E4%BA%8C-%E7%86%8A%E5%A3%AE%E5%BA%94%E7%94%A8%E6%9E%B6%E6%9E%84%E7%BB%84" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1）JSPatch 源码分析 <a href="http://www.jianshu.com/p/6cc18cfc9354">(一)</a> <a href="http://www.jianshu.com/p/3d9a1c53016a">（二）</a> @熊壮（应用架构组）</h4>
 
-<p>在 上一篇文章[1]中，我简单描述了我们一个项目的复杂程度：子模块、嵌套子模块、多分支。除了工程分支切换上的复杂，我们还遇到另一个问题：子模块持续集成。</p>
-
-<h4>
-<a id="2一个分布式服务治理系统的设计-田聪产品服务组" class="anchor" href="#2%E4%B8%80%E4%B8%AA%E5%88%86%E5%B8%83%E5%BC%8F%E6%9C%8D%E5%8A%A1%E6%B2%BB%E7%90%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1-%E7%94%B0%E8%81%AA%E4%BA%A7%E5%93%81%E6%9C%8D%E5%8A%A1%E7%BB%84" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2）<a href="http://139.196.14.76/t/topic/270">一个分布式服务治理系统的设计</a> @田聪（产品服务组）</h4>
-
-<p>本文主要介绍团队中app的crash收集的分布式系统设计的选型、实现流程及遇到的问题。</p>
-
-<h4>
-<a id="3高性能分布式mock平台的框架与设计-严月强产品服务组" class="anchor" href="#3%E9%AB%98%E6%80%A7%E8%83%BD%E5%88%86%E5%B8%83%E5%BC%8Fmock%E5%B9%B3%E5%8F%B0%E7%9A%84%E6%A1%86%E6%9E%B6%E4%B8%8E%E8%AE%BE%E8%AE%A1-%E4%B8%A5%E6%9C%88%E5%BC%BA%E4%BA%A7%E5%93%81%E6%9C%8D%E5%8A%A1%E7%BB%84" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3）<a href="http://139.196.14.76/t/mock/285">高性能分布式Mock平台的框架与设计</a> @严月强（产品服务组）</h4>
-
-<p>本文主要介绍一个多点分布式mock平台的架构与设计，即提供公有mock节点也可自助搭建私人专用mock节点，同时提供缓存模式以配合应用或系统做性能测试。文章的最后还提出平台的后期扩展和规划。</p>
+<p>前一段时间在公司做了一个iOS热补丁的模块，就用到了JSPatch框架，期间有了解过一些关于框架的源码分析的博客，本文是自己对 JSPatch 核心代码的分析。</p>
 
 <h2>
 <a id="android开发" class="anchor" href="#android%E5%BC%80%E5%8F%91" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Android开发</h2>
 
 <h4>
-<a id="1蘑菇街支付金融android单元测试实践" class="anchor" href="#1%E8%98%91%E8%8F%87%E8%A1%97%E6%94%AF%E4%BB%98%E9%87%91%E8%9E%8Dandroid%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E5%AE%9E%E8%B7%B5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1）<a href="http://mp.weixin.qq.com/s?__biz=MzA3ODg4MDk0Ng==&amp;mid=2651112121&amp;idx=1&amp;sn=c5cc27a8cefd0dc8e1ed956e82a76cd9&amp;scene=0#wechat_redirect">蘑菇街支付金融Android单元测试实践</a>
+<a id="1老司机教你飙eventbus3" class="anchor" href="#1%E8%80%81%E5%8F%B8%E6%9C%BA%E6%95%99%E4%BD%A0%E9%A3%99eventbus3" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1）<a href="http://mp.weixin.qq.com/s?__biz=MzI1NjEwMTM4OA==&amp;mid=2651231761&amp;idx=1&amp;sn=3d43eb2a21556f820f12ee6f5fd87175&amp;scene=0#wechat_redirect">老司机教你“飙”EventBus3</a>
 </h4>
 
-<p>首先要介绍为什么蘑菇街支付金融这边会采用单元测试的实践。说起来比较巧，刚开始的时候，只是我一个人会写单元测试。后来老板们知道了，觉得这是件很有价值的事情，于是就叫我负责我们组的单元测试这件事情。就这样慢慢的，单元测试这件事情就成了我们这边的正常实践了。再后来，在公司层面也开始有一定的推广。</p>
+<p>EventBus对于Android开发老司机来说肯定不会陌生，它是一个基于观察者模式的事件发布/订阅框架，开发者可以通过极少的代码去实现多个模块之间的通信，而不需要以层层传递接口的形式去单独构建通信桥梁。</p>
 
 <h4>
-<a id="2关于android-n的那些事" class="anchor" href="#2%E5%85%B3%E4%BA%8Eandroid-n%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2）<a href="https://mp.weixin.qq.com/s?__biz=MzAwNDY1ODY2OQ==&amp;mid=2649286252&amp;idx=1&amp;sn=6f8901da11883f1f9004f1319d1c20b9&amp;scene=0&amp;key=b28b03434249256bd9ff9b4a2a6d2fd616d5c7ed94e5efdfb1630742b89eb740191f060122bd01cf7d0a3c73e1446ace&amp;ascene=0&amp;uin=NTk4MzU3OTAw&amp;devicetype=iMac+MacBookPro12%2C1+OSX+OSX+10.11.1+build(15B42)&amp;version=11020201&amp;pass_ticket=PfOX9hJpyL0eGDSNdIU%2B3kzg%2Fv%2BPwAgferpOE9HYW4HaxPfElYVybw2KloP80Uon">关于Android N的那些事</a>
+<a id="2android性能优化典范五" class="anchor" href="#2android%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E5%85%B8%E8%8C%83%E4%BA%94" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2）<a href="http://mp.weixin.qq.com/s?__biz=MjM5MjAwODM4MA==&amp;mid=2650686371&amp;idx=1&amp;sn=3eb88d1cd835819a963adfaafb06ff11&amp;scene=2&amp;srcid=0430ZzuL02EXKtfx0rhxrFyr&amp;from=timeline&amp;isappinstalled=0#wechat_redirect">Android性能优化典范（五）</a>
 </h4>
 
-<p>今年3月，Google破天荒提前半年发布了Android N开发者预览版。本文是作者在参加Google在北京举办了Android开发者大会后的总结。</p>
+<p>文章共有10个段落，涉及的内容有：多线程并发的性能问题，介绍了AsyncTask、HandlerThread、IntentService与ThreadPool分别适合的使用场景以及各自的使用注意事项。这是一篇了解Android多线程编程不可多得的基础文章，清楚地了解这些Android系统提供的多线程基础组件之间的差异以及优缺点，才能够在项目实战中做出最恰当的选择。</p>
 
 <h4>
-<a id="3android-开发中的单一职责原则" class="anchor" href="#3android-%E5%BC%80%E5%8F%91%E4%B8%AD%E7%9A%84%E5%8D%95%E4%B8%80%E8%81%8C%E8%B4%A3%E5%8E%9F%E5%88%99" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3）<a href="https://realm.io/cn/news/donn-felker-solid-part-1/">Android 开发中的单一职责原则</a>
+<a id="3android推送平台调研报告" class="anchor" href="#3android%E6%8E%A8%E9%80%81%E5%B9%B3%E5%8F%B0%E8%B0%83%E7%A0%94%E6%8A%A5%E5%91%8A" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3）<a href="http://www.jianshu.com/p/d650d02a1c7a">Android推送平台调研报告</a>
 </h4>
 
-<p>SOLID 最初始于 2000 年左右，由 Robert Martin (AKA: Uncle Bob) 和 Michael Feathers 一起提出。当这五个基础的面向对象的设计原则一起提出的时候，它帮助开发者来开发可维护和可扩展的软件。</p>
+<p>Android在国内没有办法利用系统级的推送服务，再加上第三方rom对于原生的各种定制（这里的定制并无褒贬之意）所以国内的开发者就需要选择一些成熟的推送平台做推送服务了。目前的推送平台种类繁多，本文将给出推送平台的具体对比和调研结果，方便后来人进行选择。</p>
 
 <h4>
-<a id="4要做一个有冒险精神的人开启漫漫的agera之旅" class="anchor" href="#4%E8%A6%81%E5%81%9A%E4%B8%80%E4%B8%AA%E6%9C%89%E5%86%92%E9%99%A9%E7%B2%BE%E7%A5%9E%E7%9A%84%E4%BA%BA%E5%BC%80%E5%90%AF%E6%BC%AB%E6%BC%AB%E7%9A%84agera%E4%B9%8B%E6%97%85" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>4）<a href="http://zjutkz.net/2016/04/23/%E8%A6%81%E5%81%9A%E4%B8%80%E4%B8%AA%E6%9C%89%E5%86%92%E9%99%A9%E7%B2%BE%E7%A5%9E%E7%9A%84%E4%BA%BA%EF%BC%81%E5%BC%80%E5%90%AF%E6%BC%AB%E6%BC%AB%E7%9A%84agera%E4%B9%8B%E6%97%85/">要做一个有冒险精神的人！开启漫漫的agera之旅</a>
+<a id="4android分包multidex后编译加速方案" class="anchor" href="#4android%E5%88%86%E5%8C%85multidex%E5%90%8E%E7%BC%96%E8%AF%91%E5%8A%A0%E9%80%9F%E6%96%B9%E6%A1%88" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>4）<a href="http://www.jianshu.com/p/8014f1443d34">Android分包(MultiDex)后编译加速方案</a>
 </h4>
 
-<p>Google在上周开源了一个响应式框架——agera，相信它会慢慢地被广大程序员所熟知。我个人对这样的技术是很感兴趣的，在这之前也研究过RxJava，所以在得知Google开源了这样的框架之后第一时间进行了学习，这里算是把学习的心得和大家分享。</p>
+<p>Android 项目中使用了 MultiDex，会使得编译时间增加，如何在使用了 MultiDex 得项目中开启 Instant Run 呢？本文给出一个一个解决方案。</p>
 
 <h4>
-<a id="5gradle构建最佳实践" class="anchor" href="#5gradle%E6%9E%84%E5%BB%BA%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>5）<a href="http://www.figotan.org/2016/04/01/gradle-on-android-best-practise/">GRADLE构建最佳实践</a>
+<a id="5android-gc-log" class="anchor" href="#5android-gc-log" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>5）<a href="http://blog.cwzyzl.cn/2016/04/27/android-gc-log/">Android GC Log</a>
 </h4>
 
-<p>用GRADLE构建安卓项目已是大势所趋，具体实战中姿势啥的很重要，结合具体应用场景，最佳实践给你最佳的体验。</p>
+<p>最近在研究Android内存垃圾回收的内容，遇到一些自己之前不知道的技巧和方法。现在分享一种简单的在Logcat中可以看到垃圾回收状态的方法。经常关注Logcat日志的童鞋偶尔会看到一条类似于以下形式的记录。这种记录就是系统执行垃圾回收后返回的状态信息。</p>
+
+<h4>
+<a id="6好好和h5沟通几种常见的hybrid通信方式" class="anchor" href="#6%E5%A5%BD%E5%A5%BD%E5%92%8Ch5%E6%B2%9F%E9%80%9A%E5%87%A0%E7%A7%8D%E5%B8%B8%E8%A7%81%E7%9A%84hybrid%E9%80%9A%E4%BF%A1%E6%96%B9%E5%BC%8F" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>6）<a href="http://zjutkz.net/2016/04/17/%E5%A5%BD%E5%A5%BD%E5%92%8Ch5%E6%B2%9F%E9%80%9A%EF%BC%81%E5%87%A0%E7%A7%8D%E5%B8%B8%E8%A7%81%E7%9A%84hybrid%E9%80%9A%E4%BF%A1%E6%96%B9%E5%BC%8F/">好好和h5沟通！几种常见的hybrid通信方式</a>
+</h4>
+
+<p>说起hybrid大家不会陌生，主要意思就是native和h5混合开发。为什么要这样做呢？大家可以想象一下针对于同一个活动，如果使用纯native的开发方式，Android和iOS两边都要维护同一套界面甚至是逻辑，这样开发和维护的成本会很大，而使用hybrid的开发方式的话，让前端的同学去写一套界面和逻辑，对于native端来说只要使用对应的容器去展示就可以了(对于Android来说这个容器当然就是WebView)。</p>
+
+<h4>
+<a id="7如何写出低碳环保的android代码" class="anchor" href="#7%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E4%BD%8E%E7%A2%B3%E7%8E%AF%E4%BF%9D%E7%9A%84android%E4%BB%A3%E7%A0%81" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>7）<a href="https://mp.weixin.qq.com/s?__biz=MjM5MjAwODM4MA==&amp;mid=2650686413&amp;idx=1&amp;sn=c1db1a4f63c4abeb13b9e1143dc63271&amp;scene=0&amp;key=b28b03434249256b38304ca8bfc94b6bb211ae9f903ed9795def96528781ddc52daf509f2011092bebf490c0a4c81660&amp;ascene=0&amp;uin=NTk4MzU3OTAw&amp;devicetype=iMac+MacBookPro12%2C1+OSX+OSX+10.11.1+build(15B42)&amp;version=11020201&amp;pass_ticket=8vt13V8GYsibqEvFjpyVvGuqGvuq3d12N2%2BNCEZfI1j5RUc0U1KVgK2AC56fUc8n">如何写出低碳环保的Android代码</a>
+</h4>
+
+<p>什么是低碳环保，简而言之就是就是低能量、低消耗、低开支的生活方式，映射到我们的工作中就是以最低的消耗的来完成组织交给我们的任务。本文就以 Android 开发为例从库和语言两方面来讨论如何实现低碳环保的编程方式。</p>
 
 <h2>
 <a id="ios开发" class="anchor" href="#ios%E5%BC%80%E5%8F%91" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>iOS开发</h2>
 
 <h4>
-<a id="1从源代码看-objc-中消息的发送" class="anchor" href="#1%E4%BB%8E%E6%BA%90%E4%BB%A3%E7%A0%81%E7%9C%8B-objc-%E4%B8%AD%E6%B6%88%E6%81%AF%E7%9A%84%E5%8F%91%E9%80%81" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1）<a href="http://draveness.me/message/">从源代码看 ObjC 中消息的发送</a>
+<a id="1ios移动端架构的那些事" class="anchor" href="#1ios%E7%A7%BB%E5%8A%A8%E7%AB%AF%E6%9E%B6%E6%9E%84%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1）<a href="http://www.jianshu.com/p/15e5b83ab70e">iOS移动端架构的那些事</a>
 </h4>
 
-<p>如果你点开这篇文章，相信你对 Objective-C 比较熟悉，并且有多年使用 Objective-C 编程的经验，否则且先移步《<a href="http://tech.glowing.com/cn/objective-c-runtime/">Objective-C Runtime</a>》一文。</p>
+<p>一个app的初始阶段，必然是先满足各种业务需求。然后，经过多次版本迭代之后，先前的由于急于满足需求而导致的杂乱代码则会充斥整个项目。而此时，项目有了一定的规模，有了一定数量的开发人员，那么为了达到快速迭代版本的需求，则是需要有一个强大的架构来支撑。</p>
 
 <h4>
-<a id="2离屏渲染优化" class="anchor" href="#2%E7%A6%BB%E5%B1%8F%E6%B8%B2%E6%9F%93%E4%BC%98%E5%8C%96" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2）<a href="https://mp.weixin.qq.com/s?__biz=MjM5NTIyNTUyMQ==&amp;mid=2709544818&amp;idx=1&amp;sn=62d0d2e9a363d250beb2d6887dca54b3&amp;scene=0&amp;uin=NTk4MzU3OTAw&amp;key=b28b03434249256ba4bd6036fc475cf485ef5eeeafdd66c0d725a98e98ae0dc17b4e34ff9e90e5c3d4f9cf3678145ac5&amp;devicetype=iMac+MacBookPro12%2C1+OSX+OSX+10.11.1+build(15B42)&amp;version=11020201&amp;lang=zh_CN&amp;pass_ticket=soGOmluHQP0az2SXgB3LowkLxWBkUCyeUp5PMPlFIyZ5PENf0IIMYO51XHjHUrGW">离屏渲染优化</a>
+<a id="2从视觉到app网易有钱ios项目切图与适配实践" class="anchor" href="#2%E4%BB%8E%E8%A7%86%E8%A7%89%E5%88%B0app%E7%BD%91%E6%98%93%E6%9C%89%E9%92%B1ios%E9%A1%B9%E7%9B%AE%E5%88%87%E5%9B%BE%E4%B8%8E%E9%80%82%E9%85%8D%E5%AE%9E%E8%B7%B5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2）<a href="http://mp.weixin.qq.com/s?__biz=MzA3ODg4MDk0Ng==&amp;mid=2651112179&amp;idx=1&amp;sn=4c7cb33b756b343b93de8b7ccb38b486&amp;scene=0#wechat_redirect">从视觉到App：网易有钱iOS项目切图与适配实践</a>
 </h4>
 
-<p>objc.io 出品的 Getting Pixels onto the Screen 的翻译版绘制像素到屏幕上应该是国内对离屏渲染这个概念推广力度最大的一篇文章了。文章里提到「直接将图层合成到帧的缓冲区中(在屏幕上)比先创建屏幕外缓冲区，然后渲染到纹理中，最后将结果渲染到帧的缓冲区中要廉价很多。因为这其中涉及两次昂贵的环境转换(转换环境到屏幕外缓冲区，然后转换环境到帧缓冲区)。」触发离屏渲染后这种转换发生在每一帧，在界面的滚动过程中如果有大量的离屏渲染发生时会严重影响帧率。</p>
+<p>在iOS、Android、PC Web产品开发中，有个步骤基础且重要——切图和适配。在有钱项目开发中，我们参考了诸多流行的切图和适配方案，总结了一套自己的流程和规范。下面以网易有钱iOS的开发过程为例，介绍下我们的方法。</p>
 
 <h4>
-<a id="3a-waltz-with-objc-runtime-第一节-第二节" class="anchor" href="#3a-waltz-with-objc-runtime-%E7%AC%AC%E4%B8%80%E8%8A%82-%E7%AC%AC%E4%BA%8C%E8%8A%82" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3）A Waltz with Objc Runtime <a href="https://mp.weixin.qq.com/s?__biz=MzIwMTYzMzcwOQ==&amp;mid=2650948280&amp;idx=1&amp;sn=8a987e6210e37b1e872e33f36a111829&amp;scene=0&amp;uin=NTk4MzU3OTAw&amp;key=b28b03434249256b34ecb28ba05905583963cf12385c278e71758a10ae8fb06d70600e0453a10601c581016b64c64267&amp;devicetype=iMac+MacBookPro12%2C1+OSX+OSX+10.11.1+build(15B42)&amp;version=11020201&amp;lang=zh_CN&amp;pass_ticket=soGOmluHQP0az2SXgB3LowkLxWBkUCyeUp5PMPlFIyZ5PENf0IIMYO51XHjHUrGW">第一节</a> <a href="https://mp.weixin.qq.com/s?__biz=MzIwMTYzMzcwOQ==&amp;mid=2650948284&amp;idx=1&amp;sn=6372223145d1c0dcb3f534837452cb8d&amp;scene=0&amp;uin=NTk4MzU3OTAw&amp;key=b28b03434249256b9b7d1c5f603a3442dd6a033c24d8b5ab479af631ce83ff2be1998cc4486eb3d50567d0f1ce1f07ea&amp;devicetype=iMac+MacBookPro12%2C1+OSX+OSX+10.11.1+build(15B42)&amp;version=11020201&amp;lang=zh_CN&amp;pass_ticket=soGOmluHQP0az2SXgB3LowkLxWBkUCyeUp5PMPlFIyZ5PENf0IIMYO51XHjHUrGW">第二节</a>
+<a id="3微信读书-ios-性能优化总结" class="anchor" href="#3%E5%BE%AE%E4%BF%A1%E8%AF%BB%E4%B9%A6-ios-%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E6%80%BB%E7%BB%93" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3）<a href="http://wereadteam.github.io/2016/05/03/WeRead-Performance/">微信读书 iOS 性能优化总结</a>
 </h4>
 
-<p>Objective-C 中，最令人着迷的就是他那高度灵活的 Runtime 机制。通过 Runtime 我们可以调用系统私有 API、修改第三方库、让功能实现的更简练，甚至可以扩展这门语言。</p>
+<p>微信读书作为一款阅读类的新产品，目前还处于快速迭代，不断尝试的过程中，性能问题也在业务的不断累积中逐渐体现出来。最近的 1.3.0 版本发布后，关于性能问题的用户反馈逐渐增多，为此，团队开始做一些针对性的性能问题优化。本文将从发现问题、解决问题和预防问题三个方面进行总结。</p>
 
 <h2>
 <a id="技术纵横" class="anchor" href="#%E6%8A%80%E6%9C%AF%E7%BA%B5%E6%A8%AA" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>技术纵横</h2>
 
 <h4>
-<a id="1平安金融科技测试技术周报第三期" class="anchor" href="#1%E5%B9%B3%E5%AE%89%E9%87%91%E8%9E%8D%E7%A7%91%E6%8A%80%E6%B5%8B%E8%AF%95%E6%8A%80%E6%9C%AF%E5%91%A8%E6%8A%A5%E7%AC%AC%E4%B8%89%E6%9C%9F" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1）<a href="http://www.jianshu.com/p/d33c69baa0dd#rd">平安金融科技测试技术周报(第三期)</a>
+<a id="1对话一个工程师在蘑菇街4年的架构感悟" class="anchor" href="#1%E5%AF%B9%E8%AF%9D%E4%B8%80%E4%B8%AA%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%9C%A8%E8%98%91%E8%8F%87%E8%A1%974%E5%B9%B4%E7%9A%84%E6%9E%B6%E6%9E%84%E6%84%9F%E6%82%9F" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1）<a href="http://mp.weixin.qq.com/s?__biz=MzAwMDU1MTE1OQ==&amp;mid=2653547068&amp;idx=1&amp;sn=910e345a35383e9d440d8a41695ccb10&amp;scene=1&amp;srcid=0504Wzmtyh8LNqrTo2XrP1my&amp;from=groupmessage&amp;isappinstalled=0#wechat_redirect">对话：一个工程师在蘑菇街4年的架构感悟</a>
 </h4>
 
-<p>本期测试技术周报带来两篇原创文章，为大家介绍常用的开源框架以及支付宝支撑双11高并发的后端设计方案。移动端测试技术本期主打性能测试，带来两篇Android客户端性能测试及优化方法的文章，非常实用。另外要重点推荐通用测试技术专栏的探索性测试体系这篇文章，重点阐述了测试工作中如何运用探索式测试思想来发现问题。在测试杂谈专栏，让我们看看软件测试行业有哪些新趋势。</p>
+<p>架构师需要思考方案，解决问题，实现核心功能。每个人都可以是自己负责的模块或者系统的架构师，在开始实现前多思考、多类比，我该选择哪种方案，选择的理由是什么，优缺点是什么，能不能有更优解？如果前提变了（时间、资源、需求），我会做哪些改变？</p>
 
 <h4>
-<a id="2团队中的-git-实践" class="anchor" href="#2%E5%9B%A2%E9%98%9F%E4%B8%AD%E7%9A%84-git-%E5%AE%9E%E8%B7%B5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2）<a href="https://ourai.ws/posts/working-with-git-in-team/">团队中的 Git 实践</a>
-</h4>
+<a id="2react-native-for-android-之-native与javascript通信原理" class="anchor" href="#2react-native-for-android-%E4%B9%8B-native%E4%B8%8Ejavascript%E9%80%9A%E4%BF%A1%E5%8E%9F%E7%90%86" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2）React Native For Android 之 Native与Javascript通信原理</h4>
 
-<p>本文不是一篇 Git 入门教程，这样的文章一搜一大把，我是要从具体实践角度，尤其是在团队协作中，阐述如何去好好地应用 Git。既然是讲在团队中的应用实践，我就尽可能地结合实际场景来讲述。</p>
+<p><a href="http://blog.csdn.net/megatronkings/article/details/51114278">（一）</a> <a href="http://blog.csdn.net/megatronkings/article/details/51138499">（二）</a> <a href="http://blog.csdn.net/megatronkings/article/details/51195110">（三）</a></p>
 
-<h4>
-<a id="3聊聊代码规范" class="anchor" href="#3%E8%81%8A%E8%81%8A%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3）<a href="http://mp.weixin.qq.com/s?__biz=MzI5NDIyMzY2OQ==&amp;mid=2247483652&amp;idx=1&amp;sn=651dbe000f052b0cfccff4c3e439dff7&amp;scene=4#wechat_redirect">聊聊代码规范</a>
-</h4>
-
-<p>不论在哪一家公司，不论是哪一种语言，工程师们总会或显式或隐式地逐渐形成一种编码约定，这其实就是编码规范。今天，我们在这里简单的聊聊代码规范。由于平时工作中涉及的编程语言主要以Java为主，所以下面讨论的主要是Java代码规范，不过有些思想对其他的语言规范也同样有所借鉴。</p>
+<p>React Native 最核心的是 Native 与 Javascript 之间的通信，而且是双向通信，Native 层到 Javascript层，Javascript 层到 Native 层，虽说是两个方向，但实现上大同小异，本系列是对这个通信过程得解析。</p>
 
 <h4>
-<a id="4reactnative-for-android-框架启动核心路径剖析" class="anchor" href="#4reactnative-for-android-%E6%A1%86%E6%9E%B6%E5%90%AF%E5%8A%A8%E6%A0%B8%E5%BF%83%E8%B7%AF%E5%BE%84%E5%89%96%E6%9E%90" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>4）<a href="http://mp.weixin.qq.com/s?__biz=MzI1MTA1MzM2Nw==&amp;mid=2649796767&amp;idx=1&amp;sn=9a499453b627a223e0c2863658dd0329&amp;scene=0#wechat_redirect">ReactNative For Android 框架启动核心路径剖析</a>
+<a id="3函数式编程离我们有多远" class="anchor" href="#3%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B%E7%A6%BB%E6%88%91%E4%BB%AC%E6%9C%89%E5%A4%9A%E8%BF%9C" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3）<a href="https://www.h5jun.com/post/functional-how-far.html">函数式编程离我们有多远？</a>
 </h4>
 
-<p>前面给大家分析过 ReactNative For Android (RN4A) 的通信机制，这次我们从源码出发，分析下RN4A的启动过程。启动过程基于通信机制，涉及通信机制原理大家可以查看前一篇文章，本篇不赘述。</p>
-
-<h4>
-<a id="5react-native-的-es6-类写法与未定义错误" class="anchor" href="#5react-native-%E7%9A%84-es6-%E7%B1%BB%E5%86%99%E6%B3%95%E4%B8%8E%E6%9C%AA%E5%AE%9A%E4%B9%89%E9%94%99%E8%AF%AF" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>5）<a href="http://www.wangchenlong.org/2016/04/26/1604/261-rn-es6-class/">React Native 的 ES6 类写法与未定义错误</a>
-</h4>
-
-<p>ES6, 即ECMAScript6, JavaScript的新标准, 书写更加规范, 代码更加优雅. React Native推荐使用ES6的类写法代替传统的模块, 即使用extends React.Component代替React.createClass. 本文介绍在ReactNative中ES6的写法, 与传统方法进行对比, 并解决未定义(undefined)错误。</p>
-
-<h4>
-<a id="6react-native-分包实践" class="anchor" href="#6react-native-%E5%88%86%E5%8C%85%E5%AE%9E%E8%B7%B5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>6）<a href="https://mp.weixin.qq.com/s?__biz=MzI1NjEwMTM4OA==&amp;mid=2651231742&amp;idx=1&amp;sn=1e5ab2536b97bd7c6776c2d215a9d8c6&amp;scene=1&amp;srcid=04240FnRrBh23Yz8a0Up0icS&amp;key=b28b03434249256b07cd915f657014dd9a3cd79fc6a1552f597ec69788da4c0efaefdc328dd2c52f10b704d75775a98b&amp;ascene=0&amp;uin=NTkyMjI3NQ%3D%3D&amp;devicetype=iMac+MacBookPro12%2C1+OSX+OSX+10.11.4+build(15E65)&amp;version=11020201&amp;pass_ticket=Sf%2BRR%2BcLL%2B55loFUPeIAYKSS9%2B77CfOES%2BMBRqAotxg%3D">React-Native 分包实践</a>
-</h4>
-
-<p>对于很多在使用react-native开发应用的小伙伴们肯定都会遇到一个问题，功能越来越复杂，生成的jsbundle文件越来越大，无论是打包在app内发布还是走http请求更新bunlde文件都是噩梦，这个时候我们应该如何来更新呢？本文是QQ音乐技术团队的方案。</p>
-
-<h4>
-<a id="7qcon-2016-北京站演讲-ppt-合辑" class="anchor" href="#7qcon-2016-%E5%8C%97%E4%BA%AC%E7%AB%99%E6%BC%94%E8%AE%B2-ppt-%E5%90%88%E8%BE%91" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>7）<a href="http://yun.baidu.com/s/1b6M2su#path=%252F">QCON 2016 北京站演讲 PPT 合辑</a>
-</h4>
-
-<p>几天前的QCON 2016 北京站演讲PPT，可以关注下其中的：1）工程效率提升专题；2）移动开发挑战专题；3）未来的前端专题；4）人才与团队专题；5）移动测试技术专题。</p>
+<p>函数式编程（Functional Programming）其实相对于计算机的历史而言是一个非常古老的概念，甚至早于第一台计算机的诞生。函数式编程的基础模型来源于 λ 演算，而 λ 演算并非设计于在计算机上执行，它是由 Alonzo Church 和 Stephen Cole Kleene 在 20 世纪三十年代引入的一套用于研究函数定义、函数应用和递归的形式系统。</p>
 
 <blockquote>
 <p>欢迎关注我们团队的技术公众号</p>
