@@ -1,0 +1,78 @@
+# [平安金融科技移动技术周报](https://github.com/PaicHyperionDev/MobileDevWeekly)（第十七期）
+
+> @author ASCE1885的 [Github](https://github.com/ASCE1885)  [简书](http://www.jianshu.com/users/4ef984470da8/latest_articles) [微博](http://weibo.com/asce885/profile?rightmod=1&wvr=6&mod=personinfo) [CSDN](http://blog.csdn.net/asce1885) [知乎](https://www.zhihu.com/people/asce1885)
+
+![](http://c.picphotos.baidu.com/album/w%3D1458%3Bq%3D90/sign=72beb2ea2af5e0feee188d0569580fd9/dbb44aed2e738bd431bd0fc2a68b87d6267ff9a1.jpg)
+
+
+> **本期导读**：本期原创专题带来对 JSPatch 的源码分析；Android 篇可重点关注性能优化一文，Hybrid通信方式一文也可以关注一下，你是否知道我们项目中用的是哪一种？iOS 篇带来架构和性能相关的讨论；技术纵横可以了解日常开发中使用的React Natie，是如何实现 Native 和 JavaScript 的通信的。
+
+## 原创专题
+
+#### 1）JSPatch 源码分析 [(一)](http://www.jianshu.com/p/6cc18cfc9354) [（二）](http://www.jianshu.com/p/3d9a1c53016a) @熊壮（应用架构组）
+
+前一段时间在公司做了一个iOS热补丁的模块，就用到了JSPatch框架，期间有了解过一些关于框架的源码分析的博客，本文是自己对 JSPatch 核心代码的分析。
+
+## Android开发
+
+#### 1）[老司机教你“飙”EventBus3](http://mp.weixin.qq.com/s?__biz=MzI1NjEwMTM4OA==&mid=2651231761&idx=1&sn=3d43eb2a21556f820f12ee6f5fd87175&scene=0#wechat_redirect)
+
+EventBus对于Android开发老司机来说肯定不会陌生，它是一个基于观察者模式的事件发布/订阅框架，开发者可以通过极少的代码去实现多个模块之间的通信，而不需要以层层传递接口的形式去单独构建通信桥梁。
+
+#### 2）[Android性能优化典范（五）](http://mp.weixin.qq.com/s?__biz=MjM5MjAwODM4MA==&mid=2650686371&idx=1&sn=3eb88d1cd835819a963adfaafb06ff11&scene=2&srcid=0430ZzuL02EXKtfx0rhxrFyr&from=timeline&isappinstalled=0#wechat_redirect)
+
+文章共有10个段落，涉及的内容有：多线程并发的性能问题，介绍了AsyncTask、HandlerThread、IntentService与ThreadPool分别适合的使用场景以及各自的使用注意事项。这是一篇了解Android多线程编程不可多得的基础文章，清楚地了解这些Android系统提供的多线程基础组件之间的差异以及优缺点，才能够在项目实战中做出最恰当的选择。
+
+#### 3）[Android推送平台调研报告](http://www.jianshu.com/p/d650d02a1c7a)
+
+Android在国内没有办法利用系统级的推送服务，再加上第三方rom对于原生的各种定制（这里的定制并无褒贬之意）所以国内的开发者就需要选择一些成熟的推送平台做推送服务了。目前的推送平台种类繁多，本文将给出推送平台的具体对比和调研结果，方便后来人进行选择。
+
+#### 4）[Android分包(MultiDex)后编译加速方案](http://www.jianshu.com/p/8014f1443d34)
+
+Android 项目中使用了 MultiDex，会使得编译时间增加，如何在使用了 MultiDex 得项目中开启 Instant Run 呢？本文给出一个一个解决方案。
+
+#### 5）[Android GC Log](http://blog.cwzyzl.cn/2016/04/27/android-gc-log/)
+
+最近在研究Android内存垃圾回收的内容，遇到一些自己之前不知道的技巧和方法。现在分享一种简单的在Logcat中可以看到垃圾回收状态的方法。经常关注Logcat日志的童鞋偶尔会看到一条类似于以下形式的记录。这种记录就是系统执行垃圾回收后返回的状态信息。
+
+#### 6）[好好和h5沟通！几种常见的hybrid通信方式](http://zjutkz.net/2016/04/17/%E5%A5%BD%E5%A5%BD%E5%92%8Ch5%E6%B2%9F%E9%80%9A%EF%BC%81%E5%87%A0%E7%A7%8D%E5%B8%B8%E8%A7%81%E7%9A%84hybrid%E9%80%9A%E4%BF%A1%E6%96%B9%E5%BC%8F/)
+
+说起hybrid大家不会陌生，主要意思就是native和h5混合开发。为什么要这样做呢？大家可以想象一下针对于同一个活动，如果使用纯native的开发方式，Android和iOS两边都要维护同一套界面甚至是逻辑，这样开发和维护的成本会很大，而使用hybrid的开发方式的话，让前端的同学去写一套界面和逻辑，对于native端来说只要使用对应的容器去展示就可以了(对于Android来说这个容器当然就是WebView)。
+
+#### 7）[如何写出低碳环保的Android代码](https://mp.weixin.qq.com/s?__biz=MjM5MjAwODM4MA==&mid=2650686413&idx=1&sn=c1db1a4f63c4abeb13b9e1143dc63271&scene=0&key=b28b03434249256b38304ca8bfc94b6bb211ae9f903ed9795def96528781ddc52daf509f2011092bebf490c0a4c81660&ascene=0&uin=NTk4MzU3OTAw&devicetype=iMac+MacBookPro12%2C1+OSX+OSX+10.11.1+build(15B42)&version=11020201&pass_ticket=8vt13V8GYsibqEvFjpyVvGuqGvuq3d12N2%2BNCEZfI1j5RUc0U1KVgK2AC56fUc8n)
+
+什么是低碳环保，简而言之就是就是低能量、低消耗、低开支的生活方式，映射到我们的工作中就是以最低的消耗的来完成组织交给我们的任务。本文就以 Android 开发为例从库和语言两方面来讨论如何实现低碳环保的编程方式。
+
+## iOS开发
+
+#### 1）[iOS移动端架构的那些事](http://www.jianshu.com/p/15e5b83ab70e)
+
+一个app的初始阶段，必然是先满足各种业务需求。然后，经过多次版本迭代之后，先前的由于急于满足需求而导致的杂乱代码则会充斥整个项目。而此时，项目有了一定的规模，有了一定数量的开发人员，那么为了达到快速迭代版本的需求，则是需要有一个强大的架构来支撑。
+
+#### 2）[从视觉到App：网易有钱iOS项目切图与适配实践](http://mp.weixin.qq.com/s?__biz=MzA3ODg4MDk0Ng==&mid=2651112179&idx=1&sn=4c7cb33b756b343b93de8b7ccb38b486&scene=0#wechat_redirect)
+
+在iOS、Android、PC Web产品开发中，有个步骤基础且重要——切图和适配。在有钱项目开发中，我们参考了诸多流行的切图和适配方案，总结了一套自己的流程和规范。下面以网易有钱iOS的开发过程为例，介绍下我们的方法。
+
+#### 3）[微信读书 iOS 性能优化总结](http://wereadteam.github.io/2016/05/03/WeRead-Performance/)
+
+微信读书作为一款阅读类的新产品，目前还处于快速迭代，不断尝试的过程中，性能问题也在业务的不断累积中逐渐体现出来。最近的 1.3.0 版本发布后，关于性能问题的用户反馈逐渐增多，为此，团队开始做一些针对性的性能问题优化。本文将从发现问题、解决问题和预防问题三个方面进行总结。
+
+## 技术纵横
+
+#### 1）[对话：一个工程师在蘑菇街4年的架构感悟](http://mp.weixin.qq.com/s?__biz=MzAwMDU1MTE1OQ==&mid=2653547068&idx=1&sn=910e345a35383e9d440d8a41695ccb10&scene=1&srcid=0504Wzmtyh8LNqrTo2XrP1my&from=groupmessage&isappinstalled=0#wechat_redirect)
+
+架构师需要思考方案，解决问题，实现核心功能。每个人都可以是自己负责的模块或者系统的架构师，在开始实现前多思考、多类比，我该选择哪种方案，选择的理由是什么，优缺点是什么，能不能有更优解？如果前提变了（时间、资源、需求），我会做哪些改变？
+
+#### 2）React Native For Android 之 Native与Javascript通信原理
+[（一）](http://blog.csdn.net/megatronkings/article/details/51114278) [（二）](http://blog.csdn.net/megatronkings/article/details/51138499) [（三）](http://blog.csdn.net/megatronkings/article/details/51195110)
+
+React Native 最核心的是 Native 与 Javascript 之间的通信，而且是双向通信，Native 层到 Javascript层，Javascript 层到 Native 层，虽说是两个方向，但实现上大同小异，本系列是对这个通信过程得解析。
+
+#### 3）[函数式编程离我们有多远？](https://www.h5jun.com/post/functional-how-far.html)
+
+函数式编程（Functional Programming）其实相对于计算机的历史而言是一个非常古老的概念，甚至早于第一台计算机的诞生。函数式编程的基础模型来源于 λ 演算，而 λ 演算并非设计于在计算机上执行，它是由 Alonzo Church 和 Stephen Cole Kleene 在 20 世纪三十年代引入的一套用于研究函数定义、函数应用和递归的形式系统。
+
+
+> 欢迎关注我们团队的技术公众号
+
+![](http://c.picphotos.baidu.com/album/w%3D1458%3Bq%3D90/sign=682592986a224f4a579977173ccfab23/32fa828ba61ea8d327c190ba900a304e241f58a9.jpg)
