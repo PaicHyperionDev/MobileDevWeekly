@@ -1,0 +1,78 @@
+# [平安金融科技移动技术周报](https://github.com/PaicHyperionDev/MobileDevWeekly)（第十九期）
+
+> @author ASCE1885的 [Github](https://github.com/ASCE1885)  [简书](http://www.jianshu.com/users/4ef984470da8/latest_articles) [微博](http://weibo.com/asce885/profile?rightmod=1&wvr=6&mod=personinfo) [CSDN](http://blog.csdn.net/asce1885) [知乎](https://www.zhihu.com/people/asce1885)
+
+![](http://a.picphotos.baidu.com/album/w%3D1458%3Bq%3D90/sign=f4cf8bc0d51b0ef46ce89c5ae8fc6aab/8644ebf81a4c510f89f421f46759252dd42aa528.jpg)
+
+> **本期导读**：本期原创专题带来一个Android的开源网络框架，大家觉得不错的话可以star起来，同时对于JVM感兴趣的不要错过关于JVM内存结构介绍的文章；Android专题可关注Google最近发布的FlexboxLayout函数库，是屏幕适配的另一种不错的选择，对于金融类应用，安全是非常重要的，推荐重点关注密钥硬编码一文，你写的代码中是否存在类似的安全隐患？iOS篇带来微博iOS客户端架构与优化的总结；技术纵横篇重点推荐QQ空间前端优化一文。
+
+## 原创专题
+
+#### 1）[Android网络框架httplite使用指南](http://mp.weixin.qq.com/s?__biz=MzIxNjIwMTg0NA==&mid=2650279597&idx=1&sn=e975e257926dad3693bc1ace669439a3&scene=0#wechat_redirect) @谢洪林（应用架构组）
+
+Http请求是做Android应用开发工作几乎必须要用到的东西。做Android开发这几年，从最开始仿照网上代码自己使用apache的DefaultHttpClient封装网络请求工具类，到后面开始使用GitHub上面的一些http框架，Afinal,xUtils到Volley,AsyncHttpClient等，网上这些http框架大多都还比较易用，但是做实际业务中还是感觉到业务和界面代码与Http请求的代码还是耦合性过高，特别是在服务器接口比较多的时候。
+
+#### 2）[jvm学习笔记－jvm内存结构](http://139.196.14.76/t/jvm-jvm/294) @李闯（产品服务组）
+
+java的流行很大原因归功于丰富的开源库，还免费！这对java开发团队非常有益，开源库拿来就用，省时省力还省钱。但对java初学者就苦逼了，面对浩如烟海的各种框架，怎么学习呢？最好的方法就是学好基础知识，万变不离其宗，再炫酷的框架也是用基础知识做出来的，原理也大同小异。
+
+## Android开发
+
+#### 1）[Google开源的FlexboxLayout](http://mp.weixin.qq.com/s?__biz=MzA4NTQwNDcyMA==&mid=2650661681&idx=1&sn=b151aba0c5fb702492f6bbd82211988d&scene=2&srcid=0515q6chS9ubKrfBqOuIgCnR&from=timeline&isappinstalled=0#wechat_redirect)
+
+最近Google开源了一个项目叫「FlexboxLayout」，但是貌似没多少资料对这个项目介绍的，那么今天来讲讲这个项目的作用以及简单的使用介绍。
+
+#### 2）[移动端SDK的优化之路](https://mp.weixin.qq.com/s?__biz=MzA3ODg4MDk0Ng==&mid=2651112265&idx=1&sn=23fa0e84cfc9aaad0e33232d12868c07&scene=1&srcid=0516FBDWkTSxakiP1XvTGXCE&key=b28b03434249256b6d65e6baa922e1572f06be70f3e708b511de65ca833d8ccd7040b5d74f4969f8d5002ffdcb3984ab&ascene=0&uin=Mjc3OTU3Nzk1&devicetype=iMac+MacBookPro10%2C1+OSX+OSX+10.10.5+build%2814F1713%29&version=11020201&pass_ticket=8lpzOjRJO3IS%2BmKcvsqRN%2FlzlWyR2q2fmKv15GKO2PPYAKDGPXDhyfntueC4bIod)
+
+sdk优化过程，是一段血泪史，可以吐槽的地方无数。移动端sdk不像app一样方便，sdk发布后出现任何问题，都会影响到很多家的app。不能像一家app一样，可以及时发布一个hotfix，或者强制升级app，又或者热更新app。所以sdk发版之前，必须经过严格的测试，每一次sdkhotfix的发布都会对我们的用户造成严重的影响。
+
+#### 3）[使用 BitMask 写出高效的程序](https://mp.weixin.qq.com/s?__biz=MzI1MjA5NDY0Nw==&mid=2649970940&idx=1&sn=0d6dcd2df4468d230cccfa2da86d8265&scene=1&srcid=05115rs7wbYpbJqJhB8dCtqO&key=b28b03434249256b3f7fd37ec5e1a88349f84082ce0218eb1d0d5480c3660bc7c5dd108b98de0676ced356fcbfe38e55&ascene=0&uin=MTYzMjY2MTE1&devicetype=iMac+MacBookPro10%2C1+OSX+OSX+10.11.4+build(15E65)&version=11020201&pass_ticket=wcYm2Mf2UG0gvy0w50N6MwyxRlOtYicz4vAwpHodXDU%3D)
+
+在 Android 的代码中有大量的 BitMask 的运用，像 View，MotionEvent  这样的核心基础类中，需要认真考虑内存的使用，能省则省。如果你真想完全地掌控内存的使用，追求卓越的品质，想最大限度节省内存，BitMask 是你不错的选择。
+
+#### 4）[Android安全开发之浅谈密钥硬编码](https://jaq.alibaba.com/community/art/show?articleid=321)
+
+在阿里聚安全的漏洞扫描器中和人工APP安全审计中，经常发现有开发者将密钥硬编码在Java代码、文件中，这样做会引起很大风险。信息安全的基础在于密码学，而常用的密码学算法都是公开的，加密内容的保密依靠的是密钥的保密，密钥如果泄露，对于对称密码算法，根据用到的密钥算法和加密后的密文，很容易得到加密前的明文；对于非对称密码算法或者签名算法，根据密钥和要加密的明文，很容易获得计算出签名值，从而伪造签名。
+
+#### 5）[架构杂谈（Android、Web）](http://www.jianshu.com/p/11fd44bdc1ae)
+
+我们公司每周每个组进行一次讲座分享，上周是我们组，我是主讲，分享的是框架方面的。因为是很早很早以前就想写写这个，趁这个机会刚好分享一下。
+
+## iOS开发
+
+#### 1）[新浪微博iOS客户端架构与优化之路](http://mp.weixin.qq.com/s?__biz=MzA3ODg4MDk0Ng==&mid=2651112273&idx=1&sn=893a66a04e541a99b7bc4d7cf227e2f7&scene=0#wechat_redirect)
+
+随着Facebook、Twitter、微博的崛起，向UGC、PGC、OGC，自媒体提供平台的内容消费型App逐渐形成了独特的客户端架构模式。与电商和通讯工具类App不同，微博客户端具有多信息流、内容丰富多样、对数据量和延迟敏感等特点。微博的信息流承载着文字、网页、照片、视频、直播等多样的内容形式，所以复杂信息流对团队的开发效率、App的性能都带来了极大的挑战。
+
+#### 2）[Clang Attributes 黑魔法小记](http://blog.sunnyxx.com/2016/05/14/clang-attributes/)
+
+Clang Attributes 是 Clang 提供的一种源码注解，方便开发者向编译器表达某种要求，参与控制如 Static Analyzer、Name Mangling、Code Generation 等过程，一般以 __attribute__(xxx) 的形式出现在代码中；为方便使用，一些常用属性也被 Cocoa 定义成宏，比如在系统头文件中经常出现的 NS_CLASS_AVAILABLE_IOS(9_0) 就是 __attribute__(availability(...)) 这个属性的简单写法。
+
+## 技术纵横
+
+#### 1）[从本质认识JavaScript的原型继承和类继承](https://www.h5jun.com/post/inherits.html)
+
+在ES6之前，JavaScript没有类继承的概念，因此使用者为了代码复用的目的，只能参考其他语言的“继承”，然后用prototype来模拟出对应的实现，于是有了各种继承方式，比如《JavaScript高级程序设计》上说的原型链，借用构造函数，组合继承，原型式继承，寄生式继承，寄生组合式继承等等。
+
+#### 2）[用户数过亿的QQ空间前端优化的思路是什么](http://mp.weixin.qq.com/s?__biz=MzAwNjE3ODQ4NQ==&mid=2650896255&idx=1&sn=641779f9a603627620a75c1cde960916#rd)
+
+本文介绍 QQ 空间前端团队的发展，以及如何做性能优化。
+
+#### 3）[资深程序员都了解的代码复用法则](http://mp.weixin.qq.com/s?__biz=MzAwMDU1MTE1OQ==&mid=2653547118&idx=1&sn=733737f71a751feea5c2d2ca5ea3adbe)
+
+编写代码最重要一条，是怎样复用其他程序员的代码和思路来解决问题。良好的复用帮助我们编写更好的程序，并且提高程序的编写速度。不良的复用可能短时间内帮助我们借用其他程序员的思维，但最终会导致不良的开发。
+
+#### 4）[我是这样学习前端的](https://github.com/icepy/_posts/issues/39)
+
+算算时间今年（2016年）是进入前端开发这个领域第五个年头，自从上次总结完《我的编程之路》后，还想从更细节的方向上写一写自己是如何学习前端开发，并且还能够保持进步和对技术的敏感。
+
+#### 5）[敏捷软件测试常见的七个误区](http://insights.thoughtworkers.org/agile-testing-misunderstanding/)
+
+敏捷软件测试指的是在敏捷软件开发过程中跟质量相关的一系列活动，和传统意义上的软件测试有很多区别，因为敏捷软件测试的概念一直比较模糊，所以经常会有人走入误区，我曾经在瀑布型的软件开发模式下做过几年的测试人员，所以在刚刚接触敏捷项目的时候也曾有过一些误解，但是在敏捷软件开发团队工作将近5年后，对很多问题有了新的认识，以下针对几个常见的误区和大家分享一下我的理解。
+
+
+
+
+> 欢迎关注我们团队的技术公众号
+
+![](http://c.picphotos.baidu.com/album/w%3D1458%3Bq%3D90/sign=682592986a224f4a579977173ccfab23/32fa828ba61ea8d327c190ba900a304e241f58a9.jpg)
