@@ -1,0 +1,126 @@
+# [平安金融科技移动技术周报](https://github.com/PaicHyperionDev/MobileDevWeekly)（第二十期）
+
+标签（空格分隔）： 技术周报
+
+---
+
+> @author ASCE1885的 [Github](https://github.com/ASCE1885)  [简书](http://www.jianshu.com/users/4ef984470da8/latest_articles) [微博](http://weibo.com/asce885/profile?rightmod=1&wvr=6&mod=personinfo) [CSDN](http://blog.csdn.net/asce1885) [知乎](https://www.zhihu.com/people/asce1885)
+
+![IMG_2768.jpg-3055.1kB][1]
+
+[外网链接](http://www.jianshu.com/p/dae12645ab7b) [壹翎阁论坛链接](http://139.196.14.76/t/topic/299)
+
+> **本期导读**：本期总共带来 22 篇最新的技术文章，谁叫过去一周高质量文章这么多呢。原创专题带来一篇关于 React Native 0.22 开始引入的 Hot Reload 原理的介绍，以及一篇关于 5 种常见的 Web 漏洞的简介；Android 篇重点关注下 Google IO 2016 上面发布的约束布局函数库：ConstraintLayout，一种全新的布局方式。iOS 篇可以关注下其他公司对 Swift 的思考和实践，未来肯定是 iOS 开发的主流语言；技术纵横篇可关注下RN的性能调优，以及两个新的技术方案的介绍：LuaView 和 ReactMix；技术人生篇带来的依然是教你如何更快更好成长的文章。
+
+## 原创专题
+
+#### 1）[React Native 热加载（Hot Reload）原理简介](http://mp.weixin.qq.com/s?__biz=MzAwMTYwNzE2Mg==&mid=2651036597&idx=1&sn=8169e1d806ebece54403ff6902b05e36#rd) @ASCE1885（应用架构组）
+
+最近发现 React Native 官方博客上面这篇介绍 Hot Reload 原理的文章，仔细阅读了一下，顺便翻译为中文，以飨读者。本文不少内容加入了译者的理解，并没有严格字对字翻译，英文水平不错的同学可以直接阅读原文。
+
+#### 2）[大话 web 安全](http://139.196.14.76/t/web/298) @罗嘉飞（产品服务组）
+
+Web 安全在互联网中起到越来越重要的作用，尤其是金融领域。所以本文简单介绍 5 种常见的 Web 漏洞的原理，攻击和防御。
+
+## Android开发
+
+#### 1）[安卓约束控件(ConstraintLayout)扁平化布局入门](http://www.jianshu.com/p/792d2682c538)
+
+在Google IO大会中不仅仅带来了Android Studio 2.2预览版，同时带给我们一个依赖约束的库。简单来说，它是相对布局的升级版本，但是区别与相对布局更加强调约束。何为约束，即控件之间的关系。它能让你的布局更加扁平化，一般来说一个界面一层就够了；同时借助于AS我们能极其简单的完成界面布局。
+
+#### 2）[代码实验室--带你一步步理解使用 ConstraintLayout](http://quanqi.org/2016/05/20/code-labs-constraint-layout/)
+
+Google I/O 2016 上发布了 ConstraintLayout, 简直是要变革 Android 写界面方式. 于是第二天我立即找到相关文档尝试, 这是官方提供的 Codelab 项目. 手把手教你探索 ConstraintLayout。
+
+#### 3）从零开始的Android新项目
+
+* [架构搭建篇](http://blog.zhaiyifan.cn/2016/03/14/android-new-project-from-0-p1/)
+* [Gradle篇](http://blog.zhaiyifan.cn/2016/03/14/android-new-project-from-0-p2/)
+* [MVPVM in Action, 谁告诉你MVP和MVVM是互斥的](http://blog.zhaiyifan.cn/2016/03/16/android-new-project-from-0-p3/)
+* [Dagger2篇](http://blog.zhaiyifan.cn/2016/03/27/android-new-project-from-0-p4/)
+* [Repository层(上) Retrofit、Repository组装](http://blog.zhaiyifan.cn/2016/04/30/android-new-project-from-0-p5/)
+* [Repository层(下) Realm、缓存、异常处理](http://blog.zhaiyifan.cn/2016/05/15/android-new-project-from-0-p6/)
+
+#### 4）[Android官方MVP架构解读](http://blog.csdn.net/ljd2038/article/details/51477475)
+
+对于MVP (Model View Presenter)架构是从著名的MVC(Model View Controller)架构演变而来的。而对于Android应用的开发中本身可视为一种MVC架构。通常在开发中将XML文件视为MVC中的View角色，而将Activity则视为MVC中的Controller角色。不过更多情况下在实际应用开发中Activity不能够完全充当Controller，而是Controller和View的合体。于是Activity既要负责视图的显示，又要负责对业务逻辑的处理。这样在Activity中代码达到上千行，甚至几千行都不足为其，同时这样的Activity也显得臃肿不堪。所以对于MVC架构并不很合适运用于Android的开发中。下面就来介绍一下MVP架构以及看一下google官方给出的MVP架构示例。
+
+#### 5）[Crash率从2.2%降至0.2%，这个团队是怎么做到的？](http://mp.weixin.qq.com/s?__biz=MzAxMzYyNDkyNA==&mid=2651332048&idx=1&sn=97175990900c9fdb61bd7be8cbc0bb80&scene=1&srcid=0520urFZC9enpGwrezMvD3iA#wechat_redirect)
+
+天天P图作为图像处理类APP，内部集成了很多功能，包括滤镜、人脸检测、美白、磨皮、美妆、拼图、相机等，而且这些功能多是用底层算法依靠GPU实现，如何保证这些功能在众厂商生产的Android手机上正常高效运行，对于测试来说是一项极具挑战的任务。本文主要针对Android天天P图业务介绍我们在降低Crash率方面所做的工作，当然这里也离不开开发同学们的大力支持。
+
+## iOS开发
+#### 1）[猿题库从 Objective-C 到 Swift 的迁移](https://mp.weixin.qq.com/s?__biz=MjM5NTIyNTUyMQ==&mid=2709544852&idx=1&sn=61e0f9e0f1e20aa376cd9456b7045920&scene=0&key=f5c31ae61525f82e5bf490030d7cb4543f7d388a5ac0b91d0d30fe93e146b00675af7042327001ac79435363f9aed35a&ascene=0&uin=NTk4MzU3OTAw&devicetype=iMac+MacBookPro11%2C1+OSX+OSX+10.10+build(14B25)&version=11020012&pass_ticket=0kFZKPhniXhE1bEZPQqslz%2FzakKU3SLPGcUm5WkViAh3HKijlzspaVdACUuB5nKy)
+相信没有人会怀疑，Swift 是 iOS 开发未来的主流语言，但是由于 Swift 语言的不断变化以及庞大的迁移成本，真正把项目迁移到 Swift 语言的公司并不多。而猿题库 iOS 客户端是一个超过 3 年的项目，积累了超过 15 万行的 Objective-C 代码，我相信它在迁移过程中的经验对很多人有所帮助。
+
+#### 2）[Pod 预编译，减少不必要的生命浪费](https://mp.weixin.qq.com/s?__biz=MzIwMTYzMzcwOQ==&mid=2650948341&idx=1&sn=bf12097fe33d3bb553fab040a394eab6&scene=0&key=f5c31ae61525f82ec3f862cc50345a8dfb906520de0ed77b76c5566235f6b84c915e30df744c109cf34de5a9cff680c0&ascene=0&uin=NTk4MzU3OTAw&devicetype=iMac+MacBookPro11%2C1+OSX+OSX+10.10+build(14B25)&version=11020012&pass_ticket=0kFZKPhniXhE1bEZPQqslz%2FzakKU3SLPGcUm5WkViAh3HKijlzspaVdACUuB5nKy)
+
+随着越来越多的业务量，以及添加的各种第三方库，礼物说这个项目的编译时间也飙升到了五分钟以上。虽说和微博、美团、滴滴他们的三十分钟不是一个数量级，但每天好几个五分钟也会浪费不少人参。于是，加速编译就会被拉上日程。
+
+#### 3）[网易NeteaseAPM iOS SDK技术实现分享](http://www.infoq.com/cn/articles/netease-ios-sdk-neteaseapm-technology-share)
+
+Application Performance Management(APM)，应用程序性能管理， 主要指对企业的关键业务应用进行监测、优化，提高企业应用的可靠性和质量，保证用户得到良好的服务。一个企业的关键业务应用的性能强大，可以提高竞争力，并取得商业成功。
+
+#### 4）[从Android到Swift iOS开发：语言与框架对比](http://www.infoq.com/cn/articles/from-android-to-swift-ios)
+
+Swift是现在Apple主推的语言，2014年新推出的语言，比Scala等“新”语言还要年轻10岁。2015年秋已经开源。目前在linux上可用，最近已经支持Android NDK；在树莓派上有SwiftyGPIO库，可以通过GPIO控制一些硬件。
+
+#### 5）[iOS 启动连续闪退保护方案](http://wereadteam.github.io/2016/05/23/GYBootingProtection/)
+
+iOS App 有时可能遇到启动必 crash 的绝境：每次打开 App 都闪退，无法正常使用App。为了尝试解决这个问题，微信读书开发了 iOS 连续闪退保护工具：GYBootingProtection，检测连续闪退，在连续闪退出现时，尝试自修复 App。
+
+## 技术纵横
+
+#### 1）[React Native痛点解析之性能调优](http://mp.weixin.qq.com/s?__biz=MzA3ODg4MDk0Ng==&mid=2651112293&idx=1&sn=866971daf7dba22186d2c09d1bac2418&scene=0#wechat_redirect)
+
+自从React Native出世，虽然官方一直尽可能的优化其性能，为了能让其媲美原生App的速度，但是现实感觉有点不尽人意。接下来介绍下实践中遇到的一些性能问题以及优化方案。以下对性能参数的依据是来自于React Native自带的FPS Monitor。
+
+#### 2）[动态化应用新方案，阿里聚划算LuaView动态化之路](http://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2650992643&idx=1&sn=1e287d32908daf5afdb1fd9895c8eea1&scene=0#wechat_redirect)
+
+业务快速发展的互联网产品，其移动应用往往会遇到版本迭代速度跟不上需求变更速度的问题。这时候让应用具有动态化能力就显得尤为重要。所谓的动态化是指应用不发版实现内容动态更新的能力，这里的应用内容不仅限于基本信息（如售卖的商品信息），而且涉及应用的主体框架、信息结构等深层信息（如页面整体排版、布局）。
+
+#### 3）[大众点评支付渠道网关系统的实践之路](http://tech.meituan.com/The-Practice-of-Dianping-Channel-Gateway.html)
+
+业务的快速增长，要求系统在快速迭代的同时，保持很好的扩展性和可用性。其中，交易系统除了满足上述要求之外，还必须保持数据的强一致性。对系统开发人员而言，这既是机遇，也是挑战。本文主要梳理大众点评支付渠道网关系统在面对这些成长烦恼时的演进之路，以及过程中的一些思考和实践。
+
+#### 4）[深入分析网络编程中踩过的坑](https://mp.weixin.qq.com/s?__biz=MzI1NjEwMTM4OA==&mid=2651231804&idx=1&sn=cfddeb40f6efa577b63af60d5f96707a&scene=0&key=f5c31ae61525f82e02fe6b95cc4c2c1f2edb0d69c804a1c31af2ea4c2baf3769aba2562924f99692eafb9e275c883e42&ascene=0&uin=NTk4MzU3OTAw&devicetype=iMac+MacBookPro12%2C1+OSX+OSX+10.11.1+build(15B42)&version=11020201&pass_ticket=WBgo9ZnA6rJYB6sZiWLfDx10VEShv%2By4VXPJxFPjMHxKSuXX68HFyfsE0tF8Xcl%2B)
+
+网络编程中经常会遇到一些异常的情况，定位问题需要了解协议栈的实现，以下是工作中遇到的一些常见问题的深入分析和解决思路。
+
+#### 5）[ReactMix：基于HTML+JS+CSS写APP的最佳实践](http://mp.weixin.qq.com/s?__biz=MzA3ODg4MDk0Ng==&mid=2651112282&idx=1&sn=d4b706d5346844c486af902c7b1b7162&scene=0#wechat_redirect)
+
+React Native官方支持iOS和Android，但并没有覆盖Web，有些人试图做出补救，如兼容React Native API的ReactWeb，也有人用在React Native上再封装一层的形式来兼容Web。ReacMix采取的就是后面的这种做法。
+
+## 技术人生
+
+#### 1）[职场里，你不是学生，老板也不是老师](http://mp.weixin.qq.com/s?__biz=MjM5NzA4MTgyMA==&mid=2650893032&idx=1&sn=09bde8b3ad2a25e20472f98ecc8b40ed&scene=0#wechat_redirect)
+
+很多小朋友觉得，我老板教不了我就不是好老板，跟老板学不到东西就要走，可是职场学习是一个好习惯，靠自己才是核心，尤其在一些新事物上自己可以先学学好往往还会受到重用，只有蠢员工才会抱怨放弃自己手头的机会还说公司不给他机会成长。
+
+#### 2）[当技术机制已然固步自封，怎样在团队中推行革命性的“新模板”？](http://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2650992655&idx=1&sn=115ad3276296d9982218275ae6f7a084&scene=0#wechat_redirect)
+当团队中的技术机制、实现方式及执行习惯根深蒂固到拖累团队的发展时，如何在重重阻力中推行革命性的“新模板”？这是每一个技术团队的leader与成员都应该了解的经验。
+
+#### 3）[从工程师到团队Leader，我的8年心路历程](http://mp.weixin.qq.com/s?__biz=MzA5Nzc4OTA1Mw==&mid=2659597245&idx=1&sn=28f09157bf5053414bfc50b4e527b30b&scene=0#wechat_redirect)
+
+作者 08 年入职百度，从工程师开始，到作为导师带人，再到日常项目管理，以及发起和推动技术项目。离开百度体制，加入创业公司从零开始搭建大前端的团队。回到百度改革技术团队，作为技术与负责人，成立 FEX，使它成为整个百度最专业的前端团队。再到现在加入创业公司，建立和负责更多元化的研发团队。
+
+#### 4）[程序猿与架构狮的思路区别](http://www.jianshu.com/p/4646d28b3a77)
+
+* 培养技术深度：程序猿需要对面临的问题，做出深入研究，做到知其然并知其所以然。
+* 培养技术广度：程序猿除了需要理解计算机系统原理、网络原理等，更多跳出舒适区去学习新的技术。
+* 培养系统思维：一个问题的出现，意味着同类的问题正在潜伏，找到根源并且解决掉。
+* 培养体系思维：架构狮不是一个人，而且需要带领一帮程序猿去攻城略地。建立高效的体系，把程序猿培养为新的领袖--架构狮。
+
+#### 5）[找回文本的力量，恰到好处的写作体验——MarkEditor](http://www.zouyuhui.com/post/chan-pin-yu-she-ji/zhao-hui-wen-ben-de-li-liang-qia-dao-hao-chu-de-xie-zuo-ti-yan-markeditor?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io)
+
+随着近几年 Markdown 语法的流行，五花八门的编辑器也随之诞生，而其中又数 Ulysses 最具代表性，但是我今天要介绍的 MarkEditor 却彻底替代掉了我电脑中的 Ulysses，在其简洁的外表下，潜伏着野兽般的强大功能，用该产品开发者「海波」的话来说就是：简洁与强大，从不是矛盾的事物。
+
+
+
+
+> 欢迎关注我们团队的技术公众号
+
+![](http://c.picphotos.baidu.com/album/w%3D1458%3Bq%3D90/sign=682592986a224f4a579977173ccfab23/32fa828ba61ea8d327c190ba900a304e241f58a9.jpg)
+
+
+  [1]: http://static.zybuluo.com/asce1885/01j9ysq2ld0zg9uregnmpnkw/IMG_2768.jpg
